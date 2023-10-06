@@ -1,0 +1,114 @@
+@charset "utf-8" ;
+html, body {
+    /* background: #FAFBF6; */
+}
+#contents {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 150px 40px;
+    box-sizing: border-box;
+}
+.category {
+    /* margin: 50px 0 ;
+    font-family: 'Cormorant Garamond';
+    font-size: 35px; */
+    margin-bottom: 20px;
+}
+.category ul {}
+.category ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+.category ul li:first-child {
+    position: relative;
+    padding-left: 0;
+}
+.category ul li:first-child::after {
+    content: "/";
+    position: absolute;
+    top: 0;
+    right: -5px;
+}
+.product_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product_list > li {
+    width: 32%;
+    position: relative;
+}
+.product_list > li img {
+    width: 100%;
+    display: block;
+}
+.product_list > li .outer_hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .3s all ease;
+}
+.product_list > li .outer_hover img {
+    width: 100%;
+    display: block;
+}
+.product_list > li:hover .outer_hover {
+    opacity: 1;
+}
+.product_list > li .txt_wrap {
+    margin-top: 20px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+.product_list > li .txt_wrap h5 {
+    margin-bottom: 10px;
+}
+.product_list > li .txt_wrap .price {
+    font-size: 14px;
+    text-decoration: line-through;
+}
+.product_list li .txt_wrap .dc_price {
+    margin-top: 10px;
+    color: #ff3300;
+}
+.paging {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.paging > a {
+    display: inline-block;
+    padding: 0 5px;
+}
+.paging > a:hover i {
+    font-weight: bold;
+}
+.paging ol {
+    display: inline-block;
+}
+.paging ol li {
+    display: inline-block;
+}
+.paging ol li a {
+    padding: 0 5px;
+}
+.paging ol li:hover a {
+    font-weight: bold;
+}
+@media screen and (max-width:1024px) {
+    #contents {
+        padding:150px 20px ;
+    }
+}
+@media screen and (max-width:800px) {
+    .product_list > li {
+        width: 48.5%;
+    }
+}
+@media screen and (max-width:600px) {
+    .product_list > li {
+        width: 100%;
+    }
+}

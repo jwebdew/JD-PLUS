@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'NanumGothic';
+    src: url('../font/NanumGothic.eot');
+    src: url('../font/NanumGothic.eot?#iefix') format('embedded-opentype'),
+        url('../font/NanumGothic.woff2') format('woff2'),
+        url('../font/NanumGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NanumGothic';
+    src: url('../font/NanumGothicExtraBold.eot');
+    src: url('../font/NanumGothicExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../font/NanumGothicExtraBold.woff2') format('woff2'),
+        url('../font/NanumGothicExtraBold.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NanumGothic';
+    src: url('../font/NanumGothicBold.eot');
+    src: url('../font/NanumGothicBold.eot?#iefix') format('embedded-opentype'),
+        url('../font/NanumGothicBold.woff2') format('woff2'),
+        url('../font/NanumGothicBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NanumGothic';
+    src: url('../font/NanumGothicLight.eot');
+    src: url('../font/NanumGothicLight.eot?#iefix') format('embedded-opentype'),
+        url('../font/NanumGothicLight.woff2') format('woff2'),
+        url('../font/NanumGothicLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Black Han Sans';
+    src: url('../font/BlackHanSans-Regular.eot');
+    src: url('../font/BlackHanSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/BlackHanSans-Regular.woff2') format('woff2'),
+        url('../font/BlackHanSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jua';
+    src: url('../font/Jua-Regular.eot');
+    src: url('../font/Jua-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/Jua-Regular.woff2') format('woff2'),
+        url('../font/Jua-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

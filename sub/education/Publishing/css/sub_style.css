@@ -1,0 +1,39 @@
+@charset "utf-8";
+body {
+    background-color: #eee;
+}
+iframe {
+    width: 100%;
+}
+#wrap {
+    font-size: 16px;
+    padding: 100px 0;
+}
+.main_header {
+    
+    border-bottom: 1px solid #ccc;
+    
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.main_header ol {
+    width: calc(100% - 200px);
+    margin: 0 auto;
+    font-size: 14px;
+}
+.main_header ol li{
+    display: flex;
+    justify-content: flex-end;
+    line-height: 1.5;
+}
+.main_header ol li b {
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+.inner {
+    max-width: 1280px;
+    width: calc(100% - 15px);
+    margin: 0 auto;
+}

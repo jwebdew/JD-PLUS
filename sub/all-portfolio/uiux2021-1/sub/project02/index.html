@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKINNYPIG</title>
+    <link href="lib/slick/slick.css" rel="stylesheet" /><!-- 슬릭슬라이드css연결 -->
+    <link href="lib/slick/slick-theme.css" rel="stylesheet" /><!-- 슬릭슬라이드css연결 -->
+    <link href="css/main.css" rel=" stylesheet" /><!-- 메인 css연결 -->
+    <script src="lib/jquery-3.6.0.min.js"></script><!-- 제이쿼리 연결 -->
+    <script src="lib/slick/slick.min.js"></script><!-- 슬릭슬라이드 js연결 -->
+    <script src="js/common.js"></script><!-- common js파일연결 -->
+    <script src="js/main.js"></script><!-- main js파일연결 -->
+</head>
+<body>
+    <div class="bacground"></div>
+    <header class="pc_header clearfix">
+        <div class="logo"><a href="index.html"><img src="img/logo.png" alt="스키니피그"></a></div><!-- .logo end -->
+        <nav>
+            <ul>
+                <li class="depth01">
+                    <a href="sub.html">SKINNYPIG?</a> 
+                    <ul class="depth02">
+                        <li><a href="sub.html">SKINNYPIG소개</a></li>
+                        <li><a href="#">MEMBERSHIP</a></li>
+                    </ul>
+                </li>
+                <li class="depth01">
+                    <a href="#">MENU</a>
+                </li>
+                <li class="depth01">
+                    <a href="#">EVENT</a>
+                    <ul class="depth02">
+                        <li><a href="#">진행중인 이벤트</a></li>
+                        <li><a href="#">당첨자 발표</a></li>
+                    </ul>
+                </li>
+                <li class="depth01">
+                    <a href="#">CHANNEL</a>
+                    <ul class="depth02">
+                        <li><a href="#">온라인 SET</a></li>
+                        <li><a href="#">온라인 단품</a></li>
+                        <li><a href="#">오프라인 매장</a></li>
+                    </ul>
+                </li>
+                <li class="depth01">
+                    <a href="#">온라인구매</a>
+                </li>
+                <li class="depth01">
+                    <a href="#">ABOUT</a>
+                    <ul class="depth02">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">리뷰</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="util">
+            <a href="#">
+                <img src="img/login_icon.png" alt="로그인">
+                <img src="img/login_icon_click.png" alt="로그인">
+                <p>로그인</p>
+            </a>
+            <a href="#" class="search">
+                <img src="img/search_icon.png" alt="검색">
+                <img src="img/search_icon_click.png" alt="검색">
+                <p>검색</p>
+            </a>
+            <a href="#">
+                <img src="img/cart_icon.png" alt="장바구니">
+                <img src="img/cart_icon_click.png" alt="장바구니">
+                <p>장바구니</p>
+            </a>
+            <a href="#">
+                <img src="img/talk_icon.png" alt="톡상담">
+                <img src="img/talk_icon_click.png" alt="톡상담">
+                <p>톡상담</p>
+            </a>
+        </div><!-- .util end -->
+        <div class="search_box">
+            <span><img src="img/cancel_icon.png" alt="닫기"></span>
+            <form class="clearfix" action="" method="POST">
+                <input type="text" placeholder="검색어를 입력하세요">
+                <button>찾기</button>
+            </form>
+        </div><!-- .search_box end -->
+    </header><!-- .pc_header end -->
+    <header class="mobile_header clearfix">
+        <div class="hg"><img src="img/hg.png" alt="메뉴보기"></div>
+        <div class="logo"><a href="index.html"><img src="img/logo.png" alt="스키니피그"></a></div>
+        <div class="search"><img src="img/search_icon.png" alt="검색"></div>
+        <div class="close"><img src="img/cancel_icon.png" alt="닫기"></div>
+        <div class="search_box">
+            <form class="clearfix" action="" method="POST">
+                <input type="text" placeholder="검색어를 입력하세요">
+                <button>찾기</button>
+            </form>
+        </div><!-- .search_box end -->
+        <div class="mobile_menu">
+            <div class="menuIn_top clearfix">
+                <a href="index.html" class="m_logo"><img src="img/logo.png" alt="스키니피그"></a>
+                <div class="util">
+                    <a href="#"><img src="img/login_icon.png" alt="마이페이지"></a>
+                    <a href="#"><img src="img/cart_icon.png" alt="장바구니"></a>
+                    <a href="#"><img src="img/talk_icon.png" alt="톡상담"></a>
+                    <a href="#" class="m_menu_close"><img src="img/cancel_icon.png" alt="닫기"></a>
+                </div><!-- .util -->
+            </div><!-- .menuIn_top end -->
+            <nav>
+                <ul>
+                    <li class="depth01">
+                        <a href="#" class="clearfix"><p>SKINNYPIG?</p><img src="img/arrow_bottom.png" alt="메뉴보기"></a> 
+                        <ul class="depth02">
+                            <li><a href="sub.html">SKINNYPIG소개</a></li>
+                            <li><a href="#">MEMBERSHIP</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth01">
+                        <a href="#" class="clearfix"><p>MENU</p></a>
+                    </li>
+                    <li class="depth01">
+                        <a href="#" class="clearfix"><p>EVENT</p><img src="img/arrow_bottom.png" alt="메뉴보기"></a>
+                        <ul class="depth02">
+                            <li><a href="#">진행중인 이벤트</a></li>
+                            <li><a href="#">당첨자 발표</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth01">
+                        <a href="#" class="clearfix"><p>CHANNEL</p><img src="img/arrow_bottom.png" alt="메뉴보기"></a>
+                        <ul class="depth02">
+                            <li><a href="#">온라인 SET</a></li>
+                            <li><a href="#">온라인 단품</a></li>
+                            <li><a href="#">오프라인 매장</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth01">
+                        <a href="#" class="clearfix"><p>온라인구매</p></a>
+                    </li>
+                    <li class="depth01">
+                        <a href="#" class="clearfix"><p>ABOUT</p><img src="img/arrow_bottom.png" alt="메뉴보기"></a>
+                        <ul class="depth02">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">리뷰</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div><!-- .mobile_menu end -->
+    </header><!-- .mobile_header end -->
+    <section class="cont01">
+        <div class="main_slider">
+            <div class="main_slider01">
+                <img src="img/PC_main_slider01.png" alt="아이스크림칼로리">
+                <div class="sd_textbox">
+                    <h2>한 통 다 비워도 <span>280kcal</span></h2>
+                    <p>1/4로 줄어든 칼로리와 부담감!<br />
+                    이젠 칼로리 대신 좋아하는 것에만 집중해도 괜찮아요.</p>
+                    <button type="button" onclick="location.href='#'">칼로리&성분표 자세히보기 ></button>
+                </div><!-- .sd_textbox end -->
+            </div><!-- .main_slider01 end -->
+            <div class="main_slider02">
+                <img src="img/PC_main_slider02.png" alt="새벽배송">
+                <div class="sd_textbox">
+                    <img src="img/dawndelivery.png" alt="dawn delivery">
+                    <p>36시간 동안 -75℃를 지키는 보냉배송으로<br />
+                    우리집 문 앞까지 꽁꽁 얼어서 도착!</p>
+                    <button type="button" onclick="location.href='#'">새벽배송 정보 자세히보기 ></button>
+                </div><!-- .sd_textbox end -->
+            </div><!-- .main_slider02 end -->
+            <div class="main_slider03">
+                <img src="img/PC_main_slider03.png" alt="멤버십">
+                <div class="sd_textbox">
+                    <h3>SKINNYPIG</h3>
+                    <h2>MEMBERSHIP</h2>
+                    <p>최대 매월 10% 할인!<br />
+                    스키니피그 멤버십 쿠폰으로, 알뜰하게 즐겨요~</p>
+                    <button type="button" onclick="location.href='#'">등급별 멤버십 혜택 자세히보기 ></button>
+                </div><!-- .sd_textbox end -->
+            </div><!-- .main_slider03 end -->
+        </div><!-- .main_slider end -->
+        <div class="sd_pager">
+            <span class="slick_prev"><img src="img/arrow_left_white.png" alt="이전"></span>
+            <span class="slick_next"><img src="img/arrow_right_white.png" alt="다음"></span>
+            <span class="slick_play"><img src="img/play_white.png" alt="시작"></span>
+            <span class="slick_pause"><img src="img/stop_white.png" alt="정지"></span>
+        </div><!-- .sd_pager end -->
+    </section><!-- .cont01 end -->
+    <section class="mobile_cont01">
+        <div class="main_slider">
+            <div class="main_slider01">
+                <img src="img/mobile_main_slider01.png" alt="아이스크림칼로리">
+                <div class="sd_textbox">
+                    <h2>한 통 다 비워도 <span>280kcal</span></h2>
+                    <p>1/4로 줄어든 칼로리와 부담감!<br />
+                    이젠 칼로리 대신 좋아하는 것에만 집중해도 괜찮아요.</p>
+                    <button type="button" onclick="location.href='#'">칼로리&성분표 자세히보기 ></button>
+                </div><!-- .sd_textbox end -->
+            </div><!-- .main_slider01 end -->
+            <div class="main_slider02">
+                <img src="img/mobile_main_slider02.png" alt="새벽배송">
+                <div class="sd_textbox">
+                    <img src="img/dawndelivery.png" alt="dawn delivery">
+                    <p>36시간 동안 -75℃를 지키는 보냉배송으로<br />
+                    우리집 문 앞까지 꽁꽁 얼어서 도착!</p>
+                    <button type="button" onclick="location.href='#'">새벽배송 정보 자세히보기 ></button>
+                </div><!-- .sd_textbox end -->
+            </div><!-- .main_slider02 end -->
+            <div class="main_slider03">
+                <img src="img/mobile_main_slider03.png" alt="멤버십">
+                <div class="sd_textbox">
+                    <h3>SKINNYPIG</h3>
+                    <h2>MEMBERSHIP</h2>
+                    <p>최대 매월 10% 할인!<br />
+                    스키니피그 멤버십 쿠폰으로, 알뜰하게 즐겨요~</p>
+                    <button type="button" onclick="location.href='#'">등급별 멤버십 혜택 자세히보기 ></button>
+                </div><!-- .sd_textbox end -->
+            </div><!-- .main_slider03 end -->
+        </div><!-- .main_slider end -->
+        <div class="sd_pager">
+            <span class="slick_play"><img src="img/play_white.png" alt="시작"></span>
+            <span class="slick_pause"><img src="img/stop_white.png" alt="정지"></span>
+        </div><!-- .sd_pager end -->
+    </section><!-- .cont01 end -->
+    <section class="container cont02">
+        <article class="contIn_top clearfix">
+            <div class="contIn_title">
+                <h2>FLAVORS</h2><p>다양한 맛으로 즐기는 스키니피그</p>
+            </div><!-- .cont_title -->
+            <div class="contIn_pager">
+                <span class="slick_prev"><img src="img/arrow_left.png" alt="이전"></span>
+                <span class="slick_next"><img src="img/arrow_right.png" alt="다음"></span>
+                <span class="slick_play"><img src="img/play.png" alt="시작"></span>
+                <span class="slick_pause"><img src="img/stop.png" alt="정지"></span>
+            </div><!-- .cont_pager -->
+        </article><!-- .contIn_top end -->
+        <article class="cont02_slider">
+            <div class="flavors fl01">
+                <div class="flavors_img">
+                    <img src="img/cont02_01VANILLA_BEAN.png" alt="바닐라빈">
+                </div>
+                <div class="flavors_text">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 380 349" style="enable-background:new 0 0 380 349;" xml:space="preserve">
+                        <path d="M349.68,0H56.44C39.69,0,26.12,13.58,26.12,30.33v26.2L2.93,69.92c-3.91,2.26-3.91,7.91,0,10.17l23.19,13.39v225.2c0,16.75,13.57,30.33,30.32,30.33h293.25c16.74,0,30.32-13.58,30.32-30.33V30.33C380,13.58,366.43,0,349.68,0z"/>
+                    </svg>
+                    <dl>
+                        <dt>VANILLA BEAN</dt>
+                        <dd>천연 바닐라향과 더불어<br />
+                            바닐라빈이 콕콕 박힌 깊은 풍미의<br /> 
+                            클래식 아이스크림</dd>
+                    </dl>
+                    <h3>280 <span>kcal</span></h3>
+                </div>
+            </div><!-- .flavors end -->
+            <div class="flavors fl02">
+                <div class="flavors_img">
+                    <img src="img/cont02_02CHOCOLATE.png" alt="초콜릿">
+                </div>
+                <div class="flavors_text">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 380 349" style="enable-background:new 0 0 380 349;" xml:space="preserve">
+                        <path d="M349.68,0H56.44C39.69,0,26.12,13.58,26.12,30.33v26.2L2.93,69.92c-3.91,2.26-3.91,7.91,0,10.17l23.19,13.39v225.2c0,16.75,13.57,30.33,30.32,30.33h293.25c16.74,0,30.32-13.58,30.32-30.33V30.33C380,13.58,366.43,0,349.68,0z"/>
+                    </svg>
+                    <dl>
+                        <dt>CHOCOLATE</dt>
+                        <dd>네덜란드산 코코아 파우더와<br />
+                            코코아매스가 만들어내는<br /> 
+                            진한 초콜릿 풍미</dd>
+                    </dl>
+                    <h3>310 <span>kcal</span></h3>
+                </div>
+            </div><!-- .flavors end -->
+            <div class="flavors fl03">
+                <div class="flavors_img">
+                    <img src="img/cont02_03JEJU_GREEN_TEA.png" alt="제주그린티">
+                </div>
+                <div class="flavors_text">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 380 349" style="enable-background:new 0 0 380 349;" xml:space="preserve">
+                        <path d="M349.68,0H56.44C39.69,0,26.12,13.58,26.12,30.33v26.2L2.93,69.92c-3.91,2.26-3.91,7.91,0,10.17l23.19,13.39v225.2c0,16.75,13.57,30.33,30.32,30.33h293.25c16.74,0,30.32-13.58,30.32-30.33V30.33C380,13.58,366.43,0,349.68,0z"/>
+                    </svg>
+                    <dl>
+                        <dt>JEJU GREEN TEA</dt>
+                        <dd>입 안 가득히 느껴지는<br />
+                            제주 유기농 녹차의<br /> 
+                            진하고 쌉싸름한 향을 느껴보세요.</dd>
+                    </dl>
+                    <h3>280 <span>kcal</span></h3>
+                </div>
+            </div><!-- .flavors end -->
+            <div class="flavors fl04">
+                <div class="flavors_img">
+                    <img src="img/cont02_04SALTED_CARAMEL.png" alt="솔티드카라멜">
+                </div>
+                <div class="flavors_text">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 380 349" style="enable-background:new 0 0 380 349;" xml:space="preserve">
+                        <path d="M349.68,0H56.44C39.69,0,26.12,13.58,26.12,30.33v26.2L2.93,69.92c-3.91,2.26-3.91,7.91,0,10.17l23.19,13.39v225.2c0,16.75,13.57,30.33,30.32,30.33h293.25c16.74,0,30.32-13.58,30.32-30.33V30.33C380,13.58,366.43,0,349.68,0z"/>
+                    </svg>
+                    <dl>
+                        <dt>SALTED CARAMEL</dt>
+                        <dd>이탈리아산 카라멜시럽과<br />
+                            국내산천일염이 만드는<br /> 
+                            솔티드 카라멜의단짠 매력</dd>
+                    </dl>
+                    <h3>310 <span>kcal</span></h3>
+                </div>
+            </div><!-- .flavors end -->
+            <div class="flavors fl05">
+                <div class="flavors_img">
+                    <img src="img/cont02_05BLACK_SESAME.png" alt="흑임자">
+                </div>
+                <div class="flavors_text">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 380 349" style="enable-background:new 0 0 380 349;" xml:space="preserve">
+                        <path d="M349.68,0H56.44C39.69,0,26.12,13.58,26.12,30.33v26.2L2.93,69.92c-3.91,2.26-3.91,7.91,0,10.17l23.19,13.39v225.2c0,16.75,13.57,30.33,30.32,30.33h293.25c16.74,0,30.32-13.58,30.32-30.33V30.33C380,13.58,366.43,0,349.68,0z"/>
+                    </svg>
+                    <dl>
+                        <dt>BLACK SESAME</dt>
+                        <dd>고소한 검은 참깨가 만드는 진한 풍미<br />
+                            할매입맛 돌풍의 주인공이자<br /> 
+                            스키니피그 베스트셀러</dd>
+                    </dl>
+                    <h3>330 <span>kcal</span></h3>
+                </div>
+            </div><!-- .flavors end -->
+            <div class="flavors fl06">
+                <div class="flavors_img">
+                    <img src="img/cont02_06SSUK_LATTE.png" alt="쑥라떼">
+                </div>
+                <div class="flavors_text">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 380 349" style="enable-background:new 0 0 380 349;" xml:space="preserve">
+                        <path d="M349.68,0H56.44C39.69,0,26.12,13.58,26.12,30.33v26.2L2.93,69.92c-3.91,2.26-3.91,7.91,0,10.17l23.19,13.39v225.2c0,16.75,13.57,30.33,30.32,30.33h293.25c16.74,0,30.32-13.58,30.32-30.33V30.33C380,13.58,366.43,0,349.68,0z"/>
+                    </svg>
+                    <dl>
+                        <dt>SSUK LATTE</dt>
+                        <dd>향긋한 쑥향과 고소한 우유의<br />
+                            색다른 하모니, 새로운 맛이<br /> 
+                            주는 기쁨에 도전해봐요!</dd>
+                    </dl>
+                    <h3>280 <span>kcal</span></h3>
+                </div>
+            </div><!-- .flavors end -->
+            <div class="flavors fl07">
+                <div class="flavors_img">
+                    <img src="img/cont02_07MISUGARU.png" alt="미숫가루">
+                </div>
+                <div class="flavors_text">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 380 349" style="enable-background:new 0 0 380 349;" xml:space="preserve">
+                        <path d="M349.68,0H56.44C39.69,0,26.12,13.58,26.12,30.33v26.2L2.93,69.92c-3.91,2.26-3.91,7.91,0,10.17l23.19,13.39v225.2c0,16.75,13.57,30.33,30.32,30.33h293.25c16.74,0,30.32-13.58,30.32-30.33V30.33C380,13.58,366.43,0,349.68,0z"/>
+                    </svg>
+                    <dl>
+                        <dt>MISUGARU</dt>
+                        <dd>국산 현미, 조, 보리, 수수,<br />
+                            찹쌀현미로 만든 미숫가루를<br /> 
+                            가득 담은 추억의 맛</dd>
+                    </dl>
+                    <h3>280 <span>kcal</span></h3>
+                </div>
+            </div><!-- .flavors end -->
+            <div class="flavors fl08">
+                <div class="flavors_img">
+                    <img src="img/cont02_08MINT_CHOCOLATE.png" alt="민트초코">
+                </div>
+                <div class="flavors_text">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 380 349" style="enable-background:new 0 0 380 349;" xml:space="preserve">
+                        <path d="M349.68,0H56.44C39.69,0,26.12,13.58,26.12,30.33v26.2L2.93,69.92c-3.91,2.26-3.91,7.91,0,10.17l23.19,13.39v225.2c0,16.75,13.57,30.33,30.32,30.33h293.25c16.74,0,30.32-13.58,30.32-30.33V30.33C380,13.58,366.43,0,349.68,0z"/>
+                    </svg>
+                    <dl>
+                        <dt>MINT CHOCOLATE</dt>
+                        <dd>천만 민초단의 염원이 깃든 야심작!<br />
+                            상쾌한 민트와 달콤한 초코칩이<br />
+                            만들어낸 아찔한 매력에<br />
+                            퐁당 빠져보세요.</dd>
+                    </dl>
+                    <h3>330 <span>kcal</span></h3>
+                </div>
+            </div><!-- .flavors end -->
+            <div class="flavors fl09">
+                <div class="flavors_img">
+                    <img src="img/cont02_09COOKIES_AND_CREAM.png" alt="쿠키앤크림">
+                </div>
+                <div class="flavors_text">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 380 349" style="enable-background:new 0 0 380 349;" xml:space="preserve">
+                        <path d="M349.68,0H56.44C39.69,0,26.12,13.58,26.12,30.33v26.2L2.93,69.92c-3.91,2.26-3.91,7.91,0,10.17l23.19,13.39v225.2c0,16.75,13.57,30.33,30.32,30.33h293.25c16.74,0,30.32-13.58,30.32-30.33V30.33C380,13.58,366.43,0,349.68,0z"/>
+                    </svg>
+                    <dl>
+                        <dt>COOKIES AND CREAM</dt>
+                        <dd>달콤하고 바삭한 쿠키 크런치와<br />
+                            부드럽고 고소한 크림의 만남!<br />
+                            누구에게나 사랑받는 이유를<br />
+                            경험하세요.</dd>
+                    </dl>
+                    <h3>330 <span>kcal</span></h3>
+                </div>
+            </div><!-- .flavors end -->
+            <div class="flavors fl10">
+                <div class="flavors_img">
+                    <img src="img/cont02_10STRAWBERRY.png" alt="딸기">
+                </div>
+                <div class="flavors_text">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 380 349" style="enable-background:new 0 0 380 349;" xml:space="preserve">
+                        <path d="M349.68,0H56.44C39.69,0,26.12,13.58,26.12,30.33v26.2L2.93,69.92c-3.91,2.26-3.91,7.91,0,10.17l23.19,13.39v225.2c0,16.75,13.57,30.33,30.32,30.33h293.25c16.74,0,30.32-13.58,30.32-30.33V30.33C380,13.58,366.43,0,349.68,0z"/>
+                    </svg>
+                    <dl>
+                        <dt>STRAWBERRY</dt>
+                        <dd>딸기가 퐁당. 가슴이 콩닥.<br />
+                            향긋하고 달콤한 딸기,<br />
+                            꾸덕하고 쫄깃한 식감과 함께하는<br />
+                            소중한 빨간맛을 느껴보세요.</dd>
+                    </dl>
+                    <h3>280 <span>kcal</span></h3>
+                </div>
+            </div><!-- .flavors end -->
+        </article><!-- .cont02_slider end -->
+    </section><!-- .cont02 end -->
+    <section class="container mobile_cont02">
+        <article class="contIn_top clearfix">
+            <div class="contIn_title">
+                <h2>FLAVORS</h2><p>다양한 맛으로 즐기는 스키니피그</p>
+            </div><!-- .cont_title -->
+            <div class="contIn_pager">
+                <span class="slick_play"><img src="img/play.png" alt="시작"></span>
+                <span class="slick_pause"><img src="img/stop.png" alt="정지"></span>
+            </div><!-- .cont_pager -->
+        </article><!-- .contIn_top end -->
+        <article class="cont02_slider">
+            <div class="flavors fl01">
+                <div class="flavors_img">
+                    <img src="img/cont02_01VANILLA_BEAN.png" alt="바닐라빈">
+                </div>
+                <div class="flavors_text">
+                    <dl>
+                        <dt>VANILLA BEAN</dt>
+                        <dd>천연 바닐라향과 더불어<br />
+                            바닐라빈이 콕콕 박힌 깊은 풍미의<br /> 
+                            클래식 아이스크림</dd>
+                    </dl>
+                    <h3>280 <span>kcal</span></h3>
+                </div>
+            </div><!-- .flavors end -->
+            <div class="flavors fl02">
+                <div class="flavors_img">
+                    <img src="img/cont02_02CHOCOLATE.png" alt="초콜릿">
+                </div>
+                <div class="flavors_text">
+                    <dl>
+                        <dt>CHOCOLATE</dt>
+                        <dd>네덜란드산 코코아 파우더와<br />
+                            코코아매스가 만들어내는<br /> 
+                            진한 초콜릿 풍미</dd>
+                    </dl>
+                    <h3>310 <span>kcal</span></h3>
+                </div>
+            </div><!-- .flavors end -->
+            <div class="flavors fl03">
+                <div class="flavors_img">
+                    <img src="img/cont02_03JEJU_GREEN_TEA.png" alt="제주그린티">
+                </div>
+                <div class="flavors_text">
+                    <dl>
+                        <dt>JEJU GREEN TEA</dt>
+                        <dd>입 안 가득히 느껴지는<br />
+                            제주 유기농 녹차의<br /> 
+                            진하고 쌉싸름한 향을 느껴보세요.</dd>
+                    </dl>
+                    <h3>280 <span>kcal</span></h3>
+                </div>
+            </div><!-- .flavors end -->
+            <div class="flavors fl04">
+                <div class="flavors_img">
+                    <img src="img/cont02_04SALTED_CARAMEL.png" alt="솔티드카라멜">
+                </div>
+                <div class="flavors_text">
+                    <dl>
+                        <dt>SALTED CARAMEL</dt>
+                        <dd>이탈리아산 카라멜시럽과<br />
+                            국내산천일염이 만드는<br /> 
+                            솔티드 카라멜의단짠 매력</dd>
+                    </dl>
+                    <h3>310 <span>kcal</span></h3>
+                </div>
+            </div><!-- .flavors end -->
+            <div class="flavors fl05">
+                <div class="flavors_img">
+                    <img src="img/cont02_05BLACK_SESAME.png" alt="흑임자">
+                </div>
+                <div class="flavors_text">
+                    <dl>
+                        <dt>BLACK SESAME</dt>
+                        <dd>고소한 검은 참깨가 만드는 진한 풍미<br />
+                            할매입맛 돌풍의 주인공이자<br /> 
+                            스키니피그 베스트셀러</dd>
+                    </dl>
+                    <h3>330 <span>kcal</span></h3>
+                </div>
+            </div><!-- .flavors end -->
+            <div class="flavors fl06">
+                <div class="flavors_img">
+                    <img src="img/cont02_06SSUK_LATTE.png" alt="쑥라떼">
+                </div>
+                <div class="flavors_text">
+                    <dl>
+                        <dt>SSUK LATTE</dt>
+                        <dd>향긋한 쑥향과 고소한 우유의<br />
+                            색다른 하모니, 새로운 맛이<br /> 
+                            주는 기쁨에 도전해봐요!</dd>
+                    </dl>
+                    <h3>280 <span>kcal</span></h3>
+                </div>
+            </div><!-- .flavors end -->
+            <div class="flavors fl07">
+                <div class="flavors_img">
+                    <img src="img/cont02_07MISUGARU.png" alt="미숫가루">
+                </div>
+                <div class="flavors_text">
+                    <dl>
+                        <dt>MISUGARU</dt>
+                        <dd>국산 현미, 조, 보리, 수수,<br />
+                            찹쌀현미로 만든 미숫가루를<br /> 
+                            가득 담은 추억의 맛</dd>
+                    </dl>
+                    <h3>280 <span>kcal</span></h3>
+                </div>
+            </div><!-- .flavors end -->
+            <div class="flavors fl08">
+                <div class="flavors_img">
+                    <img src="img/cont02_08MINT_CHOCOLATE.png" alt="민트초코">
+                </div>
+                <div class="flavors_text">
+                    <dl>
+                        <dt>MINT CHOCOLATE</dt>
+                        <dd>천만 민초단의 염원이 깃든 야심작!<br />
+                            상쾌한 민트와 달콤한 초코칩이<br />
+                            만들어낸 아찔한 매력에<br />
+                            퐁당 빠져보세요.</dd>
+                    </dl>
+                    <h3>330 <span>kcal</span></h3>
+                </div>
+            </div><!-- .flavors end -->
+            <div class="flavors fl09">
+                <div class="flavors_img">
+                    <img src="img/cont02_09COOKIES_AND_CREAM.png" alt="쿠키앤크림">
+                </div>
+                <div class="flavors_text">
+                    <dl>
+                        <dt>COOKIES AND CREAM</dt>
+                        <dd>달콤하고 바삭한 쿠키 크런치와<br />
+                            부드럽고 고소한 크림의 만남!<br />
+                            누구에게나 사랑받는 이유를<br />
+                            경험하세요.</dd>
+                    </dl>
+                    <h3>330 <span>kcal</span></h3>
+                </div>
+            </div><!-- .flavors end -->
+            <div class="flavors fl10">
+                <div class="flavors_img">
+                    <img src="img/cont02_10STRAWBERRY.png" alt="딸기">
+                </div>
+                <div class="flavors_text">
+                    <dl>
+                        <dt>STRAWBERRY</dt>
+                        <dd>딸기가 퐁당. 가슴이 콩닥.<br />
+                            향긋하고 달콤한 딸기,<br />
+                            꾸덕하고 쫄깃한 식감과 함께하는<br />
+                            소중한 빨간맛을 느껴보세요.</dd>
+                    </dl>
+                    <h3>280 <span>kcal</span></h3>
+                </div>
+            </div><!-- .flavors end -->
+        </article><!-- .cont02_slider end -->
+    </section><!-- .mobile_cont02 end -->
+    <section class="container cont03">
+        <article class="contIn_top clearfix">
+            <div class="contIn_title">
+                <h2>EVENT</h2><p>진행중인 이벤트를 확인해보세요!</p>
+            </div><!-- .cont_title -->
+            <div class="contIn_pager">
+                <span class="slick_prev"><img src="img/arrow_left.png" alt="이전"></span>
+                <span class="slick_next"><img src="img/arrow_right.png" alt="다음"></span>
+                <span class="slick_play"><img src="img/play.png" alt="시작"></span>
+                <span class="slick_pause"><img src="img/stop.png" alt="정지"></span>
+            </div><!-- .cont_pager -->
+        </article>
+        <article class="cont03_slider">
+            <div>
+                <a href="#"><!-- 링크 - 구매 페이지로 이동 -->
+                    <img src="img/cont03_01.jpg" alt="세트할인">
+                    <dl>
+                        <dt>세트로 구매하여 할인받아가세요!</dt>
+                        <dd>홈페이지에서 스키니피그를 세트로 구매하세요.<br />
+                            구매 수량이많아질수록 할인율도 UP!  </dd>
+                    </dl>
+                </a>
+            </div>
+            <div>
+                <a href="#"><!-- 링크 - 회원가입 페이지로 이동 -->
+                    <img src="img/cont03_02.png" alt="포인트지급">
+                    <dl>
+                        <dt>회원가입시 포인트 즉시 지급! </dt>
+                        <dd>아직 스키니피그 회원이아니신가요?<br />
+                        회원가입시 1000포인트를 드립니다! </dd>
+                    </dl>
+                </a>
+            </div>
+            <div>
+                <a href="#"><!-- 링크 - 리뷰게시판으로 이동 -->
+                    <img src="img/cont03_03.jpg" alt="리뷰이벤트">
+                    <dl>
+                        <dt>스키니피그 리뷰 이벤트</dt>
+                        <dd>스키니피그를 먹고, 리뷰를 적어주세요!<br />
+                            감사한 마음을담아 적립금을 보내드립니다.</dd>
+                    </dl>
+                </a>
+            </div>
+            <div class="cont03_last">
+                <a href="https://www.instagram.com/skinnypig.creamery/"><!-- 링크 - 인스타그램으로 이동 -->
+                    <img src="img/cont03_04.png" alt="인스타그램">
+                    <dl>
+                        <dt>스키니피그 인스타를 팔로우 하세요!</dt>
+                        <dd>스키니피그 인스타 를 팔로우 하시면,<br />
+                            더 많은 이벤트에 참여할 수 있습니다.</dd>
+                    </dl>
+                </a>
+            </div>
+        </article><!-- .cont03_slider end -->
+    </section><!-- .cont03 end -->
+    <section class="container mobile_cont03">
+        <article class="contIn_top clearfix">
+            <div class="contIn_title">
+                <h2>EVENT</h2><p>진행중인 이벤트를 확인해보세요!</p>
+            </div><!-- .cont_title -->
+            <div class="contIn_pager">
+                <span class="slick_play"><img src="img/play.png" alt="시작"></span>
+                <span class="slick_pause"><img src="img/stop.png" alt="정지"></span>
+            </div><!-- .cont_pager -->
+        </article>
+        <article class="cont03_slider">
+            <div>
+                <a href="#"><!-- 링크 - 구매 페이지로 이동 -->
+                    <img src="img/cont03_01.jpg" alt="세트할인">
+                    <dl>
+                        <dt>세트로 구매하여 할인받아가세요!</dt>
+                        <dd>홈페이지에서 스키니피그를 세트로 구매하세요.<br />
+                            구매 수량이많아질수록 할인율도 UP!  </dd>
+                    </dl>
+                </a>
+            </div>
+            <div>
+                <a href="#"><!-- 링크 - 회원가입 페이지로 이동 -->
+                    <img src="img/cont03_02.png" alt="포인트지급">
+                    <dl>
+                        <dt>회원가입시 포인트 즉시 지급! </dt>
+                        <dd>아직 스키니피그 회원이아니신가요?<br />
+                        회원가입시 1000포인트를 드립니다! </dd>
+                    </dl>
+                </a>
+            </div>
+            <div>
+                <a href="#"><!-- 링크 - 리뷰게시판으로 이동 -->
+                    <img src="img/cont03_03.jpg" alt="리뷰이벤트">
+                    <dl>
+                        <dt>스키니피그 리뷰 이벤트</dt>
+                        <dd>스키니피그를 먹고, 리뷰를 적어주세요!<br />
+                            감사한 마음을담아 적립금을 보내드립니다.</dd>
+                    </dl>
+                </a>
+            </div>
+            <div class="cont03_last">
+                <a href="https://www.instagram.com/skinnypig.creamery/"><!-- 링크 - 인스타그램으로 이동 -->
+                    <img src="img/cont03_04.png" alt="인스타그램">
+                    <dl>
+                        <dt>스키니피그 인스타를 팔로우 하세요!</dt>
+                        <dd>스키니피그 인스타 를 팔로우 하시면,<br />
+                            더 많은 이벤트에 참여할 수 있습니다.</dd>
+                    </dl>
+                </a>
+            </div>
+        </article><!-- .cont03_slider end -->
+    </section><!-- .mobile_cont03 end -->
+    <section class="container cont04">
+        <article class="contIn_top clearfix">
+            <div class="contIn_title">
+                <h2>CHANNEL</h2><p>지금 당장 스키니피그가 먹고싶다면?</p>
+            </div><!-- .cont_title -->
+        </article>
+        <article class="cont04In">
+            <div>
+                <span>
+                    <img src="img/cont04_01.png" alt="마켓컬리">
+                    <img src="img/mobile_cont04_01.png" alt="마켓컬리">
+                </span>
+                <dl>
+                    <dt>마켓컬리</dt>
+                    <dd>샛별배송으로 빠르게 스키니피그를 만나요.</dd>
+                </dl>
+            </div>
+            <div>
+                <span>
+                    <img src="img/cont04_02.png" alt="쿠팡로켓프레시">
+                    <img src="img/mobile_cont04_02.png" alt="쿠팡로켓프레시">
+                </span>
+                <dl>
+                    <dt>쿠팡 로켓프레시</dt>
+                    <dd>로켓프레시에서 스키니피그를 검색해보아요~</dd>
+                </dl>
+            </div>
+            <div>
+                <span>
+                    <img src="img/cont04_03.png" alt="배달의민족B마트">
+                    <img src="img/mobile_cont04_03.png" alt="배달의민족B마트">
+                </span>
+                <dl>
+                    <dt>배달의민족 B마트</dt>
+                    <dd>단 한개만 주문해도 즉시 배달해 드립니다.</dd>
+                </dl>
+            </div>
+        </article><!-- .cont04In end -->
+    </section><!-- .cont04 end -->
+    <section class="cont05">
+        <a href="#">
+            <img src="img/cont05_mouseover.png" alt="새로운맛 설문조사">
+        </a>
+        <p>스키니피그의 새로운 맛은 어떤 것이 될까요?</p>
+    </section>
+    <section class="cont06">
+        <article class="cont06_title">
+            <a href="https://www.instagram.com/skinnypig.creamery/" target="_blank"><img src="img/spi_insta.png" alt="스키니피그_인스타"></a>
+            <p>SKINNTPIG INSTAGRAM</p>
+        </article><!-- .cont06_title" end -->
+        <article class="insta_img">
+            <div>
+                <a href="https://www.instagram.com/p/CR0ycPmJ6iF/" target="_blank"><img src="img/cont06_01.jpg" alt="인스타이미지"></a>
+                <a href="https://www.instagram.com/p/CQ-tzjFjPwt/" target="_blank"><img src="img/cont06_02.jpg" alt="인스타이미지"></a>
+                <a href="https://www.instagram.com/p/CQ8JDPRnRQz/" target="_blank"><img src="img/cont06_03.jpg" alt="인스타이미지"></a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/p/CQ8I9EuNMDQ/" target="_blank"><img src="img/cont06_04.jpg" alt="인스타이미지"></a>
+                <a href="https://www.instagram.com/p/CQvQ9sPn9ck/" target="_blank"><img src="img/cont06_05.jpg" alt="인스타이미지"></a>
+                <a href="https://www.instagram.com/p/CQssO_vHQcD/" target="_blank"><img src="img/cont06_06.jpg" alt="인스타이미지"></a>
+            </div>
+        </article><!-- .insta_img end -->
+    </section>
+    <footer>
+        <article>
+            <div class="footer_top">
+                    <p>CONTACT</p>
+                    <p>TEL.<span>1833-6069</span></p>
+                    <p>EMAIL.<span>CONTACT@SKINNTPIG.XYZ</span></p>
+            </div><!-- .footer_top end -->
+            <div class="footer_bottom clearfix">
+                <p>(주)스키니피그크리머리 ㅣ 대표. 이종범 ㅣ 개인정보책임자. 장성희<br /> 
+                    주소. 06541 서울특별시 서초구 강남대로 479 (반포동) 지하1층 162호<br />
+                    사업자번호. 323-87-00980 ㅣ
+                    통신판매업 신고번호. 2018-서울서초-1361호 [사업자정보확인]<br />
+                    COPYRIGHT © SKINNYPIG CREAMERY CORP. All rights reserved.</p>
+                <img src="img/logo_gray.png" alt="스키니피그">
+            </div><!-- .footer_bottom end -->
+        </article>
+    </footer>
+</body>
+</html>

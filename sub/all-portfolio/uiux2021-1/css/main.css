@@ -1,0 +1,587 @@
+@charset "utf-8";
+@import url("reset.css");
+body{
+    background-color: #fff7ef;
+}
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    padding: 25px 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    transition: .5s;
+}
+header p{
+    cursor: pointer;
+}
+.menu_close{display: none;}
+
+/* menu */
+.menu{
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    z-index: 998;
+    transition: 1s;
+}
+.menu nav{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 215px;
+}
+.menu nav li a{
+    color: #fff7ef;
+    font-size: 72px;
+    margin-bottom: 30px;
+    position: relative;
+    cursor: pointer;
+}
+.menu nav li a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 5px;
+    background-color: #fff7ef;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .5s;
+}
+.menu nav ul li:nth-child(1):hover a::after{
+    width: 209px;
+}
+.menu nav ul li:nth-child(2):hover a::after{
+    width: 365px;
+}
+.menu nav ul li:nth-child(3):hover a::after{
+    width: 760px;
+}
+.menu nav ul li:nth-child(4):hover a::after{
+    width: 510px;
+}
+.menu nav ul li:nth-child(5):hover a::after{
+    width: 300px;
+}
+.menu nav div h4{
+    color: #fff7ef;
+    font-size: 24px;
+}
+.menu nav div p{
+    color: #fff7ef;
+    font-size: 24px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 50px;
+    font-weight: 400;
+}
+/* section 공통값 */
+.section{
+    padding: 30px;
+    box-sizing: border-box;
+}
+/* section01 */
+.section01{
+    position: relative;
+    left: -100px;
+    opacity: 0;
+    transition: .8s;
+}
+.section01_text{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+}
+.section01 h1{
+    font-size: 167px;
+    font-weight: bold;
+    line-height: 200px;
+}
+.section01 p{
+    font-size: 48px;
+    line-height: 58px;
+    padding: 70px 0;
+}
+
+/* section02 */
+.section02{
+    transition: .8s;
+    transform: translateY(10%);
+    opacity: 0;
+}
+.section02.on{
+    transform:translateY(0);
+    opacity: 1;
+}
+.section02 h1{
+    text-align: center;
+    font-size: 72px;
+    font-weight: 900;
+}
+.section02In{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.section02In h2{
+    font-size: 36px;
+    font-weight: bold;
+}
+.skill div{
+    padding: 10px 0;
+}
+.skill h5{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 45px;
+}
+.skill p{
+    height: 10px;
+    background-color: #333;
+}
+.skill div:nth-of-type(1) p{ width: 640px;}
+.skill div:nth-of-type(2) p{ width: 590px;}
+.skill div:nth-of-type(3) p{ width: 350px;}
+.skill div:nth-of-type(4) p{ width: 640px;}
+.skill div:nth-of-type(5) p{ width: 600px;}
+.skill div:nth-of-type(6) p{ width: 550px;}
+.profile > div{
+    margin-bottom: 30px;
+}
+.profile h5{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 0;
+    letter-spacing: -1px;
+}
+.profile span{
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 10px;
+}
+.profile p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* section03 */
+.section03{
+    padding: 30px 30px 50px 30px;
+}
+.slide{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.sd_title p{
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+.slide_text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.slide01 .slide_text,
+.slide04 .slide_text,
+.slide06 .slide_text{
+    left: 0;
+}
+.slide02 .slide_text,
+.slide03 .slide_text,
+.slide05 .slide_text,
+.slide07 .slide_text,
+.slide08 .slide_text{
+    right: 0;
+    text-align: right;
+}
+.sd_title h2{
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 1.2em;
+}
+.slide03 .sd_title h2,
+.slide04 .sd_title h2{
+    font-size: 95px;
+}
+.sd_title h3{
+    font-size: 95px;
+    font-weight: 900;
+    line-height: 1.2em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+}
+.slide01 .sd_title h3{
+    -webkit-text-stroke-color: #07ff07;
+    font-size: 72px;
+}
+.slide02 .sd_title h3{
+    -webkit-text-stroke-color: #ffa7a8;
+}
+.slide03 .sd_title h3{
+    -webkit-text-stroke-color: #83d7ff;
+}
+.slide04 .sd_title h3{
+    -webkit-text-stroke-color: #ff9600;
+}
+.slide05 .sd_title h3{
+    -webkit-text-stroke-color: #ff003e;
+}
+.slide06 .sd_title h3{
+    font-size: 72px;
+    -webkit-text-stroke-color: #df702f;
+}
+.slide07 .sd_title h3{
+    -webkit-text-stroke-color: #ff3729;
+}
+.slide08 .sd_title h3{
+    -webkit-text-stroke-color: #00e9a8;
+}
+.sd_cont{
+    text-align: left;
+}
+.sd_cont h4{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.sd_cont p{
+    font-size: 16px;
+    color: #575757;
+    margin-bottom: 15px;
+}
+.sd_cont ul li{
+    font-size: 18px;
+    line-height: 36px;
+    white-space: pre-line;
+}
+.sd_button{
+    margin-top: 10px;
+    text-align: left;
+}
+.sd_button a{
+    display: inline-block;
+    margin-right: 20px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #333;
+    padding: 0 20px;
+    transition: .5s;
+    margin-top: 20px;
+}
+.sd_button a:last-child{
+    margin-right: 0;
+}
+.sd_button a:hover{
+    color: #fff;
+    background-color: #333;
+}
+.slide02 .sd_cont,
+.slide02 .sd_button{
+    transform: translateX(200px);
+}
+.slide03 .sd_cont,
+.slide03 .sd_button{
+    transform: translateX(480px);
+}
+.slide05 .sd_cont,
+.slide05 .sd_button{
+    transform: translateX(480px);
+}
+.slide07 .sd_cont,
+.slide07 .sd_button{
+    transform: translateX(200px);
+}
+.slide08 .sd_cont,
+.slide08 .sd_button{
+    transform: translateX(200px);
+}
+.slide_img{
+    max-width: 1438px;
+    width: 75%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slide01 .slide_img,
+.slide04 .slide_img,
+.slide06 .slide_img{
+    right: 0;
+}
+.slide02 .slide_img,
+.slide03 .slide_img,
+.slide05 .slide_img,
+.slide07 .slide_img,
+.slide08 .slide_img{
+    left: 0;
+}
+.slide_img img{
+    width: 100%;
+}
+
+
+/* 슬라이드 화살표 수정 */
+.fp-controlArrow{
+    z-index: 5;
+    top: unset;
+    bottom: 20px;
+}
+.fp-controlArrow.fp-prev{
+    left: 42%;
+    border-color: transparent;
+    border-width: 0;
+    width: 16px;
+    height: 16px;
+    background: url('../img/arrow-left.png') center center / cover no-repeat;
+}
+.fp-controlArrow.fp-next{
+    right: 42%;
+    border-color: transparent;
+    border-width: 0;
+    width: 16px;
+    height: 16px;
+    background: url('../img/arrow-right.png') center center / cover no-repeat;
+}
+/* 슬라이드버튼 */
+.fp-slidesNav.fp-bottom{
+    text-align: center;
+    bottom: 10px;
+}
+.fp-bottom ul{
+    display: inline-block;
+}
+/* section04 */
+.section04{
+    position: relative;
+    padding-top: 40px;
+}
+.section04 dl{
+    position: absolute;
+    top: 8%;
+    right: 18%;
+}
+.section04 dl dt{
+    font-size: 4vw;
+    font-weight: 900;
+    line-height: 4vw;
+}
+.section04 dl dd{
+    font-size: 2.5vw;
+    font-weight: 900;
+}
+.section04 a{
+    display: inline-block;
+}
+.section04 article{
+    padding: 0 75px;
+    margin: 40px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.section04 article:nth-of-type(1){
+    align-items: flex-end;
+}
+.design01{
+    width: 47.5%;
+    position: relative;
+}
+.design01 img{
+    width: 100%;
+}
+.design01 img:last-child{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .5s;
+}
+.design01:hover img:last-child{
+    opacity: 1;
+}
+.design02{
+    width: 49%;
+    position: relative;
+}
+.design02 img{
+    width: 100%;
+}
+.design02 img:last-child{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .5s;
+}
+.design02:hover img:last-child{
+    opacity: 1;
+}
+.design03{
+    width: 70%;
+    position: relative;
+}
+.design03 img{
+    width: 100%;
+}
+.design03 img:last-child{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .5s;
+}
+.design03:hover img:last-child{
+    opacity: 1;
+}
+.design04{
+    width: 43%;
+    position: relative;
+}
+.design04 img{
+    width: 100%;
+}
+.design04 img:last-child{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .5s;
+}
+.design04:hover img:last-child{
+    opacity: 1;
+}
+.design05{
+    width: 53%;
+    position: relative;
+}
+.design05 img{
+    width: 100%;
+}
+.design05 img:last-child{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .5s;
+}
+.design05:hover img:last-child{
+    opacity: 1;
+}
+.design06{
+    width: 35%;
+    position: absolute;
+    top: 27vw;
+    left: 8.3vw;
+    z-index: 1;
+}
+.design06 img{
+    width: 100%;
+}
+.design06 img:last-child{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .5s;
+}
+.design06:hover img:last-child{
+    opacity: 1;
+}
+.design07{
+    width: 48%;
+    position: relative;
+    transform: translateX(98%);
+}
+.design07 img{
+    width: 100%;
+}
+.design07 img:last-child{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .5s;
+}
+.design07:hover img:last-child{
+    opacity: 1;
+}
+.iScrollVerticalScrollbar{
+    display: none;
+}
+.more_button{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #333;
+    padding: 0 30px;
+    transition: .5s;
+    position: absolute;
+    bottom: 5.5%;
+    left: 33.4%;
+    z-index: 2;
+}
+.more_button:hover{
+    color: #fff;
+    background-color: #333;
+}
+.more_button::after{
+    content: ' MORE WORKS >';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -150px;
+    animation: gallery .5s infinite alternate;
+    color: #333;
+}
+@keyframes gallery{
+    0%{
+        left: -150px;
+    }
+    100%{
+        left: -140px;
+    }
+}
+
+/* section05 */
+.section05{
+    background: #333;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.section05_top h1{
+    font-weight: 900;
+    font-size: 60px;
+    color: #fff;
+}
+.section05_top p{
+    font-size: 30px;
+    line-height: 47px;
+    color: #fff;
+}
+.section05_bottom {
+    text-align: right;
+}
+.section05_bottom p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.section05_bottom img{
+    display: inline-block;
+    vertical-align: middle;
+}

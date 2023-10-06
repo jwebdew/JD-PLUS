@@ -1,0 +1,12 @@
+@charset "utf-8";
+* {margin : 0; padding : 0;}
+a {text-decoration : none; color : #333;}
+li {list-style : none;}
+
+/* header */
+header {width : 100%;}
+.header_wrap {
+    max-width : 1920px;
+    width : 60.98%;
+    margin : 0 auto;
+}

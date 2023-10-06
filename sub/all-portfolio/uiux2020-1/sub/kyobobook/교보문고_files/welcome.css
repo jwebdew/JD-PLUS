@@ -1,0 +1,879 @@
+@charset "euc-kr";
+
+/* 레이아웃 */
+#header {margin-bottom:0;}
+/* #header .navigation_bar .navigation {display:block;} */
+
+.main_left{float:left;width:736px;margin-top:50px;}
+.main_right{float:right;width:204px;margin-top:50px;}
+.main_both{float:left;width:100%;margin-top:50px;}
+
+.main_left01{float:left;width:158px;overflow:hidden;}
+.main_left02{float:left;width:480px;overflow:hidden;}
+
+.content_top {margin:0 auto;width:702px;padding-right:248px;position:relative;}
+.content_chart {margin:0 auto;width:750px;padding-right:200px;position:relative;}
+
+.content_top .box_1 {position:absolute;right:0;top:0;width:237px;}
+.content_chart .box_1 {position:absolute;right:0;top:0;width:190px;}
+
+/* 전체너비 조정 */
+body.welcome #wrapper {min-width:1010px;}
+body.welcome #wrap {width:auto;padding:0;}
+body.welcome #header {width:950px;padding-left:30px;padding-right:30px;margin:0 auto;position:relative;z-index:9999;}
+body.welcome #container{width:auto;}
+body.welcome .content_middle {width:950px;margin:0 auto;}
+body.welcome #footer {margin-top:22px;}
+
+body.welcome .bg_welcome_1,
+body.welcome .bg_welcome_2,
+body.welcome .bg_welcome_3,
+body.welcome .bg_welcome_4,
+body.welcome .bg_welcome_5,
+body.welcome .bg_welcome_6 {padding-left:30px;padding-right:30px;}
+
+.bg_welcome_1 {background-color:#fff;border-bottom:1px solid #dadada;padding:30px 0;/*transition:background-color 0.2s linear;*/}
+.bg_welcome_2 {background-color:#f9f9f9;border-bottom:1px solid #dadada;}
+.bg_welcome_3 {background-color:#fff;border-bottom:1px solid #dadada;}
+.bg_welcome_4 {margin-top:50px;background-color:#f3f3f3;}
+.bg_welcome_5 {margin-top:50px;padding:45px 0 50px;background:url('http://image.kyobobook.co.kr/ink/images/welcome/bg_blue_triangle.gif') center top;*zoom:1;}
+.bg_welcome_6 {margin-top:50px;background:url('http://image.kyobobook.co.kr/ink/images/welcome/bg_wide_2.gif') repeat-x center top;*zoom:1;}
+
+
+/* 공통 */
+.title_welcome_basic {font-size:16px;line-height:18px;height:35px;color:#000;font-family:'Malgun Gothic','Apple SD Neo Gothic','Dotum','Sans-Serif';}
+.title_welcome_basic small {margin-left:4px;font-size:12px;font-weight:normal;color:#444;font-family:dotum;}
+.title_welcome_basic a {color:#000;}
+.title_welcome_basic a:hover,
+.title_welcome_basic a:active {color:#3c5fdf;text-decoration:underline;}
+.title_welcome_basic img {vertical-align:baseline;}
+
+.tab_welcome_round {line-height:12px;}
+.tab_welcome_round a {display:inline-block;vertical-align:top;width:12px;height:12px; font-size:0;line-height:0;color:transparent;background:url('http://image.kyobobook.co.kr/ink/images/welcome/btn_nav_sprite.png') no-repeat 1px 1px;}
+.tab_welcome_round a.on {background-position:-19px 1px;}
+
+.box_welcome_kyobo .btn_more a,
+.box_welcome_topic .btn_more a,
+.box_welcome_thisbook .btn_more a,
+.box_welcome_chart .btn_more a,
+.box_welcome_klover .btn_more a {display:inline-block;width:8px;height:8px;padding:4px;border:1px solid #666;font-size:0;line-height:0;color:transparent;overflow:hidden;*width:16px;*height:16px;*padding:0;*background:url('http://image.kyobobook.co.kr/ink/images/common/icon_more3.gif') no-repeat 4px 4px;}
+.box_welcome_kyobo .btn_more a:before,
+.box_welcome_topic .btn_more a:before,
+.box_welcome_thisbook .btn_more a:before,
+.box_welcome_chart .btn_more a:before,
+.box_welcome_klover .btn_more a:before {content:'';display:inline-block;width:8px;height:8px;background:url('http://image.kyobobook.co.kr/ink/images/common/icon_more3.gif') no-repeat 0 0;transition:all 0.2s linear;}
+.box_welcome_kyobo .btn_more a:hover:before,
+.box_welcome_topic .btn_more a:hover:before,
+.box_welcome_thisbook .btn_more a:hover:before,
+.box_welcome_chart .btn_more a:hover:before,
+.box_welcome_klover .btn_more a:hover:before {transform:rotate(90deg);}
+
+
+/* 메인 이벤트 */
+.box_welcome_event {position:relative;padding-top:330px;height:40px;/*background-color:#fff;*/overflow:hidden;}
+.box_welcome_event h2,
+.box_welcome_event h3 {position:absolute;visibility:hidden;width:0;height:0;}
+.box_welcome_event .section_list {height:38px;border-top:1px solid #d9d9d9;border-bottom:1px solid #d9d9d9;border-right:1px solid #d7d7d7;}
+.box_welcome_event .section {float:left;position:relative;width:100px;}
+.box_welcome_event .section_title a {display:block;text-align:center;padding:14px 10px 0;height:24px;color:#333;font-weight:bold;border-left:1px solid #d7d7d7;background-color:#fff;}
+.box_welcome_event .section:first-child .section_title a,
+.box_welcome_event .section:first-child .event_title a {/*border-left:none;*/}
+.box_welcome_event .section .arrow {display:none;height:3px;background-color:#353f67;position:absolute;top:-1px;left:1px;right:0;z-index:5;}
+.box_welcome_event .section_content {}
+.box_welcome_event .event_list {display:none;position:absolute;left:0;bottom:39px;width:100%;text-align:center;white-space:nowrap;}
+.box_welcome_event .section.on .section_title a {background-color:#5e6b9e;color:#fff;}
+.box_welcome_event .section.on .event_list {display:block;}
+.box_welcome_event .section.on .arrow {display:block;}
+.box_welcome_event .event_title {display:inline;}
+.box_welcome_event .event_title a {display:inline-block;vertical-align:middle;position:relative;/*z-index:-1;*/z-index:20;width:12px;height:12px;margin-bottom:8px;font-size:0;line-height:0;font-weight:normal; color:transparent;background:url('http://image.kyobobook.co.kr/ink/images/welcome/btn_nav_sprite.png') no-repeat -39px 1px;}
+.box_welcome_event .event_banner {visibility:hidden;position:absolute;left:0;bottom:30px;width:702px;height:300px;overflow:hidden;/*background-color:#fff;*/*border-right:1px solid #dadada;white-space:normal;/*opacity:0;transition:all 0.2s linear;*/}
+.box_welcome_event .event_banner.triple a {width:232px;height:300px;overflow:hidden;padding-left:1px;background:url('http://image.kyobobook.co.kr/ink/images/welcome/line_main_event.gif') no-repeat left center;}
+.box_welcome_event .event_banner.triple a:first-child {padding-left:0;background:none;}
+.box_welcome_event .event_banner.triple a img {width:232px;height:300px;}
+.box_welcome_event .event_banner.hex a {width:234px;height:150px;overflow:hidden;}
+.box_welcome_event .event_banner.hex a img,
+.box_welcome_event .event_banner.hex > img {width:234px;height:150px;}
+.box_welcome_event .event_banner.main a {display:block;height:100%;float:none;}
+.box_welcome_event .event_banner.main a img {margin:5px -33px;} /* 국내메인 배너 768x290 */
+.box_welcome_event .event_list li {display:inline;}
+.box_welcome_event .event_list li.on .event_title a {/*color:#fff;background-color:#fb3947;border-color:#fb3947;*/background-position:-59px 1px;}
+.box_welcome_event .event_list li.on .event_banner {visibility:visible;/*opacity:1;*/}
+.box_welcome_event .event_list > li + li .event_title {*margin-left:4px;}
+.box_welcome_event .active .event_title a {z-index:20;}
+.box_welcome_event .section_list.active .section.on .arrow {*display:none;}
+.box_welcome_event .btn_prev,
+.box_welcome_event .btn_next {position:absolute;left:0;top:132px;z-index:-1; width:30px;height:34px;overflow:hidden;text-indent:-300px;cursor:pointer;background:transparent url('http://image.kyobobook.co.kr/ink/images/welcome/btn_event_nav2.png') no-repeat;border:none;padding:0;}
+.box_welcome_event .btn_next {left:auto;right:0;background-position:-30px 0;}
+.box_welcome_event .btn_prev:hover {background-position:0 -34px;}
+.box_welcome_event .btn_next:hover {background-position:-30px -34px;}
+.box_welcome_event .btn_pause {position:absolute;top:0;right:0;z-index:20; width:18px;height:18px;overflow:hidden;text-indent:-300px;cursor:pointer;background:transparent url('http://image.kyobobook.co.kr/ink/images/welcome/btn_event_pause2.png') no-repeat;border:none;padding:0;}
+.box_welcome_event .btn_play {background-position:0 -18px;}
+
+.box_welcome_event .event_banner a,
+.box_welcome_event .event_banner img {float:left;}
+.box_welcome_event .event_banner a img {float:none;}
+.box_welcome_event .event_banner a.link_book {/*margin-top:20px;*/width:151px;float:left;padding:30px 12px 0;height:270px;text-align:center;*cursor:pointer;}
+.box_welcome_event .event_banner a.link_book:hover {background-color:#f8f8f8;background-color:rgba(0,0,0,0.05);}
+/*
+.box_welcome_event .event_banner a.link_book .category {display:block;width:120px;margin:auto;padding-top:5px;background:url('http://image.kyobobook.co.kr/ink/images/welcome/bg_book_label.png') no-repeat;height:14px;color:#fff;margin-bottom:6px;font-style:normal;font-weight:bold;overflow:hidden;}
+.box_welcome_event .event_banner a.link_book.item_1 .category {background-position:0 0;}
+.box_welcome_event .event_banner a.link_book.item_2 .category {background-position:0 -20px;}
+.box_welcome_event .event_banner a.link_book.item_3 .category {background-position:0 -40px;}
+*/
+.box_welcome_event .event_banner a.link_book .title {display:block;font-size:11px;color:#333;line-height:16px;height:32px;overflow:hidden;margin-top:13px;}
+/*.box_welcome_event .event_banner a.link_book .title {display:block;font-size:11px;color:#333;font-weight:normal;line-height:16px;min-height:32px;margin-top:13px;}*/
+.box_welcome_event .event_banner a.link_book .author,
+.box_welcome_event .event_banner a.link_book .info {display:block;font-size:11px;color:#777;margin-top:4px;}
+.box_welcome_event .event_banner a.link_book img {width:127px;height:180px;border:1px solid #999;}
+
+.box_welcome_event .section .icon_ad {position:absolute; right:10px; bottom:10px; z-index:10;}
+
+
+/* 출판사 캐스트 */
+.box_welcome_bookcast {/*width:207px;*/height:353px;padding:15px 15px 0;border:1px solid #dadada;background-color:#fff;}
+.box_welcome_bookcast .box_title {text-align:center;margin-bottom:13px;}
+
+.list_welcome_bookcast {line-height:1.4;}
+.list_welcome_bookcast a {color:#333;}
+.list_welcome_bookcast a:hover {text-decoration:underline;}
+.list_welcome_bookcast li {padding:2px 0 2px 17px;background:url('http://image.kyobobook.co.kr/ink/images/common/bul_square_small.gif') no-repeat 8px 6px; white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.list_welcome_bookcast li.top {text-align:center;height:191px;border-bottom:1px solid #dadada; padding:0;background:none;margin-bottom:14px;}
+.list_welcome_bookcast li.top a {display:block;*cursor:pointer;}
+.list_welcome_bookcast li.top a:hover {text-decoration:none;}
+.list_welcome_bookcast li.top a:hover .title {text-decoration:underline;}
+.list_welcome_bookcast li.top a:hover .cover {border-color:#999;}
+.list_welcome_bookcast li.top .cover {height:110px;overflow:hidden;background-color:#eee;border:1px solid #dadada;transition:all 0.3s linear;}
+.list_welcome_bookcast li.top .cover img {width:205px;margin-top:-47px;transition:transform 0.3s linear;}
+.list_welcome_bookcast li.top a:hover .cover {border-color:#999;}
+.list_welcome_bookcast li.top a:hover .cover img {transform:scale(1.05,1.05);}
+.list_welcome_bookcast li.top .title {margin-top:16px;font-weight:bold;overflow:hidden;text-overflow:ellipsis;}
+.list_welcome_bookcast li.top .summary {margin-top:5px;line-height:16px;height:32px;overflow:hidden;white-space:normal;}
+
+
+/* 광고영역 */
+.box_welcome_ad {/*border:1px solid #dadada;border-width:1px 0;*/background-color:#f8f8f8;*zoom:1;}
+.box_welcome_ad:after {content:'';display:block;clear:both;}
+
+.ad_welcome01 {float:left;width:316px;height:128px;overflow:hidden;}
+.ad_welcome02 {float:left;width:316px;height:128px;overflow:hidden;border-left:1px solid #dadada;}
+.ad_welcome03 {float:left;width:316px;height:128px;overflow:hidden;border-left:1px solid #dadada;}
+
+.ad_welcome04 {float:right;width:268px;height:208px;margin-top:35px;margin-left:-1px;border:1px solid #dadada;border-width:1px 0;}
+.ad_welcome04 iframe {position:absolute;}
+.ad_welcome05 {float:right;width:268px;height:109px;overflow:hidden;margin-left:-1px;border-bottom:1px solid #dadada;}
+
+.ad_welcome04.type_2 {width:300px;overflow:hidden;margin-left:0;border:1px solid #dadada;}
+.ad_welcome04.type_2 iframe {margin-left:10px;position:static;}
+.ad_welcome04.type_2 a {margin-left:10px;}
+.ad_welcome05.type_2 {width:300px;margin-left:0;border:1px solid #dadada;border-top:none;}
+.ad_welcome05.type_2 iframe {margin-left:10px;}
+.ad_welcome05.type_2 a {margin-left:10px;}
+
+
+/* 배너영역 */
+.box_welcome_banner {/*border-bottom:1px solid #dadada;*/*zoom:1;}
+.box_welcome_banner:after {content:'';display:block;clear:both;} 
+.box_welcome_banner li {float:left;width:316px;border-left:1px solid #dadada;}
+.box_welcome_banner li:first-child {border-left:none;}
+.box_welcome_banner li img {width:316px;height:54px;}
+
+
+/* 오늘의 책 */
+.box_welcome_kyobo {position:relative;float:left;width:682px;height:355px;}
+.box_welcome_kyobo h2 {float:left;margin-right:25px;}
+.box_welcome_kyobo h3 {float:left;font-size:12px;margin-right:10px;}
+.box_welcome_kyobo h3 a {display:block;padding:1px 5px 0;height:22px;font-size:14px;line-height:18px;color:#555; font-family:'Malgun Gothic','Apple SD Neo Gothic','Dotum','Sans-Serif';}
+.box_welcome_kyobo .section.first h3 {}
+.box_welcome_kyobo .section.on h3 a {color:#fff;background-color:#9cafe9;}
+.box_welcome_kyobo .section .content{display:none;position:absolute;left:0;top:35px;}
+.box_welcome_kyobo .section.on .content{display:block;}
+.box_welcome_kyobo .content {float:left;width:100%;position:relative;}
+.box_welcome_kyobo .btn_more {position:absolute;right:0;top:-29px;}
+.box_welcome_kyobo .arrow {position:absolute;left:320px;top:188px;width:8px;height:15px;background:url('http://image.kyobobook.co.kr/ink/images/welcome/arrow_today_card.png') no-repeat;}
+
+.tab_welcome_kyobo {position:absolute;left:40px;width:240px;top:19px;z-index:2;}
+.tab_welcome_kyobo li {position:absolute;top:0;transition:all 0.2s linear;}
+.tab_welcome_kyobo li a {display:block;padding-top:4px;background:#fff url('http://image.kyobobook.co.kr/ink/images/welcome/todaybook_bg4.png') no-repeat;}
+.tab_welcome_kyobo li img {width:80px;height:120px;border:1px solid #999;transition:all 0.2s linear;}
+.tab_welcome_kyobo li a:hover img {border-color:#555;}
+.tab_welcome_kyobo li.on a {/*border-color:#3c5fdf;*/}
+.tab_welcome_kyobo li.book_1 {top:0px;left:62px;z-index:30;}
+.tab_welcome_kyobo li.book_2 {top:35px;left:158px;z-index:20;background-position:right top;}
+.tab_welcome_kyobo li.book_3 {top:35px;left:0;z-index:20;}
+.tab_welcome_kyobo li.book_4 {top:50px;left:207px;z-index:10;background-position:right top;}
+.tab_welcome_kyobo li.book_5 {top:50px;left:-30px;z-index:10;}
+.tab_welcome_kyobo li.book_2 a,
+.tab_welcome_kyobo li.book_4 a {background-position:right top;}
+.tab_welcome_kyobo li.book_1 img {width:114px;height:172px;}
+.tab_welcome_kyobo li.book_2 img {width:80px;height:120px;}
+.tab_welcome_kyobo li.book_3 img {width:80px;height:120px;}
+.tab_welcome_kyobo li.book_4 img {width:65px;height:100px;}
+.tab_welcome_kyobo li.book_5 img {width:65px;height:100px;}
+.tab_welcome_kyobo li.book_2:hover,
+.tab_welcome_kyobo li.book_4:hover {transform:translate(2px,0);}
+.tab_welcome_kyobo li.book_3:hover,
+.tab_welcome_kyobo li.book_5:hover {transform:translate(-2px,0);}
+
+.animate .list_welcome_kyobo .cover {visibility:hidden;}
+
+.list_welcome_kyobo {clear:both;background-color:#fafafa;border-top:1px solid #5f6b9f;border-bottom:1px solid #dadada;width:217px;height:108px;padding:210px 414px 0 52px;}
+.list_welcome_kyobo li {display:none;*zoom:1;}
+.list_welcome_kyobo li.on {display:block;}
+.list_welcome_kyobo .cover {position:absolute;left:102px;top:19px;z-index:10;}
+.list_welcome_kyobo .cover a {display:block;width:116px;height:174px;padding-top:4px;background:#fff url('http://image.kyobobook.co.kr/ink/images/welcome/todaybook_bg4.png') no-repeat;perspective:1300px;perspective-origin:50% -50%;}
+.list_welcome_kyobo .cover a img {width:114px;height:172px;border:1px solid #999;transition:transform .4s ease-in;transform-style:preserve-3d;transform-origin:0% 50%;/*backface-visibility:hidden;*/}
+.list_welcome_kyobo .cover a:hover img,
+.list_welcome_kyobo .cover a:focus img {transform:rotateY(-30deg);}/* skew(0deg,5deg) */
+.list_welcome_kyobo .cover a:after {content:'';display:block;width:25px;height:17px;position:absolute;bottom:0;right:-25px;background:url('http://image.kyobobook.co.kr/ink/images/welcome/bg_book_shadow.png') no-repeat;}
+.list_welcome_kyobo .title {line-height:16px;height:32px;font-weight:bold;color:#222;overflow:hidden;text-align:center;}
+.list_welcome_kyobo .title a {color:#333;}
+.list_welcome_kyobo .title a:hover {text-decoration:underline;}
+.list_welcome_kyobo .label_ebook,
+.list_welcome_kyobo .label_sam {color:#3c5fdf;}
+.list_welcome_kyobo .author {margin-top:10px;font-size:11px;color:#666;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.list_welcome_kyobo .author .line {color:#c6c6c6;}
+.list_welcome_kyobo .price {display:none;margin-top:3px;font-size:11px;color:#555;}/*color:#09bd00;*/
+.list_welcome_kyobo .price .sell_price {color:#ff3541;font-size:12px;}
+.list_welcome_kyobo .price .dc_rate {color:#ff3541;}
+.list_welcome_kyobo .price .dc_rate img {vertical-align:0;}
+.list_welcome_kyobo .price .mileage {color:#4c76a0;font-size:12px;}
+.list_welcome_kyobo .price .ml_rate {color:#4c76a0;}
+.list_welcome_kyobo .price .line {color:#bbb;}
+.list_welcome_kyobo .button {margin-top:10px;text-align:center;}
+.list_welcome_kyobo .button button,
+.list_welcome_kyobo .button .link {border:1px solid #e8e8e8;width:96px;height:26px;padding:3px 0 0 10px;font-size:11px;color:#333;text-align:left;background:#e8e8e8 url('http://image.kyobobook.co.kr/ink/images/common/icon_more3.gif') no-repeat 76px center;font-family:Dotum,Sans-serif;cursor:pointer;transition:all 0.2s linear;}
+.list_welcome_kyobo .button .link {display:inline-block;width:84px;height:18px;padding-top:6px;}
+.list_welcome_kyobo .button button:hover,
+.list_welcome_kyobo .button .link:hover {border-color:#bbb;}
+.list_welcome_kyobo .button button + button {*margin-left:4px;}
+
+.list_welcome_kyobo .card_news {position:absolute;right:0;top:1px;}
+
+.card_news {position:relative;width:362px;height:318px;}
+.card_news table {width:362px;height:318px;border-collapse:collapse;background-color:#f2efde;}
+.card_news table td {padding:20px;text-align:center;font-size:16px;line-height:1.4;font-family:'Malgun Gothic','Apple SD Neo Gothic','Dotum','Sans-Serif';color:#333;word-break:break-all;/*text-shadow:1px 1px 4px rgba(0,0,0,0.7);*/}
+.card_news table img {width:362px;height:318px;}
+.card_news .list_nav {position:absolute;right:12px;bottom:16px;z-index:3;font-size:11px;color:#333;text-shadow:0 0 2px #fff;}
+.card_news .list_nav .page {}
+.card_news .list_nav .current {font-weight:bold;}
+.card_news .list_nav .btn_prev,
+.card_news .list_nav .btn_next {width:20px;height:20px;padding:0;background-color:red;border:none;vertical-align:middle; border:none;font-size:0;color:transparent;*text-indent:20px;background:transparent url('http://image.kyobobook.co.kr/ink/images/welcome/btn_nav_sprite.png') no-repeat 11px -25px;cursor:pointer;}
+.card_news .list_nav .btn_next {background-position:-16px -25px;}
+.card_news .list_nav .btn_prev:hover {background-position:-29px -25px;}
+.card_news .list_nav .btn_next:hover {background-position:-56px -25px;}
+.card_news .option {position:absolute;left:10px;right:10px;padding:10px 10px 7px;bottom:10px;z-index:2;font-size:11px;line-height:15px;background:url('http://image.kyobobook.co.kr/ink/images/common/bg_white50.png');}
+.card_news .option a {color:#333;}
+.card_news .option .btn_like {display:inline-block;padding:0 0 0 15px;background:url('http://image.kyobobook.co.kr/ink/images/welcome/icon_card_like.png') no-repeat 0 1px;text-shadow:0 0 2px #fff;}
+.card_news .option .btn_like .count {font-weight:bold;}
+.card_news .option .share {margin-left:6px;display:inline-block;position:relative;}
+.card_news .option .share .btn_share {display:inline-block;padding:0 0 0 16px;background:url('http://image.kyobobook.co.kr/ink/images/welcome/icon_card_share.png') no-repeat 0 0;text-shadow:0 0 2px #fff;}
+.card_news .option .share .layer {display:none;position:absolute;left:-18px;bottom:24px;height:23px;background-color:#fff;border:1px solid #b1b1b1;padding:8px 5px 8px 10px;white-space:nowrap;}
+.card_news .option .share.on .layer {display:block;}
+.card_news .option .share .layer a {display:inline-block;vertical-align:middle;width:23px;height:23px;margin:0 1px;font-size:0;color:transparent;overflow:hidden;background:url('http://image.kyobobook.co.kr/ink/images/welcome/btn_card_sns.png') no-repeat 0 0;}
+.card_news .option .share .layer .icon_1 {background-position:-30px 0;}
+.card_news .option .share .layer .icon_2 {background-position:-60px 0;}
+.card_news .option .share .layer .icon_3 {background-position:-90px 0;}
+.card_news .option .share .layer .icon_4 {background-position:-120px 0;}
+.card_news .option .share .layer .icon_5 {background-position:-150px 0;}
+.card_news .option .share .layer .icon_6 {background-position:-180px 0;}
+.card_news .option .share .layer .btn_close {}
+.card_news .option .share .layer .arrow {position:absolute;left:17px;top:100%;width:11px;height:6px;background:url('http://image.kyobobook.co.kr/ink/images/welcome/btn_card_sns.png') no-repeat left bottom;}
+.card_news .option .btn_like:hover,
+.card_news .option .btn_share:hover {text-decoration:underline;}
+
+.card_news .list_nav2 .btn_prev2,
+.card_news .list_nav2 .btn_next2 {position:absolute;right:332px;top:142px;z-index:-1; width:30px;height:34px;overflow:hidden;text-indent:-300px;cursor:pointer;background:transparent url('http://image.kyobobook.co.kr/ink/images/welcome/btn_event_nav2.png') no-repeat;border:none;padding:0;}
+.card_news .list_nav2 .btn_next2 {right:0;background-position:-30px 0;}
+.card_news .list_nav2 .btn_prev2:hover {background-position:0 -34px;}
+.card_news .list_nav2 .btn_next2:hover {background-position:-30px -34px;}
+.card_news.active .list_nav2 .btn_prev2,
+.card_news.active .list_nav2 .btn_next2 {z-index:10;}
+
+/* 오늘의 책 type 2*/
+.box_welcome_kyobo.type_2 {width:634px;}
+.box_welcome_kyobo.type_2 .tab_welcome_kyobo {left:15px;top:36px;}
+.box_welcome_kyobo.type_2 .tab_welcome_kyobo li {background-color:#fafafa;}
+.box_welcome_kyobo.type_2 .tab_welcome_kyobo li a {transition:all 0.2s linear;}
+.box_welcome_kyobo.type_2 .tab_welcome_kyobo li.book_2 a,
+.box_welcome_kyobo.type_2 .tab_welcome_kyobo li.book_3 a {filter:alpha(opacity=50);opacity:0.5;}
+.box_welcome_kyobo.type_2 .tab_welcome_kyobo li.book_4 a,
+.box_welcome_kyobo.type_2 .tab_welcome_kyobo li.book_5 a {filter:alpha(opacity=50);opacity:0.5;}
+.box_welcome_kyobo.type_2 .tab_welcome_kyobo li.book_2 a:hover,
+.box_welcome_kyobo.type_2 .tab_welcome_kyobo li.book_3 a:hover,
+.box_welcome_kyobo.type_2 .tab_welcome_kyobo li.book_4 a:hover,
+.box_welcome_kyobo.type_2 .tab_welcome_kyobo li.book_5 a:hover {filter:alpha(opacity=100);opacity:1;}
+.box_welcome_kyobo.type_2 .tab_welcome_round {position:absolute;left:15px;top:235px;width:240px;text-align:center;}
+.box_welcome_kyobo.type_2 .tab_welcome_round a {background-position:-39px 1px;}
+.box_welcome_kyobo.type_2 .tab_welcome_round a.on {background-position:-59px 1px;}
+.box_welcome_kyobo.type_2 .list_welcome_kyobo {width:632px;height:318px;padding:0;border:1px solid #8885a0;}
+.box_welcome_kyobo.type_2 .list_welcome_kyobo .cover {top:36px;left:77px;}
+.box_welcome_kyobo.type_2 .list_welcome_kyobo .button {display:none;}
+.box_welcome_kyobo.type_2 .list_welcome_kyobo .card_news {right:1px;}
+.box_welcome_kyobo.type_2 .list_welcome_kyobo .card_news .option {display:none;}
+.box_welcome_kyobo.type_2 .list_welcome_kyobo .card_news .list_nav {color:#fff;text-shadow:none;}
+.box_welcome_kyobo.type_2 .list_welcome_kyobo .card_news .list_nav .btn_prev {background-position:-29px -55px;}
+.box_welcome_kyobo.type_2 .list_welcome_kyobo .card_news .list_nav .btn_next {background-position:-56px -55px;}
+.box_welcome_kyobo.type_2 .list_welcome_kyobo .card_news .list_nav .btn_prev:hover {background-position:-29px -25px;}
+.box_welcome_kyobo.type_2 .list_welcome_kyobo .card_news .list_nav .btn_next:hover {background-position:-56px -25px;}
+.box_welcome_kyobo.type_2 .list_welcome_kyobo .layer {position:absolute;right:0;bottom:0;padding:15px 75px 15px 15px;line-height:24px;width:542px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background:url('http://image.kyobobook.co.kr/ink/images/common/bg_blue80.png');color:#fff;}
+.box_welcome_kyobo.type_2 .list_welcome_kyobo .layer .title {display:inline-block;*display:inline;*zoom:1;vertical-align:top;*vertical-align:middle;text-align:left;color:#fff;height:auto;font-size:14px;line-height:24px;margin-right:14px;max-width:300px;text-overflow:ellipsis;}
+.box_welcome_kyobo.type_2 .list_welcome_kyobo .layer .title a {color:#fff;}
+.box_welcome_kyobo.type_2 .list_welcome_kyobo .layer .label_ebook,
+.box_welcome_kyobo.type_2 .list_welcome_kyobo .layer .label_sam {color:#d3deff;}
+.box_welcome_kyobo.type_2 .list_welcome_kyobo .layer .author {display:inline;text-align:left;color:#fff;margin-top:0;*zoom:1;*max-width:240px;}
+
+
+/* 화제의 신간 (북마스터 추천) */
+.box_welcome_topic {position:relative;height:346px;overflow:hidden;}
+.box_welcome_topic h2 {float:left;margin-right:25px;}
+.box_welcome_topic h3 {float:left;font-size:12px;margin-right:10px;}
+.box_welcome_topic h3 a {display:block;padding:1px 5px 0;height:22px;font-size:14px;line-height:18px;color:#555; font-family:'Malgun Gothic','Apple SD Neo Gothic','Dotum','Sans-Serif';}
+.box_welcome_topic .section.first h3 {}
+.box_welcome_topic .section.on h3 a {color:#fff;background-color:#9cafe9;}
+.box_welcome_topic .section .content {display:none;position:absolute;left:0;top:35px;}
+.box_welcome_topic .section.on .content {display:block;}
+.box_welcome_topic .content {float:left;width:100%;position:relative;}
+
+.box_welcome_topic .btn_prev,
+.box_welcome_topic .btn_next {position:absolute;left:0;top:109px;z-index:-1; width:30px;height:34px;overflow:hidden;text-indent:-300px;cursor:pointer;background:transparent url('http://image.kyobobook.co.kr/ink/images/welcome/btn_event_nav2.png') no-repeat;border:none;padding:0;}
+.box_welcome_topic .btn_next {left:auto;right:0;background-position:-30px 0;}
+.box_welcome_topic .btn_prev:hover {background-position:0 -34px;}
+.box_welcome_topic .btn_next:hover {background-position:-30px -34px;}
+.box_welcome_topic.active .btn_prev,
+.box_welcome_topic.active .btn_next {z-index:10;}
+/* .box_welcome_topic .btn_prev,
+.box_welcome_topic .btn_next {position:absolute;left:0;top:109px;z-index:-1;width:30px;height:34px;padding:0;margin:0;border:1px solid #dadada;background:#fff url('http://image.kyobobook.co.kr/ink/images/welcome/btn_nav_sprite.png') no-repeat 10px -51px;background-color:rgba(255,255,255,0.7);cursor:pointer; font-size:0;color:transparent;*text-indent:-300px;transition:all 0.2s linear;}
+.box_welcome_topic .btn_next {left:auto;right:0;background-position:-10px -51px;}
+.box_welcome_topic .btn_prev:hover,
+.box_welcome_topic .btn_next:hover {border-color:#999;}
+.box_welcome_topic.active .btn_prev,
+.box_welcome_topic.active .btn_next {z-index:10;} */
+.box_welcome_topic .btn_more {position:absolute;right:0;top:-29px;}
+
+.list_welcome_topic{clear:both;height:309px;margin-left:-22px;width:972px;}
+.list_welcome_topic li{float:left;width:169px;height:273px;padding:25px 25px 0;position:relative;border:1px solid #dadada;margin-left:22px;background-color:#fff;transition:border-color 0.2s linear;}
+.list_welcome_topic li .cover{/*padding-top:4px;*/text-align:center;position:absolute;left:0;bottom:86px;width:100%;}
+.box_welcome_topic .content.gift .list_welcome_topic li .cover{padding-top:0;}
+.list_welcome_topic li .cover img{width:125px;min-width:125px;max-height:185px;_height:185px;border:1px solid #888;}
+.list_welcome_topic li .cover .label_ebook,
+.list_welcome_topic li .cover .label_sam {position:absolute;z-index:10;left:50%;margin-left:25px;top:-1px;width:43px;height:15px;background-color:#6d3aa4;color:#fff;border:1px solid #e7e7e7;font-size:11px;font-weight:bold;line-height:15px;font-family:'Segoe UI','Arial','Sans-serif';}
+.list_welcome_topic li .cover .label_sam {background-color:#067f9a;}
+.list_welcome_topic li .cover .layer {visibility:hidden;opacity:0;transition:all 0.2s linear; position:absolute;left:50%;top:0;bottom:0;width:107px;margin-left:-64px;padding:10px;background:url('http://image.kyobobook.co.kr/ink/images/common/bg_blue90.png');}
+.box_welcome_topic .content.gift .list_welcome_topic li .cover .layer{top:0;}
+.list_welcome_topic li:hover,
+.list_welcome_topic li.on {border:5px solid #5e6b9e;padding:21px 21px 0; height:269px;}
+.list_welcome_topic li:hover .cover,
+.list_welcome_topic li.on .cover {bottom:82px;}
+.list_welcome_topic li:hover .cover .layer,
+.list_welcome_topic li.on .cover .layer {visibility:visible;opacity:1;}
+.list_welcome_topic li .cover .layer .info {font-size:12px;line-height:16px;position:absolute;left:10px;right:10px;top:10px;bottom:56px;}
+.list_welcome_topic li .cover .layer .info span {display:table;width:100%;height:100%;}
+.list_welcome_topic li .cover .layer .info a {display:table-cell;vertical-align:middle;color:#fff;}
+.list_welcome_topic li .cover .layer .info a:hover {text-decoration:underline;}
+.list_welcome_topic li .cover .layer .button {position:absolute;left:10px;bottom:10px;right:10px;}
+.list_welcome_topic li .cover .layer .button a {display:inline-block;width:33px;height:33px;border:1px solid #fff;overflow:hidden;font-size:0;line-height:0;color:transparent;background:url('http://image.kyobobook.co.kr/ink/images/welcome/btn_layer_option.png') no-repeat 0 0;transition:background-color 0.2s linear;}
+.list_welcome_topic li .cover .layer .button a:hover {background-color:rgba(0,0,0,0.2);}
+.list_welcome_topic li .cover .layer .button a.btn_cart {}
+.list_welcome_topic li .cover .layer .button a.btn_view {background-position:-34px 0;}
+.list_welcome_topic li .category {padding-top:202px;text-align:center;color:#333;font-size:11px;color:#3e74ab;}
+.list_welcome_topic li .title{padding-top:4px;height:32px;line-height:16px;text-align:center;overflow:hidden;}
+.list_welcome_topic li .title a{color:#333;font-size:12px;}
+.list_welcome_topic li .title a:hover {color:#000;text-decoration:underline;}
+/*.list_welcome_topic li .info {padding-top:4px;text-align:center;font-size:11px;line-height:15px;color:#767676;height:30px;overflow:hidden;}*/
+.list_welcome_topic li .price{margin-top:8px;font-size:11px;color:#09bd00;text-align:center;}
+.list_welcome_topic li .price span{font-size:12px;font-weight:bold;color:#09bd00;}
+.list_welcome_topic li .price img{vertical-align:0;}
+.list_welcome_topic li .ebook{position:absolute;top:25px;left:75px;}
+.list_welcome_topic li .ebook img {}
+
+
+/* ONLY 교보문고 */
+.box_welcome_only {height:109px;}
+.box_welcome_only .box_title {float:left;width:128px;border:1px solid #dadada;border-width:1px 0;text-align:center;padding-top:34px;height:73px;}
+.box_welcome_only .content {position:relative;float:right;width:708px;height:107px;padding:0 47px;border:1px solid #dadada;border-width:1px 0;}
+.box_welcome_only .btn_prev,
+.box_welcome_only .btn_next {position:absolute;top:42px;width:14px;height:28px; border:none;font-size:0;color:transparent;*text-indent:-300px;background:transparent url('http://image.kyobobook.co.kr/ink/images/welcome/btn_nav_sprite.png') no-repeat 0 -120px;cursor:pointer;}
+.box_welcome_only .btn_prev {left:0;}
+.box_welcome_only .btn_next {right:0;background-position:-20px -120px;}
+.box_welcome_only .btn_prev:hover {background-position:-40px -120px;}
+.box_welcome_only .btn_next:hover {background-position:-60px -120px;}
+
+.list_welcome_only {}
+.list_welcome_only li {float:left;width:118px;}
+.list_welcome_only li a {display:block;width:108px;height:87px;padding:10px 5px;}
+.list_welcome_only li a img {filter:grayscale(100%);filter:gray alpha(opacity=55);opacity:0.55;transition:all 0.2s linear;}
+.list_welcome_only li a:hover img,
+.list_welcome_only li a:focus img {filter:grayscale(0%);filter:alpha(opacity=100);opacity:1;transform:translate(0,-4px);}
+.list_welcome_only li a svg {transition:all 0.2s linear;}
+.list_welcome_only li a:hover svg,
+.list_welcome_only li a:focus svg {transform:translate(0,-4px);}
+
+
+/* #떨림 쉬어가는 곳 */
+.box_welcome_rest {height:290px;padding-left:133px;background-color:#f3f3f3;position:relative;}
+.box_welcome_rest .box_title {position:absolute;left:0;top:0;width:133px;}
+.box_welcome_rest .box_title img {width:100%;}
+.box_welcome_rest .content {position:relative;}
+.box_welcome_rest .tab_welcome_round {position:absolute;right:445px;bottom:35px;}
+
+.list_welcome_rest {}
+.list_welcome_rest li {display:none;}
+.list_welcome_rest li.on {display:block;}
+.list_welcome_rest img {width:817px;height:290px;}
+
+.box_welcome_rest .btn_prev,
+.box_welcome_rest .btn_next {position:absolute;left:0;top:128px;z-index:-1; width:30px;height:34px;overflow:hidden;text-indent:-300px;cursor:pointer;background:transparent url('http://image.kyobobook.co.kr/ink/images/welcome/btn_event_nav2.png') no-repeat;border:none;padding:0;}
+.box_welcome_rest .btn_next {left:auto;right:0;background-position:-30px 0;}
+.box_welcome_rest .btn_prev:hover {background-position:0 -34px;}
+.box_welcome_rest .btn_next:hover {background-position:-30px -34px;}
+.box_welcome_rest.active .btn_prev,
+.box_welcome_rest.active .btn_next {z-index:10;}
+
+
+/* 이럴 땐 이런 책 */
+.box_welcome_thisbook {overflow:hidden;}
+.box_welcome_thisbook .content {position:relative;height:325px;background-color:#fff;}
+.box_welcome_thisbook .box_info {float:left;width:221px;height:325px;}
+.box_welcome_thisbook .box_info img {width:100%;height:100%;}
+.box_welcome_thisbook .item {display:none;float:left;width:221px;height:325px;margin-left:22px;position:relative;background-color:#fff;}
+.box_welcome_thisbook .item.on {display:block;}
+.box_welcome_thisbook .item_title {background-color:#666;color:#fff;padding:12px 10px 0;height:23px;font-weight:bold;}
+.box_welcome_thisbook .item_title a {color:#fff;}
+.box_welcome_thisbook .item_title a:hover {text-decoration:underline;}
+.box_welcome_thisbook .item_1 .item_title {background-color:#5e6b9e;}
+.box_welcome_thisbook .item_2 .item_title {background-color:#dfaa1d;}
+.box_welcome_thisbook .item_3 .item_title {background-color:#5f9943;}
+.box_welcome_thisbook .item_4 .item_title {background-color:#59a1c2;}
+.box_welcome_thisbook .item_5 .item_title {background-color:#96649f;}
+.box_welcome_thisbook .item_6 .item_title {background-color:#cb6b58;}
+.box_welcome_thisbook .tag {position:absolute;right:10px;top:6px;color:#fff;font-size:11px;}
+.box_welcome_thisbook .tag em {display:inline-block;background:url('http://image.kyobobook.co.kr/ink/images/welcome/bg_tag.png') no-repeat left top;font-style:normal;padding-left:1px;*padding-left:7px;}
+.box_welcome_thisbook .tag em span {display:inline-block;padding-top:6px;height:17px;background:url('http://image.kyobobook.co.kr/ink/images/welcome/bg_tag.png') no-repeat right top;margin-left:10px;padding-right:6px;text-indent:-6px;}
+.box_welcome_thisbook .btn_prev,
+.box_welcome_thisbook .btn_next {position:absolute;top:163px;z-index:-1;width:30px;height:34px; font-size:0;color:transparent;*text-indent:-300px;border:none;background:transparent url('http://image.kyobobook.co.kr/ink/images/welcome/btn_event_nav2.png') no-repeat;border:none;padding:0;cursor:pointer;}
+.box_welcome_thisbook .btn_prev {left:243px;}
+.box_welcome_thisbook .btn_next {right:0; background-position:-30px 0;}
+.box_welcome_thisbook .btn_prev:hover {background-position:0 -34px;}
+.box_welcome_thisbook .btn_next:hover {background-position:-30px -34px;}
+.box_welcome_thisbook.active .btn_prev,
+.box_welcome_thisbook.active .btn_next {z-index:10;}
+.box_welcome_thisbook .btn_more {position:absolute;right:0;top:-29px;}
+
+.list_welcome_thisbook {padding:15px 15px 0;height:274px;border:1px solid #dadada;border-top:none;line-height:1.4;}
+.list_welcome_thisbook a {color:#333;}
+.list_welcome_thisbook a:hover {text-decoration:underline;}
+.list_welcome_thisbook li {padding:6px 0 2px 17px;background:url('http://image.kyobobook.co.kr/ink/images/common/bul_square_small.gif') no-repeat 8px 10px; white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-top:1px solid #dadada;}
+.list_welcome_thisbook li.top,
+.list_welcome_thisbook li.top + li {border-top:none;}
+.list_welcome_thisbook li.top {font-weight:bold;margin-bottom:6px; padding:0;background:none;}
+.list_welcome_thisbook li.top a {display:block;}
+.list_welcome_thisbook li.top .cover {width:186px;height:106px;overflow:hidden;margin-bottom:14px;border:1px solid #dadada;transition:all 0.2s linear;}
+.list_welcome_thisbook li.top .cover img {width:186px;height:186px;margin-top:-40px;}
+.list_welcome_thisbook li.top a:hover .cover {border-color:#888;}
+.list_welcome_thisbook li.top .title {line-height:18px;height:36px;overflow:hidden;white-space:normal;}
+
+
+/* 스토리:K */
+.box_welcome_story {}
+.box_welcome_story .content {position:relative;}
+.box_welcome_story .btn_list_more {text-align:center;}
+.box_welcome_story .btn_list_more button {width:136px;height:40px;padding-right:13px;color:#222;font-weight:bold;border:1px solid #e5e5e5;cursor:pointer;background:#e5e5e5 url('http://image.kyobobook.co.kr/ink/images/welcome/btn_nav_sprite2.png') no-repeat 104px 15px;transition:all 0.2s linear;font-family:Dotum, Sans-serif;line-height:1.3;}
+.box_welcome_story .btn_list_more button:hover {background-color:#efefef;border-color:#ccc;}
+.box_welcome_story .btn_list_more button.on {background-position:104px -15px;}
+.box_welcome_story .btn_more {position:absolute;right:0;top:-40px;}
+.box_welcome_story .btn_more a {display:inline-block;padding:10px 20px 0 11px;min-width:83px;height:20px;border:1px solid #dadada;transition:all 0.2s linear;background:transparent url('http://image.kyobobook.co.kr/ink/images/welcome/btn_nav_sprite2.png') no-repeat 95px -50px;}
+.box_welcome_story .btn_more a:hover {border-color:#888;}
+
+.box_welcome_story .btn_list_more button {padding-top:4px;}
+/* Safari, Chrome */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+.box_welcome_story .btn_list_more button {padding-top:0;}
+}
+/* FireFox */
+@-moz-document url-prefix(){
+.box_welcome_story .btn_list_more button {padding-top:0;}
+}
+
+.list_welcome_story {*zoom:1;margin:0 -8px;}
+.list_welcome_story:after {content:'';display:block;clear:both;}
+.list_welcome_story li {display:none;float:left;padding:20px 30px;width:180px;height:240px;text-align:center;line-height:1.4;}
+.list_welcome_story li.on {display:block;}
+.list_welcome_story li a {position:relative;display:block;width:180px;padding-top:198px;height:42px;*cursor:pointer;}
+.list_welcome_story li a .cover {position:absolute;left:0;top:0;height:180px;overflow:hidden;}
+.list_welcome_story li a .cover img {width:180px;height:180px;transition:transform 0.3s linear;}
+.list_welcome_story li a .category {position:absolute;left:-1px;top:-1px;background:url('http://image.kyobobook.co.kr/ink/images/welcome/mask_story.png') no-repeat;width:182px;height:37px;padding-top:145px;color:#fff;font-weight:bold;}
+.list_welcome_story li a .icon_video {position:absolute;top:37px;left:59px;background:url('http://image.kyobobook.co.kr/ink/images/welcome/icon_video.png') no-repeat; width:66px;height:66px;font-size:0;color:transparent;overflow:hidden;}
+.list_welcome_story li a .title {color:#333;font-weight:bold; white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.list_welcome_story li a .summary {margin-top:3px; white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.list_welcome_story li a:hover .title {text-decoration:underline;}
+.list_welcome_story li a:hover img {transform:scale(1.05,1.05);}
+
+
+/* 베스트셀러 */
+.box_welcome_chart {height:545px;position:relative;}
+.box_welcome_chart h2 {float:left;margin-right:25px;}
+.box_welcome_chart h3 {float:left;font-size:12px;margin-right:10px;}
+.box_welcome_chart h3 a {display:block;padding:1px 5px 0;height:22px;font-size:14px;line-height:18px;color:#555; font-family:'Malgun Gothic','Apple SD Neo Gothic','Dotum','Sans-Serif';}
+.box_welcome_chart .section.first h3 {}
+.box_welcome_chart .section.on h3 a {color:#fff;background-color:#9cafe9;}
+.box_welcome_chart .section .content {display:none;position:absolute;left:0;top:35px;}
+.box_welcome_chart .section.on .content {display:block;}
+.box_welcome_chart .content {float:left;width:100%;position:relative;}
+.box_welcome_chart .btn_prev,
+.box_welcome_chart .btn_next {position:absolute;left:0;top:109px;width:21px;height:28px;padding:1px;margin:0;border:0;background-color:transparent;cursor:pointer;}
+.box_welcome_chart .btn_next {left:auto;right:0;}
+.box_welcome_chart .btn_more {position:absolute;right:0;top:-29px;}
+
+.list_welcome_chart{height:490px;padding:20px 0 0 200px;background-color:#fff;}
+.list_welcome_chart li{float:left;width:108px;position:relative;text-align:center;padding:45px 10px 0;height:195px;/*transition:all 0.2s linear;*/}
+/*.list_welcome_chart li:hover {transform:translate(0,-4px);}*/
+.list_welcome_chart li .icon {position:absolute;z-index:10;left:28px;top:20px;text-align:left;}
+.list_welcome_chart li .icon .rank {display:block;margin-bottom:3px;color:#999;font-size:18px;line-height:18px;font-family:Arial,Sans-serif;font-weight:normal;}
+.list_welcome_chart li .cover {display:block;text-align:center;}
+.list_welcome_chart li .cover a {position:relative;display:inline-block;padding-top:3px;background:url('http://image.kyobobook.co.kr/ink/images/welcome/bg_book_top.png') no-repeat -100px 0;}
+.list_welcome_chart li .cover a div {visibility:hidden;position:absolute;left:1px;top:4px;width:66px;height:85px;background:url('http://image.kyobobook.co.kr/ink/images/welcome/bg_black70.png');padding:12px 2px 8px;text-align:center;color:#fff;font-size:11px;line-height:15px;letter-spacing:-1px;*cursor:pointer;overflow:hidden;}
+.list_welcome_chart li .cover a div em {display:inline-block;vertical-align:middle;width:66px;max-height:75px;overflow:hidden;font-style:normal;}
+.list_welcome_chart li .cover a div span {display:inline-block;vertical-align:middle;height:85px;}
+.list_welcome_chart li .cover img {width:70px;height:105px;border:1px solid #a9a9a9;transition:all 0.2s linear;}
+.list_welcome_chart li .cover a:hover img {border-color:#666;/*box-shadow:1px 1px 4px rgba(0,0,0,0.5);*/}
+.list_welcome_chart li .cover a.on div {visibility:visible;}
+.list_welcome_chart li .cover .label_ebook,
+.list_welcome_chart li .cover .label_sam {position:absolute;right:-5px;top:0px;z-index:10;width:43px;height:15px;background-color:#6d3aa4;color:#fff;border:1px solid #e7e7e7;font-size:11px;font-weight:bold;line-height:15px;font-family:'Segoe UI','Arial','Sans-serif';}
+.list_welcome_chart li .cover .label_sam {background-color:#067f9a;}
+.list_welcome_chart li .title {display:block;margin-top:10px;line-height:16px;max-height:32px;_height:32px;overflow:hidden;}
+.list_welcome_chart li .title a {color:#333;}
+.list_welcome_chart li .title a:hover {color:#000;text-decoration:underline;}
+.list_welcome_chart li .author {display:block;margin-top:5px;font-size:11px;}
+
+.list_welcome_chart li.best1,
+.list_welcome_chart li.best2 {position:absolute;left:40px;top:30px;width:126px;padding-top:5px;height:220px;}
+.list_welcome_chart li.best2 {top:267px;}
+.list_welcome_chart li.best1 .cover a,
+.list_welcome_chart li.best2 .cover a {padding-top:4px;background:url('http://image.kyobobook.co.kr/ink/images/welcome/bg_book_top.png') no-repeat 0 0;}
+.list_welcome_chart li.best1 .cover img,
+.list_welcome_chart li.best2 .cover img {width:96px;height:144px;}
+.list_welcome_chart li.best1 .icon,
+.list_welcome_chart li.best2 .icon {left:0;top:0;}
+.list_welcome_chart li.best1 .icon .rank,
+.list_welcome_chart li.best2 .icon .rank {width:33px;height:32px;padding-top:6px;text-align:center;font-size:21px;line-height:21px;color:#fff;}
+.list_welcome_chart li.best1 .icon .rank {background:url('http://image.kyobobook.co.kr/ink/images/welcome/bg_best_label.png') no-repeat -40px 0;}
+.list_welcome_chart li.best2 .icon .rank {background:url('http://image.kyobobook.co.kr/ink/images/welcome/bg_best_label.png') no-repeat 0 0;}
+
+.list_welcome_chart li.best1 .cover a div,
+.list_welcome_chart li.best2 .cover a div {top:5px;width:86px;height:124px;padding:12px 5px 8px;font-size:12px;line-height:16px;letter-spacing:0px;}
+.list_welcome_chart li.best1 .cover a div em,
+.list_welcome_chart li.best2 .cover a div em {width:86px;max-height:112px;}
+.list_welcome_chart li.best1 .cover a div span,
+.list_welcome_chart li.best2 .cover a div span {height:125px;}
+
+/* FadeIn Effect */
+.list_welcome_chart li .cover a div {opacity:0;transition:all .4s;}
+.list_welcome_chart li .cover a.on div {opacity:1;}
+
+
+/* 지금 뜨는 도서 */
+.box_welcome_issue {position:relative;/*width:190px;*/height:545px;}
+.box_welcome_issue .section .content {display:none;position:absolute;left:0;top:77px;width:100%;height:467px;border-top:1px solid #5e6b9e;background-color:#fff;text-align:center;}
+.box_welcome_issue .section.on .content {display:block;}
+.box_welcome_issue .section h3 {float:left;width:50%;text-align:center;font-size:12px;}
+.box_welcome_issue .section h3 a {display:block;padding-top:15px;height:28px;background-color:#dfdfdf;}
+.box_welcome_issue .section.on h3 a {background-color:#5e6b9e;color:#fff;}
+.box_welcome_issue .tag {margin:36px auto 0;width:122px;height:122px;padding-top:52px;height:70px;background:url('http://image.kyobobook.co.kr/ink/images/welcome/bg_round_yellow.gif') no-repeat;font-size:14px;line-height:22px;font-weight:bold;color:#333;}
+.box_welcome_issue .time {margin:36px auto 0;width:122px;height:122px;padding-top:52px;height:70px;background:url('http://image.kyobobook.co.kr/ink/images/welcome/bg_round_time.gif') no-repeat;font-size:20px;line-height:22px;font-weight:bold;font-family:'Verdana',Sans-serif;color:#fff;}
+.box_welcome_issue .time small {display:block;margin-top:5px;font-size:12px;line-height:16px;color:#bac5f3;font-family:Dotum,Sans-serif;}
+.box_welcome_issue .comment {margin-top:20px;height:32px;line-height:16px;overflow:hidden;padding:0 15px;}
+.box_welcome_issue .btn_prev,
+.box_welcome_issue .btn_next {position:absolute;top:311px;width:11px;height:22px; border:none;font-size:0;color:transparent;*text-indent:-300px;background:transparent url('http://image.kyobobook.co.kr/ink/images/welcome/btn_nav_sprite.png') no-repeat 0 -90px;cursor:pointer;}
+.box_welcome_issue .btn_prev {left:22px;}
+.box_welcome_issue .btn_next {right:22px; background-position:-20px -90px;}
+.box_welcome_issue .btn_prev:hover {background-position:-40px -90px;}
+.box_welcome_issue .btn_next:hover {background-position:-60px -90px;}
+
+.list_welcome_issue {background:url('http://image.kyobobook.co.kr/ink/images/welcome/bg_line_h3.gif') no-repeat center top;padding:30px 20px 0;margin-top:25px;}
+.list_welcome_issue li {display:none;}
+.list_welcome_issue li.on {display:block;}
+.list_welcome_issue li .cover a {display:inline-block;padding-top:3px;background:url('http://image.kyobobook.co.kr/ink/images/welcome/bg_book_top.png') no-repeat -100px 0;}
+.list_welcome_issue li .cover img {border:1px solid #dadada;width:70px;height:105px;transition:all 0.2s linear;}
+.list_welcome_issue li .cover a:hover img {border-color:#888;/*box-shadow:1px 1px 4px rgba(0,0,0,0.5);*/}
+.list_welcome_issue li .title {margin-top:20px;color:#333;line-height:16px;max-height:32px;overflow:hidden;}
+.list_welcome_issue li .title a {color:#333;}
+.list_welcome_issue li .title a:hover {text-decoration:underline;}
+
+
+
+/* 이주의 책 */
+.box_welcome_best{position:relative;}
+.box_welcome_best h2{}
+.box_welcome_best .icon_ad{position:absolute;right:0;top:10px;}
+.box_welcome_best .list_welcome_best {margin-left:-10px;*zoom:1;}
+.box_welcome_best .list_welcome_best:after {content:'';display:block;clear:both;}
+.box_welcome_best .list_welcome_best li {float:left;width:150px;height:270px;overflow:hidden;margin-left:10px;}
+
+
+/* 감성메이커 */
+.box_welcome_emotion {margin-top:50px;padding-top:60px;background:url(http://image.kyobobook.co.kr/ink/images/welcome/bg_line_h12.gif) repeat-x;overflow:hidden;}
+.box_welcome_emotion .content {position:relative;}
+.box_welcome_emotion .tab_welcome_round {position:absolute;right:0;top:-26px;}
+
+.list_welcome_emotion {*zoom:1;margin-left:-22px;}
+.list_welcome_emotion:after {content:'';display:block;clear:both;}
+.list_welcome_emotion li {display:none;position:relative;float:left;width:221px;margin-left:22px;text-align:center;}
+.list_welcome_emotion li.on {display:block;}
+.list_welcome_emotion .cover img {width:219px;height:219px;margin-bottom:10px;border:1px solid #dadada;transition:all 0.2s linear;}
+.list_welcome_emotion a:hover .cover img {border-color:#888;}
+.list_welcome_emotion .title {line-height:17px;height:34px;overflow:hidden;color:#333;}
+.list_welcome_emotion a:hover .title {text-decoration:underline;}
+.list_welcome_emotion .title2 {position:absolute;left:1px;top:158px;width:219px;height:62px;background:url('http://image.kyobobook.co.kr/ink/images/common/bg_white70.png');display:table;}
+.list_welcome_emotion .title2 span {display:table-cell;vertical-align:middle;color:#202020;font-size:14px;font-weight:bold;line-height:1.4;padding:10px;*display:block;*padding-top:15px;}
+.list_welcome_emotion .price {margin-top:5px;font-weight:bold;color:#de0000;}
+
+.box_welcome_emotion .btn_prev,
+.box_welcome_emotion .btn_next {position:absolute;left:0;top:93px;z-index:-1; width:30px;height:34px;overflow:hidden;text-indent:-300px;cursor:pointer;background:transparent url('http://image.kyobobook.co.kr/ink/images/welcome/btn_event_nav2.png') no-repeat;border:none;padding:0;}
+.box_welcome_emotion .btn_next {left:auto;right:0;background-position:-30px 0;}
+.box_welcome_emotion .btn_prev:hover {background-position:0 -34px;}
+.box_welcome_emotion .btn_next:hover {background-position:-30px -34px;}
+.box_welcome_emotion.active .btn_prev,
+.box_welcome_emotion.active .btn_next {z-index:10;}
+
+
+/* 공지사항/당첨자발표 */
+.box_welcome_notice {float:left;width:50%;height:37px;line-height:1.3em;position:relative;border-top:2px solid #a3a3a3;border-bottom:1px solid #dadada;}
+.box_welcome_notice:after {content:'';display:block;clear:both;}
+.box_welcome_notice h2 {float:left;margin:12px 0 0 15px;font-size:12px;}
+.box_welcome_notice h2 a {padding-right:15px;background:url('http://image.kyobobook.co.kr/ink/images/benefit/bg_line.gif') no-repeat right top;color:#222;}
+.box_welcome_notice ul {float:left;margin:12px 0 0 16px;width:350px;}
+.box_welcome_notice li {display:none;font-size:12px;color:#767676; white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.box_welcome_notice li.on {display:block;}
+.box_welcome_notice a {color:#767676;}
+.box_welcome_notice a:hover {color:#444;text-decoration:underline;}
+.box_welcome_notice .btn_prev,
+.box_welcome_notice .btn_next {position:absolute;right:10px;width:15px;height:13px;border:1px solid #dadada;padding:0;background:transparent url('http://image.kyobobook.co.kr/ink/images/welcome/btn_nav_sprite.png') no-repeat 3px -147px;overflow:hidden;text-indent:-500px;cursor:pointer;}
+.box_welcome_notice .btn_prev:hover,
+.box_welcome_notice .btn_next:hover {border-color:#888;z-index:10;}
+.box_welcome_notice .btn_prev {top:6px;}
+.box_welcome_notice .btn_next {top:18px;background-position:-17px -146px;}
+.box_welcome_notice .btn_more {position:absolute;right:3px;top:10px;}
+
+/* 바로가기 1 */
+.box_welcome_service {float:left;width:189px;height:223px;margin-top:20px;overflow:hidden;font-size:12px;}
+.box_welcome_service ~ .box_welcome_service {border-left:1px solid #dadada;}
+.box_welcome_service h2 {font-size:14px;line-height:18px;margin:4px 0 0 15px;color:#333;}
+.box_welcome_service h2 a {color:#333;}
+.box_welcome_service ul {margin:25px 0 0 15px;}
+.box_welcome_service li {margin-top:4px;line-height:20px;}
+.box_welcome_service a {color:#767676;}
+.box_welcome_service a:hover {color:#444;text-decoration:underline;}
+
+/* 바로가기 2 */
+.list_welcome_link {float:left;width:100%;}
+.list_welcome_link li {margin-top:20px;float:left;width:20%;}
+.list_welcome_link li a {display:block;border:1px solid #dadada;margin:0 5px;padding:15px 15px 0 24px; height:27px;font-weight:bold;color:#555;transition:all 0.2s linear;background:url('http://image.kyobobook.co.kr/ink/images/welcome/btn_nav_sprite2.png') no-repeat 155px -72px;}
+.list_welcome_link li a:hover {border-color:#888;text-decoration:none;}
+
+
+/* 클릭! 실시간 추천 (개인화 추천) */
+.box_welcome_personal {margin-top:50px;padding-top:60px;background:url(http://image.kyobobook.co.kr/ink/images/welcome/bg_line_h12.gif) repeat-x;}
+.box_welcome_personal h2 {}
+.box_welcome_personal .content {*zoom:1;}
+.box_welcome_personal .content:after{content:'';display:block;clear:both;}
+
+.list_welcome_personal{*zoom:1;}
+.list_welcome_personal:after{content:'';display:block;clear:both;}
+.list_welcome_personal li{float:left;width:146px;position:relative;text-align:center;padding:0 10px;}
+.list_welcome_personal li .icon {position:absolute;left:-15px;top:0;width:35px;text-align:right;}
+.list_welcome_personal li .cover {display:block;text-align:center;}
+.list_welcome_personal li .cover img {width:125px;height:185px;border:1px solid #dadada;transition:all 0.2s linear;}
+.list_welcome_personal li .cover a:hover img {border-color:#888;}
+.list_welcome_personal li .cover .label_ebook,
+.list_welcome_personal li .cover .label_sam {position:absolute;right:-5px;top:-1px;z-index:10;width:43px;height:15px;background-color:#6d3aa4;color:#fff;border:1px solid #e7e7e7;font-size:11px;font-weight:bold;line-height:15px;font-family:'Segoe UI','Arial','Sans-serif';}
+.list_welcome_personal li .cover .label_sam {background-color:#067f9a;}
+.list_welcome_personal li .category {margin:10px 0 -5px;font-size:11px;color:#3e74ab;}
+.list_welcome_personal li .title {display:block;margin-top:10px;line-height:16px;max-height:32px;_height:32px;overflow:hidden;}
+.list_welcome_personal li .title a {color:#333;}
+.list_welcome_personal li .title a:hover {color:#000;text-decoration:underline;}
+.list_welcome_personal li .author {display:block;margin-top:5px;font-size:11px;}
+
+.box_welcome_recent {float:left;position:relative;width:220px;}
+.box_welcome_recent h3 {position:absolute;z-index:10;left:47px;top:20px;font-size:12px;line-height:18px;font-family:Dotum, Sans-serif;color:#222;}
+.box_welcome_recent .list_welcome_personal {padding:38px 0 0;border:5px solid #e3e3e4;height:276px;background-color:#f9f9f9;}
+.box_welcome_recent .list_welcome_personal li {width:190px;}
+
+.box_welcome_relation {float:right;position:relative;width:704px;}
+.box_welcome_relation h3 {position:absolute;z-index:10;left:40px;top:20px;font-size:12px;line-height:18px;font-family:Dotum, Sans-serif;color:#222;}
+.box_welcome_relation .list_welcome_personal {padding:42px 19px 0;border:1px solid #dadada;height:280px;}
+
+
+/* 17-05-22 감성메이커 수정 */
+.list_welcome_emotion .cover {width:219px; height:219px; border:1px solid #dadada; margin-bottom:10px;}
+.list_welcome_emotion .cover img {width:auto; border:0;}
+
+/* 17-05-29 css 추가 */
+.bt_box, .bt_box img{width:128px; height:128px;}
+.bt_box{margin:0 auto; padding-top:26px;}
+.bt_box_cover{position:absolute; top:26px; left:31px;}
+.box_welcome_issue .bt_title, .box_welcome_issue .bt_comment{line-height:16px; overflow:hidden; padding:0 15px; color:black;}
+.box_welcome_issue .bt_title{margin-top:10px; height:16px;}
+.box_welcome_issue .bt_comment{height:30px;}
+
+/* 클릭! 실시간 추천 */
+.box_welcome_recent .list_welcome_personal li .cover a{margin-left:22px;}
+.list_welcome_personal li .cover a{position:absolute; left:19px;}
+.list_welcome_personal li .cover img{height: auto; max-height:185px; position:absolute; bottom:-187px;}
+.list_welcome_personal li .category {padding-top:187px;}
+
+/* 18-01-31 기프트 배너 추가 */
+.content_top #main_gift_banner{position:absolute; right:-122px; bottom:0; width:117px; height:182px;}
+.content_top #main_gift_banner .btn_close{position:absolute; right:3px; top:1px;}
+
+/* 18-02-13 베스트셀러-기프트 추가 */	
+.list_welcome_chart.gift li .cover img{width:94px; max-height:94px;}
+.list_welcome_chart.gift li .cover a div{width:90px; max-height:74px; padding:7px 2px 13px;}
+.list_welcome_chart.gift li .cover a div em{width:90px; max-height:60px;}	
+.list_welcome_chart.gift li.best1{top:40px;}
+.list_welcome_chart.gift li.best2{top:277px}
+.list_welcome_chart.gift li.best1 .cover a, .list_welcome_chart.gift.gift li.best2 .cover a, .list_welcome_chart.gift li .cover a{background:none;}
+.list_welcome_chart.gift li.best1 .cover a div, .list_welcome_chart.gift li.best2 .cover a div{width:113px; max-height:103px; padding: 0px 5px 20px 5px;}
+.list_welcome_chart.gift li.best1 .cover a div em, .list_welcome_chart.gift li.best2 .cover a div em{width:103px; max-height:93px;}
+.list_welcome_chart.gift li.best1 .cover img, .list_welcome_chart.gift li.best2 .cover img{width:123px; max-height:123px;}
+.list_welcome_chart.gift li.best1 .icon, .list_welcome_chart.gift li.best2 .icon{top:-10px;}
+.list_welcome_chart.gift li .price {display:block; margin-top:5px; font-size:11px;}
+
+/* 18-02-13 웰컴 메뉴내 기프트배너 추가 */	
+.welcome_menu_bn{margin-top:56px;}
+
+/* 18-03-21 Picks 추천 */
+#picksBook.box_welcome_topic .section .content {display:block;}
+#picksBook.box_welcome_topic .list_welcome_topic {width:729px; margin-left:221px;}
+.my_picks_data {position: absolute; left:0;top:0; width:169px;height:273px;padding:25px 25px 0; border:1px solid #dadada; background-image: url(http://image.kyobobook.co.kr/ink/images/welcome/bg_picks.png); background-position: 50% 66px; background-repeat: no-repeat; background-color:#f5f5f5;}
+.my_picks_data strong {display: block; width:160px; height:30px; overflow:hidden; line-height:16px; margin: 0 auto; color:#363636; margin-bottom: 150px; word-break: keep-all;}
+.my_picks_data a {display:block;}
+.my_picks_data ul li {line-height:20px; color:#4d4d4d; text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
+
+/* 18-03-28 Picks 추천 */
+#picksBook.box_welcome_topic li .sort {padding-top:202px;text-align:center;color:#333;font-size:11px;color:#3e74ab;}
+
+/* klover 평점 좋은책 */
+.box_welcome_klover {margin-top:50px;padding-top:60px;background:url(http://image.kyobobook.co.kr/ink/images/welcome/bg_line_h12.gif) repeat-x;}
+.box_welcome_klover h2 {}
+.box_welcome_klover .content {position: relative; *zoom:1;}
+.box_welcome_klover .content:after{content:'';display:block;clear:both;}
+.list_welcome_daily{*zoom:1;}
+.list_welcome_daily:after{content:'';display:block;clear:both;}
+.list_welcome_daily li{float:left;width:146px;height:270px;position:relative;text-align:center;padding:0 10px;}
+.list_welcome_daily li .icon {position:absolute;left:-15px;top:0;width:35px;text-align:right;}
+.list_welcome_daily li .cover {display:block;text-align:center;}
+.list_welcome_daily li .cover img {width:125px;height:185px;border:1px solid #dadada;transition:all 0.2s linear;}
+.list_welcome_daily li .cover a:hover img {border-color:#888;}
+.list_welcome_daily li .cover .label_ebook,
+.list_welcome_daily li .cover .label_sam {position:absolute;right:-5px;top:-1px;z-index:10;width:43px;height:15px;background-color:#6d3aa4;color:#fff;border:1px solid #e7e7e7;font-size:11px;font-weight:bold;line-height:15px;font-family:'Segoe UI','Arial','Sans-serif';}
+.list_welcome_daily li .cover .label_sam {background-color:#067f9a;}
+.list_welcome_daily li .category {margin:10px 0 -5px;font-size:11px;color:#3e74ab;}
+.list_welcome_daily li .title {display:block;margin-top:10px;line-height:16px;max-height:32px;_height:32px;overflow:hidden;}
+.list_welcome_daily li .title a {color:#333;}
+.list_welcome_daily li .title a:hover {color:#000;text-decoration:underline;}
+.list_welcome_daily li .author {display:block;margin-top:5px;font-size:11px;}
+.box_welcome_today {float:left;position:relative;width:220px;}
+.box_welcome_today h3 {position:absolute;z-index:10;left:47px;top:20px;font-size:12px;line-height:18px;font-family:Dotum, Sans-serif;color:#222;}
+.box_welcome_today .list_welcome_daily {/* padding:38px 0 0; */padding:50px 0 0;border:5px solid #e3e3e4;height:276px;background-color:#f9f9f9;}
+.box_welcome_today .list_welcome_daily li {width:190px;}
+.box_welcome_rcmm {float:right;position:relative;width:704px;}
+.box_welcome_rcmm h3 {position:absolute;z-index:10;left:40px;top:20px;font-size:12px;line-height:18px;font-family:Dotum, Sans-serif;color:#222;}
+.box_welcome_rcmm .list_welcome_daily {/* padding:42px 19px 0; */padding:54px 19px 0;border:1px solid #dadada;height:280px;}
+.box_welcome_today .list_welcome_daily li .cover a{margin-left:22px;}
+.list_welcome_daily li .cover a{position:absolute; left:19px;}
+.list_welcome_daily li .cover img{height: auto; position:absolute; bottom:-187px;}
+.list_welcome_daily li .category {padding-top:187px;}
+.box_welcome_today .list_welcome_daily {height: 350px;}
+.box_welcome_rcmm .list_welcome_daily {height: 354px;}
+.klover_area02 {width:50px; margin:6px auto 0 auto;}
+.box_welcome_today .list_welcome_daily .klover_area02,
+.box_welcome_rcmm .list_welcome_daily .klover_area02 {position:absolute; left:50%;bottom:-72px; margin-left:-25px;}
+.klover_area02 .klover {display:block; width:50px; height:47px; background-image:url(http://image.kyobobook.co.kr/ink/images/common/bg_klover02.png); background-repeat:no-repeat; vertical-align:middle;}
+.klover_area02 .klover.level0{background-position:0 0;}
+.klover_area02 .klover.level1{background-position:-50px 0;}
+.klover_area02 .klover.level2{background-position:-108px 0;}
+.klover_area02 .klover.level3{background-position:-166px 0;}
+.klover_area02 .klover.level4{background-position:-225px 0;}
+.klover_area02 .klover.level5{background-position:-291px 0;}
+.klover_area02 .level {display:block; width:50px; margin-top:2px; color:#354d51; text-align:center;}
+.klover_area02 .level .score{font-size:12px; line-height:16px;}
+.box_welcome_klover .btn_more {position:absolute;right:0;top:-29px;}
+
+/* 18-08-28 ad_welcome06 */
+.box_welcome_best:after {content: ""; clear: both; display: block;}
+.box_welcome_best .list_welcome_best {float: left;}
+.ad_welcome06 {float: left; width:300px; height: 250px; overflow: hidden; margin-left: 20px;border: 1px solid #dadada; box-sizing: border-box;}
+
+/* 18-11-08 키워드픽 */
+#picksBook {height: 401px;}
+#picksBook .keyword_area{float:left; width:932px; margin-top:5px; padding:9px; background-color:#f3f3f3;}
+#picksBook .keyword_area:after {content:""; clear:both; display:block;}
+#picksBook .keyword_area .tit {float:left; width:109px; line-height:30px; margin:2px 15px 0 0; border-right:1px solid #c1c1c1; text-align:center;  color: #090909;}
+#picksBook .book_keyword {float:left; width:800px; height:34px; overflow:hidden;}
+#picksBook .book_keyword>a {display:inline-block; *display:inline; padding:8px 12px; margin-right:5px; color:#000;border:1px solid #ccc; border-radius:20px; background-color:#fff;font-size: 12px;line-height:16px; *line-height:34px;}
+
+/* 19-03-04 북뉴스 배너 추가 */
+.content_top #main_booknews_banner{position:absolute; right:-122px; top:0; width:117px; height:182px;}
+.content_top #main_booknews_banner .btn_close{position:absolute; right:3px; top:1px;}
+
+/* 19-03-08 sam 무제한 추가 */
+/* 오늘의 책 sam 무제한 추가 */
+.tab_welcome_kyobo.sam li.book_2 {left:133px;}
+.tab_welcome_kyobo.sam li.book_3 {left:25px;}
+.tab_welcome_kyobo.sam li.book_4 {left:180px;}
+.tab_welcome_kyobo.sam li.book_5 {left:-5px;}
+/* s: 2020-07-24 eBook 추가 */
+.tab_welcome_kyobo.eBook li.book_2 {left:133px;}
+.tab_welcome_kyobo.eBook li.book_3 {left:25px;}
+.tab_welcome_kyobo.eBook li.book_4 {left:180px;}
+.tab_welcome_kyobo.eBook li.book_5 {left:-5px;}
+/* e: 2020-07-24 eBook 추가 */
+.list_welcome_kyobo .cover a .label_sam {position:absolute;z-index:10;left:50%;margin-left:19px;top:-1px;width:43px;height:15px;background-color: #067f9a;color:#fff;border:1px solid #e7e7e7;font-size:11px;font-weight:bold;line-height:15px;font-family:'Segoe UI','Arial','Sans-serif';text-align: center;}
+.list_welcome_kyobo .cover a .label_sam.unlimited {margin-left:3px;width:59px;background-color: #6d3aa4;}
+
+/* 화제의 신간 sam 무제한 추가 */
+.list_welcome_topic .cover a .label_sam.unlimited {margin-left:9px;width:59px;background-color: #6d3aa4;}
+	
+/* 베스트셀러 sam 무제한 추가 */
+.list_welcome_chart.sam,
+.list_welcome_chart.sam_unlimited {position: relative; height:217px;}
+.list_welcome_chart.sam_unlimited {height:253px;}
+.list_welcome_chart .cover a .label_sam.unlimited {margin-left:9px;width:59px;background-color: #6d3aa4;}
+
+/* 19-04-17 sam 무제한 추가 */
+.list_welcome_kyobo .cover .label_sam {position:absolute;z-index:10;left:50%;margin-left:19px;top:-1px;width:43px;height:15px;background-color: #067f9a;color:#fff;border:1px solid #e7e7e7;font-size:11px;font-weight:bold;line-height:15px;font-family:'Segoe UI','Arial','Sans-serif';text-align: center;}
+.list_welcome_kyobo .cover a .label_sam.unlimited,
+.list_welcome_kyobo .cover .label_sam.unlimited {margin-left:-5px;width:67px;background-color: #6d3aa4;}
+.list_welcome_kyobo .cover .label_sam{perspective:0;perspective-origin:0 0;transform:rotateY(0deg);}
+.list_welcome_topic .cover a .label_sam.unlimited,
+.list_welcome_chart .cover a .label_sam.unlimited {margin-left:1px;width:67px;}
+
+/* 19-06-21 sam베이직으로 변경 */
+/* 오늘의 책 화제의 신간 베스트셀러 */
+.list_welcome_kyobo .cover .label_sam,
+.list_welcome_kyobo .cover a .label_sam{margin-left:-5px;width:67px;}
+.list_welcome_topic li .cover .label_sam,
+.list_welcome_chart li .cover .label_sam {margin-left:1px;width:67px;}
+
+/* 19-08-07 picks 안내 버튼 */
+.btn_picks_guide {display: inline-block;width:16px;height:16px; font-size: 0; line-height: 0;background:url('http://image.kyobobook.co.kr/ink/images/welcome/btn_question.gif') 0 0 no-repeat;vertical-align:middle;}
+
+/* 19-08-08 Picks 개선 */
+.box_welcome_topic h2.title_welcome_basic .txt_pr,
+.box_welcome_topic h2.title_welcome_basic .txt_pr a,
+.box_welcome_topic h2.title_welcome_basic .txt_pr a:hover {color:#2ac557;}
+.box_welcome_topic .ico_update {display: inline-block;width:27px;height:17px; font-size: 0; line-height: 0;background:url('http://image.kyobobook.co.kr/ink/images/welcome/ico_update.png') 0 0 no-repeat;vertical-align:middle;}
+
+/* 20-02-25 추천 eBook */
+.box_welcome_issue .section .content {overflow: hidden;}
+.box_welcome_issue .issue_eBook{position: relative;}
+.box_welcome_issue .issue_eBook .btn_prev, .box_welcome_issue	.issue_eBook .btn_next {top:75px;}
+.box_welcome_issue .issue_eBook li .title {height:32px;}
+.box_welcome_issue .issue_eBook  {background:url('http://image.kyobobook.co.kr/ink/images/welcome/bg_line_h3.gif') no-repeat 50% 100%;padding:0 20px 40px;}
+.box_welcome_issue .issue_eBook .list_welcome_issue{background: none; margin-top: 5px;}
+
+/* 20-06-15 오디오북 아이콘 */
+.list_welcome_kyobo .cover .icon_audio,
+.list_welcome_topic .cover .icon_audio,
+.box_welcome_chart .cover .icon_audio {position:absolute;right:8px;bottom:8px;width:24px;padding-top:24px;height:0;overflow:hidden;background:url('http://image.kyobobook.co.kr/dwas/images/audio/ico_audio_02.png') no-repeat;}
+.list_welcome_topic .cover .icon_audio {right:auto;left:50%;margin-left:32px;}

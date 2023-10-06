@@ -1,0 +1,33 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'GothamMedium';
+    src: url('../fonts/W_Gotham-Medium/GothamMedium.woff2') format('woff2'),
+        url('../fonts/W_Gotham-Medium/GothamMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PT Serif';
+    src: url('../fonts/W_PTSerif-Regular/PTSerif-Regular.woff2') format('woff2'),
+        url('../fonts/W_PTSerif-Regular/PTSerif-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('../fonts/W_RobotoCondensed-Regular/RobotoCondensed-Regular.woff2') format('woff2'),
+        url('../fonts/W_RobotoCondensed-Regular/RobotoCondensed-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'NanumMyeongjo';
+    src: url('../fonts/W_NanumMyeongjo/NanumMyeongjo.woff2') format('woff2'),
+        url('../fonts/W_NanumMyeongjo/NanumMyeongjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,0 +1,185 @@
+@charset "utf-8";
+/* CSS Document */
+#wrap{}
+/*헤더영역*/
+#header{ width:100%}
+
+#head1{width:100%; height:60px;}
+#head1In{ width:980px; height:80px; position:relative; margin:0 auto;}
+#head1In div{position:absolute; top:20px;}
+#head1In .lang{ left:0;}
+#head1In .lang a:hover{ color:#999; text-decoration:underline;}
+#head1In .utill{ right:0;}
+#head1In .utill a:hover{ color:#999; text-decoration:underline;}
+#head1In ul:after{ content:""; display:block; clear:both;}
+#head1In li{ float:left;}
+#head1In li a{ color:#393939;font-family:"돋움", Dotum, Arial, Helvetica, sans-serif;}
+#head1In .lang li{margin-left:12px;}
+#head1In .utill li{margin-right:17px;}
+
+#head2{ width:100%; height:80px; background:#09330d;}
+#head2In{ width:980px; height:80px; margin:0 auto; position:relative;}
+.logo{ position:absolute; top:-60px; left:50%; margin-left:-110px;}
+/*gnb메뉴*/
+.gnb{ position:absolute;bottom:0; left:0; height: 40px;}
+.gnb h2{ display:none;}
+.gnb ul:after{ content:""; display:block; clear:both;}
+.gnb li{ float:left; margin-right:150px; position:relative;}
+.gnb li .d1{ display:block; height:40px; font-size:18px; font-weight:bold; color:#fff;}
+.gnb li:hover .d1{ background:url(../img/gnb_hover.png) repeat-x bottom;}
+/*gnb안에 서브메뉴*/
+.gnb li .sub{ position:absolute; left:0; top:40px; display: none; background:rgba(0,0,0,0.5); height:50px; z-index:100;}/*공통*/
+.gnb .g1 .sub{ width:640px;}/*g1~g4의 개별값*/
+.gnb .g2 .sub{ width:460px;}
+.gnb .g4 .sub{ width:320px;}
+
+.gnb li .sub ul{ padding:15px}
+.gnb li .sub li{ margin-right:40px;}
+.gnb li .sub .last{ margin-right:0;}
+.gnb li .sub a{ font-size:14px; font-weight:bold; color:#fff;}
+.gnb li .sub a:hover{ color:#F00;}
+
+
+.button{ position:absolute; top:20px; right:0;}
+.button a{ text-indent:-9999px; display:block; width:130px; height:47px; 
+				background:url(../img/gnb_button1.png) no-repeat;}
+.button a:hover{ background:url(../img/gnb_button2.png) no-repeat;}
+
+
+/*슬라이더영역*/
+.slider{position: relative;}
+.slider li{width: 100%; height: 450px;}
+.slider li a{display: block; width: 100%; height: 450px;}
+.slider .s1 a{background: url(../img/slider.png) no-repeat center 0;}
+.slider .s2 a{background: url(../img/slider2.png) no-repeat center 0;}
+.slider .s3 a{background: url(../img/slider3.png) no-repeat center 0;}
+
+/*.bx-pager{}                           ←페이저 버튼 전체를 묶는 div태그*/
+.slider .bx-pager{position: absolute; left:50%; transform: translateX(-50%); 
+                        bottom: 20px; background: rgba(0,0,0,0.5); padding: 5px 10px 5px 45px; 
+                        border-radius: 10px;}
+/*.bx-pager div{}                      ←페이저 버튼 하나하나를 담는 div태그*/
+.slider .bx-pager div{float: left; margin: 0 10px;}
+/*.bx-pager div a{}                   ←실제페이저 버튼 생김새 a 태그*/
+.slider .bx-pager div a{display: block; width: 12px; height: 12px; border-radius: 50%; background: #fff; text-indent: -9999px;}
+/*.bx-pager div .active{}             ←활성화 상태 a태그*/
+.slider .bx-pager div .active{ background: #09330d;}
+/*.bx-controls-direction{}           ←이전/다음 좌우버튼을 묶어두는 div태그*/
+.slider .bx-controls-direction{position: absolute; top: 50%; left: 50%; width: 1200px; transform: translateY(-50%);transform: translateX(-50%); background: #ccc;}
+/*.bx-controls-direction a{}         ←이전/다음 버튼 생김새 a태그*/
+.slider .bx-controls-direction a{display: block; width: 60px; height: 60px; text-indent: -9999px;}
+/*.bx-controls-direction .bx-prev{}←이전 a태그*/
+.slider .bx-controls-direction .bx-prev{background: url(../img/slider_prev.png) no-repeat; position: absolute; top: 0; left: 0;}
+        /*.bx-controls-direction .bx-next{}←다음 a태그*/
+.slider .bx-controls-direction .bx-next{background: url(../img/slider_next.png) no-repeat; position: absolute; top: 0; right: 0;}
+        /*.bx-controls-auto{}                 ←재생/정지 버튼 전체를 묶어두는 div태그*/
+.slider .bx-controls-auto{position: absolute; bottom: 20px; left: 50%; margin-left: -65px;
+                                z-index: 50;}
+/*.bx-controls-auto a{}              ←실제 재생/정지 버튼의 생김새 a태그*/
+.slider .bx-controls-auto a{display: block; text-indent: -9999px; width: 23px; height: 23px; 
+                                                background: url(../img/bx-controls-auto_sprite.png) no-repeat; border-radius: 50%;}
+/*.bx-controls-auto .bx-stop{}     ←정지 a태그*/
+.slider .bx-controls-auto .bx-stop{background-position: 0 -23px;}
+/*.bx-controls-auto .bx-start{}     ←재생 a태그*/ 
+
+
+/*컨테이너영역*/
+#container{}
+
+/*cont1영역*/
+.cont1{ width:980px; height:210px; margin:40px auto 30px auto; position: relative;}
+.cont1:after{ content:""; display:block; clear:both;}
+.cont1 p{ float: left; margin-right: 40px;}
+/*.cont1 .card{ margin-right:0}
+.cont1 div p{}
+.cont1 div ul{width:104px; height:13px; padding:9px 0 8px 236px;}
+.cont1 div ul:after{ content:""; display:block; clear:both;}
+.cont1 div li{ float:left; margin-right:13px;}
+.cont1 div li a{ display:block; width:13px; height:13px; text-indent:-9999px;
+					background:url(../img/cont1_pager.png) no-repeat 0 -17px;}
+.cont1 div li a:hover{background:url(../img/cont1_pager.png) no-repeat 0 0;}
+.cont1 div .stop a{ background:url(../img/con1_pager_start.png) 0 0;}
+.cont1 div .stop a:hover{background:url(../img/con1_pager_start.png) 0 -17px;}
+.cont1 div .on a{background:url(../img/cont1_pager.png) no-repeat 0 0;}*/
+.card{display: block; width: 340px; height: 180px; position: absolute; right: 0; top: 0;}
+.card li{width: 340px; height: 180px;}
+.card li a{display: block; width: 340px; height: 180px;}
+.card .cs1 a{ background: url(../img/con1_3.png) no-repeat center 0;}
+.card .cs2 a{background: url(../img/con1_3_2.png) no-repeat center 0;}
+
+/*.bx-pager{}                           ←페이저 버튼 전체를 묶는 div태그*/
+.card .bx-pager{position: absolute; right: 0; bottom: -30px;}
+        /*.bx-pager div{}                      ←페이저 버튼 하나하나를 담는 div태그*/
+.card .bx-pager div{float: left; margin: 0 5px;}
+        /*.bx-pager div a{}                   ←실제페이저 버튼 생김새 a 태그*/
+.card .bx-pager div a{display: block; width: 13px; height: 13px; border-radius: 50%; background: #ccc; text-indent: -9999px;}
+        /*.bx-pager div .active{}             ←활성화 상태 a태그*/
+.card .bx-pager div .active{ background: #f00;}
+        /*.bx-controls-direction{}           ←이전/다음 좌우버튼을 묶어두는 div태그*/
+.card .bx-controls-direction{position: absolute; top: 50%; left: 0; width: 100%; transform: translateY(-50%); background: #ccc;}
+        /*.bx-controls-direction a{}         ←이전/다음 버튼 생김새 a태그*/
+.card .bx-controls-direction a{}
+        /*.bx-controls-direction .bx-prev{}←이전 a태그*/
+.card .bx-controls-direction .bx-prev{}
+        /*.bx-controls-direction .bx-next{}←다음 a태그*/
+.card .bx-controls-direction .bx-next{}
+        /*.bx-controls-auto{}                 ←재생/정지 버튼 전체를 묶어두는 div태그*/
+.card .bx-controls-auto{position: absolute; bottom: -30px; right: 80px;}
+        /*.bx-controls-auto a{}              ←실제 재생/정지 버튼의 생김새 a태그*/
+.card .bx-controls-auto a{display: block; text-indent: -9999px; width: 13px; height: 13px; 
+                                                background: url(../img/con1_pager_start.png) no-repeat 0 -17px;}
+        /*.bx-controls-auto .bx-stop{}     ←정지 a태그*/
+.card .bx-controls-auto .bx-stop{background-position: 0 0;}
+        /*.bx-controls-auto .bx-start{}     ←재생 a태그*/ 
+
+
+
+
+/*cont2영역*/
+.cont2{ width:100%; height:370px; background:url(../img/con2_bg.png); position:relative;}
+.cont2In{ width:980px; height:370px; margin:0 auto;}
+.cont2In h3{padding-top:36px; color:#fff; font-size:36px; font-weight:lighter; 
+				background:url(../img/cont2_dot.png) no-repeat center 36px;
+				line-height:54px; text-align:center; letter-spacing:8px}
+.cont2In ul{}
+.cont2In ul:after{ content:""; display:block; clear:both;}
+.cont2In li{ float:left; position:relative; margin-right:94.5px; margin-top:22px;}
+.cont2In li:last-child{ margin-right:0;}
+.cont2In li a:hover .over{ opacity:1;}
+.cont2In li .over{ position:absolute; top:0; left:0; opacity:0; transition:opacity 0.5s;}
+.cont2In li p{ color:#fff; text-align:center; font-size:24px; line-height:24px; font-weight:bold;
+					margin-top:30px;}
+
+/*cont3영역*/
+.cont3{}
+.cont3In{ width:980px; height:350px; margin:35px auto 40px auto;}
+.cont3In div{position:relative; float:left; overflow:hidden; width:480px; height:305px; box-shadow:2px 2px 3px rgba(0,0,0,0.5);}
+.cont3In div:first-child{ margin-right:20px;}
+.cont3In div a{ overflow:hidden;}
+.cont3In div a .hover{ transition:0.5s;}
+.cont3In div:hover a .hover{transform:scale(1.2)}
+.cont3In div a .over{position:absolute; bottom:-50px; left:0; transition:0.5s;}
+.cont3In div:hover a .over{bottom:0;}
+
+/*footer영역*/
+#footer{ width:100%; height:258px; background:#09330d;}
+#footerIn{ width:980px; height:144px; margin:0 auto; padding:57px 0;}
+#footerIn:after{ content:""; display:block; clear:both;}
+#footerIn p{ color:#fff;}
+.fn1{ width:360px; height:145px; float:left; margin-right:40px;}
+.fn1 .fn1_1{font-size:20px; line-height:20px; font-weight:bold}
+.fn1 .fn1_2{ font-size:40px; line-height:60px; font-weight:bold; width:360px; border-bottom:#fff solid 2px;}
+.fn1 .fn1_3{ width:360px; height:63px; position:relative;}
+.fn1 .fn1_3 p:first-child{position:absolute; bottom:0; left:0;}
+.fn1 .fn1_3 p:nth-child(2){ position:absolute; bottom:0; right:0;}
+.fn2{ width:580px; height:145px; float:left; position:relative;}
+.sns{ margin-bottom:10px;}
+.sns ul:after{ content:""; display:block; clear:both;}
+.sns li{ float:left; margin-right:20px;}
+.fmenu{}
+.fmenu ul:after{content:""; display:block; clear:both;}
+.fmenu li{ float:left; margin-right:10px;}
+.fmenu li a{ color:#fff; padding-right:10px;border-right:#fff 1px solid;}
+.fmenu li:last-child a{ border:none;}
+.fmenu li:hover a{ text-decoration:underline;}
+.finfo{ position:absolute; bottom:0; left:0;}

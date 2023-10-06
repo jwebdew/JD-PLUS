@@ -1,0 +1,59 @@
+@charset "euc-kr";
+
+/* 자동완성 */
+
+/* #header .top_header a {color:#333;text-decoration:none;} */
+/* #header .top_header a:hover {color:#3c5fdf;text-decoration:underline;} */
+#header .top_header .auto_complete .box_search_auto .list_search_goods li .price .button,
+#header .top_header .auto_complete .list_search_category a:hover,
+#header .top_header .auto_complete .list_search_recent a:hover {text-decoration:none;color:#333;}
+
+.auto_complete .box_search_auto {width:574px;border:1px solid #333e5e;background-color:#fff;font-size:12px;line-height:1.4;font-family:'Malgun Gothic',Sans-serif;}
+.auto_complete .box_search_auto em {font-style:normal;color:#3a60e5;}
+
+.auto_complete .box_search_goods {padding:10px;}
+.auto_complete .box_search_goods .status {margin-top:5px;text-align:center;}
+.auto_complete .box_search_goods .status .nav_page {margin-left:5px;}
+.auto_complete .box_search_goods .status .page {}
+.auto_complete .box_search_goods .status .btn_prev {vertical-align:middle;display:inline-block;width:15px;height:14px;/*border:none;padding:0;*/font-size:0;color:transparent;background:url('http://image.kyobobook.co.kr/ink/images/welcome/btn_prev5.gif') no-repeat;}
+.auto_complete .box_search_goods .status .btn_next {vertical-align:middle;display:inline-block;width:15px;height:14px;/*border:none;padding:0;*/font-size:0;color:transparent;background:url('http://image.kyobobook.co.kr/ink/images/welcome/btn_next5.gif') no-repeat;}
+
+.auto_complete .box_search_auto .list_search_goods {min-height:261px;}
+.auto_complete .box_search_auto .list_search_goods li {position:relative;padding:6px 10px 0 73px;height:81px;}
+.auto_complete .box_search_auto .list_search_goods li.on {background-color:#f1f1f1;}
+.auto_complete .box_search_auto .list_search_goods li .cover {position:absolute;left:10px;top:10px;}
+.auto_complete .box_search_auto .list_search_goods li .cover img {width:43px;max-height:63px;border:1px solid #ccc;background-color:#eee;transition:0.3s;}
+.auto_complete .box_search_auto .list_search_goods li .cover a:hover img {border-color:#aaa;}
+.auto_complete .box_search_auto .list_search_goods li .cover .icon_audio {position:absolute;right:3px;bottom:3px;width:24px;padding-top:24px;height:0;overflow:hidden;background:url('http://image.kyobobook.co.kr/dwas/images/audio/ico_audio_02.png') no-repeat;}
+.auto_complete .box_search_auto .list_search_goods li .title {line-height:17px;min-height:22px;max-height:34px;overflow:hidden;}
+.auto_complete .box_search_auto .list_search_goods li .author {margin-top:3px;}
+.auto_complete .box_search_auto .list_search_goods li .price {margin-top:3px;}
+.auto_complete .box_search_auto .list_search_goods li .price strong {color:#f74451;}
+.auto_complete .box_search_auto .list_search_goods li .price strong.text {font-weight:normal;}
+.auto_complete .box_search_auto .list_search_goods li .price .button {display:inline-block;border:1px solid #aaa;padding:5px 9px 0;height:13px;font-size:11px;line-height:13px;font-family:'Dotum',Sans-serif;background-color:#fff;color:#444;transition:0.3s;}
+.auto_complete .box_search_auto .list_search_goods li .price .button:hover {border-color:#888;}
+
+.auto_complete .box_search_auto .list_search_category {padding:10px;border-top:1px solid #ccc;}
+.auto_complete .box_search_auto .list_search_category li {}
+.auto_complete .box_search_auto .list_search_category li a {display:block;padding:3px 10px;}
+.auto_complete .box_search_auto .list_search_category li a:hover {text-decoration:none;}
+.auto_complete .box_search_auto .list_search_category li.on a {background-color:#f1f1f1;}
+.auto_complete .box_search_auto .list_search_category li em {font-weight:bold;}
+
+.auto_complete .box_search_auto .list_search_recent {padding:15px 10px;}
+.auto_complete .box_search_auto .list_search_recent li {position:relative;}
+.auto_complete .box_search_auto .list_search_recent li.on {background-color:#f1f1f1;}
+.auto_complete .box_search_auto .list_search_recent li .keyword {display:block;padding:5px 10px;margin-right:80px;}
+.auto_complete .box_search_auto .list_search_recent li .date {position:absolute;right:40px;top:5px;}
+.auto_complete .box_search_auto .list_search_recent li .btn_delete {position:absolute;right:3px;top:3px;width:20px;height:0;padding-top:20px;overflow:hidden;background:url('http://image.kyobobook.co.kr/ink/images/search/btn_delete.png') no-repeat center;}
+
+.auto_complete .box_search_auto .box_search_text {text-align:center;margin:50px 0;font-size:14px;line-height:1.4;color:#333;}
+
+.auto_complete .box_search_auto .box_search_bottom {position:relative;padding:5px 10px 7px;background-color:#ebebeb;}
+.auto_complete .box_search_auto .box_search_bottom .button {position:absolute;right:10px;top:5px;}
+
+
+
+/* eBook */
+.auto_complete a {color:#333;text-decoration:none;}
+.auto_complete a:hover {color:#3c5fdf;text-decoration:underline;}

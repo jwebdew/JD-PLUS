@@ -1,0 +1,1062 @@
+@charset "utf-8";
+
+
+
+*{margin:0; padding:0;}
+li{list-style:none;}
+a{
+    text-decoration: none;
+    display:block;
+    color:#333;
+}
+
+@font-face {
+    font-family: 'TmonMonsori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    max-width:1920px;
+    width:100%;
+    height:130px;
+    margin:0 auto;
+}
+
+.head_bar p {
+    width:100%;
+    height:70px;
+    background-color: #2301ff;
+}
+
+.head {
+    width:calc(100% - 480px);
+    margin:0 auto;
+}
+
+.head h1{
+    width:30%;
+    padding-top:65px;
+    box-sizing: border-box;
+    margin-bottom:10px;
+}
+
+.head h1 img {
+    width:100%;
+}
+
+.head_bar{
+    position:relative;
+    width:100%;
+}
+
+.head_bar .menu {
+    width:80%;
+    height:50px;
+    line-height: 50px;
+    background-color:#fcca00;
+    position:absolute;
+    right:0;
+    top:40px;
+}
+
+.head_bar .menu ul {
+    width:calc(100% - 480px);
+    /* background-color: aliceblue; */
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: flex-end
+}
+
+.head_bar .menu ul li{
+    width:calc(590px / 5);
+    text-align: center;
+}
+
+.head_bar .menu ul li a {
+        font-family: 'TmonMonsori';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-size: 20px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
+.main_visual {
+    max-width:1920px;
+    width:100%;
+    margin:0 auto;
+    margin-top:150px;
+    position: relative;
+
+}
+
+.main_bg {
+    width:100%;
+    height:700px;
+    background:url('../img/6fb9208fa1bfc4da5fbeb34395ff49d8.jpg') center center / cover no-repeat;
+    position:relative;
+}
+
+.main_bg:before {
+    content:'';
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, .5);
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.main_visual p:nth-child(1) button{
+    width:10px;
+    height:10px;
+    border:0;
+    background-color: transparent;
+    z-index: 3;
+    position: absolute;
+    top:12%;
+    right:10%;
+    color:#fff;
+}
+
+.main_visual p:nth-child(2) button{
+    width:10px;
+    height:10px;
+    border:0;
+    background-color: transparent;
+    z-index: 3;
+    position: absolute;
+    top:17%;
+    right:10%;
+    color:#fff;
+}
+
+.main_visual p:nth-child(1) span a{
+    font-size: 20px;
+    color:#fff;
+    position: absolute;
+    left:12%;
+    bottom:10%;
+}
+
+.main_visual p:nth-child(2) span a{
+    font-size: 20px;
+    color:#fff;
+    position: absolute;
+    left:12%;
+    bottom:15%;
+}
+
+.main_visual p:nth-child(1){
+    position:absolute;
+    right:0;
+    top:50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+
+.main_visual p:nth-child(2){
+    position:absolute;
+    left:70%;
+    top:0;
+    transform: translateX(-50%);
+    z-index: 1;
+    
+}
+
+.main_visual p:nth-child(3) {
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right:35%;
+}
+
+.side_menu {
+    width:10%;
+    height:100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding-top:20px;
+    padding-bottom:20px;
+    box-sizing: border-box; 
+    position: fixed;
+    /* position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left:0; */
+    z-index: 2;
+}
+
+.side_menu ul{
+    width:80%;
+    margin:0 auto;
+    padding-left:10px;
+    box-sizing: border-box; 
+    border-left:2px solid #333;
+}
+
+.side_menu ul li{
+    margin-bottom:10px;
+    position: relative;
+}
+
+.side_menu ul li:hover a{
+    color:#2301FF;
+}
+
+.side_menu ul li:nth-child(1){
+    height: auto;
+    background:url('/sub/leezbecoming/img/under_line01.png')no-repeat;
+    
+}
+
+.side_menu ul li:nth-child(2){
+    height: auto;
+    background:url('../img/under_line02.png')no-repeat;
+}
+
+.side_menu ul li:nth-child(3){
+    height: auto;
+    background:url('../img/under_line04.png')no-repeat;
+}
+/* .side_menu ul li:nth-child(2),
+.side_menu ul li:nth-child(3) */
+
+/* .side_menu ul li:nth-child(1):before,
+.side_menu ul li:nth-child(2):before,
+.side_menu ul li:nth-child(3):before {
+    content:'';
+    width:50%;
+    height:50%;
+    background-color: rgba(0, 255, 255, 0.5);
+    position:absolute;
+    bottom:0;
+    left:0;
+    z-index: -1;
+} */
+
+.side_menu ul li a{
+    font-family: 'TmonMonsori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-size:20px;
+    transition: 0.5s;
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+.w02 {
+    display:none;
+}
+
+.cont01 {
+    max-width:1920px;
+    width:100%;
+    margin:0 auto;
+}
+
+.cont01_in {
+    width:calc(100% - 480px);
+    margin:250px auto;
+
+}
+
+.cont01_in ul {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.cont01_in ul li {
+    position:relative;
+}
+
+.cont01_in ul li:before {
+    content:'';
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position:absolute;
+    top:0;
+    left:0;
+    display:none;
+    transition:.5s;
+}
+
+.cont01_in ul li img {
+    display:block;
+}
+
+.cont01_in ul li span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color:#fff;
+    font-family: 'TmonMonsori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-size:20px;
+    display: none;
+    transition:.3s;
+}
+
+.cont01_in ul li:hover span,
+.cont01_in ul li:hover::before {
+    display:block;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+.cont02 {
+    max-width:1920px;
+    width:100%;
+    margin:0 auto;
+    
+}
+
+.cont02_in {
+    width:calc(100% - 480px);
+    margin:0 auto;
+    text-align: center;
+    position: relative;
+} 
+
+.cont02_in > p {
+    position:absolute;
+    right:0;
+    bottom:-100px;
+}
+
+.cont02_in > p a {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.cont02_in > h3 {
+    height:auto;
+    background:url('../img/under_line05.png')center center no-repeat;
+}
+
+.cont02_in > h3 {
+    font-family: 'TmonMonsori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-size:24px;
+}
+
+.cont02_in .photo_t{
+    width: 100%;
+    margin:50px auto;
+}
+
+.cont02_in .photo_t  {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    
+}
+
+.cont02_in .photo_t .img {
+    height:475px;
+    /* overflow: hidden; */
+    position:relative;
+    
+}
+
+.cont02_in .photo_t div h3 {
+    width:100%;
+}
+
+.cont02_in .photo_t div h3 a {
+    padding-bottom:10px;
+}
+
+.cont02_in .photo_t .pay ul{
+    width:100%;
+}
+
+.cont02_in .photo_t .pay ul li{
+    text-align: left;
+    padding:10px 0;
+    box-sizing: border-box;
+    font-size:18px;
+}
+
+.cont02_in .photo_t div .pay ul li:nth-child(2) {
+    border-top:1px solid #333;
+    font-weight:bold;
+}
+
+.photo_t .img .hover {
+    position:absolute;
+    bottom:-100px;
+    left:0;
+    width:100%;
+    height:70px;
+    line-height:70px;
+    background-color:rgba(0, 0, 0, 0.5);
+    display:none;
+    transition: .5s;
+}
+
+.photo_t div .hover ul{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.photo_t .img:hover .hover {
+    display:block;
+    bottom:0;
+    
+}
+
+.cont02_in .photo_t .photo_b {
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin-top:50px;
+}
+
+.cont02_in .photo_t > div:nth-child(5), 
+.cont02_in .photo_t > div:nth-child(6), 
+.cont02_in .photo_t > div:nth-child(7), 
+.cont02_in .photo_t > div:nth-child(8) {
+    margin-top:50px;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+
+.cont03 {
+    max-width:1920px;
+    width:100%;
+    margin:250px auto;
+}
+
+.cont03_in {
+    width:calc(100% - 480px);
+    margin:0 auto;
+    text-align: center;
+    position: relative;
+} 
+
+.cont03_in > p {
+    position:absolute;
+    right:0;
+    bottom:-100px;
+}
+
+.cont03_in > p a {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.cont03_in > h3 {
+    font-family: 'TmonMonsori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-size:24px;
+}
+
+.cont03_in .photo_t{
+    width: 100%;
+    margin:50px auto;
+}
+
+.cont03_in .photo_t  {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    
+}
+
+.cont03_in .photo_t .img {
+    height:475px;
+    /* overflow: hidden; */
+    position:relative;
+    
+}
+
+.cont03_in > h3 {
+    height:auto;
+    background:url('../img/under_line05.png')center center no-repeat;
+}
+
+.cont03_in .photo_t div h3 {
+    width:100%;
+}
+
+.cont03_in .photo_t div h3 a {
+    padding-bottom:10px;
+}
+
+.cont03_in .photo_t .pay ul{
+    width:100%;
+}
+
+.cont03_in .photo_t .pay ul li{
+    text-align: left;
+    padding:10px 0;
+    box-sizing: border-box;
+    font-size:18px;
+}
+
+.cont03_in .photo_t div .pay ul li:nth-child(2) {
+    border-top:1px solid #333;
+    font-weight:bold;
+}
+
+.photo_t .img .hover {
+    position:absolute;
+    bottom:-100px;
+    left:0;
+    width:100%;
+    height:70px;
+    line-height:70px;
+    background-color:rgba(0, 0, 0, 0.5);
+    display:none;
+    transition: .5s;
+}
+
+.photo_t div .hover ul{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.photo_t .img:hover .hover {
+    display:block;
+    bottom:0;
+    
+}
+
+.cont03_in .photo_t .photo_b {
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin-top:50px;
+}
+
+.cont03_in .photo_t > div:nth-child(5), 
+.cont03_in .photo_t > div:nth-child(6), 
+.cont03_in .photo_t > div:nth-child(7), 
+.cont03_in .photo_t > div:nth-child(8) {
+    margin-top:50px;
+}
+
+/*------------------------------------------------------------------------------------------------- */
+
+.cont04 {
+    max-width:1920px;
+    width:100%;
+    margin:250px auto;
+}
+
+.cont04_in {
+    width:calc(100% - 480px);
+    margin:0 auto;
+    text-align: center;
+    position: relative;
+} 
+
+.cont04_in > p {
+    position:absolute;
+    right:0;
+    bottom:-100px;
+}
+
+.cont04_in > p a {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.cont04_in > h3 {
+    height:auto;
+    background:url('../img/under_line06.png')center center no-repeat;
+}
+
+.cont04_in > h3 {
+    font-family: 'TmonMonsori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-size:24px;
+}
+
+.cont04_in .photo_t{
+    width: 100%;
+    margin:50px auto;
+}
+
+.cont04_in .photo_t  {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;   
+}
+
+.cont04_in .photo_t .img {
+    height:400px;
+    /* height:auto; */
+    /* overflow: hidden; */
+    position:relative;
+}
+
+.cont04_in .photo_t .img img {
+    width:100%;
+    display: block;
+}
+
+.cont04_in .photo_t div h3 {
+    width:100%;
+    height:100%;
+}
+
+.cont04_in .photo_t div h3 a {
+    /* padding-bottom:10px; */
+    height:100%;
+    overflow: hidden;
+}
+
+.cont04_in .photo_t .pay ul{
+    width:100%;
+    margin-top:40px;
+}
+
+.cont04_in .photo_t .pay ul li{
+    text-align: left;
+    padding:10px 5px;
+    box-sizing: border-box;
+    font-size:18px;
+}
+
+.cont04_in .photo_t div .pay ul li:nth-child(2) {
+    border-top:1px solid #333;
+    font-weight:bold;
+}
+
+.cont04_in .photo_t .img .hover {
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:auto;
+    background-color:rgba(0, 0, 0, 0.5);
+    display:none;
+    transition: .5s;
+}
+
+.cont04_in .photo_t div .hover ul{
+    padding:25px 0;
+    box-sizing: border-box;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.photo_t .img:hover .hover {
+    display:block;
+    bottom:0;
+    
+}
+
+.cont04_in .photo_t .photo_b {
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin-top:50px;
+}
+
+.cont04 .slick-slide {
+    margin:0 20px;
+}
+
+.slick-prev, .slick-next {
+    background: transparent;
+    z-index: 1;
+    color: #333;
+    
+}
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+    background: transparent;
+    z-index: 1;
+    color: #333;
+    
+}
+.slick-prev:before, .slick-next:before {
+    color:#ddd;
+}
+
+.l01 {
+    display:none;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+.media {
+    display:none;
+}
+
+footer {
+    max-width:1920px;
+    width:100%;
+    margin:0 auto;
+    background-color:#333;
+    color:#fff;
+    padding:50px 0 ;
+}
+
+footer .footer_in {
+    width:calc(100% - 480px);
+    margin:0 auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+footer a {
+    color:#fff;
+}
+footer button {
+    background: transparent;
+    border:0;
+    color:#fff;
+    position: relative;
+    margin:0 30px;
+}
+
+footer button span {
+    position: absolute;
+    bottom:50%;
+    left:-40%;
+    transform: translateY(50%);
+    margin-right:10%;
+    width:30%;
+}
+footer button:nth-child(1) span{
+    bottom:45%;
+}
+footer button:nth-child(2) span{
+    width:55%;
+    left:-70%;
+}
+footer button span img {
+    width:100%;
+}
+.footer_in ul li {
+    margin:10px 0;
+}
+
+/* =================================================================== */
+
+@media screen and (max-width:960px) {
+    .head {
+        width:100%;
+        margin:0;
+    }
+    .head h1{
+        width:45%;
+        padding-top:65px;
+        padding-left:20px;
+        box-sizing: border-box;
+        margin-bottom:10px;
+    }
+    .head_bar p {
+        height:40px;
+    }
+    .head_bar .menu {
+        height:30px;
+        line-height: 30px;
+        top:25px;
+    }
+    .head_bar .menu ul {
+        width:auto;
+    }
+    .head_bar .menu ul li {
+        width:calc(550px / 5)
+    }
+    .main_visual {
+        height:100vh;
+    }
+    .main_bg {
+       height:100vh;
+    }
+    .main_visual p:nth-child(1) {
+        transform: unset;
+        top:30%;
+    }
+    .main_visual p:nth-child(2){
+        left:auto;
+        right:40%;
+        bottom:-15%;
+        transform: unset;
+        height:60%;
+        top:auto;
+        width:50%;
+    }
+    .main_visual p:nth-child(2) span a{
+        left:12%;
+        bottom:12%;
+    }
+    .main_visual p:nth-child(2) button{
+        top:10%;
+    }
+    .main_visual p:nth-child(3){
+        width:calc(100% - 120px);
+        left:50%;
+        top:10%;
+        transform: translateX(-50%);
+    }
+    .main_bg img{
+        width:100%;
+     }
+     .side_menu {
+         width:15%;
+         height:67%;
+     }
+    .cont01_in {
+        width:calc(100% - 330px);
+    }
+    .cont01_in ul li {
+        width:calc(610px / 2);
+        margin-bottom: 70px;
+        justify-content: space-between;
+    }
+    .cont01_in ul li a {
+        width:100%;
+    }
+    .cont01_in ul li img {
+        width:100%;
+        display:block;
+    }
+    .cont02_in {
+        width:calc(100% - 330px);
+    }
+    .cont02_in > .photo_t div:nth-child(1),
+    .cont02_in > .photo_t div:nth-child(2),
+    .cont02_in > .photo_t div:nth-child(3),
+    .cont02_in > .photo_t div:nth-child(4) {
+        width:calc(610px / 2);
+    }
+    .cont02_in .photo_t img {
+        width:100%;
+    }
+    .cont02_in .photo_t .photo_b > div {
+        width:calc(610px / 2);
+    }
+    .cont03_in {
+        width:calc(100% - 330px);
+    }
+    .cont03_in > .photo_t div:nth-child(1),
+    .cont03_in > .photo_t div:nth-child(2),
+    .cont03_in > .photo_t div:nth-child(3),
+    .cont03_in > .photo_t div:nth-child(4) {
+        width:calc(610px / 2);
+    }
+    .cont03_in .photo_t img {
+        width:100%;
+    }
+    .cont03_in .photo_t .photo_b > div {
+        width:calc(610px / 2);
+    }
+    .cont04 {
+        display:none;
+    }
+    .l01{
+        display:block;
+    }
+    footer .footer_in {
+        width:calc(100% - 240px);
+    }
+    .footer_in .footer_r_b li:nth-child(1),
+    .footer_in .footer_r_b li:nth-child(2),
+    .footer_in .footer_r_b li:nth-child(3),
+    .footer_in .footer_r_b li:nth-child(4),
+    .footer_in .footer_r_b li:nth-child(5),
+    .footer_in .footer_r_b li:nth-child(6) {
+       display:none;
+    }
+    .footer_l {
+        display:none;
+    }
+    .fotter_r {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+    }
+    .media {
+        display: block;
+    }
+}
+
+/* ============================================================ */
+
+@media screen and (max-width:340px) {
+    .main_visual {
+        height:50vh;
+        margin-top:50px;
+    }
+    .main_bg {
+       height:70vh;
+    }
+    header {
+        height:auto;
+    }
+    .head h1 {
+        padding-top:10px;
+    }
+    .head_bar p {
+        height:25px;
+    }
+    .head_bar .menu {
+        height:20px;
+        line-height: 20px;
+        top:15px;
+    }
+    .head_bar .menu ul li {
+        width:calc(100% / 5); 
+    }
+    .head_bar .menu ul li a {
+        font-size: 10px; 
+    }
+    .main_visual p:nth-child(3) {
+        width:calc(100% -  40px);
+    }
+    .main_visual p:nth-child(1) span a{
+        font-size: 10px;
+        bottom:10%;
+    }
+    .main_visual p:nth-child(1) {
+        width:40%;
+        right:10%;
+        top:40%;
+    }
+    .main_visual p:nth-child(2) {
+        width:60%;
+        height:20%;
+        bottom:25%;
+        left:10%;
+    }
+    .main_visual p:nth-child(2) span a {
+        bottom:-45%;
+        left:10%;
+        font-size: 10px;
+    }
+    .side_menu {
+        display:none;
+    }
+    .w01{
+        display:none;
+    }
+    .w02 {
+        display:block;
+    }
+    .w02 .cont01_in {
+        width:calc(100% - 103px);
+        margin:200px auto;
+        margin-bottom: 100px;
+    }
+    .w02 .cont01_in .slick-slide {
+        margin:0 10px;
+    }
+    .cont02_in{
+        width:calc(100% - 50px);
+    }
+    .cont03_in{
+        width:calc(100% - 50px);
+    }
+    .cont04_in{
+        width:calc(100% - 50px);
+    }
+    .cont04_in .photo_t .img {
+        width:100%;
+        height:250px;
+    }
+    .cont04_in .photo_t div h3 a {
+        height:90%;
+    }
+    .cont04_in .photo_t .pay ul {
+        margin-top:10px;
+    }
+    .photo_t .img:hover .hover {
+        bottom:17px;
+    }
+    .cont02_in > .photo_t div:nth-child(1),
+    .cont02_in > .photo_t div:nth-child(2),
+    .cont02_in > .photo_t div:nth-child(3),
+    .cont02_in > .photo_t div:nth-child(4) {
+        width:100%;
+    }
+    .cont03_in > .photo_t div:nth-child(1),
+    .cont03_in > .photo_t div:nth-child(2),
+    .cont03_in > .photo_t div:nth-child(3),
+    .cont03_in > .photo_t div:nth-child(4) {
+        width:100%;
+    }
+    .cont02_in > h3{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        background:unset;
+        position: relative;
+    }
+    .cont03_in > h3{
+        background:unset;
+    }
+    .cont04_in > h3{
+        background:unset;
+    }
+    .cont02_in > h3::before {
+        content:'';
+        width: 100%;
+        height:100%;
+        position: absolute;
+        bottom: 0;
+        right:-10%;
+        background: url('/sub/leezbecoming/img/under_line07.gif')bottom right no-repeat;
+        z-index: -1;
+    }
+    .cont03_in > h3{
+        display: flex;
+        flex-wrap:wrap;
+        font-size: 30px;
+        position: relative;
+    }
+    .cont03_in > h3::before {
+        content:'';
+        width: 100%;
+        height:100%;
+        position: absolute;
+        bottom: 0;
+        left:-10%;
+        background: url('/sub/leezbecoming/img/under_line08.gif')bottom left no-repeat;
+        z-index: -1;
+    }
+    .cont04_in > h3{
+        font-size: 30px;
+        position: relative;
+    }
+    .cont04_in > h3::before {
+        content:'';
+        width: 100%;
+        height:100%;
+        position: absolute;
+        bottom: 0;
+        left:0%;
+        background: url('/sub/leezbecoming/img/under_line09.gif')bottom center no-repeat;
+        z-index: -1;
+    }
+    footer .footer_in{
+        width:calc(100% - 50px);
+    }
+}

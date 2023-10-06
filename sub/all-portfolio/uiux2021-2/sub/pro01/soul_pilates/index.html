@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOUL PILATES STUDIO</title>
+    <script src="lib/jquery-3.5.1.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
+    <!-- slick slider -->
+    <script src="lib/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="lib/slick/slick.css">
+    <link rel="stylesheet" href="lib/slick/slick-theme.css">
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- aos -->
+    <script src="lib/aos.js"></script>
+    <link rel="stylesheet" href="lib/aos.css">
+    <!-- main.js, main.css -->
+    <script src="lib/main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <div id="banner">
+            <div class="notice">
+                <p class="banner_pc"><a href="#">Please note the temporary regulation due to COVID-19</a></p>
+                <p class="banner_mo"><a href="#">Please note the COVID-19 regulation</a></p>
+                <p class="arrow"><a href="#"><img src="img/arrow_right.png" alt=""></a></p>
+            </div>
+            <span class="close"><img src="img/close.png" alt=""></span>
+        </div><!-- #banner end -->
+        <div id="popup">
+            <div class="popup__wrap">
+                <h1>THANK YOR FOR VISITING US!</h1>
+                <div class="popup_img">
+                    <img src="img/popup.png" alt="">
+                </div>
+                <dl>
+                    <dt>Any Interest?</dt>
+                    <dd><a href="tel:051-480-4731">
+                        <i class="fas fa-phone-alt"></i> Call me!
+                    </a></dd>
+                    <dd>Mon to Fri / 10:00 ~ 18:00</dd>
+                    <dd>Sat to Sun / 10:00 ~ 15:00</dd>
+                </dl>
+                <div class="popup_bottom">
+                    <div class="btn_close">
+                        <p>Close</p>
+                        <p class="close"><img src="img/close.png" alt=""></p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- #popup end -->
+
+        <div id="header">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </div><!-- .logo end-->
+            <div class="menu_pc">
+                <div class="menu_left">
+                    <nav>
+                        <div class="wrap">
+                            <ul class="main">
+                                <li>
+                                    <a href="#" data-text="studio">
+                                        <span class="menu-item">studio</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-text="classes">
+                                        <span class="menu-item">classes</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-text="retreat&nbsp;2021">
+                                        <span class="menu-item">retreat 2021</span>
+                                    </a>
+                                </li>
+                            </ul><!-- .main end -->
+                        </div><!-- .flex end-->
+                    </nav>
+                </div><!-- .menu_left end -->
+                <div class="menu_right">
+                    <nav>
+                        <div class="wrap">
+                            <ul class="main">
+                                <li>
+                                    <a href="#" data-text="soul&nbsp;team">
+                                        <span class="menu-item">soul team</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-text="events">
+                                        <span class="menu-item">events</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-text="reserve">
+                                        <span class="menu-item">reserve</span>
+                                    </a>
+                                </li>
+                            </ul><!-- .main end-->
+                        </div><!-- .flex end -->
+                    </nav>
+                </div><!-- .menu_right end -->
+            </div><!-- .menu_pc end -->
+            <div class="menu_mo">
+                <div class="menu_mo__wrap">
+                    <ul class="main_mo">
+                        <li>
+                            <a href="#">
+                                studio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">classes</a>
+                            <ul class="sub_mo">
+                                <li>
+                                    <a href="#">
+                                        group classes
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        private classes
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        online clases
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        pregnancy pilates
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        trial program
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        studio etiquette
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                retreat 2021
+                            </a>
+                            <ul class="sub_mo">
+                                <li>
+                                    <a href="#">
+                                        challenge 2021
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        refresh 2021
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                soul team
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                             events   
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                reserve
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- .menu_mo__wrap end -->
+            </div><!-- .menu_mo end -->
+            <div class="menu_mo_icon">
+                <div class="bars">
+                    <img src="img/bars.png" alt="">
+                </div>
+                <div class="close">
+                    <img src="img/close_mo.svg" alt="">
+                </div>
+            </div><!-- .menu_mo_icon end -->
+        </div>
+    </header>
+    <main>
+        <section id="section01">
+            <div class="main_img">
+                <img src="img/main_visual.png" alt="" class="mainImg__pc">
+                <img src="img/main_visual_mo.png" alt="" class="mainImg__mo">
+            </div><!--.main_img end -->
+            <div class="main_text">
+                <div class="main_text_inner" data-aos="fade-up"
+                data-aos-duration="1500">
+                    <dl>
+                        <dt>welcome</dt>
+                        <dd> Pellentesque sit amet porttitoreget
+                            dolor morbi non. Nec sagittisaliquam
+                            malesuada bibendum arcu. Mauris
+                            pharetra et ultrices neque ornare
+                            aenean. Non tellus orci ac auctoraugu.
+                        </dd>
+                    </dl>
+                </div>
+            </div><!-- .main_text end -->
+            <div class="animation">
+                <div class="outtext_box">
+                    <div class="outtext">
+                        <img src="img/scroll01.svg" alt="">
+                    </div>
+                </div>
+                <div class="arrow_bottom">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="42.4" height="14.8" viewBox="0 0 42.4 14.8">
+                        <defs>
+                          <style>
+                            .cls-1 {
+                              fill: none;
+                              stroke: rgb(0, 0, 0);
+                              stroke-linecap: round;
+                              stroke-width: 2px;
+                            }
+                          </style>
+                        </defs>
+                        <g id="ARROW_RIGHT" transform="translate(1 1.4)">
+                          <line id="선_3" data-name="선 3" class="cls-1" x2="40" transform="translate(0 6)"/>
+                          <line id="선_4" data-name="선 4" class="cls-1" x2="8" y2="6" transform="translate(32)"/>
+                          <line id="선_5" data-name="선 5" class="cls-1" y1="6" x2="8" transform="translate(32 6)"/>
+                        </g>
+                      </svg>
+                </div><!-- .arrow end -->
+            </div><!-- .animation end -->
+        </section><!-- #section01 end-->
+
+        <section id="section02">
+            <div class="content01">
+                <div class="preview-img__wrap">
+                    <div class="preview-img"></div>
+                </div>
+                <ul class="classlist">
+                    <li class="list-item" data-aos="flip-left" data-aos-delay="200" data-aos-duration="500">
+                        <a href="">
+                            <span class="list-item-color item01" data-text="GROUP&nbsp;CLASS">GROUP CLASS</span>
+                        </a>
+                    </li>
+                    <li class="list-item" data-aos="flip-right" data-aos-delay="300"
+                    data-aos-duration="500">
+                        <a href="">
+                            <span class="list-item-color item02" data-text="PRIVATE&nbsp;CLASS">PRIVATE CLASS</span>
+                        </a>
+                    </li>
+                    <li class="list-item" data-aos="flip-left" data-aos-delay="400" data-aos-duration="500">
+                        <a href="">
+                            <span class="list-item-color item03" data-text="ONLINE&nbsp;CLASS">ONLINE CLASS</span>
+                        </a>
+                    </li>
+                    <li class="list-item" data-aos="flip-right" data-aos-delay="400" data-aos-duration="500">
+                        <a href="">
+                            <span class="list-item-color item04" data-text="PREGNANCY&nbsp;PILATES">PREGNANCY PILATES</span>
+                        </a>
+                    </li>
+                </ul><!-- .classlist end -->
+            </div><!-- .content01 end -->
+        </section><!-- section #section02 end -->
+
+        <section id=#section03>
+            <div class="content02">
+                <div class="content02__wrap">
+                    <div class="content02__img">
+                        <div><img src="img/trial.png" alt=""></div>
+                        <div class="img-mask">
+                            <dl>
+                                <dt>Pilates Trial 1 week</dt>
+                                <dd>$20.00</dd>
+                            </dl>
+                            <p class="btn_enrol"><a href="">ENROL NOW</a></p>
+                        </div>
+                    </div><!-- .content02__img end-->
+                    <div class="content02__text">
+                        <dl>
+                            <dt data-aos="fade-left" data-aos-duration="1500">your first pilates?</dt>
+                            <dd data-aos="fade-left" data-aos-duration="2000">
+                                <a href="">
+                                    <p>start with trial program</p>
+                                    <p class="more">more<span class="arrow"><img src="img/arrow_right.png" alt=""></span></p>
+                                </a>
+                            </dd>
+                        </dl>
+                    </div><!-- .cotnent02__text end -->
+                </div><!-- .content02__wrap end -->
+            </div><!-- .content02 end -->
+        </section><!-- section #section03 end -->
+
+        <section id="section04">
+            <div class="content03">
+                <div class="content03__wrap">
+                    <div class="content03__text">
+                        <a href="">
+                            <h1>RETREAT YOURSELF 2021</h1>
+                            <p class="more">more<span class="arrow"><img src="img/arrow_right.png" alt=""></span></p>
+                        </a>
+                    </div>
+                </div><!-- .content03__wrap end-->
+            </div><!-- .content03 end-->
+        </section><!-- section #section04 end-->
+
+        <section id="section05">
+            <div class="content04">
+                <div class="content04__wrap">
+                    <h1><a href="#">EVENTS</a></h1>
+                    <div class="content04__event__pc">
+                        <div class="content04-item" data-dot-title="Beginner's Barre Class 30% Off">
+                            <a href="">
+                                <img src="img/event01.png" alt="">
+                            </a>
+                        </div>
+                        <div class="content04-item" data-dot-title="Member's Coffee Club 20% Off">
+                            <a href="">
+                                <img src="img/event02.png" alt="">
+                            </a>
+                        </div>
+                        <div class="content04-item" data-dot-title="Get 50% Off with your Friend">
+                            <a href="">
+                                <img src="img/event03.png" alt="">
+                            </a>
+                        </div>
+                    </div><!-- .content04__event__pc end -->
+
+                    <div class="content04__event__mo">
+                        <div class="content04-item" data-dot-title="Beginner's Barre Class 30% Off" data-dot-subTitle="•">
+                            <div class="content04-item__text">
+                                <h1>Beginner's Barre Class 30% Off</h1>
+                            </div>
+                            <a href="">
+                                <img src="img/mo_event01.png" alt="">
+                            </a>
+                        </div>
+                        <div class="content04-item" data-dot-title="Member's Coffee Club 20% Off" data-dot-subTitle="•">
+                            <div class="content04-item__text">
+                                <h1>Member's Coffee Club 20% Off</h1>
+                            </div>
+                            <a href="">
+                                <img src="img/mo_event02.png" alt="">
+                            </a>
+                        </div>
+                        <div class="content04-item" data-dot-title="Get 50% Off with your Friend" data-dot-subTitle="•">
+                            <div class="content04-item__text">
+                                <h1>Get 50% Off with your Friend</h1>
+                            </div>
+                            <a href="">
+                                <img src="img/mo_event03.png" alt="">
+                            </a>
+                        </div>
+                    </div><!-- .content04__event end -->
+                </div><!-- .content04__wrap end -->
+            </div><!-- .content04 end -->
+        </section><!-- #section05 end -->
+
+        <section id="section06">
+            <div class="content05">
+                <div class="content05__wrap">
+                    <div class="cont05_left">
+                        <dl>
+                            <dt>LOCATION</dt>
+                            <dd>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        688, Jungang-daero, Busanjin-gu, Busan
+                                    </li>
+                                    <li>
+                                        <a href="tel:051-480-4731">
+                                            <i class="fas fa-phone-alt"></i>
+                                            051 480 4731
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-envelope"></i>
+                                        hellosoul@soulpilates.com
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li><i class="fas fa-subway"></i>Line1 gate 4, 6</li>
+                                    <li>Line2 gate 2, 4</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div><!-- .cont05_left end-->
+                    <div class="cont05_right">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.097428248154!2d129.05731981560237!3d35.15419086630201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568eb7017a9ad13%3A0x2b7d4004b989e8b9!2z67aA7IKw6rSR7Jet7IucIOu2gOyCsOynhOq1rCDrtoDsoIQy64-ZIOykkeyVmeuMgOuhnCA2ODg!5e0!3m2!1sko!2skr!4v1615122510239!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div><!-- .cont05_right end -->
+                </div><!-- .content05__wrap end -->
+            </div><!-- .content05 end -->
+        </section><!-- section #section06 end -->
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer__wrap">
+                <h2><a href="#">@soul__pilates</a></h2>
+                <div class="sns">
+                    <ul>
+                        <li><a href="#"><img src="img/sns_instagram.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/sns_facebook.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/sns_youtube.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    <div class="links">
+                        <ul class="links_top">
+                            <li><a href="#">SOUL PILATES STUDIO BUSAN</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Payment terms and Conditions</a></li>
+                        </ul>
+                        <p>Copyright © 2021 SOUL PILATES STUDIO.  All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

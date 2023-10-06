@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+
+/*  */
+.top_intro {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.top_intro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.top_intro .sub-title {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.top_intro .sub-title h2 {
+    font-size: 6rem;
+}
+.top_intro .sub-title p {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    display: inline-block;
+    position: relative; 
+}
+.top_intro .sub-title p::before {
+    content: '';
+    width: 100%;
+    height: 8px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    z-index: -1;
+}
+
+
+.sub_main_w {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.sub_main_w > div {
+    width: calc(100% / 2 - 10px);
+    margin-bottom: 40px;
+}
+.sub_main_w > div figure {
+    height: 470px;
+}
+.sub_main_w > div figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid #000;
+}
+.sub_main_w > div div {
+    margin-top: 2rem;
+    
+}
+.sub_main_w > div div h5 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+.sub_main_w > div div p {
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+

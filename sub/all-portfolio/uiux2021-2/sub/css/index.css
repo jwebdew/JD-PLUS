@@ -1,0 +1,686 @@
+@charset "utf-8";
+@import url(https://cdn.jsdelivr.net/gh/sunghyunzz/eulyoo1945/eulyoo1945.css);
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@900&display=swap');
+
+* {margin : 0; padding : 0;}
+a {text-decoration : none; color : #8f5745;}
+p {color : #8f5745; font-family: 'Eulyoo1945', serif;}
+li {list-style : none;}
+body {background-color : #d9c6b0; overflow-x : hidden;}
+
+/* section .main */
+    .mainPage {
+        width : 100%;
+        height : 90vh;
+        padding : 45px;
+        box-sizing: border-box;
+        position :relative;
+    }
+    .mainP__wrap {
+        width : 100%;
+        height : 100%;
+        position : relative;
+        box-sizing: border-box;
+    }
+    .cursor {
+        position : absolute;
+        width : 10px;
+        height : 10px;
+        border-radius : 50%;
+        z-index : 0;
+        user-select : none;
+        pointer-events : none;
+        overflow : hidden;
+        transition : 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        z-index : 2;
+    }
+    .cursor.bgImg {
+        background : url(../img/img01.jpg) center fixed;
+    }
+    .cursor.bgImg::before {
+        content : '';
+        width : 100%;
+        height : 100%;
+        position : absolute;
+        background-color : rgba(0,0,0,0.5);
+        top : 0;
+        left: 0;
+    }
+    .cursor::before {
+        content : '';
+        width : 100%;
+        height : 100%;
+        position : absolute;
+        background-color : #8f5745;
+        top : 0;
+        left: 0;
+    }
+    .cursor.atag {z-index : 6;}
+    .cursor.atag::before {
+        content : '';
+        font-size : 0.7rem;
+        text-align : center;
+        line-height : 50px;
+        white-space: nowrap;
+        background : url(../img/cursor_atag.svg) center center no-repeat;
+        box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+
+    .mainTitle {
+        position : absolute;
+        top : 45%;
+        left : 20%;
+        transform : translateY(-50%);
+        z-index : 3;
+    }
+    .mainTitle h1 {
+        font-family: 'Eulyoo1945', serif;
+        font-size : 4.5rem;
+        font-weight : bold;
+        color : #D94343;
+    }
+    .mainTitle::before {
+        content : 'Hello, there.';
+        color : transparent;
+        font-size : 10rem;
+        -webkit-text-stroke : 0.5px #eee;
+        position : absolute;
+        top : -160px;
+        left : -120px;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight : 700;
+        z-index : -1;
+        width : 215%;
+    }
+    .subTitle {
+        position : absolute;
+        bottom : 10%;
+        left : 20%;
+        z-index : 3;
+    }
+    .subTitle h5 {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size : 3rem;
+        font-weight : text;
+        color : #8f5745;
+    }
+    .subTitle::before {
+        content : 'Search, question, keep learning and enhancing myself.';
+        color : transparent;
+        font-size : 3rem;
+        -webkit-text-stroke : 0.5px #eee;
+        position : absolute;
+        top : -35px;
+        left : 18%;
+        width : 120%;
+        z-index : -1;
+        font-weight : 700;
+    }
+    /* header */
+    .header {
+        width : 145px;
+        height : 100vh;
+        position : fixed;
+        top : 0;
+        left : 0;
+        z-index : 6;
+    }
+    .logo {
+        width : 100px;
+        height : 100px;
+        background-color : salmon;
+        position : absolute;
+        top : 45px;
+        right : 0;
+        z-index : 1;
+    }
+
+    .menu__icon {
+        width : 100px;
+        height : 90px;
+        position : absolute;
+        top : 50%;
+        left : 63%;
+        transform : translate(-50%, -50%);
+        z-index : 1;
+        border : 0;
+        background-color : transparent;
+        cursor : pointer;
+    }
+    .menu__icon:focus {
+        outline: 0;
+    }
+
+    /* svg lines */
+            /* menu */
+            .line1 {
+                stroke-dasharray : 60 196;
+                stroke-dashoffset : 0;
+                transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+                stroke : #D94343;
+                stroke-width: 5px;
+            }
+            .line2 {
+                stroke-dasharray : 60 60;
+                stroke-dashoffset : 0;
+                transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+                stroke : #D94343;
+                stroke-width: 5px;
+            }
+            .line3 {
+                stroke-dasharray : 60 196;
+                stroke-dashoffset : 0;
+                transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+                stroke : #D94343;
+                stroke-width: 5px;
+            }
+    
+            /* close */
+            .opened .line1 {
+                stroke-dasharray: 90 196;
+                stroke-dashoffset: -117;
+                stroke : #eee;
+                stroke-width: 5px;
+            }
+            .opened .line2 {
+                stroke-dasharray: 1 60;
+                stroke-dashoffset: -30;
+                stroke : #eee;
+                stroke-width: 5px;
+            }
+            .opened .line3 {
+                stroke-dasharray: 90 196;
+                stroke-dashoffset: -117;
+                stroke : #eee;
+                stroke-width: 5px;
+            }
+    /* svg lines end */
+
+    .menu__wrap {
+        width : 850px;
+        height : 100vh;
+        background-color : #A6826D;
+        position : fixed;
+        top : 0;
+        left : -100%;
+        z-index : 5;
+    }
+    .mainMenu {
+        padding : 45px 60px 45px 145px;
+        box-sizing: border-box;
+    }
+    .mainMenu > li {
+        margin-left : 60px;
+        line-height : 2;
+    }
+    .mainMenu > li > a {
+        font-size : 4.5rem;
+        font-family: 'Frank Ruhl Libre', serif;
+        color : #73121A;
+        display : block;
+        transition : 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    .mainMenu > li > a:hover {transform: skewX(-15deg);}
+
+    .subMenu {
+        margin-left : 50px;
+        display : none;
+    }
+    .subMenu > li {
+        line-height : 2.5;
+    }
+    .subMenu > li > a {
+        font-size : 2rem;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight : bold;
+        color : rgba(255, 255, 255, 0.5);
+    }
+    .subMenu > li > a > span {
+        position : relative;
+        display : inline-block;
+    }
+    .subMenu > li > a > span::before {
+        content : attr(data-text);
+        font-size : 2rem;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight : bold;
+        color : rgba(255, 255, 255, 1);
+        overflow : hidden;
+        position : absolute;
+        width : 0;
+        transition : all 0.8s cubic-bezier(0.84, 0, 0.08, 0.99);
+    }
+    .subMenu > li > a:hover span::before {
+        width : 100%;
+    }
+
+    /* contactFixed */
+    .contactFixed {
+        position : fixed;
+        top : 50%;
+        right : 45px;
+        transform :translateY(-50%);
+        z-index : 1;
+    }
+    .contactFixed ul {
+        text-align : center;
+    }
+    .contactFixed ul li {
+        line-height : 2;
+    }
+    .contactFixed ul li a {
+        font-size : 2rem;
+        color : #eee;
+    }
+
+/* section .main end */
+
+/* section cont01 */
+    .cont01 {
+        width : 100%;
+        overflow : hidden;
+        position : relative;
+    }
+    .cont01__wrap {
+        max-width : 1280px;
+        width : 100%;
+        margin : 0 auto;
+        padding : 160px 0;
+        box-sizing: border-box;
+    }
+    .cont01Title {
+        text-align :center;
+        margin-bottom : 100px;
+    }
+    .cont01Title h1 a {
+        font-size : 4.5rem;
+        font-family: 'Frank Ruhl Libre', serif;
+    }
+    .cont01Title p {
+        font-size : 1.5rem;
+        margin-top : 20px;
+    }
+    .cont01__inner {
+        width : 100%;
+        position : relative;
+    }
+    .cont01List {
+        width : 40%;
+        display : inline-block;
+    }
+    .cont01List ul li {
+        line-height : 2.5;
+    }
+    .cont01List ul li a {
+        font-size : 3rem;
+        font-family: 'IBM Plex Sans', sans-serif;
+        transition : 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+        position : relative;
+        color : rgba(255, 255, 255, 0.5);
+        font-weight : bold;
+    }
+    .cont01List ul li a::before {
+        content : '';
+        width : 0%;
+        height : 30px;
+        background-color : #eee;
+        position : absolute;
+        bottom : -5px;
+        right : 0;
+        z-index : -1;
+        transition : 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .cont01List ul li a:hover {
+        padding-left : 30px;
+    }
+    .cont01List ul li.active a {
+        padding-left : 30px;
+        color : #d94343;
+        opacity : 1;
+    }
+    .cont01List ul li.active a::before {
+        width : 100%;
+        right : auto;
+        left : 0;
+    }
+    .cont01List ul li.active::after {
+        content : attr(data-text);
+        color : #333;
+        font-size : 1.5rem;
+        font-family: 'Eulyoo1945', serif;
+        position : absolute;
+        bottom : -10px;
+        left : 70%;
+        text-align : center;
+    }
+    /* SCROLLTRIGGER */
+    .cont01 .scrollTextTop {
+        position : absolute;
+        top : -40px;
+        left : 0;
+        font-size : 5rem;
+        -webkit-text-stroke : 0.5px #eee;
+        color : transparent;
+        font-size : bold;
+    }
+    .scont01 .scrollTextTop .text {
+        position : relative;
+        width : 100%;
+        height : 20vh;
+    }
+    .cont01 .scrollTextBottom {
+        position : absolute;
+        bottom : -20px;
+        right : 0;
+        font-size : 5rem;
+        -webkit-text-stroke : 0.5px #eee;
+        color : transparent;
+        font-size : bold;
+    }
+
+    /* .cont01Preview */
+    .cont01Preview {
+        width : 945px;
+        height : 580px;
+        display : inline-block;
+        position : absolute;
+        top : 0;
+        left : 40%;
+        overflow : hidden;
+    }
+    .macbook {
+        position : absolute;
+        top : 0;
+        right : 0;
+        overflow : hidden;
+        width : 907px;
+        height : 538px;
+    }
+    .macbook .frame {
+        width : 100%;
+        display : block;
+        position :relative;
+    }
+    .macbook_img {
+        width : 100%;
+        height : 90%;
+        background : url(../img/soul_pc.png) center top no-repeat;
+        background-size : 83%;
+        position : absolute;
+        top : 6%;
+        left : 0;
+        border-radius : 40px;
+        z-index :  -1;
+    }
+    .iphone {
+        width : 200px;
+        height : 405px;
+        position : absolute;
+        bottom : 0;
+        left : 0;
+        overflow : hidden;
+        display : block;
+    }
+    .iphone .frame {
+        width : 100%;
+        display : block;
+        position : relative;
+        z-index : 1;
+    }
+    .iphone_img {
+        width : 100%;
+        height : 97%;
+        background : url(../img/soul_mo.png) center top no-repeat;
+        background-size : 90%;
+        position : absolute;
+        top : 1%;
+        left : 0;
+        border-radius : 40px;
+    }
+/* section .cont01 end */
+
+    .cont02 {
+        width : 100%;
+        overflow : hidden;
+        position : relative;
+    }
+    .cont02__wrap {
+        max-width : 1630px;
+        width : 100%;
+        margin : 0 auto;
+        padding : 200px 34px;
+        box-sizing: border-box;
+        position : relative;
+    }
+    .cont02Title {
+        text-align :center;
+        margin-bottom : 100px;
+    }
+    .cont02Title h1 a {
+        font-size : 4.5rem;
+        font-family: 'Frank Ruhl Libre', serif;
+    }
+    .cont02Title p {
+        font-size : 1.5rem;
+        margin-top : 20px;
+    }
+    .cont02__img {
+        width : 100%;
+        display : flex;
+        justify-content: space-between;
+    }
+    /* cont02 Frame & Preview Image */
+    .cont02Frame {
+        width : 470PX;
+        height : 350px;
+        background-color : rgba(255, 255, 255, 0.3);
+        border-radius : 0 40px;
+        position : relative;
+        overflow : hidden;
+    }
+    .cont02Preview {
+        width : 80%;
+        height : 65%;
+        background-color: #555;
+        position : absolute;
+        top : 50%;
+        left : 50%;
+        transform : translate(-50%, -50%);
+        overflow : hidden;
+        transition : 0.5s;
+    }
+    .cont02Preview::before {
+        content : '';
+        width : 100%;
+        height : 100%;
+        background : radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%);
+        position : absolute;
+        top : 0;
+        left : 0;
+    }
+    .cont02Preview img {
+        width : 100%;
+        display : block;
+    }
+    .cont02Frame:hover .cont02Preview {
+        top : 40%;
+        box-shadow : 0 20px 10px rgba(0,0,0,0.5);
+    }
+    .cont02Frame:hover .cont02Preview::before {
+        background : transparent;
+    }
+    .cont02Frame:hover .cont02Preview img {
+        animation : hover 4s infinite linear;
+    }
+    @keyframes hover {
+        0% {margin-top : 0}
+        100% {margin-top : -320px}
+    }
+
+    .cont02Frame .button {
+        width : 120px;
+        height : 50px;
+        border-radius : 30px;
+        border: 0;
+        background-color : #D94343;
+        position : absolute;
+        bottom : -50px;
+        left : 50%;
+        transform : translateX(-50%);
+    }
+    .cont02Frame .button p {
+        text-align : center;
+        line-height : 50px;
+        color : #eee;
+        font-family : 'IBM Plex Sans', sans-serif;
+    }
+
+    /* SCROLLTRIGGER */
+    .cont02 .scrollTextTop {
+        position : absolute;
+        top : -40px;
+        left : 0;
+        font-size : 5rem;
+        color :rgba(255, 255, 255, 0.5);
+        font-size : bold;
+        white-space: nowrap;
+    }
+    .scont02 .scrollTextTop .text {
+        position : relative;
+        width : 100%;
+        height : 20vh;
+    }
+    .cont02 .scrollTextBottom {
+        position : absolute;
+        bottom : -20px;
+        right : 0;
+        font-size : 5rem;
+        -webkit-text-stroke : 0.5px #eee;
+        color : transparent;
+        font-size : bold;
+        white-space: nowrap;
+    }
+/* section .cont02 end */
+
+/* section .cont03 */
+    .cont03 {
+        width : 100%;
+        position : relative;
+        overflow : hidden;
+    }
+    .cont03__wrap {
+        width : 100%;
+        padding : 200px 0 220px;
+        position : relative;
+        overflow : hidden;
+    }
+    .cont03__wrap h2 {
+        content : 'GRAPHIC DESIGN';
+        color : transparent;
+        -webkit-text-stroke : 0.5px #eee;
+        font-size: 11rem;
+        font-weight : bold;
+        font-family : 'IBM Plex Sans', sans-serif;
+        width : 100%;
+        z-index : -1;
+        margin-left : 100px;
+    }
+    .cont03Title {
+        text-align :center;
+        margin-bottom : 100px;
+    }
+    .cont03Title h1 a {
+        font-size : 4.5rem;
+        font-family: 'Frank Ruhl Libre', serif;
+    }
+    .cont03Title p {
+        font-size : 1.5rem;
+        margin-top : 20px;
+    }
+    .cont03__img {
+        width : 100%;
+        overflow : hidden;
+        position : relative;
+    }
+    .cont03__imgList {
+        padding : 30px 0;
+    }
+    .cont03Frame {
+        float : left;
+        width : 300px;
+        height : 436px;
+        background-color : #ddd;
+        border-radius : 20px;
+        margin : 0 20px;
+        position : relative;
+        transition : 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .cont03Frame:hover {
+        margin-top : -20px;
+        box-shadow : 8px 15px 10px rgba(0,0,0,0.5);
+    }
+    .cont03Img {
+        width : 70%;
+        position : absolute;
+        top : 50%;
+        left : 50%;
+        transform : translate(-50%, -50%);
+    }
+    .cont03Img img {
+        display : block;
+        width : 100%;
+    }
+    /* SCROLLTRIGGER */
+    .cont03 .scrollTextTop {
+        position : absolute;
+        top : -40px;
+        left : 0;
+        font-size : 5rem;
+        color :rgba(255, 255, 255, 0.5);
+        font-size : bold;
+        white-space: nowrap;
+    }
+    .scont03 .scrollTextTop .text {
+        position : relative;
+        width : 100%;
+        height : 20vh;
+    }
+    .cont03 .scrollTextBottom {
+        position : absolute;
+        bottom : -20px;
+        right : 0;
+        font-size : 5rem;
+        -webkit-text-stroke : 0.5px #eee;
+        color : transparent;
+        font-size : bold;
+        white-space: nowrap;
+    }
+/* section .cont03 end */
+
+/* footer */
+    footer {
+        width : 100%;
+        background-color : #8f5745;
+    }
+    .footer__wrap {
+        width : 100%;
+        padding : 90px 0;
+        text-align : center;
+    }
+    .footer__wrap h1 {
+        font-size : 4.5rem;
+        font-family: 'Frank Ruhl Libre', serif;
+        color : #d9c6b0;
+    }
+    .footer__wrap ul {
+        margin-top : 30px;
+    }
+    .footer__wrap ul li {
+        display : inline-block;
+        margin : 0 20px;
+    }
+    .footer__wrap ul li a {
+        color : #eee;
+        font-size : 2.5rem;
+    }

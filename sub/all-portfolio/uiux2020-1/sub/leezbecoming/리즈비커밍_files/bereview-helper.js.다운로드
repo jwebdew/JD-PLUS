@@ -1,0 +1,154 @@
+/**
+ * bereview-helper.js
+ * 
+ * Author: Yun Kyo Hwang (gkdgkd2@gmail.com)
+ */
+var _server = "https://biz.bereview.co.kr";
+var _shop_id = "940";
+var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+// var matomoTracker;
+// window.piwikAsyncInit = function () {
+//   try {
+//     matomoTracker = Matomo.getTracker("https://log.bereview.co.kr/piwik/matomo.php", _shop_id);
+//     _paq.push([ function() {
+//       if(this.getUserId() != '') {
+//         matomoTracker.setUserId(this.getUserId());
+//       }
+//     }]);
+//     matomoTracker.trackPageView();
+//   } catch( err ) { console.log(err);}
+// };  
+
+(function() {                                                                      
+  // if(!matomoTracker) {                                                             
+  //   if(typeof Matomo == 'undefined') {                                             
+  //     var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0];
+  //     g.type="text/javascript"; g.async=true; g.defer=true; g.src="https://log.bereview.co.kr/piwik/matomo.js"; s.parentNode.insertBefore(g,s);
+  //   } else {                                                                       
+  //     window.piwikAsyncInit();                                                     
+  //   }                                                                              
+  // }                                                                                
+  // => @deprecated
+  // $('.SMSdetail_cart_btnTD').click(function() {
+  //   var products = [];
+  //   var hasNaN = false;
+  //
+  //   var productTotalPrice = 0;
+  //   $('#MK_innerOptScroll li').each(function(index, item){
+  //     var quantity = $(this).find('.MK_qty-ctrl').find('input').val();
+  //     var optionName = $(this).find('.MK_p-name').html();
+  //     var totalPrice = parseInt(($(this).find('.MK_price').html()).replace(/\<.*?\>/g," ").replace(/,/g,""));
+  //
+  //     if(isNaN(totalPrice)) {
+  //       hasNaN = true;
+  //     } else {
+  //       productTotalPrice += totalPrice;
+  //     }
+  //
+  //     products.push({
+  //       'id': product_uid,
+  //       'name': product_name,
+  //       'category': categoryCode,
+  //       'price': parseInt(totalPrice / quantity),
+  //       "variant": optionName,
+  //       'quantity': quantity
+  //     })
+  //   });
+  //
+  //   if(products.length > 0) {
+  //     matomoTracker.trackEvent('장바구니', product_uid, JSON.stringify(products));
+  //   }
+  // });
+  //
+  // $(document).delegate('.SMS_loveOn', 'click', function(e) {
+  // //$(document).on('click', '.SMS_loveOn', function(e) {
+  //   if(typeof product_uid != 'undefined' && product_uid != '') {
+  //     matomoTracker.trackEvent('찜하기', product_uid, "");
+  //   } else {
+  //     var _delim = 'branduid=';
+  //     var _link = $(this).parent().parent().parent().find("a").attr("href");
+  //     if(typeof _link != 'undefined' && _link.indexOf(_delim) > -1) {
+  //       var _product_uid = _link.split(_delim)[1].split('&')[0];
+  //       matomoTracker.trackEvent('찜하기', _product_uid, "");
+  //     }
+  //   }
+  // });
+})(); 
+
+// function log_order_bereview(order_id, order_price, order_item) {
+//   for(var i=0; i<order_item.length; i++) {
+//     var order_info = {"id":order_item[i]["id"], "name":order_item[i]["name"], "price":order_item[i]["price"], "quantity":order_item[i]["quantity"], "order_id":order_id, "totalPrice":order_price};
+//     matomoTracker.trackEvent('상품구매', order_item[i]["id"], JSON.stringify(order_info));
+//   }
+// }
+
+function click_categorized(idx, category, item_code) {
+  // matomoTracker.trackEvent(category, item_code, "all");
+  $(".bereview-categorized-reviews").hide();
+  $("#bereview_categorized_reviews_"+idx).show();
+  $(".bereview-categorized-button").css("background-color", "#b7b8b7");
+  $("#bereview_categorized_button_"+idx).css("background-color", "#f55200");
+}
+
+function click_review_wrapper(idx, category, item_code, review_code) {
+  if($("#bereview_categorized_review_arrow_"+idx+"_down").css("display") == "none") {
+    click_review(idx, "up", category, item_code, review_code);
+  } else {
+    click_review(idx, "down", category, item_code, review_code);
+  }
+}
+
+function click_fold(type, item_code, category_idx) {
+    var category = '';
+    $('.bereview-categorized-button').each(function() {
+        if($(this).css('background-color') == 'rgb(245, 82, 0)')
+          category = $(this).html().replace(/(^\s*)|(\s*$)/gi, "");
+    });
+
+    if(type == "down") {
+        // matomoTracker.trackEvent(category, item_code, "unfold")
+        $(".arrow_down_"+category_idx).hide();
+        $(".arrow_up_"+category_idx).show();
+        //$("#bereview_categorized_review_arrow_up").css("left", "100%");
+        $(".review-fold-"+category_idx).show();
+    } else {
+        // matomoTracker.trackEvent(category, item_code, "fold")
+        $(".arrow_down_"+category_idx).show();
+        $(".arrow_up_"+category_idx).hide();
+        //$("#bereview_categorized_review_arrow_down").css("left", "100%");
+        $(".review-fold-"+category_idx).hide();
+    }
+}
+
+function click_review(idx, type, category, item_code, review_code, e) {
+  if (e) e.stopPropagation();
+  // matomoTracker.trackEvent(category, item_code, review_code)
+  if(type == "down") {
+    $("#bereview_categorized_review_arrow_"+idx+"_down").hide();
+    $("#bereview_categorized_review_arrow_"+idx+"_up").show();
+    $("#bereview_categorized_review_"+idx).show();
+    $("#bereview_categorized_review_wrapper_"+idx).css("border-bottom", "0px");
+  } else {
+    $("#bereview_categorized_review_arrow_"+idx+"_up").hide();
+    $("#bereview_categorized_review_arrow_"+idx+"_down").show();
+    $("#bereview_categorized_review_"+idx).hide();
+    $("#bereview_categorized_review_wrapper_"+idx).css("border-bottom", "1px solid #e8e9e8");
+  }
+}
+
+function moveToHashtag(shop_id, item_code, keyword, _keyword, title, type) {
+  type = (isMobile == true) ? 1:2;
+  // matomoTracker.trackEvent('#'+keyword, "Detail", item_code) 
+  location.href = _server +'/widget/hashtag?shop_id='+shop_id+'&item_code='+item_code+'&item_code2='+item_code+'&keyword='+_keyword+'&title='+title+'&type='+type;
+}
+
+function moveHomeToHashtag(shop_id, item_code, keyword, _keyword, title, type, isIframe) {
+  type = (isMobile == true) ? 1:2;
+  // matomoTracker.trackEvent('#'+keyword, "Home", item_code);
+  var href = _server +'/widget/hashtag?shop_id='+shop_id+'&item_code='+item_code+'&item_code2='+item_code+'&keyword='+_keyword+'&title='+title+'&type='+type;
+  if (isIframe) {
+    window.parent.postMessage({ tag:"bereview-home-upper", href:href }, "*");
+  } else {
+    location.href = href;
+  }
+}

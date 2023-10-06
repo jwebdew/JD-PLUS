@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKINNYPIG</title>
+    <link href="css/sub.css" rel=" stylesheet" /><!-- 서브02 css연결 -->
+    <script src="lib/jquery-3.6.0.min.js"></script><!-- 제이쿼리 연결 -->
+    <script src="js/common.js"></script><!-- common js파일연결 -->
+    <script src="js/sub.js"></script><!-- main js파일연결 -->
+</head>
+<body>
+    <div class="bacground"></div>
+    <header class="pc_header clearfix">
+        <div class="logo"><a href="index.html"><img src="img/logo.png" alt="스키니피그"></a></div><!-- .logo end -->
+        <nav>
+            <ul>
+                <li class="depth01">
+                    <a href="#">SKINNYPIG?</a> 
+                    <ul class="depth02">
+                        <li><a href="#">SKINNYPIG소개</a></li>
+                        <li><a href="#">MEMBERSHIP</a></li>
+                    </ul>
+                </li>
+                <li class="depth01">
+                    <a href="#">MENU</a>
+                </li>
+                <li class="depth01">
+                    <a href="#">EVENT</a>
+                    <ul class="depth02">
+                        <li><a href="#">진행중인 이벤트</a></li>
+                        <li><a href="#">당첨자 발표</a></li>
+                    </ul>
+                </li>
+                <li class="depth01">
+                    <a href="#">CHANNEL</a>
+                    <ul class="depth02">
+                        <li><a href="#">온라인 SET</a></li>
+                        <li><a href="#">온라인 단품</a></li>
+                        <li><a href="#">오프라인 매장</a></li>
+                    </ul>
+                </li>
+                <li class="depth01">
+                    <a href="#">온라인구매</a>
+                </li>
+                <li class="depth01">
+                    <a href="#">ABOUT</a>
+                    <ul class="depth02">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">리뷰</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="util">
+            <a href="#">
+                <img src="img/login_icon.png" alt="로그인">
+                <img src="img/login_icon_click.png" alt="로그인">
+                <p>로그인</p>
+            </a>
+            <a href="#" class="search">
+                <img src="img/search_icon.png" alt="검색">
+                <img src="img/search_icon_click.png" alt="검색">
+                <p>검색</p>
+            </a>
+            <a href="#">
+                <img src="img/cart_icon.png" alt="장바구니">
+                <img src="img/cart_icon_click.png" alt="장바구니">
+                <p>장바구니</p>
+            </a>
+            <a href="#">
+                <img src="img/talk_icon.png" alt="톡상담">
+                <img src="img/talk_icon_click.png" alt="톡상담">
+                <p>톡상담</p>
+            </a>
+        </div><!-- .util end -->
+        <div class="search_box">
+            <span><img src="img/cancel_icon.png" alt="닫기"></span>
+            <form class="clearfix" action="" method="POST">
+                <input type="text" placeholder="검색어를 입력하세요">
+                <button>찾기</button>
+            </form>
+        </div><!-- .search_box end -->
+    </header><!-- .pc_header end -->
+    <header class="mobile_header clearfix">
+        <div class="hg"><img src="img/hg.png" alt="메뉴보기"></div>
+        <div class="logo"><a href="index.html"><img src="img/logo.png" alt="스키니피그"></a></div>
+        <div class="search"><img src="img/search_icon.png" alt="검색"></div>
+        <div class="close"><img src="img/cancel_icon.png" alt="닫기"></div>
+        <div class="search_box">
+            <form class="clearfix" action="" method="POST">
+                <input type="text" placeholder="검색어를 입력하세요">
+                <button>찾기</button>
+            </form>
+        </div><!-- .search_box end -->
+        <div class="mobile_menu">
+            <div class="menuIn_top clearfix">
+                <a href="index.html" class="m_logo"><img src="img/logo.png" alt="스키니피그"></a>
+                <div class="util">
+                    <a href="#"><img src="img/login_icon.png" alt="마이페이지"></a>
+                    <a href="#"><img src="img/cart_icon.png" alt="장바구니"></a>
+                    <a href="#"><img src="img/talk_icon.png" alt="톡상담"></a>
+                    <a href="#" class="m_menu_close"><img src="img/cancel_icon.png" alt="닫기"></a>
+                </div><!-- .util -->
+            </div><!-- .menuIn_top end -->
+            <nav>
+                <ul>
+                    <li class="depth01">
+                        <a href="#" class="clearfix"><p>SKINNYPIG?</p><img src="img/arrow_bottom.png" alt="메뉴보기"></a> 
+                        <ul class="depth02">
+                            <li><a href="#">SKINNYPIG소개</a></li>
+                            <li><a href="#">MEMBERSHIP</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth01">
+                        <a href="#" class="clearfix"><p>MENU</p></a>
+                    </li>
+                    <li class="depth01">
+                        <a href="#" class="clearfix"><p>EVENT</p><img src="img/arrow_bottom.png" alt="메뉴보기"></a>
+                        <ul class="depth02">
+                            <li><a href="#">진행중인 이벤트</a></li>
+                            <li><a href="#">당첨자 발표</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth01">
+                        <a href="#" class="clearfix"><p>CHANNEL</p><img src="img/arrow_bottom.png" alt="메뉴보기"></a>
+                        <ul class="depth02">
+                            <li><a href="#">온라인 SET</a></li>
+                            <li><a href="#">온라인 단품</a></li>
+                            <li><a href="#">오프라인 매장</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth01">
+                        <a href="#" class="clearfix"><p>온라인구매</p></a>
+                    </li>
+                    <li class="depth01">
+                        <a href="#" class="clearfix"><p>ABOUT</p><img src="img/arrow_bottom.png" alt="메뉴보기"></a>
+                        <ul class="depth02">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">리뷰</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div><!-- .mobile_menu end -->
+    </header><!-- .mobile_header end -->
+    <section class="sub_in">
+        <ul>
+            <li class="on">SKINNYPIG 소개</li>
+            <li>MEMBERSHIP</li>
+        </ul>
+        <article>
+            <div class="spi_int on">
+                <h2>WHAT IS <span>SKINNYPIG?</span></h2>
+                <div>
+                    <dl>
+                        <dt>칼로리는 가볍게, 맛은 돼지롭게!</dt>
+                        <dd>
+                            <span>:</span>
+                            <p>아이스크림은 맛있어요.<br />
+                            그러니 남녀노소 모두 좋아할 수밖에요.<br />
+                            하지만 아이스크림의 높은 칼로리는 우리를 망설이게만들죠.<br />
+                            그래서 설탕과 유지방을 줄여 칼로리를 1/4로 낮췄습니다.<br />
+                            파인트 한 통을 다 비워도 밥 한공기보다<br />
+                            칼로리가 낮은 아이스크림, 그게 바로 스키니피그예요.</p>
+                        </dd>
+                    </dl>
+                    <img src="img/sub_int01.png" alt="아이스크림이미지">
+                </div>
+                <div>
+                    <img src="img/sub_int02.png" alt="아이스크림이미지">
+                    <dl>
+                        <dt>낮은 칼로리는 덤일 뿐.</dt>
+                        <dd>
+                            <span>:</span>
+                            <p>아이스크림은 일단 맛있어야겠죠?<br />
+                                그게 우리가 이걸 먹는 이유니까요. 칼로리 때문이라면<br />
+                                아이스크림 대신 풀을 뜯어 먹었을 거예요.<br />
+                                그래서 스키니피그는 맛있게 만들었습니다.<br />
+                                덤으로 칼로리조차 낮을 뿐이죠.<br />
+                                예상치 못한 선물처럼요.</p>
+                        </dd>
+                    </dl>
+                </div>
+                <div>
+                    <dl>
+                        <dt>비법은 간단합니다!</dt>
+                        <dd>
+                            <span>:</span>
+                            <p>설탕과 유지방, 맛이 없을 수가 없는 녀석들이죠.<br />
+                                당연히 얘네들을 줄이면 맛도 함께 줄고요.<br />
+                                그럼 스키니피그는 왜 맛있냐고요? 비법은 간단합니다.<br />
+                                설탕을 줄이는 대신 천연감미료로 단맛을 내고,<br />
+                                깐깐하게 고른 고품질 원재료를 모아<br />
+                                30회 이상 배합 테스트만 하면 됩니다.</p>
+                        </dd>
+                    </dl>
+                    <img src="img/sub_int03.png" alt="아이스크림이미지">
+                </div>
+                <span><img src="img/sub_bar.png" alt="스피아이콘"></span>
+            </div><!-- .spi_int end -->
+            <div class="spi_mem">
+                <h2><span>SPi</span> MEMBERSHIP<img src="img/sub_title_deco.png" alt="반짝이펙트"></h2>
+                <div>
+                    <div class="ticket_img">
+                        <img src="img/membership01.png" alt="paper ticket">
+                        <p>PAPER TICKET</p>
+                    </div><!-- .ticket_img end -->
+                    <div class="mem_text">
+                        <div><h3>기준</h3><p>신규회원</p></div>
+                        <div><h3>혜택</h3><p>신규 회원 적립급 1,000원</p></div>
+                    </div><!-- .mem_text -->
+                </div>
+                <div>
+                    <div class="ticket_img">
+                        <img src="img/membership02.png" alt="silver ticket">
+                        <p>SILVER TICKET</p>
+                    </div><!-- .ticket_img end -->
+                    <div class="mem_text">
+                        <div><h3>기준</h3><p>최초 1회 구매시</p></div>
+                        <div><h3>혜택</h3><p><span>즉시 할인</span> 일반1%, 무통장 3%</p></div>
+                    </div><!-- .mem_text -->
+                </div>
+                <div>
+                    <div class="ticket_img">
+                        <img src="img/membership03.png" alt="gold ticket">
+                        <p>GOLD TICKET</p>
+                    </div><!-- .ticket_img end -->
+                    <div class="mem_text">
+                        <div><h3>기준</h3><p>최근 3개월 동안<br />10만원 이상 구매시</p></div>
+                        <div><h3>혜택</h3><p><span>즉시 할인</span> 일반3%, 무통장 5%<br />매월 7% <span>할인 쿠폰</span> 1장</p></div>
+                    </div><!-- .mem_text -->
+                </div>  
+                <div>
+                    <div class="ticket_img">
+                        <img src="img/membership04.png" alt="spi ticket">
+                        <p>SPI TICKET</p>
+                    </div><!-- .ticket_img end -->
+                    <div class="mem_text">
+                        <div><h3>기준</h3><p>최근 3개월 동안<br />20만원 이상 구매시</p></div>
+                        <div><h3>혜택</h3><p><span>즉시 할인</span> 일반5%, 무통장 7%<br />매월 10% <span>할인 쿠폰</span> 1장</p></div>
+                    </div><!-- .mem_text -->
+                </div>
+                <p class="mem_other">
+                    * 멤버십 실적과 혜택은 스피 공식 스토어 구매시 적용됩니다. (네이버 페이 구매 제외)<br/>
+                    * 이전 3개월 실 결제금액 기준으로 매주 월요일 등급 변경 적용됩니다.<br/>
+                    * 멤버십 등급 별 쿠폰은 매월 1일 발급해 드립니다. (유효 기간 1개월) <br/>
+                </p><!-- .mem_other end -->
+            </div><!-- .spi_mem end -->
+        </article>
+    </section>
+    <footer>
+        <article>
+            <div class="footer_top">
+                    <p>CONTACT</p>
+                    <p>TEL.<span>1833-6069</span></p>
+                    <p>EMAIL.<span>CONTACT@SKINNTPIG.XYZ</span></p>
+            </div><!-- .footer_top end -->
+            <div class="footer_bottom clearfix">
+                <p>(주)스키니피그크리머리 ㅣ 대표. 이종범 ㅣ 개인정보책임자. 장성희<br /> 
+                    주소. 06541 서울특별시 서초구 강남대로 479 (반포동) 지하1층 162호<br />
+                    사업자번호. 323-87-00980 ㅣ
+                    통신판매업 신고번호. 2018-서울서초-1361호 [사업자정보확인]<br />
+                    COPYRIGHT © SKINNYPIG CREAMERY CORP. All rights reserved.</p>
+                <img src="img/logo_gray.png" alt="스키니피그">
+            </div><!-- .footer_bottom end -->
+        </article>
+    </footer>
+</body>
+</html>

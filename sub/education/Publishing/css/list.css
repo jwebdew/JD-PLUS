@@ -1,0 +1,215 @@
+@charset "utf-8";
+@import url('common.css');
+@font-face {
+    font-family: 'MonoLisa';
+    src: url('font/MonoLisa-Regular.eot');
+    src: url('css/font/MonoLisa-Regular.eot?#iefix') format('embedded-opentype'),
+        url('css/font/MonoLisa-Regular.woff2') format('woff2'),
+        url('css/font/MonoLisa-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+.en {
+    font-family: 'MonoLisa';
+    font-size: 15px;
+}
+
+
+body {
+    background-color: #eee;
+}
+iframe {width: 100%;}
+.work {
+    margin: 100px auto;
+    position: relative;
+}
+ 
+.content_menu {
+    
+    /* font-size: 20px; */
+    margin-bottom: 5rem;
+    
+    border-bottom: 2px solid #000;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.content_menu ul {
+    display: flex;
+}
+.content_menu li {
+    height: 48px;
+    /* line-height: 48px; */
+    /* padding: 0 43px; */
+    /* border-radius: 100%;    */
+    /* border: 1px solid #000; */
+    /* margin-right: 20px; */
+    margin-right: 50px;
+    color: #ccc;
+    font-size: 5rem;
+    font-family: 'Cafe24-ClassicType';
+    position: relative;
+    
+}
+.content_menu ul li .page {
+    position: absolute;
+    right: -40px;
+    top: -40px;
+    background-color: #bfff00;
+    padding: 0 15px;
+    border-radius: 50px;
+    height: 50px;
+    line-height: 50px; 
+    font-size: 20px;
+    font-family: 'S-Core_Dream';
+    box-shadow: 3px 3px 12px #bfff007e;
+    z-index: -1;
+    display: none;
+}
+.content_menu li:hover {
+    color: #FF55BB;
+}
+.content_menu li.on {
+    /* background-color: #FF55BB; */
+    color: #000;
+}
+.content_menu li.on .page {
+    display: block;
+}
+.content_menu p {
+    color: rgba(0, 0, 0, .5);
+    font-size: 20px;
+    font-family: 'Cafe24-ClassicType';
+}
+.content_menu__category {
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 3rem;
+}
+.content_menu__category.on {
+    position: fixed;
+    top: 10%;
+    left: 50px; 
+    z-index: 9;
+    display: block;
+    width: auto;
+}
+.content_menu__category.on li {
+    margin: 30px 0;
+    display: flex;
+     
+} 
+.content_menu__category li {
+    margin-right: 30px;
+}
+.content_menu__category li.on {
+    
+    color: #FF55BB;
+}
+.content_menu__category li.on a {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #FF55BB;
+}
+
+form {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 0;
+    top: 120px;
+}
+form .search_box input {
+    width: 300px;
+    height: 40px;
+    border: 1px solid #FF55BB;
+    padding: 0 10px;
+}
+form .search_box input::placeholder {
+    color: #FF55BB;
+}
+
+.work .work_list {
+    display: none;
+    margin-top: 60px;
+}
+.work .work_list.on {
+    display: block;
+}
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    display: none;
+}
+.list.on {
+    display: block;
+}
+.list .item,
+.list .itemOn {
+    
+}
+ 
+
+.list .list_tit {
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    margin-bottom: 20px; 
+    /* padding: 0 20px; */
+}
+.list .list_tit li.num {
+    border: 0;
+}
+.table_info li.num {
+    width: 6%;
+    border-right: 1px solid #ccc;
+    text-align: center;
+}
+.table_info li.text {
+    width: 80%;
+    text-align: left;
+    
+}
+.table_info li.date {
+    width: 12%;
+    text-align: center;
+    font-size: 14px;
+}
+.itemWrap__item {
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 22px 0;
+    margin: 15px 0;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid transparent;
+}
+.itemWrap__item:hover {
+    /* background-color: #bfff00; */
+    border: 1px solid #FF55BB;
+    /* box-shadow: 0 0 15px #ff55bb52; */
+}
+.itemWrap__item a {
+    display: block;
+}
+
+#numList {
+    width: 1500px;
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow-y: scroll;
+    height: 80vh;
+    box-shadow: 3px 3px 25px rgba(0, 0, 0, 0.322);
+    display: none;
+}
+#numList.on {
+    display: block;
+}
+#numList img {
+    width: 100%;
+}

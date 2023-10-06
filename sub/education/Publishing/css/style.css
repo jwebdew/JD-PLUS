@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+html, body {
+    font-size: 62.5%;
+}
+main {
+    font-size: 18px;    
+}
+
+#header {
+    margin: 30px 0;
+  
+}
+#header .date ul {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+#header .date ul li:last-child {
+     margin-left: 10px;
+}
+.cont__inner {
+    max-width: 1440px;
+    margin: 0 auto;
+}

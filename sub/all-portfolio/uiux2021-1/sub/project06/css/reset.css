@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+*{ margin:0; padding:0;}
+body{ font-size:12px; line-height:18px; font-family: 'Noto Sans KR', sans-serif;}
+a{ color:#121212; text-decoration:none;}
+img{ border:none; vertical-align:top;}
+ul{ list-style:none;}
+ol{ list-style:none;}
+.cf:after{content: ""; display: block; clear: both;}

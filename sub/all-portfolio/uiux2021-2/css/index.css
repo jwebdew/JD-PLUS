@@ -1,0 +1,655 @@
+@charset "utf-8";
+@import url("common.css");
+
+/* .popup */
+.popup {
+    width : 400px;
+    height : 550px;
+    border: 1px solid #333;
+    border-radius : 20px;
+    overflow : hidden;
+    transition : 1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    position : absolute;
+    top : 0;
+    left : 20%;
+    z-index : 5;
+}
+.popup_wrap {
+    width : 100%;
+    height : 100%;
+}
+.popup_bg {
+    width : 100%;
+    height : 470px;
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    position : relative;
+}
+.popup_bg::before {
+    content : '';
+    width : 300px;
+    height : 200px;
+    background : url(../img/bonobono.jpg) center right no-repeat;
+    background-size : cover;
+    position : absolute;
+    top : 50%;
+    transform : translateY(-50%);
+}
+.popup_bg::after {
+    content : '환영합니다';
+    color : #333;
+    font-size : 2rem;
+    position : absolute;
+    top : 0;
+    left : 0;
+}
+.popup_bg dl {
+    position : absolute;
+    bottom : 0;
+    left : 0;
+}
+.popup_click {
+    width : 100%;
+    height : 80px;
+    background-color : #111;
+    display : flex;
+    flex-wrap : wrap;
+    text-align : center;
+}
+.popup_click h1 {
+    font-size : 1rem;
+    color : #eee;
+    line-height : 80px;
+    width : 50%;
+}
+/* .popup end */
+
+.cursor.bgImg {
+    background : url(../img/img01.jpg) center fixed;
+}
+.cursor.bgImg::before {
+    content : '';
+    width : 100%;
+    height : 100%;
+    position : absolute;
+    background-color : rgba(0,0,0,0.5);
+    top : 0;
+    left: 0;
+}
+
+/* section .main */
+    .mainTitle {
+        position : absolute;
+        top : 45%;
+        left : 20%;
+        transform : translateY(-50%);
+        z-index : 3;
+    }
+    .mainTitle h1 {
+        font-family: 'Eulyoo1945', serif;
+        font-size : 4.5rem;
+        font-weight : bold;
+        color : #D94343;
+    }
+    .mainTitle::before {
+        content : 'Hello, there.';
+        color : transparent;
+        font-size : 10rem;
+        -webkit-text-stroke : 0.5px #fff;
+        position : absolute;
+        top : -160px;
+        left : -120px;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight : 700;
+        z-index : -1;
+        width : 215%;
+    }
+    .subTitle {
+        position : absolute;
+        bottom : 10%;
+        left : 20%;
+        z-index : 3;
+    }
+    .subTitle h5 {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size : 3rem;
+        font-weight : text;
+        color : #8f5745;
+    }
+    .subTitle::before {
+        content : 'Search, question, keep learning and enhancing myself.';
+        color : transparent;
+        font-size : 3rem;
+        -webkit-text-stroke : 0.5px #fff;
+        position : absolute;
+        top : -35px;
+        left : 18%;
+        width : 120%;
+        z-index : -1;
+        font-weight : 700;
+    }
+/* section .main end */
+
+/* section cont01 */
+    .cont01 {
+        width : 100%;
+        overflow : hidden;
+        position : relative;
+    }
+    .cont01__wrap {
+        max-width : 1280px;
+        width : 100%;
+        margin : 0 auto;
+        padding : 160px 0;
+        box-sizing: border-box;
+    }
+    .cont01Title {
+        text-align :center;
+        margin-bottom : 100px;
+        position : relative;
+    }
+    .cont01Title::before {
+        content : '';
+        width : 43px;
+        height : 15px;
+        background : url(../img/arrow_right.png) center center no-repeat;
+        background-size: cover;
+        position :absolute;
+        top : 60%;
+        left : 48%;
+        animation : check 2s ease-in-out infinite;
+    }
+    @keyframes check {
+        0% {width : 0;}
+        100% {width : 43px; }
+    }
+    .cont01Title h1 a {
+        font-size : 4.5rem;
+        font-family: 'Frank Ruhl Libre', serif;
+        color : #73121A;
+    }
+    .cont01Title p {
+        font-size : 1.5rem;
+        margin-top : 20px;
+    }
+    .cont01__inner {
+        width : 100%;
+        position : relative;
+    }
+    .cont01List {
+        width : 40%;
+        display : inline-block;
+    }
+    .cont01List ul li {
+        line-height : 2.5;
+    }
+    .cont01List ul li a {
+        font-size : 3rem;
+        font-family: 'IBM Plex Sans', sans-serif;
+        transition : 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+        position : relative;
+        color : rgba(255, 255, 255, 0.7);
+        font-weight : bold;
+    }
+    .cont01List ul li a::before {
+        content : '';
+        width : 0%;
+        height : 30px;
+        background-color : #fff;
+        position : absolute;
+        bottom : -5px;
+        right : 0;
+        z-index : -1;
+        transition : 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .cont01List ul li.active a {
+        padding-left : 30px;
+        color : #d94343;
+        opacity : 1;
+    }
+    .cont01List ul li.active a::before {
+        width : 100%;
+        right : auto;
+        left : 0;
+        transform: skew(10deg, 7deg);
+    }
+    .cont01List ul li.active::after {
+        content : attr(data-text);
+        color : #333;
+        font-size : 1.5rem;
+        font-family: 'Eulyoo1945', serif;
+        position : absolute;
+        bottom : -10px;
+        left : 70%;
+        text-align : center;
+    }
+    /* SCROLLTRIGGER */
+    .cont01 .scrollTextTop {
+        position : absolute;
+        top : -40px;
+        left : 0;
+        font-size : 5rem;
+        -webkit-text-stroke : 0.5px #fff;
+        color : transparent;
+        font-size : bold;
+        white-space: nowrap;
+    }
+    .scont01 .scrollTextTop .text {
+        position : relative;
+        width : 100%;
+        height : 20vh;
+    }
+    .cont01 .scrollTextBottom {
+        position : absolute;
+        bottom : -20px;
+        right : 0;
+        font-size : 5rem;
+        -webkit-text-stroke : 0.5px #fff;
+        color : transparent;
+        font-size : bold;
+        white-space : nowrap
+    }
+
+    /* .cont01Preview */
+    .cont01Preview {
+        width : 945px;
+        height : 580px;
+        display : inline-block;
+        position : absolute;
+        top : 0;
+        left : 40%;
+        overflow : hidden;
+    }
+    .macbook {
+        position : absolute;
+        top : 0;
+        right : 0;
+        overflow : hidden;
+        width : 907px;
+        height : 538px;
+        background : url(../img/mackbook.png) center center no-repeat;
+    }
+    .macbook .frame {
+        width : 100%;
+        display : block;
+        position :relative;
+    }
+    .macbook_img {
+        width: 82.5%;
+        height: 84%;
+        position: absolute;
+        top: 6%;
+        left: 82px;
+        overflow: scroll;
+        overflow-X: hidden;
+    }
+    .macbook_img::-webkit-scrollbar { display: none; }
+    .macbook .overlay {
+        width: 83%;
+        height: 85%;
+        background-color: rgba(0,0,0,0.3);
+        position: absolute;
+        top: 30px;
+        left: 82px;
+        transition: 0.2s;
+        z-index: 1;
+    }
+    .macbook:hover .overlay {
+        z-index : 0;
+    }
+    .macbook_img img {
+        width : 100%;
+        display : block;
+    }
+    .overlay::before {
+        content : '';
+        width : 30px;
+        height : 50px;
+        background-color : transparent;
+        border : 2px solid #eee;
+        position : absolute;
+        top : 50%;
+        left : 50%;
+        transform : translate(-50%, -50%);
+        border-radius : 30px;
+    }
+    .overlay::after {
+        content : '';
+        width : 2px;
+        height : 0px;
+        background-color : #fff;
+        position : absolute;
+        top : 50%;
+        left : 50%;
+        transform : translate(-50%, -50%);
+        animation : bar 1s ease-in-out infinite;
+    }
+    @keyframes bar {
+        0% { height : 0; top : 47%;}
+        100% { height : 20px; top : 50%;}
+    }
+
+    .iphone {
+        width : 200px;
+        height : 405px;
+        position : absolute;
+        bottom : 0;
+        left : 0;
+        overflow : hidden;
+        display : block;
+        background : url(../img/iphone.png) center center no-repeat;
+        z-index : 1;
+    }
+    .iphone .frame {
+        width : 100%;
+        display : block;
+        position : relative;
+        z-index : 1;
+    }
+    .iphone_img {
+        width: 89%;
+        height: 95%;
+        position: absolute;
+        top: 9px;
+        left: 11px;
+        border-radius: 18px;
+        overflow: scroll;
+        overflow-X: hidden;
+    }
+    .iphone_img::before {
+        position: fixed;
+        top: 8px;
+        left: 33px;
+        width : 138px;
+        height : 16px;
+        content : '';
+        background : url(../img/iphone_camera.png) center center no-repeat;
+    }
+    .iphone_img::-webkit-scrollbar { display: none; }
+    .iphone .overlay {
+        width: 92%;
+        height: 97%;
+        background-color: rgba(0,0,0,0.3);
+        border-radius: 20px;
+        position: absolute;
+        top: 5px;
+        left: 7px;
+        transition: 0.3s;
+        z-index: 1;
+    }
+    .iphone:hover .overlay {
+        z-index : 0;
+    }
+    .iphone_img img {
+        width : 100%;
+        display : block;
+    }
+    
+/* section .cont01 end */
+
+    .cont02 {
+        width : 100%;
+        overflow : hidden;
+        position : relative;
+    }
+    .cont02__wrap {
+        max-width : 1600px;
+        width : 100%;
+        margin : 0 auto;
+        padding : 200px 60px;
+        box-sizing: border-box;
+        position : relative;
+    }
+    .cont02Title {
+        text-align :center;
+        margin-bottom : 100px;
+    }
+    .cont02Title::before {
+        content : '';
+        width : 43px;
+        height : 15px;
+        background : url(../img/arrow_right.png) center center no-repeat;
+        background-size: cover;
+        position :absolute;
+        top : 60%;
+        left : 48%;
+        animation : check 2s ease-in-out infinite;
+    }
+    @keyframes check {
+        0% {width : 0;}
+        100% {width : 43px; }
+    }
+    .cont02Title h1 a {
+        font-size : 4.5rem;
+        font-family: 'Frank Ruhl Libre', serif;
+        color : #73121A;
+    }
+    .cont02Title p {
+        font-size : 1.5rem;
+        margin-top : 20px;
+    }
+    .cont02__img {
+        width : 100%;
+        display : flex;
+        justify-content: space-between;
+    }
+    /* cont02 Frame & Preview Image */
+    .cont02Frame {
+        width : 450px;
+        height : 500px;
+        position : relative;
+        overflow : hidden;
+    }
+    .cont02Preview {
+        width : 90%;
+        height : 90%;
+        position : absolute;
+        top : 50%;
+        left : 50%;
+        transform : translate(-50%, -50%);
+        overflow : hidden;
+        transition : 0.5s;
+    }
+    .cont02Preview::before {
+        content : '';
+        width : 100%;
+        height : 100%;
+        background : radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%);
+        position : absolute;
+        top : 0;
+        left : 0;
+    }
+    .cont02Preview img {
+        width : 100%;
+        display : block;
+    }
+    .cont02Frame:hover .cont02Preview {
+        top : 45%;
+        box-shadow : 0 20px 10px rgba(0,0,0,0.5);
+    }
+    .cont02Frame:hover .cont02Preview::before {
+        background : transparent;
+    }
+
+    .cont02Frame .button {
+        width : 120px;
+        height : 50px;
+        border: 0;
+        background-color : #d94343;
+        position : absolute;
+        bottom : -10%;
+        left : 50%;
+        transform : translateX(-50%);
+        overflow : hidden;
+        border-radius : 30px;
+    }
+
+    .cont02Frame:hover .button {
+        bottom : 0;
+    }
+    .cont02Frame .button p {
+        text-align : center;
+        line-height : 50px;
+    }
+
+    /* SCROLLTRIGGER */
+    .cont02 .scrollTextTop {
+        position : absolute;
+        top : -40px;
+        left : 0;
+        font-size : 5rem;
+        color :rgba(255, 255, 255, 0.5);
+        font-size : bold;
+        white-space: nowrap;
+    }
+    .scont02 .scrollTextTop .text {
+        position : relative;
+        width : 100%;
+        height : 20vh;
+    }
+    .cont02 .scrollTextBottom {
+        position : absolute;
+        bottom : -20px;
+        right : 0;
+        font-size : 5rem;
+        -webkit-text-stroke : 0.5px #fff;
+        color : transparent;
+        font-size : bold;
+        white-space: nowrap;
+    }
+/* section .cont02 end */
+
+/* section .cont03 */
+    .cont03 {
+        width : 100%;
+        position : relative;
+        overflow : hidden;
+    }
+    .cont03__wrap {
+        width : 100%;
+        padding : 200px 0 220px;
+        position : relative;
+        overflow : hidden;
+    }
+    .cont03__wrap h2 {
+        content : 'GRAPHIC DESIGN';
+        color : transparent;
+        -webkit-text-stroke : 0.5px #fff;
+        font-size: 11rem;
+        font-weight : bold;
+        font-family : 'IBM Plex Sans', sans-serif;
+        width : 100%;
+        z-index : -1;
+        margin-left : 100px;
+    }
+    .cont03Title {
+        text-align :center;
+        margin-bottom : 100px;
+    }
+    .cont03Title::before {
+        content : '';
+        width : 43px;
+        height : 15px;
+        background : url(../img/arrow_right.png) center center no-repeat;
+        background-size: cover;
+        position :absolute;
+        top : 60%;
+        left : 48%;
+        animation : check 2s ease-in-out infinite;
+    }
+    @keyframes check {
+        0% {width : 0;}
+        100% {width : 43px; }
+    }
+    .cont03Title h1 a {
+        font-size : 4.5rem;
+        font-family: 'Frank Ruhl Libre', serif;
+        color : #73121A;
+    }
+    .cont03Title p {
+        font-size : 1.5rem;
+        margin-top : 20px;
+    }
+    .cont03__img {
+        width : 100%;
+        overflow : hidden;
+        position : relative;
+    }
+    .cont03__imgList {
+        padding : 30px 0;
+    }
+    .cont03Frame {
+        float : left;
+        width : 300px;
+        height : 435px;
+        background-color : rgba(255, 255, 255, 0.3);
+        overflow : hidden;
+        margin : 10px 20px;
+        position : relative;
+        transition : 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .cont03Frame:hover {
+        margin-top : -20px;
+        box-shadow : 0px 15px 10px rgba(0,0,0,0.5);
+    }
+    .cont03Img {
+        width : 100%;
+        height : 100%;
+        position : absolute;
+        top : 50%;
+        left : 50%;
+        transform : translate(-50%, -50%);
+        overflow : hidden;
+    }
+    .cont03Img img {
+        display : block;
+        width : 100%;
+    }
+    /* SCROLLTRIGGER */
+    .cont03 .scrollTextTop {
+        position : absolute;
+        top : -40px;
+        left : 0;
+        font-size : 5rem;
+        color :rgba(255, 255, 255, 0.5);
+        font-size : bold;
+        white-space: nowrap;
+    }
+    .scont03 .scrollTextTop .text {
+        position : relative;
+        width : 100%;
+        height : 20vh;
+    }
+    .cont03 .scrollTextBottom {
+        position : absolute;
+        bottom : -20px;
+        right : 0;
+        font-size : 5rem;
+        -webkit-text-stroke : 0.5px #fff;
+        color : transparent;
+        font-size : bold;
+        white-space: nowrap;
+    }
+/* section .cont03 end */
+
+/* footer */
+    footer {
+        width : 100%;
+        background-color : #567C8C;
+        margin-top : 100px;
+    }
+    .footer__wrap {
+        width : 100%;
+        padding : 50px 0;
+        text-align : center;
+    }
+    .footer__wrap dt {
+        font-family: 'Eulyoo1945', serif;
+        color : #d9c6b0;
+        font-size : 1.5rem;
+        font-weight : bold;
+        padding-bottom : 20px;
+    }
+    .footer__wrap dd {
+        color : #eee;
+        font-size : 1rem;
+    }

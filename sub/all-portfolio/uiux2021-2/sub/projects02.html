@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison de Bora</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- jQuery -->
+    <script src="lib/jquery-3.5.1.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+
+    <script src="js/project02.js"></script>
+    <link rel="stylesheet" href="css/project02.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="header">
+        <div class="logo">
+            <a href="../index.html">
+                <span>home</span>
+                <div class="name_stroke">
+                    <svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 89 76" style="enable-background:new 0 0 89 76;" xml:space="preserve">
+                        <path class="name__stroke" d="M6.45,27.3c8.27-0.85,16.08-5.4,20.91-12.16c0.96-1.35,1.83-2.85,1.9-4.51s-0.91-3.45-2.53-3.8
+                            c-2.21-0.48-4.01,1.76-5.01,3.79c-3.91,7.96-4.89,17.18-3.65,25.96c1.25,8.78,4.64,17.16,9.07,24.85
+                            c-3.03-6.82-4.42-14.36-4.01-21.8c0.28-5.09,1.51-10.39,4.96-14.14c1.35-1.47,3.36-2.71,5.26-2.09c2.1,0.7,2.87,3.24,3.15,5.44
+                            c0.96,7.69-0.36,15.66-3.77,22.62c0.95-3.24,2.88-6.19,5.46-8.38c2.53-2.13,6.61-3.39,8.95-1.05c1.96,1.96,1.47,5.24,0.52,7.83
+                            c-1.79,4.87-4.78,9.29-8.64,12.77c-1.54,1.39-3.45,2.7-5.51,2.46c4.8-4.76,10.3-8.82,16.26-12.01c-0.44,2.06-1.75,3.9-1.95,6
+                            c-0.19,2.1,1.69,4.61,3.63,3.79c0.6-0.25,1.04-0.77,1.41-1.3c1.13-1.68,1.63-3.77,1.39-5.78c-0.17-1.38-1.44-3.04-2.63-2.3
+                            c-0.37,0.23-0.59,0.66-0.7,1.08c-0.47,1.82,0.96,3.86,2.81,4.15c1.86,0.3,3.79-1.08,4.23-2.91c0.44-1.83-0.57-3.87-2.24-4.74
+                            c1.93-1.39,3.74-2.96,5.4-4.67c-0.12,2.16,0.22,4.35,0.98,6.37c0.24,0.65,0.55,1.31,1.09,1.74c1.69,1.35,4.18-0.39,5.12-2.34
+                            c1.44-3,1.24-6.73-0.51-9.57c-2.95,2.57-3.76,7.29-1.82,10.69c0.27,0.48,0.66,0.97,1.21,1.01c0.73,0.06,1.24-0.7,1.5-1.38
+                            c1.23-3.16,0.83-6.91-1.04-9.74c0.8,0.99,1.16,2.27,1.85,3.34c0.69,1.07,1.98,1.98,3.18,1.56c0.57-0.2,1-0.66,1.38-1.13
+                            c2.01-2.57,2.71-6.11,1.82-9.25"/>
+                        </svg>
+                </div>
+            </a>
+        </div>
+        <button class="menu__icon">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                <path class="opened line1" fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" d="M20,20.113h60c0,0,10.191,17.432,10.191,32.721 S81.246,69.821,80,69.821S21.335,14.556,21.335,14.556"/>
+                <line class="opened line2" fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" x1="20" y1="42.136" x2="80" y2="42.136"/>
+                <path class="opened line3" fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" d="M19.887,64.47h60.001 c0,0,10.191-17.42,10.191-32.709c0-15.289-8.945-16.987-10.191-16.987S21.223,70.027,21.223,70.027"/>
+            </svg>
+        </button>
+    </div><!-- .header end -->
+
+    <div class="menu__wrap">
+        <ul class="mainMenu">
+            <li><a href="about.html">ABOUT</a></li>
+            <li>
+                <a>PROJECTS</a>
+                    <ul class="subMenu">
+                        <li>
+                            <a href="projects01.html">
+                                <span data-text="Web&nbsp;Design&nbsp;&&nbsp;Publishing"> Web Design &    Publishing</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span data-text="Web&nbsp;Design">Web Design</span>
+                            </a>
+                        </li>
+                        <li><a href="projects03.html">
+                                <span data-text="Graphic&nbsp;Design">Graphic Design</span>
+                            </a>
+                        </li>
+                    </ul>
+            </li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul><!-- .mainMenu end -->
+    </div><!-- .menu__wrap -->
+
+    <div class="contactFixed">
+        <ul>
+            <li><a href="#"><i class="fas fa-file-alt"></i></a></li>
+            <li><a href="tel:010-9019-1865"><i class="fas fa-mobile-alt"></i></a></li>
+            <li><a href="mailto:chaud1024@gmail.com"><i class="fas fa-paper-plane"></i></a></li>
+        </ul>
+    </div><!--.contactFixed end -->
+    
+    <section class="pageTitle">
+        <h1>WEB DESIGN</h1>
+    </section><!-- .pageTitle end -->
+
+    <section class="cont">
+        <div class="cont__wrap">
+            <div class="cont01">
+                <div class="project02__box">
+                    <div class="project02__img">
+                        <img src="img/pro02_cont01__img04.png" alt="">
+                    </div>
+                    <div class="overlay">
+                        <a href="pro02/pro02_kiehl.html" target="_blank">자세히 보기</a>
+                    </div>
+                </div><!-- .project02__box end -->
+                
+                <div class="project02__box">
+                    <div class="project02__img">
+                        <img src="img/pro02_cont01__img03.png" alt="">
+                    </div>
+                    <div class="overlay">
+                        <a href="pro02/pro02_vividflower.html" target="_blank">자세히 보기</a>
+                    </div>
+                </div><!-- .project02__box end -->
+            </div><!--.cont01 end -->
+    
+            <div class="cont02">
+                <div class="project02__box">
+                    <div class="project02__img">
+                        <img src="img/pro02_cont01__img05.png" alt="">
+                    </div>
+                    <div class="overlay">
+                        <a href="pro02/pro02_bluebottle.html" target="_blank">자세히 보기</a>
+                    </div>
+                </div><!-- .project02__box end -->
+    
+                <div class="project02__box">
+                    <div class="project02__img">
+                        <img src="img/pro02_cont01__img01.png" alt="">
+                    </div>
+                    <div class="overlay">
+                        <a href="pro02/pro02_adventure.html" target="_blank">자세히 보기</a>
+                    </div>
+                </div><!-- .project02__box end -->
+            </div>
+    
+            <div class="cont03">
+                <div class="project02__box">
+                    <div class="project02__img">
+                        <img src="img/pro02_cont01__img06.png" alt="">
+                    </div>
+                    <div class="overlay">
+                        <a href="pro02/pro02_museumda.html" target="_blank">자세히 보기</a>
+                    </div>
+                </div><!-- .project02__box end -->
+    
+                <div class="project02__box">
+                    <div class="project02__img">
+                        <img src="img/pro02_cont01__img02.png" alt="">
+                    </div>
+                    <div class="overlay">
+                        <a href="pro02/pro02_tripdiscovery.html" target="_blank">자세히 보기</a>
+                    </div>
+                </div><!-- .project02__box end -->
+            </div>
+        </div>
+    </section><!-- .cont01 end -->
+</body>
+</html>

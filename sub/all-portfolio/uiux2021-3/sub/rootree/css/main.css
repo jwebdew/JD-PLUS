@@ -1,0 +1,692 @@
+@charset "utf-8";
+*{margin: 0 ; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none; color: #333;}
+
+/********** header : 헤더 시작 **********/
+header {
+    /* position: fixed; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+.header_wrap {
+    max-width: 1400px;
+    width: 100%;
+    height: 120px;
+    margin: 0 auto;
+}
+.logo a img {
+    float: left;
+    margin-top: 31px;
+}
+.mobile_icon {display: none;}
+/***** top_menu : 로그인 메뉴 *****/
+.top_menu {}
+.top_menu .right {
+    float: right;
+    margin-top: 22px;
+}
+.top_menu .right li {
+    display: inline-block;
+    padding: 0 20px;
+    border-right: solid 1px #eaeaea;
+}
+.top_menu .right li:last-child {
+    padding-right: 0;
+    border-right:0;
+}
+.top_menu .right li a {
+    font-family:'Roboto Condensed';
+    font-size: 14px;
+    color: #ffffff;
+}
+/***** gnb_pc : 메뉴 *****/
+.mobile {display: none;}
+.pc {position: relative;}
+.pc .main {
+    position: absolute;
+    right: 128px;
+}
+.pc .main > li {
+    float: left;
+    margin-top: 68px;
+    font-family:'Roboto Condensed';
+    position: relative;
+}
+.pc .main > li > a {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+}
+.pc .main .sub {
+    position: absolute;
+    width: 210px;
+    background-color: #333;
+    top: 35px;
+    left: 50%;
+    margin-left: -105px;
+    display: none;
+    font-size: 14px;
+}
+.pc .main .sub li {
+    text-align: center;
+}
+.pc .main .sub li:first-child {
+    padding-top: 15px;
+}
+.pc .main .sub li:last-child {
+    padding-bottom: 15px;
+}
+.pc .main .sub li a {
+    color: #fff;
+    display: block;
+    padding: 5px 0;
+}
+.pc .lang_wrap {
+    float: right;
+    margin-top: 70px;
+    font-family: 'Roboto Condensed';
+    position: absolute;
+    right: 0;
+}
+.pc .lang_wrap ul {}
+.pc .lang_wrap ul li {
+    display: inline-block;
+}
+.pc .lang_wrap ul li a {
+    display: block;
+    font-size: 11px;
+    color: #fff;
+    font-family: Gotham;
+    background: #94775f;
+    padding: 5px 10px;
+}
+/***** 헤더 고정 *****/
+.fixed {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .5);
+    z-index: 1;
+}
+.fixed .logo a img {width: 140px;}
+.fixed .top_menu .right li {border-right: solid 1px #333}
+.fixed .top_menu .right li:last-child {border-right: 0}
+.fixed .top_menu .right li a {color: #333;}
+.fixed .pc .main > li > a {color: #333;}
+/********** main_visual : 메인 비주얼 시작 **********/
+.slick-slide img {
+    width: 100%;
+    display: block;
+}
+.slick-prev:before, .slick-next:before {
+    display: none;
+}
+.slick-prev, .slick-prev:hover, .slick-prev:focus {
+    background: url(../img/controls.png) 0 -32px no-repeat ;
+    width: 32px;
+    height: 32px;
+    left: 10px;
+    z-index: 1;
+}
+.slick-next, .slick-next:hover, .slick-next:focus {
+    background: url(../img/controls.png) -43px -32px no-repeat ;
+    width: 32px;
+    height: 32px;
+    right: 10px;
+    z-index: 1;
+}
+.slick-dots {bottom: 55px;}
+.slick-dotted.slick-slider {margin-bottom: 0;}
+.m_slider {display: none; }
+/********** cont01 : Best Product 시작 **********/
+.cont01_wrap {
+    max-width: 1160px;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+.title {
+    text-align: center;
+    padding-top: 17.24% ; /* 200px */
+    padding-bottom: 3.87% ;/* 45px */
+    box-sizing: border-box;
+}
+.title h2 {
+    font-family: 'PT Serif';
+    font-size: 55px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.title p {}
+.product_slide {
+    padding: 0 12px;
+    box-sizing: border-box;
+}
+.best {
+    height: 500px;
+    text-align: center;
+    border: 1px solid #f5f5f5;
+    box-sizing: border-box;
+    padding: 0 12px;
+}
+.best a {}
+.best a img {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 230px;
+    height: 230px;
+}
+.best a .p_title {
+    /* padding: 0 12px; */
+    box-sizing: border-box;
+}
+.best a .p_title .txt {
+    font-size: 12px;
+    margin: 30px 0px 5px;
+}
+.best a .p_title .tit {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.best a .p_title .price {
+    font-size: 20px;
+    color: #94775f;
+}
+.product_slide .slick-slide:nth-child(even) {
+    background-color: #f5f5f5;
+}
+/* cont01 슬라이드 버튼 */
+.product_slide .slick-prev {
+    left: -100px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+.product_slide .slick-next {
+    right: -100px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+.product_slide .slick-prev::before {
+    display: block;
+    content: "\e908";
+    font-family: xeicon!important;
+    color: #999;
+    font-size: 25px;
+}
+.product_slide .slick-next::before {
+    display: block;
+    content: "\e90b";
+    font-family: xeicon!important;
+    color: #999;
+    font-size: 25px;
+}
+.xi-long-arrow-left, .xi-long-arrow-right { 
+    display: none;
+}
+/********** cont02 : 숲의 비밀을 피부에게, 루트리 시작 **********/
+.cont02 {
+    background: url(../img/section2_bg.jpg) center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.cont02_wrap {
+    max-width: 1020px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.cont02_wrap h2 {
+    font-family: 'NanumMyeongjo';
+    font-size: 45px;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    padding-top: 230px;
+    padding-bottom:50px ;
+    position: relative;
+}
+.txt_box {
+    width: 100%;
+    background: #fff;
+    /* padding: 100px; */
+    height: 284px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.txt_box .left {
+    float: left;
+    width: 35%;
+    padding: 100px;
+    padding-right: 0;
+    box-sizing: border-box;
+}
+.txt_box .left h3 {
+    color: #8e7369;
+    font-size: 26px;
+    font-weight: normal;
+}
+.txt_box .right {
+    float: right;
+    width: 65%;
+    padding: 100px;
+    padding-left: 0;
+    box-sizing: border-box;
+    text-align: justify;
+    position: relative;
+}
+.txt_box .right p {
+    vertical-align: top;
+    line-height: 2;
+    font-size: 14px;
+    color: #777;
+    letter-spacing: 0px;
+}
+.txt_box .right .button {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background: #8e7369;
+    letter-spacing: 1px;
+    padding: 20px 30px;
+}
+.txt_box .right .button a {
+    color: #fff;
+    display: block;
+}
+.mul {
+    position: absolute;
+    right: -75px;
+    top: 260px
+}
+/********** cont03 : 루트리무비 시작 **********/
+.cont03 {
+    background: url(../img/section3_bg.jpg) center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.cont03_wrap {
+    max-width: 1160px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.cont03_wrap h2 {
+    font-family: 'PT Serif';
+    color: #333;
+    font-size: 45px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    text-align: center;
+    padding-top: 175px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+.movie_box {
+    width: 100%;
+    height: 466px;
+    background: #fff;
+    padding: 50px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.movie_box .left_video {
+    float: left;
+    width: 60%;
+}
+.movie_box .left_video a {
+    display: block;
+    height: 365px;
+    width: 100%;
+    background: url(../img/main_youtube.jpg) center top no-repeat;
+    background-size: cover;
+}
+.movie_box .left_video a img {
+    width: 100%;
+    height: 365px;
+}
+.movie_box .right_text {
+    float: right;
+    width: 40%;
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+.movie_box .right_text h3 {
+    color: #8e7369;
+    font-size: 26px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+.movie_box .right_text p {
+    vertical-align: top;
+    line-height: 2;
+    font-size: 13px;
+    color: #777;
+    letter-spacing: 0px;
+}
+.movie_box .button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #8e7369;
+    letter-spacing: 1px;
+    padding: 20px 30px;
+}
+.movie_box .button a {color: #fff;}
+/********** cont04 : 인스타그램 시작 **********/
+.cont04 {}
+.cont04_wrap {
+    max-width: 1160px;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+.cont04_wrap h2 {
+    font-family: 'PT Serif';
+    color: #333;
+    font-size: 45px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    text-align: center;
+    padding-top: 15%;
+    box-sizing: border-box;
+}
+.instagram {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 30%;
+}
+.instagram article {
+    width: 20%;
+    position: relative;
+}
+.instagram article::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .5s;
+}
+.instagram article:hover::before {
+    opacity: 1;
+}
+.instagram article img {
+    width: 100%;
+    display: block;
+}
+.instagram article .txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .5s;
+    color: #fff;
+}
+.instagram article:hover .txt {
+    opacity: 1;
+}
+/********** footer : 푸터 시작 **********/
+footer {
+    background: #5e504a;
+}
+/* footer_top */
+.footer_top {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    /* border-bottom: 1px solid #4b3e39; */
+}
+.info {
+    float: left;
+    width: 100%;
+    color: #fff;
+}
+.info > span.brown {
+    color: #dedede;
+    font-family: Gotham;
+}
+.info > span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #b9b0ac;
+    display: inline-block;
+    padding: 5px 20px 5px 0;
+    letter-spacing: -0.05em;
+    box-sizing: border-box;
+}
+.personal {
+    border-right: solid 1px #4b3e39;
+    width: 27%;
+    float: left;
+    padding: 22px 0;
+    box-sizing: border-box;
+}
+.personal a {color: #fff;}
+.customer {
+    font-family: 'Gotham';
+    width: 70%;
+    float: left;
+    padding: 15px 0 15px 20px;
+}
+.customer .sns {
+    display: inline-block;
+}
+.customer .sns a {color: #fff;}
+.customer .sns a i {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: #fff;
+    text-align: center;
+    /* padding-top: 10px; */
+    text-align: center;
+    border-radius: 30px;
+    color: #000;
+}
+/* footer_bottom */
+.footer_bottom {
+    color: #fff;
+    border-top: 1px solid #4b3e39;;
+}
+.contact {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+.contact h1 {
+    display: inline-block;
+    width: 12%;
+    vertical-align: top;
+    padding: 60px 0px;
+}
+.contact .copyright_pc {
+    display: inline-block;
+    width: 75%;
+    vertical-align: top;
+    padding: 60px 0 ;
+}
+
+.copyright_mobile {display: none;}
+
+
+/********** 1280px 시작 **********/
+@media screen and (max-width:1280px) {
+    /********** 헤더 **********/
+    header {
+        position: inherit;
+    }
+    .header_wrap {
+        background: #fff;
+        border-bottom: solid 1px #ddd;
+        height: 60px;
+        position: relative;
+    }
+    .pc, .top_menu {display: none;}
+
+    .logo a img, .fixed .logo a img {
+        display: block;
+        width: 100px;
+        height: 30px;
+        margin-top: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .mobile_icon {
+        display: block;
+        font-size: 24px;
+        padding: 20px;
+        color: #929292;
+    }
+    .xi-bars {
+        float: left;
+    }
+    .right {
+        float: right;
+    }
+
+    /********** 메인비주얼 **********/
+    .slider {display: none;}
+    .m_slider {display: block;}
+
+    /* cont01 */
+    .cont01 {}
+    .cont01_wrap {
+        height: 100vh;
+    }
+    .title {
+        /* padding-top: 50px;
+        padding-bottom: 20px; */
+    }
+    .title h2 {
+        font-size: 30px;
+    }
+    .title p {
+        font-size: 14px;
+    }
+    .best a img {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+    .product_slide .slick-prev {
+        width: 40px;
+        height: 40px;
+        background: #000;
+        border: 1px solid  #000;
+        left: 0;
+    }
+    .product_slide .slick-next {
+        width: 40px;
+        height: 40px;
+        background: #000;
+        border: 1px solid  #000;
+        right: 0;
+    }
+    .product_slide .slick-prev::before, .product_slide .slick-next::before {
+        color: #fff;
+        font-size: 16px;
+    }
+    /* cont02 */
+    .cont02 {display: none;}
+
+    /* cont03 */
+    .cont03 {
+        position: relative;
+        height: 100%;
+    }
+    .cont03_wrap h2 {
+        font-size: 30px;
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
+    .movie_box {
+        background: transparent;
+        position: inherit;
+        padding: 20px;
+    }
+    .movie_box .left_video {
+        float: inherit;
+        width: 100%;
+    }
+    .movie_box .right_text {
+        display: none;
+        float: inherit;
+    }
+    .movie_box .button {
+        bottom: 45px;
+        right: 50%;
+        transform: translate(50%, 0);
+        padding: 10px 15px;
+        font-size: 12px;
+        margin-top: 20px
+    }
+}
+/********** 1024px 시작 **********/
+@media screen and (max-width:1024px) {
+    .cont01_wrap {
+        height: auto;
+    }
+    .title {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    .best {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+        transition: .5s;
+        height: auto;
+        margin-bottom: 60px;
+        /* border: 0; */
+    }
+    .best:hover {
+        border-bottom: 3px solid #666;
+    }
+    .best:nth-child(4) ~ .best {
+        display: none;
+    }
+    .best a .p_title .tit {
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .best a .p_title .txt {
+        font-size: 12px;
+        margin: 0;
+    }
+    .instagram {
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width:817px) {
+    .instagram {
+
+    }
+    .instagram article {
+        width: 33.28%;
+    }
+    .instagram article:last-child {
+        display: none;
+    }
+}

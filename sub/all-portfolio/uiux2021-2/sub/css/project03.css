@@ -1,0 +1,134 @@
+@charset "utf-8";
+@import url("../../css/common.css");
+
+.pageTitle {
+    text-align : center;
+    margin-top : 80px;
+    font-size : 3rem;
+    color : #fff;
+    font-family: 'Frank Ruhl Libre', serif;
+}
+.pageTitle h1 {transform : translateY(100px);}
+.sec01 {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 80px;
+    position: relative;
+}
+
+.sec01__wrap {
+    display : flex;
+    justify-content: space-between;
+    transform: rotate(-50deg);
+    position: absolute;
+    top: -46%;
+    left: 20%;
+}
+.contItem {
+    width : 280px;
+    margin-right : 50px;
+}
+.box02 {transform: translateY(-8%);}
+.box03 {transform: translateY(-10%);}
+
+.project03__img {
+    width : 100%;
+    margin-bottom : 80px;
+    position : relative;
+}
+.project03__img::before {
+    content : '';
+    width : 100%;
+    height : 100%;
+    background-color : #A6826D;
+    mix-blend-mode: hue;
+    position : absolute;
+    top : 30px;
+    left : -30px;
+    z-index : -1;
+}
+.project03__img:last-of-type {margin-bottom : 0;}
+.project03__img img {
+    width : 100%;
+    display : block;
+}
+
+
+.sec02 {
+    width: 1580px;
+    margin : 0 auto;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+.sec02__list {width : 100%;}
+.listItem {
+    display : inline-block;
+    margin : 80px 50px;
+}
+.listItem h1 {
+    font-size : 2rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    transition : 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+    position : relative;
+    color : rgba(255, 255, 255, 0.7);
+    font-weight : bold;
+}
+.listItem.active h1 {
+    color : #d94343;
+    opacity : 1;
+}
+.listItem h1::before {
+    content : '';
+    width : 0%;
+    height : 30px;
+    background-color : #fff;
+    position : absolute;
+    bottom : -5px;
+    right : 0;
+    z-index : -1;
+    transition : 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.listItem.active h1::before {
+    width : 100%;
+    right : auto;
+    left : 0;
+    transform: skew(10deg, 7deg);
+}
+.sec02__img {
+    width : 100%;
+    height : 100%;
+    margin : 0 auto;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.sec02__imgWrap {display : none;}
+.sec02__imgWrap.active {
+    width : 100%;
+    height : 100%;
+    display : block;
+}
+.img__list {
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.imgBox {
+    width : 30%;
+    height : 320px;
+    overflow : hidden;
+    margin-bottom : 50px;
+    transition : 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.imgBox:hover {
+    transform : translateY(-10%);
+    box-shadow : -10px 20px 0 #A6826D;
+}
+.imgBox img {
+    width : 100%;
+    display : block;
+}

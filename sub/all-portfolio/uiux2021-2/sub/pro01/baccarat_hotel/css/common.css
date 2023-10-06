@@ -1,0 +1,342 @@
+@charset "utf-8";
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Red+Hat+Display&display=swap');
+
+body{ -ms-overflow-style: none; }
+::-webkit-scrollbar { display: none; }
+
+h1 {color : #a6141d; font-weight : bold;}
+h1, p {font-family: 'Crimson Text', serif;}
+p {line-height : 1.2;}
+a {text-decoration : 0; color : #111;     font-family: 'Red Hat Display', sans-serif;}
+
+/* header */
+#header {
+    width : 100%;
+    height : 100px;
+    position : fixed;
+    top : 0;
+    left : 0;
+    z-index : 2;
+    transition : 0.5s;
+    background-color : transparent;
+}
+#header:hover {background-color : rgba(255,255,255,.5);}
+#header.down {background-color : rgba(255, 255, 255, .5);}
+#header.on {background-color : #fff;}
+#header h1 {
+    width: 160px;
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+}
+#header h1 a {
+    width : 100%;
+    padding : 0 1rem;
+    display : block;
+}
+#header h1 a img {
+    width : 100%;
+}
+#header h1.white {display : block;}
+#header:hover h1.white {display : none;}
+#header.down h1.white {display : none;}
+
+#header h1.colour {display : none;}
+#header:hover h1.colour {display : block;}
+#header.down h1.colour {display : block;}
+#header.on h1.colour {display : block;}
+#header .icon {display : none;}
+#header .rsv {
+    display: inline-block;
+    line-height: 60px;
+    border: 0;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+    background-color: #a6141d;
+}
+#header .rsv a {
+    text-align : center;
+    font-size : 1.2rem;
+    text-transform: uppercase;
+    display : block;
+    color : #fff;
+}
+#header .rsv_mo {
+    display : none;
+    line-height: 60px;
+    border: 0;
+    width: 90px;
+    background-color: #a6141d;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-top: 0;
+    margin-right: 0;
+}
+#header .rsv_mo a {
+    text-align : center;
+    font-size : 1.2rem;
+    text-transform: uppercase;
+    display : block;
+    color : #fff;
+}
+
+.header_wrap {
+    display: inline-block;
+    padding-left: 16%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.main_pc {
+    display : inline-block;
+    width : 100%;
+}
+.main_pc > li {
+    display : inline-block;
+}
+.main_pc > li > a {
+    font-size : 1.2rem;
+    color : #fff;
+    text-transform : uppercase;
+    display : block;
+    line-height : 100px;
+    padding : 0 2rem;
+    position : relative;
+    transition : 0.5s;
+}
+
+#header:hover .main_pc > li > a {color : #111;}
+.down .main_pc > li > a {color : #111;}
+.on > .main_pc > li > a {color : #111;}
+
+#header:hover .main_pc > li:hover > a {color : #a6141d;}
+.main_pc > li.active > a {color : #a6141d;}
+
+.on .main_pc > li.active > a::before {
+    width : 90%;
+    background-color : #a6141d;
+}
+.main_pc > li > a::before {
+    content : '';
+    width : 0%;
+    height : 2px;
+    background-color : transparent;
+    position : absolute;
+    bottom : 20px;
+    left : 50%;
+    transform : translateX(-50%);
+    transition : 0.5s;
+}
+
+.sub {
+    display : none;
+    position : absolute;
+    top : 100px;
+    left : 0;
+    background-color : #fff;
+    width : 100%;
+    padding : 20px 0;
+    padding-left : 12%;
+    box-sizing : border-box;
+    z-index : 9;
+}
+
+.sub > li {
+    display : inline-block;
+    width : 25%;
+}
+.sub > li > a {
+    text-transform : capitalize;
+    line-height : 3;
+}
+.sub > li > a.all {
+    color : #a6141d;
+    font-size : 1.2rem;
+}
+
+/* 모바일메뉴 */
+
+#mobile {display : none;}
+.main_mo {
+    display : none;
+}
+.m_sub {
+    display : none;
+}
+
+
+
+@media screen and (max-width : 1350px) {
+    #header h1 a {padding : 0;}
+    #header .rsv {
+        margin-right : 0;
+        width : 180px;
+    }
+    #header .rsv a {font-size : 1rem;}
+    .main_pc > li > a {
+        font-size : 1rem;
+        padding : 0 1rem;
+    }
+}
+
+@media screen and (max-width : 1024px) {
+    #header {
+        height : 60px;
+        width: 100vw;
+    }
+    #header h1 {
+        width : 110px;
+        margin-top : 6px;
+    }
+    .main_pc {
+        display : none;
+    }
+    #header .rsv {
+        width : 155px;
+        margin-right: 0;
+        margin-top: 0;
+        right : 0;
+    }
+    #header .rsv a {
+        font-size : 0.95rem;
+    }
+    #mobile {
+        display : block;
+        width : 100%;
+        height : 60px;
+        position : absolute;
+        top : 0;
+        left : 0;
+    }
+    #header .icon {
+        width : 60px;
+        height : 60px;
+        position : absolute;
+        top : 0;
+        right : 155px;
+        border : 0;
+        background-color : transparent;
+        display : block;
+    }
+    .icon a {
+        padding : 10px 0;
+        display : block;
+    }
+    .fa-bars {
+        font-size : 30px;
+        color : #111;
+    }
+    .fa-times {
+        font-size : 36px;
+        color : #fff;
+        display : none;
+    }
+    .mo_mask {
+        display : none;
+        width : 100%;
+        height : 100vh;
+        background-color : rgba(0,0,0,0.5);
+        z-index : 5;
+    }
+    .mobile_wrap {
+        display: block;
+        width: 70%;
+        height: 100vh;
+        position : absolute;
+        top : 0;
+        left : -70%;
+        background-color : #fff;
+        z-index : 3;
+    }
+    #header .mobile_wrap h1 {
+        position : absolute;
+        top : 1%;
+        left : 50%;
+        transform : translateX(-50%);
+        width : 110px;
+    }
+    #header .mobile_wrap h1 img {
+        width : 100%;
+    }
+    .main_mo {
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 0 2rem;
+        box-sizing: border-box;
+    }
+    .main_mo > li {
+        list-style: none;
+        line-height: 100px;
+        border-bottom: 1px solid;
+        position : relative;
+    }
+    .main_mo > li > a {
+        text-decoration: 0;
+        color: #333;
+        text-transform: uppercase;
+    }
+    .m_sub {
+        display : none;
+    }
+    .m_sub > li {
+        line-height : 80px;
+        padding-left : 2rem;
+        box-sizing: border-box;
+        text-transform : uppercase;
+    }
+    .m_sub > li > a.all {
+        color : #a6141d;
+        font-size : 1rem;
+    }
+
+    /* 모바일메뉴 스크롤바 */
+    .mobile_wrap {
+        overflow : hidden;
+        overflow-y : scroll;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    #header .rsv {
+        display : none
+    }
+    #header .rsv_mo {
+        display : block;
+    }
+    #header .icon {
+        right : 90px;
+    }
+    .mobile_wrap {
+        left : -80%;
+        width: 80%;
+    }
+    .main_mo {
+        padding: 0 1rem;
+    }
+    .main_mo > li {
+        line-height: 80px;
+    }
+    .m_sub > li {
+        line-height: 60px;
+        padding-left: 1rem;
+        box-sizing: border-box;
+        text-transform: uppercase;
+    }
+    .m_sub li a {
+        font-size: 0.8rem;
+    }
+
+    .text_pc {display : none;}
+    .text_mo {display : block;}
+}

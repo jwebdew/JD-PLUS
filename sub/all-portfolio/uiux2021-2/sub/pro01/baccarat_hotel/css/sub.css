@@ -1,0 +1,741 @@
+@charset "utf-8";
+@import url("common.css");
+p {color : #111;}
+body.fp-viewing-secondPage > #header > .header_wrap > ul> li > a {color : #111;}
+body.fp-viewing-secondPage > #header {background-color : #fff;}
+body.fp-viewing-secondPage > #header > h1.white {display : block;}
+body.fp-viewing-secondPage > #header > h1.colour {display : block;}
+body.fp-viewing-3rdPage > #header > .header_wrap > ul> li > a {color : #111;}
+body.fp-viewing-3rdPage > #header {background-color : #fff;}
+body.fp-viewing-3rdPage > #header > h1.white {display : block;}
+body.fp-viewing-3rdPage > #header > h1.colour {display : block;}
+
+#section0 {
+    background : url(../img/cont02_pc_dining.png) center no-repeat;
+    background-size : cover;
+}
+.intro {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgb(0 0 0 / 60%);
+}
+.intro h1 {
+    font-size : 3rem;
+    text-align : center;
+    color : #fff;
+    text-transform: uppercase;
+}
+.intro p {
+    font-size : 1.1rem;
+    text-align : center;
+    color : #fff;
+    text-transform: uppercase;
+    width : 70%;
+    margin : 0 auto;
+}
+.text_mo {display : none;}
+
+/* section1 */
+.sec1_wrap {
+    max-width : 1280px;
+    width : 100%;
+    margin : 0 auto;
+}
+.title {padding : 0 2%;}
+.title h1 {
+    font-size : 3rem;
+    text-transform: capitalize;
+    color : #a6141d;
+    margin-top : 120px;
+}
+.title p {
+    font-size : 1.2rem;
+    margin-bottom : 100px;
+}
+
+.text h1 {
+    font-size : 3rem;
+    text-transform : capitalize;
+    color : #a6141d;
+    text-align : center;
+}
+.text p {
+    font-size : 1.2rem;
+    color : #111;
+    margin-top : 45px;
+    line-height : 2;
+    text-align : left;
+}
+/* grand salon */
+.grandsalon_img1 {width : 100%;}
+.grandsalon_img1 img {width : 100%; display : block;}
+
+.opt_title {
+    text-align : center;
+    margin : 70px 0 100px;
+}
+.opt_title p {
+    font-size : 1rem;
+    text-transform: uppercase;
+}
+.opt_title h1 {
+    font-size : 3rem;
+    text-transform : capitalize;
+    color : #a6141d;
+    margin-bottom : 50px;
+}
+.opt_title button {
+    background-color : #fff;
+    border : 0;
+    border-top : 1px solid #a6141d;
+    border-bottom : 1px solid #a6141d;
+    width : 280px;
+    padding : 14px 0;
+    box-sizing : border-box;
+}
+.opt_title button a {
+    font-size : 1.2rem;
+    color : #a6141d;
+    text-transform : capitalize;
+    display : block;
+}
+
+.detail.grandsalon {
+    margin-bottom : 120px;
+}
+.grandsalon_img2 {
+    width : 50%;
+    display : inline-block;
+    overflow : hidden;
+}
+.grandsalon_img2 img {
+    width : 100%;
+    display : block;
+}
+.text.gabriel {
+    width : 49%;
+    height : 430px;
+    display : inline-block;
+    position : relative;
+}
+.gabriel .text_wrap {
+    width : 70%;
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%, -50%);
+}
+.detail.afternoontea {
+    position : relative;
+    margin-bottom : 120px;
+}
+.text.afternoontea {
+    width : 50%;
+    height : 500px;
+    display : inline-block;
+    text-align : center;
+    position : relative;
+}
+.afternoontea .text_wrap {
+    width : 70%;
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%, -50%);
+}
+.text button {
+    background-color : #fff;
+    border : 0;
+    border-top : 1px solid #a6141d;
+    border-bottom : 1px solid #a6141d;
+    width : 70%;
+    padding : 14px 0;
+    box-sizing : border-box;
+    margin-top : 77px;
+}
+.text button a {
+    font-size : 1.2rem;
+    color : #a6141d;
+    text-transform : capitalize;
+    display : block;
+}
+.grandsalon_img3 {
+    float : right;
+    position : absolute;
+    top : 0;
+    right : -320px;
+}
+
+/* the bar */
+.thebar_img1 {width : 100%;}
+.thebar_img1 img {width : 100%; display : block;}
+.detail.thebar {
+    width : 100%;
+    height : 430px;
+    position : relative;
+    margin-bottom : 120px;
+}
+.thebar_img2 {
+    display : inline-block;
+    position : absolute;
+    top : 0;
+    left : -320px;
+}
+.text.thebar {
+    width : 50%;
+    height : 430px;
+    display : inline-block;
+    text-align : right;
+    position : relative;
+    margin-left : 50%;
+}
+.thebar .text_wrap {
+    width : 70%;
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%, -50%);
+}
+
+/* inroom */
+.inroom_img1 {width : 100%;}
+.inroom_img1 img {width : 100%; display : block;}
+
+.detail.inroom {
+    width : 100%;
+    height : 572px;
+    position : relative;
+    margin-bottom : 120px;
+}
+.inroom_img2 {
+    width : 50%;
+    display : inline-block;
+    overflow : hidden;
+}
+.inroom_img2 img {
+    width : 100%;
+    display : block;
+}
+.text.inroom {
+    width : 49%;
+    height : 572px;
+    display : inline-block;
+    text-align : right;
+    position : relative;
+}
+.inroom .text_wrap {
+    width : 70%;
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%, -50%);
+}
+.inroom .text_wrap button {display : none;}
+.inroom .text p {margin-top : 0;}
+.inroom ul {margin-top : 20px;} 
+.inroom ul li p span {font-weight : bold;}
+
+
+.private_img1 {width : 100%;}
+.private_img1 img {width : 100%; display : block;}
+
+.detail.private {
+    width : 100%;
+    height : 720px;
+}
+.private_img2 {
+    width : 50%;
+    height : 720px;
+    display : inline-block;
+    overflow : hidden;
+}
+.pritave_img2 img {
+    width : 100%;
+    display : block;
+}
+.text.private {
+    width : 49%;
+    height : 720px;
+    display : inline-block;
+    position : relative;
+}
+.private .text_wrap {
+    width : 70%;
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%, -50%);
+}
+
+
+/* section2 */
+#section2 {
+    position : relative;
+    overflow : hidden;
+}
+.sec2_bg {
+    overflow : hidden;
+    position : relative;
+    height : 694px;
+}
+.sec2_bg::before {
+    content : '';
+    width : 100%;
+    height : 100%;
+    background-color : rgba(255, 255, 255, 0.6);
+    position : absolute;
+    top : 0;
+    left : 0;
+}
+.sec2_bg img {
+    width: 100%;
+    display: block;
+}
+#section2 .sec2_wrap {
+    max-width : 1280px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#section2 .text {
+    width : 100%;
+    position : absolute;
+    top : 130px;
+    left : 0;
+    box-sizing : border-box;
+    color : #fff;
+    z-index : 2;
+}
+#section2 .text h1 {
+    font-size : 2.3rem;
+    text-transform : uppercase;
+    color : #fff;
+    margin : 40px 0;
+}
+#section2 .text p {
+    font-size : 1rem;
+    margin-top : 20px;
+}
+#section2 .text .button_wrap {
+    width : 20%;
+}
+#section2 .text button {
+    border : 0;
+    border-top : 1px solid #fff;
+    border-bottom : 1px solid #fff;
+    width : 100%;
+    box-sizing : border-box;
+    background-color : transparent;
+}
+#section2 .text button:nth-of-type(2) {
+    border : 0;
+    border-bottom : 1px solid #fff;
+}
+#section2 .text button:nth-of-type(3) {
+    border : 0;
+}
+#section2 .text button a {
+    font-size : 1.2rem;
+    text-transform : capitalize;
+    color : #fff;
+    padding : 14px;
+    display : block;
+    box-sizing : border-box;
+}
+#section2 .text button.sec5_btn_mo {display : none;}
+
+/* footer */
+
+.footer {
+    height: 354px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.footer_top {
+    width : 100%;
+    background-color : #fff;
+    text-align : center;
+}
+.footer_top h1 {
+    width : 10%;
+    display : inline-block;
+    margin: 20px 0;
+}
+.footer_top h1 img {
+    width : 100%;
+}
+.sns {
+    text-align : center;
+}
+.sns li {
+    display : inline-block;
+    padding : 0 15px;
+}
+.badge {
+    text-align : center;
+}
+.badge li {
+    display : inline-block;
+    margin : 10px 20px;
+}
+.badge li a {
+    width: 100%;
+}
+.badge li a img {
+    width: 100%;
+}
+.link {
+    text-align : center;
+    padding : 10px 0;
+}
+.link li {
+    display : inline-block;
+    padding : 0 15px;
+}
+.link li a {
+    text-transform : capitalize;
+}
+.footer_btm {
+    width : 100%;
+    background-color : #a6141d;
+    text-align : center;
+}
+.footer_btm p {
+    display : inline-block;
+    color : #fff;
+    padding : 15px 0;
+}
+/* card */
+.card {
+    position: absolute;
+    right: auto;
+    top: auto;
+    bottom: 356px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 40px;
+    box-sizing: border-box;
+    background-color : transparent;
+    z-index: 1;
+    width: 100%;
+}
+.card_wrap {
+    margin: 0 auto;
+    width: 700px;
+    height: 260px;
+    overflow: hidden;
+}
+.card_wrap h1 {
+    width: 342px;
+    box-sizing: border-box;
+    overflow: hidden;
+    float: left;
+}
+.card_wrap form {
+    width: 342px;
+    float: right;
+}
+.card_wrap form h4 {
+    text-align: center;
+    color: #a6141d;
+    font-size: 1.5rem;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    font-family: 'Crimson Text', serif;
+}
+.card_wrap form h4 span {
+    font-size : 1rem;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.card_wrap fieldset {
+    border: 0;
+    text-align: center;
+    width : 90%;
+    margin : 0 auto;
+}
+.card_wrap fieldset legend {
+    display : none;
+}
+.card_wrap fieldset label {
+    display : none;
+}
+#email {
+    text-align : center;
+    width : 90%;
+    padding : 15px;
+    box-sizing: border-box;
+    border: 0;
+    box-shadow : 0 0 10px rgba(0,0,0,0.5);
+}
+input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+}
+.card_wrap p {
+    display: inline-block;
+    font-size: 1rem;
+    padding-left: 5px;
+    box-sizing: border-box;
+    margin: 20px 0;
+    width: 80%;
+}
+.card_wrap p span {
+    text-decoration : underline;
+}
+.card_wrap .subsc input {
+    width : 90%;
+    background-color : #a6141d;
+    color : #fff;
+    border : 0;
+    padding : 14px 0;
+    letter-spacing : 5px;
+    font-size : 1rem;
+    cursor : pointer;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+
+@media screen and (max-width : 1024px) {
+    .grandsalon_img2 img {
+        width: auto;
+        display: block;
+        margin-left: -15%;
+    }
+    .grandsalon_img3 {
+        float: right;
+        position: absolute;
+        top: 0;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .text.afternoontea {
+        width: 45%;
+        height: 500px;
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        margin-left: 3%;
+        background-color: rgba(255,255,255,0.7);
+    }
+    .text button {
+        background-color: #fff0;
+        border: 0;
+        border-top: 1px solid #a6141d;
+        border-bottom: 1px solid #a6141d;
+        width: 100%;
+        padding: 14px 0;
+        box-sizing: border-box;
+        margin-top: 40px;
+    }
+    .thebar_img2 {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .text.thebar {
+        width: 47%;
+        height: 430px;
+        display: inline-block;
+        text-align: right;
+        position: relative;
+        margin-left: 50%;
+        background-color: rgba(255,255,255,0.7);
+    }
+    .inroom_img2 img {
+        width: auto;
+        display: block;
+        margin-left: -15%;
+    }
+
+    .sec2_bg img {
+        width: auto;
+        display: block;
+    }
+}
+
+@media screen and (max-width : 800px) {
+    .text h1 {font-size: 2rem;}
+    .text p {font-size: 1rem;}
+    .text_pc {display : none;}
+    .text_mo {display : block;}
+
+    .text.afternoontea {margin-left : 0;}
+    .text.thebar {margin-left: 53%;}
+    .inroom .text_wrap button {display : block;}
+}
+
+@media screen and (max-width : 500px) {
+    .title {
+        padding: 0 5%;
+    }
+    .opt_title {
+        text-align: center;
+        margin: 50px 0;
+    }
+
+
+    .detail.grandsalon {
+        margin-bottom: 0;
+    }
+    .grandsalon_img2 {
+        width: 100%;
+        height: 300px;
+        display: inline-block;
+        overflow: hidden;
+    }
+    .text.gabriel {
+        width : 100%;
+        height : 330px;
+    }
+
+    .detail.afternoontea {
+        position: relative;
+        margin-bottom: 80px;
+    }
+    .grandsalon_img3 {
+        display: inline-block;
+        position: relative;
+        top: 0;
+        right: auto;
+    }
+    .grandsalon_img3 img {
+        width: 100%;
+    }
+    .text.afternoontea {
+        margin-left : 0;
+        width : 100%;
+        height : 390px;
+    }
+
+
+    .detail.thebar {
+        width: 100%;
+        height: 500px;
+        position: relative;
+        margin-bottom: 80px;
+    }
+    .thebar_img2 {
+        display: inline-block;
+        position: relative;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .thebar_img2 img {
+        width: 120%;
+    }
+    .text.thebar {
+        margin-left: 0;
+        width : 100%;
+        height : 330px;
+    }
+
+
+    .detail.inroom {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        margin-bottom: 120px;
+    }
+    .inroom_img2 {
+        display : none;
+    }
+    .text.inroom {
+        width: 100%;
+        height: 400px;
+        display: inline-block;
+        text-align: right;
+        position: relative;
+    }
+    .text_wrap {
+        width: 70%;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .detail.private {
+        width: 100%;
+        height: 330px;
+    }
+    .private_img2 {
+        width: 50%;
+        height: 720px;
+        display: none;
+        overflow: hidden;
+    }
+    .text.private {
+        width: 100%;
+        height: 330px;
+        display: inline-block;
+        position: relative;
+    }
+
+
+    .sec2_bg {
+        overflow: hidden;
+        position: relative;
+        height: 100vh;
+    }
+    .sec2_bg::before {background-color: rgb(255 255 255 / 60%);}
+    .footer {
+        height: auto;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .footer_top h1 {width : 22%;}
+    .sns li a img {width : 70%;}
+    .badge li {
+        margin: 10px 0;
+        width: 23%;
+    }
+    .badge li a img {width: 70%;}
+    .link {
+        padding: 0;
+        padding-top: 20px;
+    }
+    .link li {
+        display: inline-block;
+        padding: 0 15px;
+        margin-bottom: 10px;
+    }
+    .link li a {font-size : 0.8rem;}
+    .footer_btm p {font-size: 0.8rem;}
+    .card {
+        position: absolute;
+        right: auto;
+        top: 13%;
+        bottom: auto;
+        left: 0;
+        transform: translateX(0%);
+        padding: 0;
+        box-sizing: border-box;
+        background-color: transparent;
+        z-index: 1;
+        width: 100%;
+    }
+    .card_wrap {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    .card_wrap h1 {display: none;}
+    .card_wrap form {width: 100%;}
+    .card_wrap form h4 {
+        font-size: 1.2rem;
+        padding-bottom: 20px;
+    }
+}

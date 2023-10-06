@@ -1,0 +1,11 @@
+@font-face {
+    font-family: '.';
+    src: url('MonoLisa-Regular.eot');
+    src: url('MonoLisa-Regular.eot?#iefix') format('embedded-opentype'),
+        url('MonoLisa-Regular.woff2') format('woff2'),
+        url('MonoLisa-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,111 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Cafe24-ClassicType';
+    src: url('font/Cafe24Classic/Cafe24ClassicType-Regular.eot');
+    src: url('font/Cafe24Classic/Cafe24ClassicType-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/Cafe24Classic/Cafe24ClassicType-Regular.woff2') format('woff2'),
+        url('font/Cafe24Classic/Cafe24ClassicType-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'S-Core_Dream';
+    src: url('font/S-CoreDream/S-CoreDream-2ExtraLight.eot');
+    src: url('font/S-CoreDream/S-CoreDream-2ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('font/S-CoreDream/S-CoreDream-2ExtraLight.woff2') format('woff2'),
+        url('font/S-CoreDream/S-CoreDream-2ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'S-Core_Dream';
+    src: url('font/S-CoreDream/S-CoreDream-4Regular.eot');
+    src: url('font/S-CoreDream/S-CoreDream-4Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/S-CoreDream/S-CoreDream-4Regular.woff2') format('woff2'),
+        url('font/S-CoreDream/S-CoreDream-4Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'S-Core_Dream';
+    src: url('font/S-CoreDream/S-CoreDream-6Bold.eot');
+    src: url('font/S-CoreDream/S-CoreDream-6Bold.eot?#iefix') format('embedded-opentype'),
+        url('font/S-CoreDream/S-CoreDream-6Bold.woff2') format('woff2'),
+        url('font/S-CoreDream/S-CoreDream-6Bold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'S-Core_Dream';
+    src: url('font/S-CoreDream/S-CoreDream-8Heavy.eot');
+    src: url('font/S-CoreDream/S-CoreDream-8Heavy.eot?#iefix') format('embedded-opentype'),
+        url('font/S-CoreDream/S-CoreDream-8Heavy.woff2') format('woff2'),
+        url('font/S-CoreDream/S-CoreDream-8Heavy.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+/* *:focus {
+    outline: 1px solid #FF55BB;
+    
+} */
+ 
+
+h3 {
+    font-family: 'Cafe24-ClassicType';
+    font-weight: normal; 
+}
+.text_slide {
+    font-family: 'Cafe24-ClassicType';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+html,body {
+    line-height: 1;
+    color: #000;
+    font-size: 62.5%;
+    font-family: 'S-Core_Dream';
+    font-weight: 400;
+     
+    /* overflow-x: hidden; */
+}
+img {
+    vertical-align: top;
+}
+h1, h2, h3, h4, h5 {
+    font-weight: normal;
+}
+.inner {
+    max-width: 1440px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
+
+section {
+    padding: 200px 0;
+}
+
+/* 🎫 header*/
+header {}
+
+/* 🎫 footer*/
+footer {}

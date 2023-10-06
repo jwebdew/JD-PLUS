@@ -1,0 +1,6 @@
+@charset "utf-8";
+@import url("font.css");
+*{padding:0; margin:0; font-family: 'NanumGothic'; color: #222;}
+a{text-decoration: none; color: #222;}
+li{list-style: none;}
+.clearfix::after{content: ''; display: block; clear: both;}

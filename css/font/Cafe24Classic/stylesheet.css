@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Cafe24 ClassicType';
+    src: url('Cafe24ClassicType-Regular.eot');
+    src: url('Cafe24ClassicType-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Cafe24ClassicType-Regular.woff2') format('woff2'),
+        url('Cafe24ClassicType-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

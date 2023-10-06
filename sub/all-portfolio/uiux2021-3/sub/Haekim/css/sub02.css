@@ -1,0 +1,236 @@
+@charset "utf-8" ;
+
+#contents {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 150px 40px;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    overflow: hidden;
+}
+.container > div {
+    float: left;
+}
+.m_thumnail {display: none;}
+.infoArea {
+    width: 35%;
+    vertical-align: top;
+    position: fixed;
+    right: 10px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.infoArea h3 {
+    font-size: 20px;
+    font-family: 'Montserrat';
+    padding: 5px 0 20px 0;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+.infoArea ul {}
+.infoArea ul li {}
+.infoArea ul li.sale_price {
+    font-size: 18px;
+    color: #fa5555;
+    letter-spacing: 0.5px;
+    padding-bottom: 10px;
+}
+.infoArea ul li.sale_price span {
+    font-family: 'Noto Sans KR';
+    font-size: 16px;
+}
+.infoArea ul li.prd_price {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    text-decoration: line-through;
+}
+.infoArea ul li.point {
+    padding: 20px 0;
+}
+.infoArea select {
+    border: 1px solid #ccc;
+    width: 50%;
+    padding: 5px;
+}
+.infoArea form {
+    margin: 20px 0;
+}
+.infoArea form span {
+    margin-right: 10px;
+}
+.infoArea form input {
+    border: 0;
+}
+.infoArea form input[type=button] {
+    width: 25px;
+    height: 25px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 8px;
+    background-color: #fff;
+    color: #333;
+    font-size: 18px;
+    border: 1px solid #ccc;
+}
+.infoArea form input.amount {
+    text-align: center;
+}
+.infoArea form input.sum {
+    font-size: 20px;
+    position: relative;
+    font-weight: bold;
+}
+.infoArea form input.sum::after {
+    content: ',';
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.infoArea form p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.infoArea .btn {}
+.infoArea .btn ul {
+    text-align: center;
+    overflow: hidden;
+}
+.infoArea .btn ul .top {
+    width: 50%;
+    background: #231916;
+    border: 1px solid#231916;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 1%;
+    transition: all 0.3s;
+}
+.infoArea .btn ul .bottom {
+    float: left;
+    width: 24.5%;
+    background: #fff;
+    border: 1px solid#ccc;
+    margin-right: 1%;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+.infoArea .btn ul li a {
+    color: #231916;
+    display: block;
+    padding: 10px 0;
+}
+.infoArea .btn ul .top a {
+    color: #fff;
+    display: block;
+}
+.infoArea .btn ul .top:hover {
+    background: #fff;
+}
+.infoArea .btn ul .top:hover a {
+    color: #231916;
+}
+.infoArea .btn ul .bottom:hover {
+    border: 1px solid#231916;
+    box-sizing: border-box;
+}
+
+.detailArea {
+    vertical-align: top;
+    width: 65%;
+    box-sizing: border-box;
+}
+.detailArea .thumnail {
+    width: 100%;
+    margin-bottom: 50px;
+}
+.detailArea .thumnail  img {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+}
+.detailArea .detail img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+.detailArea .review {
+    margin: 100px 0;
+}
+.detailArea .board_top {
+    overflow: hidden;
+}
+.detailArea .board_top h3 {
+    float: left;
+    width: 50%;
+}
+.detailArea .board_top .right {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+.detailArea .board_top .right a {
+    display: inline-block;
+    border: 1px solid #231916;
+    color: #231916;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px 10px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+.detailArea .board_top .right a:hover {
+    border: 1px solid #231916;
+    background-color: #231916;
+    color: #fff;
+    box-sizing: border-box;
+}
+.detailArea .board {
+    margin: 10px 0 0;
+    border-top: 1px solid #ddd;
+    color: #9e9e9e;
+    line-height: 39px;
+    text-align: center;
+}
+
+
+@media screen and (max-width:1024px) {
+    #contents {
+        padding: inherit;
+    }
+    .container > div {
+        float: inherit;
+    }
+    .m_thumnail {display: block;}
+    .m_thumnail img {
+        width: 100%;
+        display: block;
+    }
+    .infoArea {
+        position: inherit;
+        width: 100%;
+        margin: 50px 0;
+    }
+    .infoArea select {
+        width: 100%;
+    }
+    .infoArea .btn ul .top {
+        width: 100%;
+    }
+    .infoArea .btn ul .bottom {
+        width: 49.5%;
+    }
+    .infoArea .btn ul .bottom:last-of-type {
+        margin-right: 0;
+    }
+    .detailArea {width: 100%;}
+    .detailArea .thumnail {display: none;}
+    .detailArea .review, .detailArea .QnA {
+        padding: 0 1%;
+    }
+}

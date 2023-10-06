@@ -1,0 +1,224 @@
+@charset "utf-8";
+#wrap{}
+/*헤더영역*/
+#header{}
+#headerIn1{ width: 100%;  border-bottom: 1px solid #ee3524;}
+.inner1{width: 1100px; height:30px; margin: 0 auto;}
+.utill{ float: right; margin-top: 10px;}
+.utill li{float: left; margin-left: 10px; background:url(../img/utill_bar.png) no-repeat left center;}
+.utill li:first-child{ background: none;}
+.utill li a{color: #888;display: block; padding-left: 10px;}
+.utill li a:hover{ color: #121212; text-decoration: underline;}
+
+#headerIn2{width: 100%; height: 75px; border-bottom: 4px solid #404040; position: relative;}
+.inner2{width: 1100px; margin: 0 auto; position: relative; padding-top: 20px;}
+.logo{}
+.gnb{position: absolute; right: 0; top:35px; z-index: 150; height: 44px; overflow: hidden;}
+.gnb h2{text-indent: -9999px;}
+.gnb .mu{}
+.gnb .ml{ float: left; width: 142px; text-align: center;}
+.gnb .ml .d1{ font-size: 18px; font-weight: bold; display: block; width: 100%; transition: 0.3s;}
+.gnb .ml:hover .d1{ color: #ee3523;}
+.gnb .ml .d1 span{ display: block; width: 100%; height: 4px; background: #ee3524; margin-top: 4px; 
+                        transform: scaleX(0); transition: transform 0.3s;}
+.gnb .ml:hover .d1 span{transform: scaleX(1);}
+/*서브메뉴*/
+.gnb .ml .sub{background: #fff; height: 210px; padding:20px 0;}
+/*.gnb:hover .ml .sub{ display: block;}*/
+.gnb .ml .sub ul{}
+.gnb .ml .sub li{}
+.gnb .ml .sub li a{ color: #505050; font-size: 14px; font-weight: 500; line-height: 35px; transition: 0.5s;}
+.gnb .ml .sub li:hover a{color: #ee3523;}
+.subBg{width: 100%; height: 250px; background: #fff; position: absolute; top:79px; z-index: 100; display: none;}
+
+
+/*슬라이더영역*/
+.slider{position: relative;}
+.slider li{width: 100%; height: 510px;}
+.slider li a{display: block; width: 100%; height: 510px;}
+.slider .ms1 a{background: url(../img/mainSlider.png) no-repeat center 0;}
+.slider .ms2 a{background: url(../img/mainSlider2.png) no-repeat center 0;}
+.slider .ms3 a{background: url(../img/mainSlider3.png) no-repeat center 0;}
+
+.slider .bx-pager{position: absolute; left: 50%; transform: translateX(-50%); bottom: 30px;}
+.slider .bx-pager div{float: left; margin: 0 15px;}
+.slider .bx-pager div a{display: block; width: 18px; height: 18px; border-radius: 50%; text-indent: -9999px;
+                            border: 3px solid #fff; box-sizing: border-box;}
+.slider .bx-pager div .active{background: #fff;}
+.slider .bx-controls-direction{position: absolute; top: 50%; left: 50%; width: 1100px; transform: translateY(-50%); transform: translateX(-50%); background: #ccc;}
+.slider .bx-controls-direction a{display: block; width: 24px; height: 54px; text-indent: -9999px; transition: 0.3s;}
+.slider .bx-controls-direction .bx-prev{background: url(../img/arrow_left.png) no-repeat; position: absolute; top: 0; left: 0;}
+.slider .bx-controls-direction .bx-prev:hover{background: url(../img/arrow_left_hover.png) no-repeat;}
+.slider .bx-controls-direction .bx-next{background: url(../img/arrow_right.png) no-repeat; position: absolute; top: 0; right: 0;}
+.slider .bx-controls-direction .bx-next:hover{background: url(../img/arrow_right_hover.png) no-repeat;}
+.slider .bx-controls-auto{display: none;}
+
+/*컨테이너영역*/
+#container{}
+
+/*contents영역(컨테이너1)*/
+.contents{margin-top: 70px;}
+.contentsIn{ width: 1100px; height:446px; margin: 0 auto;}
+.contentsIn>div{ float: left;}
+.box1{margin-right: 20px; position: relative;}
+.button{width:186px; height: 38px; border: 2px solid #fff; 
+        font-size:24px; font-weight: bold; text-align: center; line-height: 38px; color: #fff;
+        position: absolute; bottom: 33px; left:50%; margin-left: -95px; }/*바로가기버튼 공통*/
+.box1:hover .button{ padding: 2px; border: none; background: #fff; color: #ee3524;}
+.box2{ width: 460px; height: 446px; position: relative;}
+.box2 .fact{}
+.box2 h3{ width:280px; font-size: 16px; color: #404040; line-height: 20px; 
+            border-bottom: 2px solid #ee3524; margin-bottom: 15px;}/*h3공통*/
+.fact .factInfo{ margin-top: 9px; width: 460px; height: 147px;}
+.fact .factInfo>div{float: left;}
+.fact .factInfo .movie{ width: 260px; height: 147px;}
+.fact .factInfo .text{ width: 180px; height: 147px; margin-left:20px; position: relative;;}
+.fact .factInfo .text h4{ font-weight:400; line-height: 20px; color: #fff; background: #ee3524; margin-bottom: 10px; padding-left: 5px;}
+.fact .factInfo .text p{ color: #404040;}
+.fact .factInfo .text .more{position: absolute; bottom: 0; right: 0;}
+.fact .factInfo .text .more:hover a{ color: #ee3524;}
+.box2 .news{position: absolute; bottom: 0;}
+.news .list{width: 460px; height: 181px; }
+.news .list ul{ position: absolute; bottom: 0;}
+.news .list li{ width: 448px; height: 19px; border: 1px solid #999; padding: 9.5px 0 9.5px 10px; position: relative;}
+.news .list li:nth-child(3){ border-top:none;}
+.news .list li:last-child{border-top:none;}
+.news .list li p{width: 21px; height: 21px; color: #fff; text-align: center; background: #ee3524;}
+.news .list li .d1{background: #999; float: left;}
+.news .list li .listA{float: left; font-size:14px; margin-left:10px;}
+.news .list li .listDetail{ width: 460px; height: 103px; background: #ccc; position: absolute; bottom:-1px;; left: -1px; display: none; }
+.news .list li:hover .listDetail{ display: block;}
+.news .list li .listDetail .ldTxt{}
+.news .list li .listDetail .ldTxt p{ position: absolute; top: 8px; left: 203px;}
+.news .list li .listDetail .ldTxt h4{ position: absolute; top: 8px; left: 232px; font-size: 14px; color: #404040;}
+.news .list li .listDetail .ldTxt a{ line-height: 14px; display: block; width: 214px; height: 55px; position: absolute; top: 30px; left: 232px;}
+.box3{ margin-left: 20px; position: relative;}
+.box3:hover .button{ padding: 2px; border: none; background: #fff; color: #282368;}
+
+
+/*product영역(컨테이너2)*/
+.product{ width: 100%; margin:90px 0;}
+.productIn{ width: 1100px; height: 562px; margin: 0 auto;}
+.productIn h3{ font-size: 40px; line-height: 40px; font-weight: bold; color: #404040; text-align: center; margin-bottom: 30px;}
+.productIn .pdList{}
+.pdList ul{}
+.pdList li{ float: left;}
+.pdList li:nth-child(2n){ padding-top: 62px;}
+.pdList li h4{ text-align: center; font-size: 25px; font-weight: 400; color: #404040; line-height: 40px; }
+.pdList li a{}
+.pdList li a p{ text-indent: -9999px; height: 387px; border-top:3px solid #7c7c7c; background-repeat: no-repeat; transition: 0.5s;}
+.pdList li a p:hover{border-top:3px solid #ee3524;}
+.pdList li a .pdImg1{width: 279px; background-image: url(../img/product_img1.gif);}
+.pdList li a .pdImg1:hover{background-image: url(../img/product_img1_hover.gif);}
+.pdList li a .pdImg2{ width: 261px; background-image: url(../img/product_img2.gif);}
+.pdList li a .pdImg2:hover{ background-image: url(../img/product_img2_hover.gif);}
+.pdList li a .pdImg3{ width: 280px; background-image: url(../img/product_img3.gif);}
+.pdList li a .pdImg3:hover{ background-image: url(../img/product_img3_hover.gif);}
+.pdList li a .pdImg4{ width: 280px; background-image: url(../img/product_img4.gif);}
+.pdList li a .pdImg4:hover{ background-image: url(../img/product_img4_hover.png);}
+
+
+/*kaltwin영역(컨테이너3)*/
+.kaltwin{ width: 100%; height: 462px; background: url(../img/kaltwin.gif) no-repeat center 0; margin-bottom: 85px;}
+.kaltwinIn{ width: 1100px; height: 462px; margin: 0 auto; position: relative;}
+.kaltwinIn a{ display: block; width: 276px; height: 46px; 
+                font-size: 24px; font-weight: bold; color: #fff; line-height: 46px; text-align: center;
+                border: 2px solid #fff; position: absolute; bottom: 80px; left: 150px;}
+.kaltwinIn a:hover{ background: #fff; color: #383838; transition: 0.5s;}
+
+/*service영역(컨테이너4)*/
+.service{ width: 100%}
+.serviceIn{ width: 1100px; height: 460px; margin: 0 auto;}
+.serviceIn .s1{width: 500px; height: 460px; float: left;}
+.serviceIn h3{ font-size: 24px; line-height: 24px; font-weight: bold; color: #404040;}
+.s1 .imembers{ position: relative; width:500px; height: 430px; overflow: hidden; margin-top:6px;}
+.imembers .imImg{ text-indent: -9999px; width:500px; height: 430px;  background: url(../img/imembers.png) no-repeat; transition: 3s;}
+.imembers .imTxt{width: 460px; height: 125px; background: rgba(0,0,0,0.5); padding: 0 20px; 
+                        position:absolute; bottom: -70px; left: 0; transition: all 0.5s}
+.imembers:hover .imTxt{ bottom: 0; left: 0;}
+.imembers:hover .imImg{transform: scale(1.2);}
+.imembers .imTxt h4{ font-size: 26px; line-height: 60px; color: #fff; font-weight: bold;}
+.imembers .imTxt p{ font-size: 16px; line-height: 20px; color: #fff; font-weight: 200;}
+.imembers .imTxt p:hover{text-decoration: underline;}
+.imembers .imTxt span{ font-size: 16px; line-height: 16px; color: #fff; font-weight: 200; float: right;}
+.imembers .imTxt span:hover{text-decoration: underline;}
+
+.serviceIn .s2{ float: right;}
+.s2 .call{ width: 561px; height: 265px;}
+.s2 .call h3{border-bottom: 2px solid #ee3524; padding-bottom: 3px;}
+.s2 .call h4{ font-size: 70px; line-height: 70px;  color: #ee3524; margin: 25px 0 20px 0;}
+.s2 .call p{ font-size: 20px; font-weight: bold; line-height: 20px; color: #535353;}
+.s2 .call span{ font-size: 14px; font-weight: bold; line-height: 36px; color: #535353;}
+.s2 .call .svBtn{}
+.s2 .call .svBtn ul{}
+.s2 .call .svBtn li{ float: left; width: 140px; height: 24px; text-align: center; padding: 20.5px 0; background: #f4f4f4;}
+.s2 .call .svBtn li:nth-child(2n){ background: #dfdfdf;}
+.s2 .call .svBtn li:hover{ background: #b1b1b1;}
+.s2 .call .svBtn a{ font-size: 24px; line-height: 24px; font-weight: bold; color: #535353; transition: 0.3s;}
+.s2 .call .svBtn li:hover a{ color: #fff;}
+
+.s2 .sns{ width: 561px; height: 141px; margin-top: 54px;}
+.s2 .sns h3{border-bottom: 2px solid #ee3524; padding-bottom: 3px; }
+.s2 .sns ul{ width: 496px; padding: 0 32.5px; margin-top: 33px;}
+.s2 .sns li{ float: left; margin-right: 60px;}
+.s2 .sns li:last-child{ margin-right: 0;}
+.s2 .sns li a{text-indent: -9999px; display: block; width: 79px; height: 79px; background-repeat: no-repeat; transition: 0.5s;}
+.s2 .sns li .s1{background-image:url(../img/sns1.png);}
+.s2 .sns li .s1:hover{background-image:url(../img/sns1_hover.png);}
+.s2 .sns li .s2{background-image:url(../img/sns2.png);}
+.s2 .sns li .s2:hover{background-image:url(../img/sns2_hover.png);}
+.s2 .sns li .s3{background-image:url(../img/sns3.png);}
+.s2 .sns li .s3:hover{background-image:url(../img/sns3_hover.png);}
+.s2 .sns li .s4{background-image:url(../img/sns4.png);}
+.s2 .sns li .s4:hover{background-image:url(../img/sns4_hover.png);}
+
+
+
+/*푸터영역*/
+#footer{ width: 100%; margin-top: 60px;}
+#f1{ width: 100%; height: 60px; background: #383838;}
+.footerIn{ width: 1100px; margin: 0 auto;}/*f1과 f2의 푸터인 공통값*/
+#f1 .footerIn{height: 60px;}
+.footerIn .fmenu{padding: 25px 0; height: 10px;}
+.fmenu ul{ width: 800px; margin: 0 auto;}
+.fmenu li{ float: left; margin-right: 10px; padding-right: 10px; border-right: 1px solid #e6e6e6; 
+                font-size: 14px; line-height: 10px;}
+.fmenu li:last-child{ margin-right: 0; padding-right: 0; border-right: 0;}
+.fmenu li a{color: #e6e6e6;}
+.fmenu li:nth-child(5) a{color: #e30613;}
+.fmenu li a:hover{ text-decoration: underline;}
+
+
+#f2{width: 100%; height: 190px;}
+#f2 .footerIn{height: 156px; padding-top: 34px; position: relative;}
+#f2 .footerIn .fLogo{text-indent: -9999px; width: 226px; height: 31px; background: url(../img/flogo.png) no-repeat;
+                            margin-bottom: 27px;}
+#f2 .footerIn .fInfo{color: #535353;}
+
+#f2 .footerIn .family{position: absolute; top: 32px; right: 0;}
+#f2 .footerIn .family a{font-size: 14px; color: #535353; font-weight: 500;}
+#f2 .footerIn .family>a{ display: block; 
+                             line-height: 23px; width: 158px; height: 23px; padding: 0 10px;
+                            border: 1px solid #c5c5c5; position: relative;}
+#f2 .footerIn .family a span{ display: block; width: 12px; height: 7px; background: url(../img/f_arrow.png) no-repeat;
+                                        position: absolute; top: 50%; right:10px; margin-top:-3.5px;}
+#f2 .footerIn .family:hover a span{ transform: rotate(180deg)}
+.family .flist{ width: 158px; height: 92px; background: #fff; padding: 10px;
+                border: 1px solid #c5c5c5; border-bottom: 0; 
+                position: absolute; top: -112px; left: 0px;
+                display: none;}
+.family:hover .flist{ display: block;}
+.family .flist ul{}
+.family .flist li{}
+.family .flist li a{ line-height: 30px;}
+.family .flist li a:hover{ text-decoration: underline;}
+
+#f2 .footerIn .fmark{ position: absolute; top: 92px; right: 0;}
+.fmark ul{}
+.fmark li{ float: left;}
+
+
+
+
+
+

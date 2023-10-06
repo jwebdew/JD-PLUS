@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DIY:공작새</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        #wrap{max-width: 1000px; min-width: 1000px; margin: 0 auto;}
+        section{width: 100%; background-repeat: no-repeat; background-position: center 0; background-size: cover;}
+        .s1{height: 669px; background-image: url(img/1.jpg); position: relative;}
+        .s1 div{position: absolute; top: 125px; left: 164px;}
+        .s1 div img{width: 228px; height: 403px;}
+        .s2{height: 618px; background-image: url(img/2.jpg)}
+        .s3{height: 823px; background-image: url(img/3.jpg)}
+        .s4{height: 1100px;}
+        .s4 input{display: none;}
+        #photo{width: 1000px; height: 1100px; position: relative; overflow: hidden;}
+        #imgWrap{width: 3000px; height: 1100px; position: relative; transition: 0.7s;}
+        #imgWrap:after{display: block; content: ""; clear: both;}
+        #imgWrap img{ float: left;}
+        #btnWrap{position: absolute; top: 15px; left: 50%; transform: translateX(-50%); font-weight: bold; color: #646464;}
+        #btnWrap:after{display: block; content: ""; clear: both;}
+        #btnWrap label{display: block; width: 12px; height: 12px; border-radius: 50%; 
+            border: 2px solid #ff4181; float: left; cursor:pointer;
+            margin-right: 20px;}
+        #img1:checked ~ #photo #imgWrap{left: 0;}
+        #img2:checked ~ #photo #imgWrap{left: -1000px;}
+        #img3:checked ~ #photo #imgWrap{left: -2000px;}
+        
+        #img1:checked ~ #photo #btnWrap label:nth-child(1){background: #ff4181;}
+        #img2:checked ~ #photo #btnWrap label:nth-child(2){background: #ff4181;}
+        #img3:checked ~ #photo #btnWrap label:nth-child(3){background: #ff4181;}
+        
+        .s5{height: 692px; background-image: url(img/5.jpg)}
+        .s6{height: 907px; background-image: url(img/6.jpg)}
+        .s7{height: 1189px; background-image: url(img/7.jpg)}
+        .s8{height:  1715px; background-image: url(img/8.jpg)}
+        .s9{height:  1617px; background-image: url(img/9.jpg)}
+        .s10{height:  1670px; background-image: url(img/10.jpg)}
+        .s11{height:  3361px; background-image: url(img/11.jpg)}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <section class="s1">
+            <div><img src="img/app.gif" alt="DIY공작새"></div>
+        </section>
+        <section class="s2"></section>
+        <section class="s3"></section>
+        <section class="s4">
+            <input type="radio" name="photo" id="img1" checked="checked">
+            <input type="radio" name="photo" id="img2">
+            <input type="radio" name="photo" id="img3">
+            <div id="photo">
+                <div id="imgWrap">
+                    <img src="img/4-1.jpg" alt="페르소나">
+                    <img src="img/4-2.jpg" alt="시나리오">
+                    <img src="img/4-3.jpg" alt="정보설계">
+                </div><!--#imgWrap-->
+                <div id="btnWrap">
+                    <label for="img1"></label>
+                    <label for="img2"></label>
+                    <label for="img3"></label>
+                    ←Click
+                </div><!--#btnWrap-->
+            </div><!--#photo-->
+        </section>
+        <section class="s5"></section>
+        <section class="s6"></section>
+        <section class="s7"></section>
+        <section class="s8"></section>
+        <section class="s9"></section>
+        <section class="s10"></section>
+        <section class="s11"></section>
+    </div><!--.wrap-->
+</body>
+</html>

@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비에메종 반응형 리뉴얼</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <link href="css/main.css" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        window.onload = function () {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1.4,
+                spaceBetween: 15,
+                /*  pagination: {
+                     el: ".swiper-pagination",
+                     clickable: true,
+                 }, */
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints: {
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    1024: {
+                        slidesPerView: 2,
+                        spaceBetween: 25,
+                    },
+                },
+            }); //mySwiper
+
+            var swiper = new Swiper(".insta_slide", {
+                slidesPerView: 1.5,
+                spaceBetween: 15,
+                /*  pagination: {
+                     el: ".swiper-pagination",
+                     clickable: true,
+                 }, */
+                navigation: {
+                    nextEl: ".swiper-insta-next",
+                    prevEl: ".swiper-insta-prev",
+                },
+                breakpoints: {
+                    768: {
+                        slidesPerView: 2.5,
+                        spaceBetween: 20,
+                    },
+                    1024: {
+                        slidesPerView: 3.5,
+                        spaceBetween: 25,
+                    },
+                },
+            });//insta_slide 
+
+            let openBtn = document.querySelector('.open');
+            let closeBtn = document.querySelector('.close');
+            let mobileNav = document.querySelector('.m_nav');
+            mobileNav.style.display = 'none';
+            openBtn.onclick = function () {
+                mobileNav.style.display = 'block'
+            }
+            closeBtn.onclick = function () {
+                mobileNav.style.display = 'none'
+            }
+
+            let editorItem = document.querySelectorAll('.editor .list_text > div');
+            let editorItemImg = document.querySelector('.editor img');
+            console.log(editorItem)
+            for (let i = 0; i < editorItem.length; i++) {
+                editorItem[i].onmouseenter = function () {
+                    let num = i + 1;
+                    //alert();
+                    editorItemImg.src = 'img/note_img0' + num + '.jpg';
+                }
+            }//editorItem for
+
+
+            //best
+            let best = document.querySelector('.best');
+            let bestMenu = best.querySelectorAll('.best_menu li');
+            let bestCont = best.querySelectorAll('.best_slide_cont .mySwiper')
+
+
+            for (let i = 0; i < bestMenu.length; i++) {
+                bestMenu[i].onclick = function () {
+                    // bestMenu.forEach(function (item) {
+                    //     item.classList.remove('on')
+                    // })
+                    bestMenu.forEach(function (item) {
+                        item.classList.remove('on')
+                    });
+                    bestMenu[i].classList.add('on')
+
+                    bestCont.forEach(function (item) {
+                        item.classList.remove('on')
+                    });
+                    bestCont[i].classList.add('on')
+                }
+            }
+        }//end
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <div class="inner">
+            <h1>
+                <a href="#">
+                    <img src="img/logo.png" alt="비에메종" />
+                </a>
+            </h1>
+            <nav class="pc">
+                <ul class="gnb">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Archive</a></li>
+                    <li><a href="#">Wholesale</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">0/Bag</a></li>
+                </ul><!-- .gnb end -->
+                <ul class="user">
+                    <li>
+                        <a href="#">
+                            <img src="img/user.png" alt="로그인/회원가입" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/search.png" alt="검색" />
+                        </a>
+                    </li>
+                </ul><!-- .user end -->
+
+            </nav><!-- .pc end -->
+
+            <div class="mobile open">
+                <img src="img/menu.png" alt="메뉴보기" />
+            </div><!-- .mobile.open -->
+
+            <nav class="mobile m_nav">
+                <div class="close">
+                    <img src="img/close.png" alt="메뉴닫기" />
+                </div><!-- .close end -->
+                <ul class="gnb">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Archive</a></li>
+                    <li><a href="#">Wholesale</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">0/Bag</a></li>
+                </ul><!-- .gnb end -->
+                <ul class="user">
+                    <li>
+                        <a href="#">
+                            <img src="img/user.png" alt="로그인/회원가입" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/search.png" alt="검색" />
+                        </a>
+                    </li>
+                </ul><!-- .user end -->
+
+            </nav><!-- .mobile end -->
+
+        </div><!-- .inner end -->
+    </header>
+    <main>
+        <section class="main_visual">
+            <figure>
+                <img src="img/main_visual01.jpg" alt="VIE ET MAISON 라이프 스타일 편집샵 비에메종" />
+                <p>VIE ET MAISON 라이프 스타일 편집샵 비에메종</p>
+            </figure>
+
+            <figure>
+                <img src="img/main_visual02.jpg" alt="VIE ET MAISON 라이프 스타일 편집샵 비에메종" />
+                <p>DESIGN STUDIO VIE ET 디자인 스튜디오 비에</p>
+            </figure>
+        </section><!-- .main_visual end -->
+
+        <section class="vie">
+            <div class="inner">
+                <div class="title">
+                    <h3>VIE MIL</h3>
+                    <p>비밀스럽게 소개하고픈 특별한 제품들을 모았어요.<br />
+                        이제는 온라인에서도 만나볼 수 있습니다.</p>
+                </div><!-- .title -->
+                <div class="item">
+                    <a href="#">
+                        <figure>
+                            <img src="img/vie_img01.jpg" alt="LA MAGIEE 고블렛 / 블루" />
+                        </figure>
+                        <div>
+                            <h4>LA MAGIEE 고블렛 / 블루</h4>
+                            <strong>31,000원</strong>
+                        </div>
+                    </a>
+                </div><!-- .item end -->
+
+                <div class="item">
+                    <a href="#">
+                        <figure>
+                            <img src="img/vie_img02.jpg" alt="LA MAGIEE 고블렛 / 블루" />
+                        </figure>
+                        <div>
+                            <h4>LA MAGIEE 고블렛 / 블루</h4>
+                            <strong>31,000원</strong>
+                        </div>
+                    </a>
+                </div><!-- .item end -->
+
+                <div class="item">
+                    <a href="#">
+                        <figure>
+                            <img src="img/vie_img03.jpg" alt="LA MAGIEE 고블렛 / 블루" />
+                        </figure>
+                        <div>
+                            <h4>LA MAGIEE 고블렛 / 블루</h4>
+                            <strong>31,000원</strong>
+                        </div>
+                    </a>
+                </div><!-- .item end -->
+
+                <div class="item">
+                    <a href="#">
+                        <figure>
+                            <img src="img/vie_img04.jpg" alt="LA MAGIEE 고블렛 / 블루" />
+                        </figure>
+                        <div>
+                            <h4>LA MAGIEE 고블렛 / 블루</h4>
+                            <strong>31,000원</strong>
+                        </div>
+                    </a>
+                </div><!-- .item end -->
+
+                <div class="item">
+                    <a href="#">
+                        <figure>
+                            <img src="img/vie_img05.jpg" alt="LA MAGIEE 고블렛 / 블루" />
+                        </figure>
+                        <div>
+                            <h4>LA MAGIEE 고블렛 / 블루</h4>
+                            <strong>31,000원</strong>
+                        </div>
+                    </a>
+                </div><!-- .item end -->
+
+            </div><!-- .inner end -->
+        </section><!-- .vie end -->
+
+        <section class="editor">
+            <div class="inner">
+                <h3>Editor's Note</h3>
+                <div class="list">
+                    <figure>
+                        <img src="img/note_img01.jpg" alt="Editor's Note 이미지" />
+                    </figure>
+                    <div class="list_text">
+                        <div>
+                            <div>
+                                <h4>주방 질서를 바꿔보세요</h4>
+                                <a href="#">전체보기</a>
+                            </div>
+                            <p>직화와 오븐 사용이 가능하고 냄새 배임도 걱정 없는, 노다호로 저장용기로 냉장고를 정리해보세요. 80년 전통을 계승하고 있는 법랑 주방용품 브랜드답게,
+                                비에메종에서도 오랜기간 가장 사랑을 많이 받았습니다.</p>
+                        </div>
+
+                        <div>
+                            <div>
+                                <h4>Drip Chair Yellow</h4>
+                                <a href="#">전체보기</a>
+                            </div>
+                            <p>더 쉽고 깔끔하게, 더 맛있게, 더 즐겁게<br />
+                                드립백 전용 거치대 드립체어입니다.</p>
+                        </div>
+
+                        <div>
+                            <div>
+                                <h4>홍차를 제대로 즐기고 싶다면</h4>
+                                <a href="#">전체보기</a>
+                            </div>
+                            <p>몸을 편안하게 만드는 차의 힘을 느껴보세요. 찻잎이 우려나기 좋은 둥근 형태의 도자기, 런던포터리는 유서깊은 영국 티팟 브랜드입니다. 넉넉한 용량으로 얼음 가득
+                                냉침도 문제 없어요.</p>
+                        </div>
+                    </div><!-- list_text end -->
+                </div><!-- .list end -->
+
+            </div><!-- .inner end -->
+        </section><!-- .editor end -->
+
+        <section class="best">
+            <div class="inner">
+                <div class="left">
+                    <h3>Best Seller</h3>
+                    <ul class="best_menu">
+                        <li class="on"><a href="#" onclick="return false;">FOG LINEN WORK</a></li>
+                        <li><a href="#" onclick="return false;">VIE ET MAISON</a></li>
+                        <li><a href="#" onclick="return false;">NODA HORO</a></li>
+                        <li><a href="#" onclick="return false;">ACME</a></li>
+                        <li><a href="#" onclick="return false;">LONDON POTTERY</a></li>
+                        <li><a href="#" onclick="return false;">STUDIO M</a></li>
+                    </ul><!-- .best_menu end -->
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div><!-- .left end -->
+
+                <div class="best_slide_cont">
+                    <!-- swiper / swiper demo -->
+
+                    <div class="swiper mySwiper on">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/best_img01.jpg" alt="" />
+                                    </figure>
+                                    <div class="info">
+                                        <p>FOG LINEN WORK</p>
+                                        <h4>포그린넨 2023 린넨 캘린더 - 망고 아보카도
+                                            샐러드 SALADE MANGUE ET AVO</h4>
+                                        <div>
+                                            <p>39,000원</p>
+                                            <strong>19,500원<span>50%</span></strong>
+                                        </div>
+                                    </div><!-- .info end -->
+                                </a>
+                            </div> <!-- swiper-slide end -->
+
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/best_img02.jpg" alt="" />
+                                    </figure>
+                                    <div class="info">
+                                        <p>FOG LINEN WORK</p>
+                                        <h4>포그린넨 2023 린넨 캘린더 - 망고 아보카도
+                                            샐러드 SALADE MANGUE ET AVO</h4>
+                                        <div>
+                                            <p>39,000원</p>
+                                            <strong>19,500원<span>50%</span></strong>
+                                        </div>
+                                    </div><!-- .info end -->
+                                </a>
+                            </div> <!-- swiper-slide end -->
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/best_img03.jpg" alt="" />
+                                    </figure>
+                                    <div class="info">
+                                        <p>FOG LINEN WORK</p>
+                                        <h4>포그린넨 2023 린넨 캘린더 - 망고 아보카도
+                                            샐러드 SALADE MANGUE ET AVO</h4>
+                                        <div>
+                                            <p>39,000원</p>
+                                            <strong>19,500원<span>50%</span></strong>
+                                        </div>
+                                    </div><!-- .info end -->
+                                </a>
+                            </div> <!-- swiper-slide end -->
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/best_img04.jpg" alt="" />
+                                    </figure>
+                                    <div class="info">
+                                        <p>FOG LINEN WORK</p>
+                                        <h4>포그린넨 2023 린넨 캘린더 - 망고 아보카도
+                                            샐러드 SALADE MANGUE ET AVO</h4>
+                                        <div>
+                                            <p>39,000원</p>
+                                            <strong>19,500원<span>50%</span></strong>
+                                        </div>
+                                    </div><!-- .info end -->
+                                </a>
+                            </div> <!-- swiper-slide end -->
+
+                        </div>
+                        <!-- <div class="swiper-pagination"></div> -->
+                    </div><!-- 1 -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/best_img01.jpg" alt="" />
+                                    </figure>
+                                    <div class="info">
+                                        <p>FOG LINEN WORK</p>
+                                        <h4>포그린넨 2023 린넨 캘린더 - 망고 아보카도
+                                            샐러드 SALADE MANGUE ET AVO</h4>
+                                        <div>
+                                            <p>39,000원</p>
+                                            <strong>19,500원<span>50%</span></strong>
+                                        </div>
+                                    </div><!-- .info end -->
+                                </a>
+                            </div> <!-- swiper-slide end -->
+
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/best_img02.jpg" alt="" />
+                                    </figure>
+                                    <div class="info">
+                                        <p>FOG LINEN WORK</p>
+                                        <h4>포그린넨 2023 린넨 캘린더 - 망고 아보카도
+                                            샐러드 SALADE MANGUE ET AVO</h4>
+                                        <div>
+                                            <p>39,000원</p>
+                                            <strong>19,500원<span>50%</span></strong>
+                                        </div>
+                                    </div><!-- .info end -->
+                                </a>
+                            </div> <!-- swiper-slide end -->
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/best_img03.jpg" alt="" />
+                                    </figure>
+                                    <div class="info">
+                                        <p>FOG LINEN WORK</p>
+                                        <h4>포그린넨 2023 린넨 캘린더 - 망고 아보카도
+                                            샐러드 SALADE MANGUE ET AVO</h4>
+                                        <div>
+                                            <p>39,000원</p>
+                                            <strong>19,500원<span>50%</span></strong>
+                                        </div>
+                                    </div><!-- .info end -->
+                                </a>
+                            </div> <!-- swiper-slide end -->
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/best_img04.jpg" alt="" />
+                                    </figure>
+                                    <div class="info">
+                                        <p>FOG LINEN WORK</p>
+                                        <h4>포그린넨 2023 린넨 캘린더 - 망고 아보카도
+                                            샐러드 SALADE MANGUE ET AVO</h4>
+                                        <div>
+                                            <p>39,000원</p>
+                                            <strong>19,500원<span>50%</span></strong>
+                                        </div>
+                                    </div><!-- .info end -->
+                                </a>
+                            </div> <!-- swiper-slide end -->
+
+                        </div>
+                        <!-- <div class="swiper-pagination"></div> -->
+                    </div><!-- 2 -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/best_img01.jpg" alt="" />
+                                    </figure>
+                                    <div class="info">
+                                        <p>FOG LINEN WORK</p>
+                                        <h4>포그린넨 2023 린넨 캘린더 - 망고 아보카도
+                                            샐러드 SALADE MANGUE ET AVO</h4>
+                                        <div>
+                                            <p>39,000원</p>
+                                            <strong>19,500원<span>50%</span></strong>
+                                        </div>
+                                    </div><!-- .info end -->
+                                </a>
+                            </div> <!-- swiper-slide end -->
+
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/best_img02.jpg" alt="" />
+                                    </figure>
+                                    <div class="info">
+                                        <p>FOG LINEN WORK</p>
+                                        <h4>포그린넨 2023 린넨 캘린더 - 망고 아보카도
+                                            샐러드 SALADE MANGUE ET AVO</h4>
+                                        <div>
+                                            <p>39,000원</p>
+                                            <strong>19,500원<span>50%</span></strong>
+                                        </div>
+                                    </div><!-- .info end -->
+                                </a>
+                            </div> <!-- swiper-slide end -->
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/best_img03.jpg" alt="" />
+                                    </figure>
+                                    <div class="info">
+                                        <p>FOG LINEN WORK</p>
+                                        <h4>포그린넨 2023 린넨 캘린더 - 망고 아보카도
+                                            샐러드 SALADE MANGUE ET AVO</h4>
+                                        <div>
+                                            <p>39,000원</p>
+                                            <strong>19,500원<span>50%</span></strong>
+                                        </div>
+                                    </div><!-- .info end -->
+                                </a>
+                            </div> <!-- swiper-slide end -->
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/best_img04.jpg" alt="" />
+                                    </figure>
+                                    <div class="info">
+                                        <p>FOG LINEN WORK</p>
+                                        <h4>포그린넨 2023 린넨 캘린더 - 망고 아보카도
+                                            샐러드 SALADE MANGUE ET AVO</h4>
+                                        <div>
+                                            <p>39,000원</p>
+                                            <strong>19,500원<span>50%</span></strong>
+                                        </div>
+                                    </div><!-- .info end -->
+                                </a>
+                            </div> <!-- swiper-slide end -->
+
+                        </div>
+                        <!-- <div class="swiper-pagination"></div> -->
+                    </div><!-- 3 -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/best_img01.jpg" alt="" />
+                                    </figure>
+                                    <div class="info">
+                                        <p>FOG LINEN WORK</p>
+                                        <h4>포그린넨 2023 린넨 캘린더 - 망고 아보카도
+                                            샐러드 SALADE MANGUE ET AVO</h4>
+                                        <div>
+                                            <p>39,000원</p>
+                                            <strong>19,500원<span>50%</span></strong>
+                                        </div>
+                                    </div><!-- .info end -->
+                                </a>
+                            </div> <!-- swiper-slide end -->
+
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/best_img02.jpg" alt="" />
+                                    </figure>
+                                    <div class="info">
+                                        <p>FOG LINEN WORK</p>
+                                        <h4>포그린넨 2023 린넨 캘린더 - 망고 아보카도
+                                            샐러드 SALADE MANGUE ET AVO</h4>
+                                        <div>
+                                            <p>39,000원</p>
+                                            <strong>19,500원<span>50%</span></strong>
+                                        </div>
+                                    </div><!-- .info end -->
+                                </a>
+                            </div> <!-- swiper-slide end -->
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/best_img03.jpg" alt="" />
+                                    </figure>
+                                    <div class="info">
+                                        <p>FOG LINEN WORK</p>
+                                        <h4>포그린넨 2023 린넨 캘린더 - 망고 아보카도
+                                            샐러드 SALADE MANGUE ET AVO</h4>
+                                        <div>
+                                            <p>39,000원</p>
+                                            <strong>19,500원<span>50%</span></strong>
+                                        </div>
+                                    </div><!-- .info end -->
+                                </a>
+                            </div> <!-- swiper-slide end -->
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/best_img04.jpg" alt="" />
+                                    </figure>
+                                    <div class="info">
+                                        <p>FOG LINEN WORK</p>
+                                        <h4>포그린넨 2023 린넨 캘린더 - 망고 아보카도
+                                            샐러드 SALADE MANGUE ET AVO</h4>
+                                        <div>
+                                            <p>39,000원</p>
+                                            <strong>19,500원<span>50%</span></strong>
+                                        </div>
+                                    </div><!-- .info end -->
+                                </a>
+                            </div> <!-- swiper-slide end -->
+
+                        </div>
+                        <!-- <div class="swiper-pagination"></div> -->
+                    </div><!-- 4 -->
+                    
+
+                </div><!-- best_slide_cont end -->
+
+            </div><!-- .inner end -->
+        </section><!-- best end -->
+
+        <section class="brand">
+            <div class="inner">
+                <h3>Brand</h3>
+                <div class="brand_list">
+                    <div class="left_item">
+
+                        <figure>
+                            <img src="img/brand_img01.jpg" alt="" />
+                        </figure>
+                        <div>
+                            <h4>ACME</h4>
+                            <p>커피업계로부터 오랜 시간 사랑 받는 뉴질랜드<br />
+                                도자 브랜드 애크미의 기능적이고도 아름다운 커피잔</p>
+                            <a href="#" class="btn">상품보러가기</a>
+                        </div>
+
+                    </div><!-- .left_item end -->
+
+                    <div class="right_item_list">
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/brand_img02.jpg" alt="" />
+                                </figure>
+                                <div>
+                                    <h4>NODA HORO</h4>
+                                    <p>80년 전통의 일본 법랑 제조사의 주방용품<br />
+                                        직화와 오븐사용이 가능한 다용도 식기
+                                    </p>
+                                </div>
+                            </a>
+                        </div><!-- .item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/brand_img02.jpg" alt="" />
+                                </figure>
+                                <div>
+                                    <h4>LONDON POTTERY</h4>
+                                    <p>선명하고 따뜻한 컬러감이 돋보이는<br />
+                                        영국식 차주전자 런던포터리</p>
+                                </div>
+                            </a>
+                        </div><!-- .item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/brand_img03.jpg" alt="" />
+                                </figure>
+                                <div>
+                                    <h4>STUDIO M'</h4>
+                                    <p>즐거운 식사에 대한 철학, 자연의 숨결과<br />
+                                        사람 손의 따뜻함이 담긴 식기, 스튜디오엠</p>
+                                </div>
+                            </a>
+                        </div><!-- .item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/brand_img04.jpg" alt="" />
+                                </figure>
+                                <div>
+                                    <h4>FOG LINEN WORK</h4>
+                                    <p>리투아니아산 린넨을 재료로, 일본 디자인의 절제된<br />
+                                        미감을 추구하는 라이프스타일 브랜드 포그린넨워크</p>
+                                </div>
+                            </a>
+                        </div><!-- .item end -->
+                    </div><!-- .right_item_list end -->
+                </div><!-- .list end -->
+            </div><!-- .inner end -->
+        </section><!-- .brand end -->
+
+        <section class="archive">
+            <img src="img/banner01.jpg" alt="" />
+            <div class="inner">
+                <div>
+                    <h3>Brand Archive</h3>
+                    <h4>VIE ET MAISON BRAND CHOICE</h4>
+                    <p>매일 그리고 오랜 기간 곁에 두고 싶은 제품과 브랜드를 소개합니다.<br />
+                        아카이브를 통해 해외 창작자들의 이야기를 만나보세요.</p>
+                    <a href="#">자세히보기</a>
+                </div>
+            </div>
+
+        </section><!-- .archive end -->
+
+        <section class="insta">
+            <div class="inner">
+                <div class="left">
+                    <h3>Instagram</h3>
+                    <p>@VIE_ET_MAISON</p>
+                    <div class="swiper-insta-next"></div>
+                    <div class="swiper-insta-prev"></div>
+                </div><!-- .left_info end -->
+
+                <div class="insta_slide_list">
+                    <!-- Swiper -->
+                    <div class="swiper insta_slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/insta_img01.jpg" alt="" />
+                                    </figure>
+                                    <div class="insta_info">
+                                        <h4>요즘 날씨 너무 좋아 💛</h4>
+                                        <p>낮 최고온도가 25도가 될 만큼 온전한 봄이 왔어요. 오늘 낮에는 다시 비가 온다지만..? 쨍쨍한</p>
+                                        <div>
+                                            <p>vie_et_maison</p>
+                                        </div>
+                                    </div><!-- insta_info end -->
+                                </a>
+                            </div> <!-- .swiper-slide -->
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/insta_img01.jpg" alt="" />
+                                    </figure>
+                                    <div class="insta_info">
+                                        <h4>요즘 날씨 너무 좋아 💛</h4>
+                                        <p>낮 최고온도가 25도가 될 만큼 온전한 봄이 왔어요. 오늘 낮에는 다시 비가 온다지만..? 쨍쨍한</p>
+                                        <div>
+                                            <p>vie_et_maison</p>
+                                        </div>
+                                    </div><!-- insta_info end -->
+                                </a>
+                            </div> <!-- .swiper-slide -->
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/insta_img01.jpg" alt="" />
+                                    </figure>
+                                    <div class="insta_info">
+                                        <h4>요즘 날씨 너무 좋아 💛</h4>
+                                        <p>낮 최고온도가 25도가 될 만큼 온전한 봄이 왔어요. 오늘 낮에는 다시 비가 온다지만..? 쨍쨍한</p>
+                                        <div>
+                                            <p>vie_et_maison</p>
+                                        </div>
+                                    </div><!-- insta_info end -->
+                                </a>
+                            </div> <!-- .swiper-slide -->
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/insta_img01.jpg" alt="" />
+                                    </figure>
+                                    <div class="insta_info">
+                                        <h4>요즘 날씨 너무 좋아 💛</h4>
+                                        <p>낮 최고온도가 25도가 될 만큼 온전한 봄이 왔어요. 오늘 낮에는 다시 비가 온다지만..? 쨍쨍한</p>
+                                        <div>
+                                            <p>vie_et_maison</p>
+                                        </div>
+                                    </div><!-- insta_info end -->
+                                </a>
+                            </div> <!-- .swiper-slide -->
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/insta_img01.jpg" alt="" />
+                                    </figure>
+                                    <div class="insta_info">
+                                        <h4>요즘 날씨 너무 좋아 💛</h4>
+                                        <p>낮 최고온도가 25도가 될 만큼 온전한 봄이 왔어요. 오늘 낮에는 다시 비가 온다지만..? 쨍쨍한</p>
+                                        <div>
+                                            <p>vie_et_maison</p>
+                                        </div>
+                                    </div><!-- insta_info end -->
+                                </a>
+                            </div> <!-- .swiper-slide -->
+                        </div>
+                    </div><!-- swiper  -->
+                </div><!-- .insta_slide_list end -->
+            </div><!-- .inner end -->
+        </section><!-- .insta end -->
+
+        <footer>
+            <div class="footer_top">
+                <div class="top_menu">
+                    <ul>
+                        <li><a href="#">멤버쉽</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">도매신청</a></li>
+                        <li><a href="#">자주묻는질문</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">이용가이드</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                    <div>
+                        <span>입금계좌</span>
+                        <strong>KB국민은행 562101-01-531761<span>예금주 : 주은영(비에메종)</span></strong>
+                        
+                    </div>
+
+                </div><!-- .top_menu end -->
+            </div><!-- footer_top -->
+            <div class="inner">
+                <div class="footer_info">
+                    <ul>
+                        <li><strong>회사정보</strong></li>
+                        <li>비에메종 대표 : 주은영</li>
+                        <li>사업자등록번호 : 810-34-00590</li>
+                        <li>통신판매업신고 : 2019-부산동래-0330호 사업자정보확인</li>
+                        <li>개인정보관리책임자 : 양대석 / yang500@hanmail.net</li>
+                        <li>제휴/제안 : yang500@hanmail.net</li>
+                    </ul>
+                    <ul>
+                        <li><strong>배송/반품</strong></li>
+                        <li>반품 : 부산광역시 동래구 오천천로 471번가길 61 2층</li>
+                        <li>택배 : CJ대한통운 1588-1255</li>
+                    </ul>
+                    <ul>
+                        <li><strong>고객센터</strong></li>
+                        <li><a href="tel:051-742-0214">051-742-0214</a></li>
+                        <li>월 - 금 : 09:00 - 18:00</li>
+                        <li>점심시간 : 11:40 - 13:00</li>
+                        <li>토-일, 공휴일 휴무</li>
+                    </ul>
+                </div><!-- footer_info -->
+                <p>고객님의 안전거래를 위해 결제시 저희 쇼핑몰에서 가입한 KICC 구매안전(에스크로)서비스를 이용하실 수 있습니다.</p>
+                <p>COPYRIGHT © VIE ET MAISON. ALL RIGHTS RESERVED.</p>
+            </div><!-- .inner end -->
+
+        </footer>
+    </main>
+</body>
+
+</html>

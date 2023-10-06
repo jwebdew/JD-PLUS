@@ -1,0 +1,848 @@
+@charset "utf-8";
+
+@import url('reset.css');
+@import url('common.css');
+
+.main {
+    font-size: 16px;
+}
+
+.main_visual {
+    height: calc(100vh - 100px);
+    background-color: #FEC67A;
+    display: flex;
+
+}
+
+.main_visual .swiper-slide {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+}
+
+.main_visual .swiper-slide img {
+    width: 65.62%;
+    /* height: 76.39vh; */
+    height: 62,09vh;
+    margin-right: 70px;
+    margin-bottom: 70px;
+    /* position: absolute; */
+    /* right: 70px;
+    bottom: 70px; */
+
+    object-fit: cover;
+    border-radius: 20px;
+
+}
+
+.main_visual .swiper-slide div {
+    max-width: 1440px;
+    width: calc(100% - 30px);
+    position: absolute;
+    bottom: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.main_visual .swiper-slide div p {
+    font-size: 3rem;
+ font-family: 'Song Myung', serif;
+
+}
+
+.main_visual .swiper-slide div h2 {
+    font-family: 'Shrikhand', cursive;
+    font-size: 12rem;
+
+}
+
+.main_visual .swiper-slide div a {
+    width: 125px;
+    height: 50px;
+    border: 2px solid #333;
+    background-color: #fff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.tea_name .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tea_name .inner>div {
+    width: 31.66%;
+    /* width: 456px */
+    text-align: center;
+}
+
+.tea_name .inner>div:nth-child(2) {
+    order: -1;
+}
+
+.tea_name .inner .title h3 {
+    margin-bottom: 25px; 
+}
+
+.tea_name .inner .title p {
+    /* font-size: 16px; */
+    line-height: 1.5;
+    word-break: keep-all;
+}
+
+.tea_name .inner .item {
+    position: relative;
+}
+.tea_name .inner .item a {
+    display: block;
+    transition: transform 1s;
+}
+.tea_name .inner .item .hover_text {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 55px;
+    transition: opacity 0.7s 0.2s; 
+    transform: rotateY(180deg);
+    opacity: 0;
+     
+}
+.tea_name .inner .item .hover_text span {
+    font-size: 20px;
+    font-weight: bold;
+}
+.tea_name .inner .item .hover_text h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5rem;
+
+}
+.tea_name .inner .item .hover_text p {
+    /* font-size: 16px; */
+    line-height: 1.5;
+    word-break: keep-all;
+}
+.tea_name .inner .item .hover_text strong {
+    margin-top: 8rem;
+    font-size: 25px;
+    font-weight: bold;
+}
+.tea_name .inner .item a>span {
+    /* font-size: 16px; */
+    display: block;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #333;
+}
+
+.tea_name .inner>div:nth-child(3)~div {
+    margin-top: 8rem;
+}
+
+.tea_name .inner .item figure {
+    width: 100%;
+    max-height: 430px;
+    height: 29.86vw;
+    overflow: hidden;
+
+}
+
+.tea_name .inner .item figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.tea_name .inner .item div {
+    margin-top: 20px;
+
+}
+
+.tea_name .inner .item div h4 {
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.tea_name .inner .item div strong {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 20px;
+    display: block;
+}
+
+.tea_name .inner .item div .btn {
+
+    display: block;
+    padding: 16px 0;
+    /* font-size: 16px; */
+    text-align: center;
+    transition: 1s;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    position: relative;
+    z-index: 1;
+}
+
+.tea_name .inner .item div .btn::before {
+    content: '';
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FEC67A;
+    z-index: -1;
+    transition: 1s;
+    box-sizing: border-box;
+
+}
+
+/* .tea_name .inner .item:hover figure img {
+    transform: scale(1.1);
+}
+ */
+.tea_name .inner .item:hover div .btn::before {
+    width: 100%;  
+}
+.tea_name .inner .item:hover a {
+    transform: rotateY(180deg);
+}
+.tea_name .inner .item:hover a .hover_text {
+    opacity: 1;
+}
+.recipe_wrap {
+    /* min-width: 1600px; */
+    /* width: 100%; */
+    /* margin: 0 auto; */
+}
+
+.recipe_wrap {
+    text-align: center;
+}
+
+.recipe_wrap .swiper-wrapper {
+    /* align-items: center;  */
+    transition-timing-function: linear;
+}
+
+/* 😍😍😍😍😍 텍스트 슬라이드 */
+.text_slide {
+    background-color: #E86747;
+}
+
+.text_slide p {
+    font-family: 'Shrikhand', cursive;
+    font-size: 2.5rem;
+
+    color: #fff;
+    white-space: nowrap;
+    padding: 32px 0;
+    animation: text 50s infinite linear;
+}
+
+@keyframes text {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/*  😍 beauty */
+.beauty {
+    display: flex;
+    align-items: center;
+    height: 770px;
+    /* height: 53.47vw; */
+    background-color: #949F76;
+}
+
+.beauty figure {
+    width: 50%;
+    height: 100%;
+}
+
+.beauty figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.beauty div {
+    width: 50%;
+    text-align: center;
+    /* padding: 12rem 0; */
+    background-color: #949F76;
+    color: #fff;
+}
+
+.beauty div strong {
+    font-size: 20px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.beauty div p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.beauty div a {
+    position: relative;
+    display: inline-block;
+}
+
+.beauty div a::before {
+    content: '';
+    width: 61px;
+    height: 16px;
+    background: url('../img/btn_arrow.png') 0 0 / 100% no-repeat;
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.beauty div a:hover img {
+    transform: rotate(0deg);
+    animation: btnRotate 5s infinite linear;
+}
+
+@keyframes btnRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* 😍😍😍😍😍  */
+.recipe {
+    /* min-width: 1440px; */
+    /* left: 0; */
+}
+
+.recipe_wrap .swiper-slide {
+    text-align: center;
+    position: relative;
+
+}
+
+.recipe_wrap .swiper-slide img {
+    width: 100%;
+    max-height: 413px;
+    height: 21.51vw;
+    object-fit: cover;
+    border-radius: 200px;
+    
+}
+
+.recipe_wrap .swiper-slide div {
+    margin-top: 20px;
+}
+
+.recipe_wrap .swiper-slide div h4 {
+    /* font-size: 16px; */
+}
+
+.recipe_wrap .swiper-slide div p {
+    /* font-size: 16px; */
+    line-height: 1.3;
+    margin-top: 10px;
+
+    
+}
+
+.recipe_wrap .swiper-slide p {
+    display: none;
+}
+
+.recipe_wrap .swiper-slide.swiper-slide-active {
+    
+
+}
+
+.recipe_wrap .swiper-slide.swiper-slide-active img {
+    width: 100%;
+    border-radius: 0;
+    transform: scale(1.2);
+    transform-origin: center bottom;
+}
+
+.recipe_wrap .swiper-slide.swiper-slide-active h4 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+.recipe_wrap .swiper-slide.swiper-slide-active p {
+    display: block;
+  
+
+} 
+
+/* .recipe_wrap .swiper-slide.swiper-slide-next + .swiper-slide {
+    transform: scale(1.2, 1);
+
+}
+
+.recipe_wrap .swiper-slide.swiper-slide-next+.swiper-slide img {
+    width: 100%;
+    border-radius: 0;
+}
+
+.recipe_wrap .swiper-slide.swiper-slide-next+.swiper-slide h4 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.3;
+
+} */
+
+/* .recipe_wrap .swiper-slide.swiper-slide-next+.swiper-slide p {
+    display: block;
+
+} */
+
+.recipe_wrap a {
+    padding: 15px 40px;
+    border: 2px solid #333;
+    font-size: 20px;
+    font-family: 'Song Myung', serif;
+    font-weight: normal;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10rem;
+}
+
+.sns {
+    background-color: #E8DED2;
+    padding: 17rem 0;
+    text-align: center;
+}
+
+.sns .list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sns .list div {
+    width: calc(100% / 5);
+    position: relative;
+}
+.sns .list div ul {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0000005c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 30px;
+    opacity: 0;
+    transition: opacity 0.7s;
+    backdrop-filter: blur(4px);
+}
+.sns .list div ul li {
+    margin: 0 10px;
+}
+.sns .list div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sns .list div:hover ul {
+    opacity: 1;
+}
+
+/* footer */
+@media screen and (max-width:1024px) {
+    .tea_name .inner .title h3 {
+        font-size: 5vw;
+    }
+    footer {font-size: 14px;}
+    .tea_name .inner .item:hover a {
+        transform: rotateY(0)
+    }
+    .tea_name .inner .item:hover a .hover_text {
+        display: none;
+    } 
+     
+    .recipe_wrap .swiper-slide {
+        margin-top: 74px;
+    }
+    .recipe_wrap .swiper-slide img {
+        height: 34.68vw;
+    }
+    
+    .beauty div a img {
+        transform: rotate(0deg);
+        animation: btnRotate 5s infinite linear;
+    }
+    .beauty div a::before { 
+        width: 39px;  
+        right: 50%;
+        transform: translate(50%, -50%);
+        top: 50%; 
+    }
+    .recipe_wrap .swiper-slide.swiper-slide-active img {
+        width: 100%;
+        /* height: 41.77vw; */
+        object-fit: cover;
+        /* transform: scale(1.2); */
+    }
+    footer .footer .family {
+        right: 0;
+        transform: translateX(0);
+    }
+    footer .footer {
+        padding: 20px 0 30px;
+    }
+    footer .footer .footer_info div:nth-child(2) {
+        margin: 0 54px 0 62px;
+    }
+    footer .footer .footer_info {
+        width: calc(100% - 311px)
+    }
+     
+    footer .footer .footer_info div:nth-child(2) {
+        margin: 0 54px;
+    }
+    footer .footer .family ul li:nth-child(2) img {
+        width: 89px;
+    }
+    footer .footer .family ul li:nth-child(3) img {
+        width: 133px;
+    }
+    
+}
+
+@media screen and (max-width:960px) {
+   
+}
+@media screen and (max-width:767px) {
+    .main_visual {
+        height: auto;
+        padding: 50px 0;
+    }
+    .main_visual .swiper-slide {
+        align-items: flex-start;
+        justify-content: center;
+        display: block;
+        padding: 0 15px;
+    }
+    .main_visual .swiper-slide img {
+        width: 100%;
+        height: 60.31vw;
+        box-sizing: border-box;
+    }
+    .main_visual .swiper-slide div {
+        position: static;
+        transform: translate(0);
+        margin-top: 30px;
+    }
+    .main_visual .swiper-slide div h2 {
+        font-size: 60px;
+        margin: 20px 0 40px;
+
+    }
+    .tea_name .inner .item div h4 {font-size: 16px; }
+    .recipe_wrap a {
+        margin-top: 40px;
+        font-size: 16px;
+    }
+    .sns .list div {
+        width: calc(100% / 4);
+    }
+    .sns .list div:nth-child(8) ~ div {
+        display: none;
+    }
+
+    footer .footer {
+        /* flex-direction: column;
+        padding: 0; */
+    }
+    footer .footer .family {
+        /* width: 100%; */
+        /* order: -1; */
+        /* position: static; */
+    }
+    footer .footer .family ul {
+        /* position: static; */
+        /* transform: translate(0); */
+        padding: 50px 30px;
+    }
+    footer .footer .footer_info div:nth-child(2) {
+        margin: 0 40px;
+    }
+    footer .footer .footer_info {
+        width: calc(100% - 230px);
+        /* width: calc(100% - 30px); */
+        /* margin: 0 auto; */
+        /* display: block;  */ 
+    }
+    footer .footer .footer_info > div {
+        /* width: 50%; */
+    }
+    footer .footer .footer_info div:nth-child(2) {
+        /* margin: 0; */
+    }
+    
+   
+}
+
+@media screen and (max-width:640px) {
+   
+    .tea_name .inner>div:nth-child(2) {
+        order: 0;
+    }
+    .tea_name .inner>div {
+        width: 47.91%;
+    }
+    
+    .tea_name .inner>div.title {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .tea_name .inner>div:last-child {
+        display: none;
+    }
+    .tea_name .inner .item figure {
+        height: 52.08vw;
+    }
+    .tea_name .inner .item div h4 {
+        height: 38px;
+    }
+    
+
+    .beauty {
+        height: auto;
+        display: block;
+         
+    }
+    .beauty figure {
+        width: 100%;
+        height: 80.43vw;
+    }
+    .beauty div {
+        width: 100%;
+        padding: 30px 0;
+    }
+    .beauty div br {
+        display: none;
+    }
+    .beauty div strong {
+        font-size: 16px;
+    }
+    .beauty div p {
+        font-size: 16px;
+    }
+   
+    .recipe_wrap .swiper {
+        /* overflow: scroll; */
+        overflow: visible;
+    }
+    .recipe_wrap .swiper-slide.swiper-slide-active h4 {
+        font-size: 25px;
+        word-break: break-all;
+    }
+
+    .recipe_wrap .swiper-slide.swiper-slide-active p {
+        display: -webkit-box;/* 박스설정 */
+        -webkit-box-orient: vertical;
+        /* 박스방향설정 : 세로 */
+        -webkit-line-clamp: 2;
+        /* 박스안에스 보여지고자 하는 라인 수 */
+        overflow: hidden;
+    }
+
+    footer .inner {
+        width: 100%;
+    }
+    footer .inner > ul,
+    footer .inner > .footer .footer_info,
+    footer .inner > p {
+        width: calc(100% - 30px);
+        margin: 0 auto;
+    }
+    footer .footer {
+        flex-direction: column;
+        padding: 0; 
+    }
+    footer .footer .family {
+        width: 100%;
+        order: -1;
+        position: static;
+    }
+    footer .footer .family ul {
+        position: static;
+        transform: translate(0); 
+        padding: 25px 0;
+    }
+    footer .footer .family ul li:nth-child(2) img {
+        margin: 12px 0;
+    }
+    footer .footer .footer_info { 
+        width: calc(100% - 30px);
+        /* margin: 0 auto; */
+        display: flex;  
+        flex-direction: column;
+    } 
+    footer .footer .footer_info div:nth-child(2) {
+        /* margin: 0; */
+    }
+
+    footer .footer .footer_info {
+        flex-wrap: wrap;
+    }
+    footer .footer .footer_info > div {
+        width: 100%;
+    }
+    footer .footer .footer_info > div:nth-child(1) {
+        margin: 40px 0;
+    }
+    footer .footer .footer_info div:nth-child(2) {
+        margin: 0;
+        margin-top: 20px;
+        order: -1;
+    }
+    footer .footer_wrap .inner {
+       width: 100%;
+    }
+    .footer_nav {
+        justify-content: center;
+        text-align: center;
+    }
+    footer .footer_copy {
+        height: 40px;
+    }
+    footer .footer_copy::before {
+        bottom: 40px;
+    }
+    footer .footer_nav li {
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .tea_name .inner .title h3 {
+        font-size: 27px;
+    }
+    .tea_name .inner .item div strong {
+        font-size: 16px;
+    }
+    .recipe_wrap .swiper-slide.swiper-slide-active {
+        padding: 0 15px;
+    }
+    .recipe_wrap .swiper-slide.swiper-slide-active img {
+        transform: scale(1);
+        height: 401px;
+    }
+    .recipe_wrap a {
+        font-size: 16px;
+    }
+    .text_slide p {
+        padding: 20px 0;
+    }
+    .sns .list div {
+        width: calc(100% / 3);
+    }
+    .sns .list div:nth-child(6) ~ div {
+        display: none;
+    }
+    .beauty .btn_more {
+        width: 140px;
+    }
+    .beauty div a::before {
+        width: 38px;
+    }
+    footer .footer_copy {
+        /* text-align: center; */
+        
+    }
+    .recipe_wrap .swiper-slide img {
+        border-radius: 0;
+        height: 401px;
+    }
+    .recipe_wrap .swiper-slide {
+        margin-top: 0;
+    }
+    .tea_name .inner .item div .btn {
+        padding: 10px 0;
+    }
+    .tea_name .inner .item div .btn {
+        padding: 7px 0; 
+    }
+
+   
+}
+
+@media screen and (max-width:360px) { 
+    .main {
+        font-size: 14px;
+    }
+    .section {
+        padding: 70px 0;
+    } 
+   
+    .main_visual .swiper-slide div h2 {
+        font-size: 40px;
+        margin: 5px 0 20px;
+    }
+    .main_visual .swiper-slide div a {
+        font-size: 16px;
+        width: 100px;
+        height: 40px;
+    }
+    .tea_name .inner .title h3 {
+        margin-bottom: 10px;
+    }
+    .tea_name .inner .item div {
+        margin-top: 10px;
+    }
+    .tea_name .inner .item div h4 {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+    }
+    .tea_name .inner .item div strong {
+        font-size: 16px;
+    }
+   
+
+    .text_slide p {
+        padding: 20px 0;
+    }
+    .beauty div p {
+        font-size: 14px;
+    }
+
+    .sns .list div {
+        width: calc(100% / 2);
+    }
+}

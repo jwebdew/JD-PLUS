@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+*{margin:0; padding:0;}
+a{
+    text-decoration:none;
+    display:block;
+    color:#333;
+}
+li { list-style:none;}
+
+/* div {
+    width:200px;
+    height:50px;
+    background-color:burlywood;
+    color:#fff;
+    line-height:50px;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+div:hover {
+    width:500px;
+    background-color:coral;
+}
+
+div:first-child {
+    transition:all ease-in-out 1s 3s; */
+    /* 
+    transition: 요소 진행속도 효과시간(변화되는속도) 지연시간(몇초후에 변화를 나타내는가)
+    */
+
+    /* 
+    transition-property:요소 설정;
+    transition-duration: 효과 지속될시간 설정;
+    transition-timing-function: 효과 진행속도 설정;
+
+
+    transition: property timimg-funcion
+    duration delay
+    transition: width ease-in-out 1s 3s;
+
+    */
+}
+
+/* div:nth-child(2) {
+    transition:1s;
+}
+
+div:nth-child(3) {
+    transition: width 5s;
+}
+
+div:nth-child(4) { */
+    /* 
+    ease-in-out : 처음과 끝이 느림
+    linear : 등속운동(일정한 속도)
+    ease-in : 점점 빨라짐
+    ease-out: 점점 느려짐
+    cubic-bezier : 4개의 값으로 속도 조절
+    
+
+    */
+    /* transition:ease-in-out 2s; */
+    /* transition: linear 2s; */
+    /* transition : ease-in 5s; */
+    /* transition: ease-out 5s; */
+}
+/* div:nth-child(5) {
+    transition:all 2s; */
+    /* 
+    모든 효과를 2초동안 이루어지게 할 것이다 
+    */
+}
+
+/* 
+    cubic-bezier : 4개의 값으로 속도 조절
+    **나온지 얼마 안됌**
+    cubic-bezier : 4개의 값으로 이루어짐
+    cubic-bezier(0,0,0,0);
+    0~1사이의 값, 소수점을 활용한 값 입력
+    1이상 사용 가능함 
+*/
+
+/* div:nth-child(6) {
+    transition: 2s cubic-bezier(0,0,0,1);
+}
+div:nth-child(7) {
+    transition:2s cubic-bezier(0,0,1,0);
+}
+div:nth-child(8) {
+    transition:2s cubic-bezier(0,1,0,0);
+}
+div:nth-child(9) {
+    transition:2s cubic-bezier(1,0,0,0);
+}
+div:nth-child(10) {
+    transition:2s cubic-bezier(0.31, 1.0, 0.08, 0.49);
+} */
+/* 
+    앞 2개의 숫자가 처음의 속도를 조절하고 
+    뒤 2개의 숫자가 나중의 속도를 조절한다
+*/
+
+/* p {
+    width:140px;
+    height:50px;
+    border:1px solid red;
+    text-align:center;
+    line-height:50px;
+    overflow: hidden;
+    position:relative;
+}
+
+p a {
+    color:red;
+}
+
+p:before {
+    content:'';
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:-140px;
+    background-color: coral;
+    z-index: -1;
+    transition: 2s cubic-bezier(.14, 1.13, .54, .01);
+}
+
+p:hover:before{
+    left:0;
+}
+
+p:hover a{
+    color:#fff;
+} ----> 연습용  */
+
+.btn a {
+    width:140px;
+    height:50px;
+    border:1px solid red;
+    text-align:center;
+    line-height:50px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+/* --->a 태그 영역잡기 */
+
+.btn {
+    width:0;
+    transition:all 1s;
+}
+/* ---> p태그 영역설정 + 적용할 효과의 속도 설정 */
+
+.btn:hover {
+    width:140px;
+    background-color: coral;
+}
+/* ---> 적용효과 설정 */

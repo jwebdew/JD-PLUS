@@ -1,0 +1,205 @@
+@charset 'utf-8';
+*{margin:0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none; display: block; color: #333;}
+
+body {
+    width:2000px;
+   /*overflow-x: hidden; */
+}
+header {}
+header p {
+    padding: 20px 0;
+    text-align: center;
+}
+header p img {}
+
+header nav {}
+header nav ul {
+    text-align: center;
+    border-top: 1px solid#efefef;
+    height: 55px;
+    line-height: 55px;
+}
+header nav ul li {
+    display: inline-block;
+    margin-right: 108px;
+}
+header nav ul li:last-child {
+    margin-right: 0;
+}
+header nav ul li a {}
+/* 메인비주얼 */
+main {}
+main .main_visual {
+    height: 711px;
+    background: url('../img/main_visual.jpg') center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+main .main_visual div {
+    position:absolute;
+    top:50%; left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 100%;
+}
+main .main_visual div h2 {
+    font-size: 68px;
+    margin-bottom: 10px;
+}
+main .main_visual div p {
+    font-size: 34px;
+}
+/* section_cont01 : 인테리어 */
+.cont01 {
+    background-color: #fcfcfc;
+    padding: 100px 0;
+}
+.cont01 h3 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.cont01 div {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.cont01 div article {
+    float: left;
+    width: 277px; height:242px;
+    background-color: #fff;
+    text-align: center;
+    padding: 38px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+.cont01 div article img {}
+.cont01 div article dl {}
+.cont01 div article dl dt {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.cont01 div article dl dd {
+    font-size: 16px;
+    color:#555;
+}
+/* section_cont02 : 건축01*/
+/* .cont02 {
+    height: 545px;
+    background: url('../img/right_img.jpg') right 0 #ebe0e0 no-repeat;
+}
+.cont02 .cont02_in {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 117px 0;
+}
+.cont02 .cont02_in div {
+    width: 490px;
+}
+.cont02 .cont02_in h3 {
+    font-size: 40px;
+}
+.cont02 .cont02_in h3 span {
+    font-size: 18px;
+    color: #3d3d3d;
+}
+.cont02 .cont02_in dl {}
+.cont02 .cont02_in dl dt {
+    font-size:22px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.cont02 .cont02_in dl dd {
+    font-size:16px;
+    color: #555;
+}
+.cont02 .cont02_in p {
+    width: 140px; height: 38px;
+    line-height: 38px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 45px;
+}
+.cont02 .cont02_in p a {
+    width: 100%;
+    display:block;
+    color:#555
+} */
+/* section_cont02 : 건축02*/
+.cont02 {
+    height: 545px;
+    background-color: #ebe0e0;
+    overflow: hidden;
+    width: 2000px;
+}
+.cont02 .cont02_in {
+    /* margin-left: 400px; */
+    width: 935px;
+    float: left;
+    padding: 117px 0;
+    padding-left: 400px;
+    box-sizing: border-box;
+}
+.cont02 .cont02_in div {
+    /* width:490px */
+}
+.cont02 .cont02_in h3 {
+    font-size: 40px;
+}
+.cont02 .cont02_in h3 span {
+    font-size: 18px;
+    color: #3d3d3d;
+}
+.cont02 .cont02_in dl {}
+.cont02 .cont02_in dl dt {
+    font-size:22px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.cont02 .cont02_in dl dd {
+    font-size:16px;
+    color: #555;
+}
+.cont02 .cont02_in p {
+    width: 140px; height: 38px;
+    line-height: 38px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 45px;
+}
+.cont02 .cont02_in p a {
+    width: 100%;
+    display:block;
+    color:#555
+}
+.cont02 .cont02_right {
+    width: 1065px;
+    float: right;
+}
+.cont02 .cont02_right img {
+    width: 100%;
+}
+/* footer */
+footer {
+    background-color: #333;
+    color: #fff;
+}
+footer div {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 42px 0;
+}
+footer div p {
+    font-size: 15px;
+    line-height: 2;
+}
+footer div p span {
+    margin: 0 50px;
+}

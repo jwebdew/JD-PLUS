@@ -1,0 +1,81 @@
+@charset "utf-8";
+@import url("../../css/common.css");
+
+body {
+    background-color : #B0CDD9;
+}
+.contact {
+    position : absolute;
+    width : 100%;
+    height : 100vh;
+    top : 0;
+    left : 0;
+    overflow : hidden;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact_wrap {
+    width : 1000px;
+    height : 750px;
+    overflow : hidden;
+    position : relative;
+}
+.contact_wrap img {
+    width : 100%;
+    display : block;
+}
+.contact_wrap::before {
+    content : '';
+    width : 100%;
+    height : 100%;
+    background : url(../img/contact_bg.gif) center center no-repeat;
+    background-size : cover;
+    opacity : 0.25;
+    position : absolute;
+    top : 0;
+    left : 0;
+}
+.contact_wrap .text {
+    width : 90%;
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%, -50%);
+    text-align : center;
+}
+.st0 {
+    fill: none;
+    stroke: #d94343;
+    stroke-miterlimit: 10;
+    stroke-linecap: round;
+    stroke-linejoin: bevel;
+    stroke-width: 6px;
+    stroke-dasharray: 0 1120;
+    animation : line01 2.5s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+@keyframes line01 {
+    0% {stroke-dasharray: 0 1562;}
+    100% {stroke-dasharray: 1562 1562;}
+}
+.text h3 {
+    font-size : 2rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color : #fff;
+    font-weight : normal;
+    text-shadow: 0 0 3px rgba(0,0,0,0.7);
+}
+.text ul {transform : translateY(-5%);}
+.text ul li {
+    display : inline-block;
+    margin : 0 30px 20px;
+}
+.text ul li a {
+    font-size : 4rem;
+    color : #73121A;
+}
+.text ul li span {
+    display : block;
+    color : #73121A;
+    font-weight : bold;
+}

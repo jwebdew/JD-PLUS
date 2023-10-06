@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="63" viewBox="0 0 80 63">
+  <defs>
+    <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 0 0">
+      <image/>
+    </pattern>
+    <clipPath id="clip-Canvas">
+      <rect width="80" height="63"/>
+    </clipPath>
+  </defs>
+  <g id="Canvas" clip-path="url(#clip-Canvas)">
+    <rect width="80" height="63" fill="rgba(0,0,0,0)"/>
+    <rect id="Layer_2" data-name="Layer 2" fill="url(#pattern)"/>
+    <rect id="Shape_8" data-name="Shape 8" width="80" height="2" rx="1" fill="#d94343"/>
+    <rect id="Shape_9" data-name="Shape 9" width="80" height="2" rx="1" transform="translate(0 20)" fill="#d94343"/>
+    <rect id="Shape_10" data-name="Shape 10" width="50" height="2" rx="1" transform="translate(0 41)" fill="#d94343"/>
+    <rect id="Shape_11" data-name="Shape 11" width="80" height="2" rx="1" transform="translate(0 61)" fill="#d94343"/>
+  </g>
+</svg>

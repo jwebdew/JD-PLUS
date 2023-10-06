@@ -1,0 +1,212 @@
+@charset "euc-kr";
+/* CSS Document */
+
+body,p,h1,h2,h3,h4,h5,h6,menu,ul,ol,li,dl,dt,dd,div,pre,blockquote,table,th,td,form,fieldset,legend,input,textarea,button,select,hr{margin:0;padding:0;}
+body{position:relative;*word-break:break-all;-ms-word-break:break-all;font-size:12px;font-family:dotum;color:#333;line-height:1.2em;}
+body,h2{font-size:12px;line-height:15px;font-family:"µ¸¿ò",Dotum,"±¼¸²",Gulim,AppleGothic,Sans-serif;letter-spacing:-1px;}
+fieldset,img,abbr,acronym{border:0 none;}
+address,caption,cite,code,dfn,var{font-style:normal;font-weight:normal;}
+ol,ul{list-style:none;}
+caption,legend{visibility:hidden;position:absolute;top:-9999em;left:-9999em;width:0;height:0;line-height:0;overflow:hidden;}
+a{text-decoration:none;color: #333;}
+a:hover{color:#333;text-decoration:none;}
+hr{display:none;}
+img{vertical-align:top;}
+label,input,select{vertical-align:middle;}
+select,input{font-size:12px;font-family:dotum;color:#777;}
+textarea{font-size:12px;font-family:dotum;color:#777;}
+form{line-height:1.2em;}
+
+/* °øÅë°ª */
+.png24 {tmp:expression(setPng24(this))}
+.clear{*zoom:1;}
+.clear:after{content:"";display:block;clear:both;}
+
+.box_welcome_ad, .box_welcome_ad02 {border: 1px solid #dadada;border-top: none;}
+.box_welcome_ad {width:310px;}
+
+dl.list_welcome_ad  {width: 150px;height: 270px;position: relative;text-align:center;letter-spacing:0;}
+dl.list_welcome_ad dt {background-color:#f9f9f9;padding: 20px 10px;}
+dl.list_welcome_ad dt a {display:inline-block;padding-top:4px;background:url('http://image.kyobobook.co.kr/ink/images/welcome/bg_book_top.png') no-repeat 0 0;}
+dl.list_welcome_ad dt img {width: 96px;height: 144px;border: 1px solid #dadada;transition:all 0.2s;}
+dl.list_welcome_ad dt a:hover img {border-color:#aaa;}
+dl.list_welcome_ad dd {padding:0 10px;}
+dl.list_welcome_ad dd.title {margin-top: 15px;line-height: 16px; height:32px; overflow:hidden;}
+dl.list_welcome_ad dd.title a:hover {text-decoration:underline;}
+dl.list_welcome_ad dd.stit {margin-top: 8px;line-height: 14px;font-size: 11px;color: #777; height:28px; overflow:hidden;}
+dl.list_welcome_ad dd.price {font-size: 11px;color:#3fa11f;text-align: center;letter-spacing:0;}
+dl.list_welcome_ad dd.price img {vertical-align: 0;}
+dl.list_welcome_ad dd.price span {font-size: 12px;font-weight: bold;color:#3fa11f;}
+
+dl.list_welcome_ad02  {width: 134px;height: 200px;padding: 16px 10px 10px 10px;position: relative; background-color:#e8e8e8;}
+dl.list_welcome_ad02 dt {width: 74px;height: 102px;margin-left: 30px;}
+dl.list_welcome_ad02 dt img {width: 72px;height: 100px;border: 1px solid #ccc;}
+dl.list_welcome_ad02 dd.title {position:absolute;width:134px;bottom:20px;line-height: 15px;text-align: center;}
+dl.list_welcome_ad02 dd.stit {margin: 3px 0 10px; height:26px;overflow:hidden; line-height: 13px;text-align: center;font-size: 11px;color: #777;}
+
+.box_welcome_ad02 {width:621px;}
+.box_welcome_ad02 .list_welcome_ad {margin: 10px 0 5px 0;height: 168px; overflow:hidden;}
+.box_welcome_ad02 .list_welcome_ad li {padding: 0 5px 0 8px;}
+.box_welcome_ad02 .second {border-top: 1px solid #dadada;height: 179px;}
+.box_welcome_ad02 .second li {margin-top:10px;}
+
+.box_welcome_ad03 {width:228px; height:77px; overflow:hidden; padding:3px 0;}
+.box_welcome_ad03 dl{position:relative; width:212px;margin:0 0 0 16px;}
+.box_welcome_ad03 dl dt{position:absolute; right:0;}
+.box_welcome_ad03 dl dt img{width:55px;height:75px;border:1px solid #e6e6e6;}
+.box_welcome_ad03 dl dd {width:145px; text-align:right;}
+.box_welcome_ad03 dl dd.stit {font-size:11px;color:#777;padding-top:5px; }
+.box_welcome_ad03 dl dd.title {height:32px;overflow:hidden;line-height:16px; padding-top:8px}
+.box_welcome_ad03 dl dd.title a{font-size:13px;color:#ea5210; font-weight:bold;}
+.box_welcome_ad03 dl dd.muc a{color:#4667da;}
+
+.box_welcome_ad04 {width:310px;height:122px; background:url('http://image.kyobobook.co.kr/ink/images/welcome/bg_ad_M003.gif') left top no-repeat; overflow:hidden;}
+.box_welcome_ad04 dl{position:relative;width:260px; height:79px;margin:9px 0 0 17px;}
+.box_welcome_ad04 dl dt{position:absolute;}
+.box_welcome_ad04 dl dt img{width:75px;height:103px;border:1px solid #d2d2d2;}
+.box_welcome_ad04 dl dd.title{height:32px;overflow:hidden;padding:11px 0 0 93px;font-size:14px;line-height:18px;font-weight:bold;color:#3a9ce9;}
+.box_welcome_ad04 dl dd.title a{color:#3a9ce9;}
+.box_welcome_ad04 dl dd.stit{padding:13px 0 0 93px;font-size:12px;line-height:16px;color:#626262;}
+.box_welcome_ad04 dl dd.stit a{color:#626262;}
+
+.box_welcome_ad05 {width:310px;height:275px; background:url('http://image.kyobobook.co.kr/ink/images/welcome/bg_ad_M011.gif') left top no-repeat; overflow:hidden;}
+.box_welcome_ad05 dl{position:relative;width:280px;height:238px;margin:17px 0 0 14px;}
+.box_welcome_ad05 dl dt{position:absolute;left:174px;top:79px;}
+.box_welcome_ad05 dl dt img{width:104px;height:157px;border:1px solid #d2d2d2;}
+.box_welcome_ad05 dl dd.stit{width:210px;font-size:12px;color:#4b4b4b;}
+.box_welcome_ad05 dl dd.stit a{color:#4b4b4b;}
+.box_welcome_ad05 dl dd.title{width:210px;height:40px;overflow:hidden;padding-top:8px;font-size:14px;line-height:20px;font-weight:bold;color:#1d1c1c;}
+.box_welcome_ad05 dl dd.title a{color:#1d1c1c;}
+.box_welcome_ad05 dl dd.info{width:160px;padding-top:10px;font-size:12px;line-height:17px;color:#8d8d8d;}
+.box_welcome_ad05 dl dd.info a{color:#8d8d8d;}
+
+.box_welcome_ad06 {width:310px;height:119px; border-top:none; background:url('http://image.kyobobook.co.kr/ink/images/welcome/bg_ad_M005.gif') left top no-repeat; overflow:hidden;}
+.box_welcome_ad06 dl{position:relative;width:275px;height:82px;margin:11px 0 0 20px;}
+.box_welcome_ad06 dl dt{position:absolute;}
+.box_welcome_ad06 dl dt img{width:65px;height:91px;border:1px solid #d2d2d2;}
+.box_welcome_ad06 dl dd.title{height:36px;overflow:hidden;padding:10px 0 6px 90px;line-height:18px;font-size:14px;font-weight:bold;color:#ff5921;}
+.box_welcome_ad06 dl dd.title a{color:#ff5921;}
+.box_welcome_ad06 dl dd.stit{padding-left:90px;font-size:12px;line-height:16px;color:#666;}
+.box_welcome_ad06 dl dd.stit a{color:#666;}
+
+.box_welcome_ad07 {width:310px;height:166px; overflow:hidden; background:url('http://image.kyobobook.co.kr/ink/images/welcome/bg_ad_M006.gif') left top no-repeat;}
+.box_welcome_ad07 dl{position:relative;width:275px;height:151px;margin:19px 0 0 19px;}
+.box_welcome_ad07 dl dt{position:absolute;left:185px;}
+.box_welcome_ad07 dl dt img{width:85px;height:125px;border:1px solid #d2d2d2;}
+.box_welcome_ad07 dl dd.stit{width:165px;padding-top:10px;font-size:12px;color:#ff5921;}
+.box_welcome_ad07 dl dd.stit a{color:#ff5921;}
+.box_welcome_ad07 dl dd.title{width:165px;height:36px;overflow:hidden;font-size:14px;line-height:18px;padding-top:8px;font-weight:bold;color:#6633CC;}
+.box_welcome_ad07 dl dd.title a{color:#6633CC;}
+.box_welcome_ad07 dl dd.info{width:165px;padding-top:10px;font-size:12px;color:#666666;}
+.box_welcome_ad07 dl dd.info a{color:#666666;}
+
+.box_welcome_ad08 dl{position:relative;width:290px;height:123px;}
+.box_welcome_ad08 dl dt{position:absolute;}
+.box_welcome_ad08 dl dt img{width:72px;height:100px;border:1px solid #dadada;}
+.box_welcome_ad08, .box_welcome_ad08 a {letter-spacing:normal;}
+.box_welcome_ad08 dl dd.title{line-height:16px;padding:4px 0 4px 84px;font-weight:bold;font-size:12px;}
+.box_welcome_ad08 dl dd.title a{color:#333;}
+.box_welcome_ad08 dl dd.stit{padding-left:84px;font-size:12px;line-height:17px;color:#777777;}
+.box_welcome_ad08 dl dd.stit a {color:#777777;}
+.box_welcome_ad08 dl dd.social{padding:5px 0 0 84px;}
+
+.box_welcome_ad09 {width:156px;height:122px;}
+.box_welcome_ad09 img {width:156px;height:122px;}
+
+.box_welcome_ad10 {width:156px;height:122px; overflow:hidden; background:url('http://image.kyobobook.co.kr/ink/images/welcome/bg_ad_M012.gif') left top repeat-x;}
+.box_welcome_ad10 dl{position:relative;width:140px;height:97px;margin:13px 0 0 9px;}
+.box_welcome_ad10 dl dt{position:absolute;}
+.box_welcome_ad10 dl dt img{width:69px;height:95px;border:1px solid #d2d2d2;}
+.box_welcome_ad10 dl dd.title{height:45px;overflow:hidden;padding:8px 0 0 80px;font-size:12px;line-height:15px;font-weight:bold;color:#333333;}
+.box_welcome_ad10 dl dd.title a{color:#333333;}
+.box_welcome_ad10 dl dd.info{padding:8px 0 0 80px;font-size:12px;color:#666666;}
+.box_welcome_ad10 dl dd.info a{color:#666666;}
+
+.quick_ad {width:86px;height:135px; background-color:#ececec; overflow:hidden;text-align:center;}
+.quick_ad dl dt img{width:72px;height:100px;border:1px solid #bcbcbc;}
+.quick_ad dl dd.title{display:block;margin-top:9px;font-size:11px;line-height:12px;color:#777777;}
+.quick_ad dl dd.title a {color:#777777;}
+
+
+.box_kor_ad {width:126px; height:245px; padding:19px 26px 10px 26px; border: 1px solid #ebe1b0; background-color:#faf4d6;overflow: hidden;}
+.box_kor_ad dl {text-align: center;}
+.box_kor_ad dl dt {}
+.box_kor_ad dt img {width: 104px;height: 155px;border: 1px solid #dcd29a;margin-bottom: 13px;}
+.box_kor_ad dd.stit {margin-bottom:  9px;line-height: 15px; font-size: 12px; color: #b61e06;overflow: hidden;}
+.box_kor_ad dd.title {line-height: 17px; font-size: 14px;font-weight:bold;color:#561207;overflow: hidden;}
+
+/*.bookman_area {float: left;width:179px; height:233px; text-align: center;background: url(http://image.kyobobook.co.kr/ink/images/korean/bg_bookman_02.gif) 0 100% no-repeat;}
+.bookman_area h3 {height: 14px;margin: 10px 0 14px;overflow: hidden;}*/
+.bookman_book {width:130px; padding-top:8px; /*padding-left:1px;*/ display: inline-block; text-align: center;/*background: url(http://image.kyobobook.co.kr/ink/images/korean/bg_bookman_02.gif) -24px -30px no-repeat;*/}/*12.4.9 ¼öÁ¤*/
+.bookman_book .image {width: 72px;height: 100px;border: 1px solid #dadada;}
+.bookman_book p {margin-top: 18px;text-align: center;font-size: 12px;font-weight: bold;color: #585858;line-height: 16px;letter-spacing:normal;}
+
+
+.box_showcase_ad {width:126px; height:245px; padding:19px 26px 10px 26px; border: 1px solid #d4d4d4; background-color:#f3f3f3;overflow: hidden;}
+.box_showcase_ad dl {text-align: center;}
+.box_showcase_ad dl dt {}
+.box_showcase_ad dt img {width: 104px;height: 155px;border: 1px solid #dcd29a;margin-bottom: 13px;}
+.box_showcase_ad dd.stit {margin-bottom:  9px;line-height: 15px; font-size: 12px; color: #696969;overflow: hidden;}
+.box_showcase_ad dd.title {line-height: 17px; font-size: 14px;font-weight:bold;color:#262626;overflow: hidden;}
+
+.box_showcase_ad02 {width:149px;height:135px;padding:12px 10px 9px 9px; background-color:#faf7e7; overflow:hidden;}
+.box_showcase_ad02 h3 {width:149px; text-align:center;font-size:12px;color:#84400d; line-height:15px; margin-bottom:5px;}
+.box_showcase_ad02 dl{position:relative;width:165px;height:156px;}
+.box_showcase_ad02 dl dt{position:absolute; padding:0 0 0 77px;}
+.box_showcase_ad02 dl dt img{width:67px;height:113px;border:1px solid #c5bfa0;}
+.box_showcase_ad02 dl dd {width:70px; text-align:left;}
+.box_showcase_ad02 dl dd.title{height:32px; overflow:hidden;line-height:16px;}
+.box_showcase_ad02 dl dd.title a{font-size:14px;color:#db5c16; font-weight:bold;}
+.box_showcase_ad02 dl dd.stit{font-size:11px;color:#646464;padding-top:5px}
+
+
+.box_showcase_ad03 {width:156px; height:189px; padding:22px 12px 22px 12px; text-align: center;background: url(http://image.kyobobook.co.kr/ink/images/bestseller/bg_best.gif) 0 0 no-repeat; overflow:hidden;}
+.box_showcase_ad03 dl {}
+.box_showcase_ad03 dl dt {margin-bottom:19px;}
+.box_showcase_ad03 dl dt img {width: 72px;height: 100px;border: 1px solid #dadada;}
+.box_showcase_ad03 dl dd {letter-spacing:normal;}
+.box_showcase_ad03 dl dd.title a{font-size:12px;color:#777; font-weight:bold;line-height:18px; margin-top:6px;}
+.box_showcase_ad03 dl dd.info{font-size: 12px;color: #585858;font-weight:bold;line-height:18px;}
+.box_showcase_ad03 dl dd.writer {font-size:11px; color: #777;line-height:13px;}
+
+
+.box_product_ad {width:138px; height:226px; padding:30px 31px 30px 29px; border:#dadada solid 1px; background:url(http://image.kyobobook.co.kr/ink/images/newproduct/ad_bg_product_K001.jpg) left top no-repeat; overflow:hidden;}
+.box_product_ad dl {text-align: center;}
+.box_product_ad dl dt {height: 142px;margin-bottom:29px;}
+.box_product_ad dt img {width: 98px;height: 140px;border: 1px solid #b2b2b2;margin-bottom: 13px;}
+.box_product_ad dd.stit {margin-bottom: 6px;line-height: 15px; font-size: 11px; color: #777;}
+.box_product_ad dd.title {line-height: 17px; font-size: 12px;font-weight:bold;color:#1566c1;}
+.box_product_ad dd.title a {line-height: 17px; font-size: 12px;font-weight:bold;color:#1566c1;}
+
+
+.box_search_ad {width:175px;height:110px; padding:7px 9px 9px 9px; overflow:hidden; border:1px solid #dadada; background-color:#fcf8e3; overflow:hidden;}
+.box_search_ad dl{position:relative;width:173px;height:110px;}
+.box_search_ad dl dt{position:absolute;}
+.box_search_ad dl dt img{width:73px;height:111px;border:1px solid #dadada;}
+.box_search_ad dl dd.stit{font-size: 11px;color: #666664;line-height:15px;letter-spacing:normal; padding:12px 0 0 84px;}
+.box_search_ad dl dd.title a, .box_search_ad dl dd.title02 a{font-size:14px;color:#e63701;font-weight:bold;line-height:16px;}
+.box_search_ad dl dd.title a {padding:12px 0 2px 84px;}
+.box_search_ad dl dd.title02 a {padding-left:85px;color: #be2d01}
+
+
+.box_login_ad {width: 305px; height:264px; padding:16px 18px; border: solid #b4c3df 1px; background-color:#e8effc; overflow:hidden;}
+.box_login_ad h3 {width:235px; height:13px; padding:7px 16px; margin-left:18px; text-align:center;font-size:12px; font-weight:lighter;color:#fff; line-height:15px; margin-bottom:19px; border: solid #244c9b 1px; background-color:#2a5bbd; overflow:hidden;}
+.box_login_ad dl{position:relative; }
+.box_login_ad dl dt{position:absolute;}
+.box_login_ad dl dt img {width:148px;height:217px;border:1px solid #c5bfa0;}
+.box_login_ad, .box_login_ad a {letter-spacing:normal;}
+.box_login_ad dl dd.title a{font-size:16px;color:#315bae; font-weight:bold;line-height:18px;padding:12px 0 5px 162px;}
+.box_login_ad dl dd.writer {font-size: 12px;color:#5b5d60; font-weight:bold;line-height:16px;padding:0 0 32px 162px;}
+.box_login_ad dl dd.info a{font-size:11px; color: #898a8a;line-height:16px; height:128px; padding-left:162px; display:block; overflow:hidden;}
+
+/*******************13.4.19 ±¸¹ÌÇý ¼öÁ¤***************************************************************************************************************************/
+/* ¸®ºä·Î º¸´Â Ã¥ */
+.box_welcome_ad08_v2 dl{position:relative;width:290px;/*height:123px;*/height: 108px;}
+.box_welcome_ad08_v2 dl dt{position:absolute;}
+.box_welcome_ad08_v2 dl dt img{width:72px;/*height:100px;*/height: 106px;border:1px solid #dadada;}
+.box_welcome_ad08_v2, .box_welcome_ad08_v2 a {letter-spacing:normal;}
+.box_welcome_ad08_v2 dl dd.title{line-height:16px;/*padding:4px 0 4px 84px;*/padding:4px 0 4px 90px;font-weight:bold;font-size:12px;}
+.box_welcome_ad08_v2 dl dd.title a{color:#333;}
+.box_welcome_ad08_v2 dl dd.stit{/*padding-left:84px;*/padding-left:90px;font-size:12px;line-height:17px;color:#777777;}
+.box_welcome_ad08_v2 dl dd.stit a {color:#777777; font-size:11px;}
+.box_welcome_ad08_v2 dl dd.social{padding:5px 0 0 84px;}

@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* 나눔명조. 프리텐다드
+regular, bold */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+/* @import url(https://fonts.googleapis.com/earlyaccess/nanummyeongjo.css); */
+@font-face {
+    font-family: 'NanumMyeongjoBold';
+    src: url('font/NanumMyeongjoBold.eot');
+    src: url('font/NanumMyeongjoBold.eot?#iefix') format('embedded-opentype'),
+        url('font/NanumMyeongjoBold.woff2') format('woff2'),
+        url('font/NanumMyeongjoBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NanumMyeongjo';
+    src: url('font/NanumMyeongjo.eot');
+    src: url('font/NanumMyeongjo.eot?#iefix') format('embedded-opentype'),
+        url('font/NanumMyeongjo.woff2') format('woff2'),
+        url('font/NanumMyeongjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NanumMyeongjoExtraBold';
+    src: url('font/NanumMyeongjoExtraBold.eot');
+    src: url('font/NanumMyeongjoExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('font/NanumMyeongjoExtraBold.woff2') format('woff2'),
+        url('font/NanumMyeongjoExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+html, body {
+    font-size: 62.5%;
+    /* font-size: 10px -> 1rem */
+    color: #333;
+    font-family: 'Pretendard-Regular';
+    font-weight: 400;
+}
+h3 {
+    /* font-family: 'Nanum Myeongjo', serif; */
+    font-family: 'NanumMyeongjo';
+    font-weight: normal;
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+}
+.inner {
+    max-width: 1360px;
+    width: calc(100% - 40px);
+    margin: 18rem auto;
+    /* margin: 180px auto */
+}
+.mobile {display: none;}
+@media screen and (max-width:1024px) {
+    .pc {display: none;}
+    .mobile {display: block;}
+} 

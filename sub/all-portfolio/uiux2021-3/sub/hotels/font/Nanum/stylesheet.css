@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'NanumBarunGothic';
+    src: url('NanumBarunGothic.woff2') format('woff2'),
+        url('NanumBarunGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NanumGothic';
+    src: url('NanumGothic.woff2') format('woff2'),
+        url('NanumGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NanumSquare';
+    src: url('NanumSquareR.woff2') format('woff2'),
+        url('NanumSquareR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

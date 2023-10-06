@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+#wrap{width: 100%; min-width: 320px; background: #eee;}
+/*헤더영역*/
+#header{width: 100%; height: 35px; padding-top: 15px; background: #fff;}
+#header .logo{ width: 70px; height: auto; margin: 0 auto;
+                    position: absolute; top: 7px; left: 50%; margin-left: -35px}
+#header .logo a{ display: block; width: 90px; height: 35px; text-indent: -9999px; 
+                        background-image: url(../img/logo.png);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: 100% auto;}
+
+#header{position: relative;}
+#header .openMenu{position: absolute; top: 15px; left: 15px;}
+#header>p>a{display: block; text-indent: -9999px; width: 24px; height: 16px;}
+#header .openMenu a:before{content: ""; display: block; width:24px; height: 2px; background: #333; margin-bottom: 5px;}
+#header .openMenu a span{display: block; width:24px; height: 2px; background: #333; margin-bottom: 5px;}
+#header .openMenu a:after{content: ""; display: block; width:24px; height: 2px; background: #333;}
+#header .openCart{position: absolute; top: 15px; right: 15px;}
+#header .openCart a{display: block; width: 24px; height: auto; 
+                            background-image: url(../img/cart.png);
+                            background-repeat: no-repeat;
+                            background-size: 24px auto;}
+/*gnb영역*/
+#side{width:240px; height:100%; background:#fff;
+		position:fixed; top:0; left:-240px; padding-top:60px; z-index:400;}
+#side .close{display:block; padding:19.8px; font-size:20px; font-weight:bold; color:#fff;
+				position:absolute; top:0; right:0; z-index: 410;}
+#side .utill{position: absolute; top: 0px; left: 0px; background: #09330d;
+                padding: 20px 65.9px 20px 20px;}
+#side .utill li{ float: left; margin-right: 10px;}
+#side .utill li a{ font-size: 12px; color: #fff;}
+#side .gnb{}
+#side .gnb li{border-top:1px solid #ccc; }
+#side .gnb li .m{display:block; padding:15px 20px; font-weight:bold; color: #121212;}
+#side .gnb li .m.on{background:#f00; color:#fff;}
+
+#side .gnb li .sub{display:none;}
+#side .gnb li .sub li a{display:block; padding:10px 30px; background:#eee; color: #2e2e2e;}
+
+.sideBg{width:100%; height:100%; background:#000; opacity:0.7;
+			position:fixed; top:0; left:0; z-index:300; display:none;}
+
+/*슬라이더*/
+.mainSlider{width: 100%;  margin-bottom: 20px; position: relative;}
+.mainSlider li{width: 100%; height: auto;}
+.mainSlider li a{display: block; width: 100%; height: auto;}
+.mainSlider li a img{width:100%; height: auto;}
+.mainSlider .bx-pager{position: absolute; left: 15px; bottom: 10px; 
+                            background: rgba(0,0,0,0.4); border-radius: 4px; padding: 3px;}
+.mainSlider .bx-pager div{float: left; margin: 0 5px;}
+.mainSlider .bx-pager div a{display: block; width: 7px; height: 7px; border-radius: 50%; 
+                                    background: #fff; text-indent: -9999px;}
+.mainSlider .bx-pager div .active{ background: #f00;}
+.mainSlider .bx-controls-direction{display: none;}
+.mainSlider .bx-controls-auto{display: none;}
+
+/*컨테이너*/
+.event{ margin-left:  7.5px; margin-right: 7.5px;}
+.event>div{width: 50%; float: left; padding: 0 7.5px; box-sizing: border-box; margin-bottom: 10px;}
+.event img{width: 100%; height: auto; }
+
+.card{margin: 0 15px; margin-bottom:23px;}
+.card img{ width: 100%; height: auto;}
+
+.service{margin-left: 15px; margin-right: 15px; margin-bottom: 20px;}
+.service>div{width: 50%; height: auto; text-align: center; float: left;}
+.service img{width: 40%; height: auto;}
+.service h3{font-size: 15px; font-weight:900; color: #09330d;}
+.service p{color: #555; font-weight: bold;}
+
+/*푸터영역*/
+#footer{width: 100%; height: 178px; background:#09330d;}
+.fsns{ width: 100%; height: 33px; background:#244c29; text-align: center; padding: 10px 0;}
+.fsns a{ margin-left: 20px;}
+.fsns a img{width: 32.5px; height: auto;}
+
+#footerIn{width: 100%; text-align: center;}
+.fmenu{display: inline-block; padding-top: 10px;}
+.fmenu li{ float: left;}
+.fmenu li:after{content: ""; display: inline-block; width: 1px; height: 9px; background: #fff;}
+.fmenu li:last-child:after{ display: none;}
+.fmenu li a{ font-size: 12px; font-weight: 500; color: #fff; margin: 0 10px;}
+.finfo{}
+.finfo p{font-size: 12px; color: #4c7651; font-weight: bold;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

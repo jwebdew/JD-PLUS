@@ -1,0 +1,9 @@
+@font-face {
+    font-family: '';
+    src: url('NotoSansKR-Regular-Alphabetic.woff2') format('woff2'),
+        url('NotoSansKR-Regular-Alphabetic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

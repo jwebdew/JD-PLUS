@@ -1,0 +1,141 @@
+@charset "utf-8";
+html, body{height: 100%;}
+#wrap{width: 100%; height: 100%; padding: 70px 0 0 0; box-sizing: border-box;}
+
+#header{width: 100%; height: 70px; background: rgba(255,255,255,0.5); position: fixed; top: 0; left: 0; z-index: 400;}
+#headerIn{width: 1200px; height: 70px; margin: 0 auto; position: relative;}
+#headerIn .logo{padding-top: 7px; width: 85px; height: 54px; margin: 0 auto;}
+#headerIn .logo a{display: block; text-indent: -9999px; width: 85px; height: 54px;
+                    background: url(../img/logo.png);}
+#headerIn .gnb{position: absolute; top: 30px; left: 50%; margin-left: -590px;}
+#headerIn .gnb ul{}
+#headerIn .gnb li{float: left; margin-right: 200px;}
+#headerIn .gnb li:nth-child(2){margin-right: 250px;}
+#headerIn .gnb li:nth-child(3){margin-left: 250px;}
+#headerIn .gnb li:last-child{margin-right: 0;}
+#headerIn .gnb li a{font-size: 18px; font-weight: bold; line-height: 2em; color: #2f2c27;}
+#headerIn .gnb li a span{display: block; width: 100%; height: 5px; background: #555;transform: scaleX(0); transition: 0.5s;}
+#headerIn .gnb li:hover a span{transform: scaleX(1)}
+#footer{}
+#footerIn{}
+
+.mainPager{ position: fixed; top: 50%; left:80px; margin-top: -110px; z-index: 400;}
+.mainPager ul{}
+.mainPager li{ margin-bottom: 30px;}
+.mainPager li a{display: block; width: 20px; height: 20px; background: #ffffff; text-indent: -9999px;
+                    border-radius: 50%; opacity: 0.5;}
+.mainPager .on a{opacity: 1;}
+
+
+#container{height: 100%;}
+#container>section{height: 100%; background-repeat: no-repeat; background-position: center; background-size: cover;
+                            position: relative;}
+#sct1{background-image: url(../img/mv1.jpg);}
+#sct2{background-image: url(../img/mv2.jpg);}
+#sct3{background-image: url(../img/mv3.jpg);}
+#sct4{background-image: url(../img/mv4.jpg);}
+#sct5{background-image: url(../img/mv5.jpg);}
+.inner{ width: 1200px; height: 800px;
+        position: absolute; top: 50%; left: 50%; margin-top:-400px; margin-left: -600px;}
+.arrow {position: absolute; bottom: 10px; left: 50%; margin-left: -51px;}
+.arrow a{display: block; width: 102px; height: 45px; background: url(../img/arrow.png) no-repeat; 
+        opacity: 0.5; transition: 0.3s;}
+.arrow a:hover{opacity: 1;}
+
+#sct1 h2{ font-size: 122px; line-height: 1em; font-weight: 400; color: #2f2c27; letter-spacing: 10px; text-align: center;
+            margin-top: 600px; margin-bottom: 10px;}
+#sct1 .border{display: block; width: 828px; height: 5px; background: #2f2c27; margin: 0 auto;}
+#sct1 p{ font-size: 30px; line-height: 1em; font-weight: 500; color: #2f2c27; letter-spacing: 10px; text-align: center; margin-top: 5px;}
+
+#sct2 h2{font-size: 32px; line-height: 1em; font-weight: 300; color: #fff; text-align: center; margin-bottom: 15px; margin-top: 95px;}
+#sct2 .border{ display: block; width: 668px; height: 5px; background: #fff; margin: 0 auto;}
+#sct2 p{font-size: 18px; line-height: 2em; font-weight: 300; color: #fff; text-align: center; margin-top: 5px;}
+
+#sct3 h3{font-size: 24px; line-height: 1em; font-weight: 500; color: #2f2c27; text-align: center;
+            margin-top: 50px;}
+#sct3 h2{ font-size: 36px; line-height: 1em; font-weight: 600; color: #2f2c27; text-align: center;}
+#sct3 p{ font-size: 18px; line-height: 1em; font-weight: 400; color: #2f2c27; text-align: center; margin:10px 0 20px 0;}
+#sct3 .movie{width: 940px; height: 529px; background: #fff; margin: 0 auto;}
+
+
+#sct4{text-align: center;}
+#sct4 .bar{display: inline-block; width: 829px; height: 5px; background: #2f2c27; margin: 50px 0 10px;}
+#sct4 h2{color: #2f2c27; font-size: 45px; line-height: 1em; font-weight: 600; letter-spacing: 5px}
+#sct4 h3{color: #2f2c27; font-size: 18px; line-height: 1em; font-weight: 400; letter-spacing: 2px; margin-top: 10px;}
+#sct4 .list{}
+#sct4 .list li{position: absolute;}
+#sct4 .list li a{text-indent: -9999px; display: block; width: 371px; height: 371px; background-repeat: no-repeat; transition: all 0.5s;}
+#sct4 .list .coco{left: -27px; bottom: 25px;}
+#sct4 .list .coco a{background-image: url(../img/mv4_img1.png)}
+#sct4 .list .earring{top:182px; left: 196px;}
+#sct4 .list .earring a{background-image: url(../img/mv4_img2.png)}
+#sct4 .list .earring a:hover{background-image: url(../img/mv4_img2_hover.png)}
+#sct4 .list .bracelet{left: 50%; bottom: 25px; margin-left: -185px;}
+#sct4 .list .bracelet a{background-image: url(../img/mv4_img3.png)}
+#sct4 .list .bracelet a:hover{background-image: url(../img/mv4_img3_hover.png)}
+#sct4 .list .ring{top: 182px; right: 196px;}
+#sct4 .list .ring a{background-image: url(../img/mv4_img4.png)}
+#sct4 .list .ring a:hover{background-image: url(../img/mv4_img4_hover.png)}
+#sct4 .list .necklace{right: -27px; bottom: 25px;}
+#sct4 .list .necklace a{background-image: url(../img/mv4_img5.png)}
+#sct4 .list .necklace a:hover{background-image: url(../img/mv4_img5_hover.png)}
+
+#sct5{ text-align: center;}
+#sct5 h2{color: #fff; font-size: 55px; line-height: 1em; font-weight: 600; letter-spacing: 10px; margin-top: 260px;}
+#sct5 h3{color: #fff; font-size: 20px; line-height: 1em; font-weight: 400; letter-spacing: 3px; margin: 20px 0;}
+#sct5 p{margin-top: 10px;}
+#sct5 p a{display: inline-block; color: #fff; font-size: 20px; line-height: 50px; font-weight: 400; 
+                width: 400px; height: 50px; border: 3px solid #fff; letter-spacing: 5px;}
+#sct5 p a:hover{ color: #2f2c27; background: #fff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

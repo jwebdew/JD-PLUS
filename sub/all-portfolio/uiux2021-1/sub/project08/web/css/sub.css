@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#wrap{}
+/*컨테이너 영역*/
+#container{}
+#containerIn{ width:980px; margin:0 auto; }
+#containerIn .title{width:100%; height:18px; padding:30px 0;}
+.title h1{ font-size:18px; font-weight:lighter; float:left; color:#383838;}
+.title span{float:right; position:relative;}
+.title span a{font-size:18px; font-weight:lighter; color:#383838;}
+.title span:hover a{ text-decoration:underline;}
+.title span .cartOn{ width:17px; height:17px; background:url(../img/sub1/cart_on.png) no-repeat; 
+						color:#fff; font-weight:bold; text-align:center; line-height:17px;
+						position:absolute; top:-10px; right:-10px;}
+
+
+#containerIn .bm{ width:980px; height:275px; margin-bottom:75px; position:relative;}
+.bm .bg{}
+.bm .bgOn{width:980px; height:275px; background:rgba(0,0,0,0.4); position:absolute; top:0; left:0;}
+.bm h2{ font-size:36px; color:#fff; font-weight:bold; top:50%; left:50%; margin-left:-87px; position:absolute;}
+
+
+
+#containerIn .list{ width:980px; height:384px; margin-bottom:60px;}
+.list:after{ content:""; display:block; clear:both;}
+.list li{ float:left; margin-right:40px;}
+.list li:last-child{ margin-right:0;}
+.list li .pizza{ position:relative; overflow:hidden;}
+.list li .pizza .pzOn{ color:#fff; font-size:70px; font-weight:bold; text-align:center; line-height:284px; 
+							width:300px; height:284px; background:rgba(0,0,0,0.4);
+							position:absolute; top:0; left:0; display:none;}
+.list li:hover .pizza .pzOn{ display:block;}
+.list li:hover .pizza img{ transform:scale(1.4); transition:1s;}							
+.list li .mTit{ width:290px; height:18px; background:#09330d; 
+				font-size:18px; line-height:18px; font-weight:bold; color:#fff; padding:4px 0 4px 10px;}
+.list li .price{ width:240px; height:44px; background:#ebebeb;
+					padding:15px 30px; font-weight:bold; font-size:14px; line-height:15px;}
+.list li .price:after{ content:""; display:block; clear:both;}
+.list li .price li{ margin-right:70px; height:30px;}
+.list li .price li:nth-child(2n){ margin-right:0;}
+.list li .price li p{width:15px; height:15px; background:#09330d; color:#fff; float:left; text-align:center; margin-right:5px;}
+.list li .price .sizeP p{ background:#d11524;}
+
+
+
+
+
+
+

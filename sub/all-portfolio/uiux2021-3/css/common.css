@@ -1,0 +1,255 @@
+@charset 'utf-8';
+@font-face {
+    font-family: 'Keep Calm';
+    src: url('../font/KeepCalm-Medium/KeepCalm-Medium.woff2') format('woff2'),
+        url('../font/KeepCalm-Medium/KeepCalm-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Antro Vectra';
+    src: url('../font/AntroVectra/AntroVectra.woff2') format('woff2'),
+        url('../font/AntroVectra/AntroVectra.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Antro Vectra_b';
+    src: url('../font/AntroVectra/AntroVectra-Bolder.woff2') format('woff2'),
+        url('../font/AntroVectra/AntroVectra-Bolder.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'JS Dongkang';
+    src: url('../font/JSDongkang-Regular/JSDongkang-Regular.woff2') format('woff2'),
+        url('../font/JSDongkang-Regular/JSDongkang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body::-webkit-scrollbar { display: none; }
+::-webkit-scrollbar { display: none; }
+.fp-enabled body, html.fp-enabled {overflow: hidden !important;}
+
+
+header {
+    width: 100%;
+    padding: 0 40px;
+    box-sizing: border-box;
+    background-color: #fff;
+    position: relative;
+    top: 40px;
+    z-index: 999;
+}
+.logo {
+    position: fixed;
+    z-index: 99;
+    top: 30px;
+    left: 40px;
+}
+.logo a img {
+    width: 100%;
+    display: block;
+}
+/* .logo a {
+    width: 100%;
+    font-family: 'keep calm';
+    font-size: 50px;
+    color: #707070;
+    display: block;
+    position: relative;
+}
+.logo a p::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #FFEF85;
+    position: absolute;
+    right: -10px;
+    bottom: 0;
+    z-index: -1;
+}
+.logo a {
+    width: 100%;
+    font-family: 'keep calm';
+    font-size: 35px;
+    color: #707070;
+    display: block;
+    position: relative;
+    text-align: center;
+}*/
+.gnb {
+    position:relative;
+}
+.menu {
+    width: 100%;
+    /* font-family: 'Keep Calm'; */
+    font-family: 'Arial';
+    font-weight: 800;
+    padding: 20px 0;
+    position: absolute;
+}
+.menu li {
+    margin-right: 40px;
+    display: inline-block;
+    position: relative;
+}
+/* .menu li::before {
+    content: "";
+    width: 105%;
+    height: 2px;
+    background: #b91a2f;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1px;
+    opacity: 0;
+    transition: .6s;
+} */
+.menu li:first-child {
+    margin-left: 200px;
+}
+.menu li:last-child{
+    margin-right: 0;
+}
+/* .menu li:hover::before {
+    opacity: 1;
+} */
+.menu li a {
+    font-size: 18px;
+    color:#707070;
+    position: relative;
+}
+.menu li a::before {
+    content: "[";
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: .6s;
+    color: #FFEF85;
+}
+.menu li a::after {
+    content: "]";
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transition: .6s;
+    color: #FFEF85;
+}
+.menu li:hover a {
+    color: #fff; 
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+.menu li:hover a::before {
+    left: -15px;
+    opacity: 1;
+    text-shadow: none;
+}
+.menu li:hover a::after {
+    right: -15px;
+    opacity: 1;
+    text-shadow: none;
+}
+/* 햄버거 메뉴 시작 */
+.h_btn {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    background: #FFEF85;
+    top: 35px;
+    right: 3vw;
+    padding: 10px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 999;
+    display: block;
+}
+.h_btn > span {
+    background-color: #707070;
+    width: 30px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    z-index: 9;
+    transition: .6s;
+}
+.h_btn > span:first-child {top: 14px;}
+.h_btn > span:nth-child(2) {top: 24px;}
+.h_btn > span:nth-child(3) {top: 24px;}
+.h_btn > span:last-child {top: 34px;}
+.h_btn.open > span:first-child  {opacity: 0;}
+.h_btn.open > span:nth-child(2)  {transform: rotate(45deg);}
+.h_btn.open > span:nth-child(3)  {transform: rotate(-45deg);}
+.h_btn.open > span:last-child  {opacity: 0;}
+.h_menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 50vw;
+    height: 100vh;
+    background-color: #FFEF85;
+    overflow-y: scroll;
+    transition: .8s;
+    z-index: 99;
+}
+.h_main {
+    width: 100%;
+    height: 100%;
+    padding: 20%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.h_main li {
+    line-height: 3;
+    position: relative;
+    overflow: hidden;
+}
+.h_main li a {
+    font-size: 35px;
+    font-family: 'keep calm';
+    transition: all .2s;
+}
+.h_main li a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+    right: 100%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 6px;
+    background: #FFC107;
+    transition: all .3s;
+    transition-delay: .2s;
+    z-index: -1;
+}
+.h_main li:hover a::after {
+    right: 0%;
+}
+.h_main li:hover a {
+    color: #FFEF85; 
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+.h_menu.open {
+    /* display: block; */
+    right: 0;
+    z-index: 9;
+}
+.h_menu::-webkit-scrollbar {
+    display: none;
+}
+/* 햄버거 메뉴 끝 */
+
+@media screen and (max-width:1024px) {
+    .fp-enabled body, html.fp-enabled {overflow: inherit !important;}
+    .menu {display: none;}
+}

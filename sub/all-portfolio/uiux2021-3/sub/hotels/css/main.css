@@ -1,0 +1,760 @@
+@charset "utf-8";
+
+/* 메인비주얼 */
+.main_visual div {
+    position: relative;
+}
+.main_visual div .tit {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-family: 'Gotham';
+    font-weight: 300;
+    color: #fff;
+    z-index: 99;
+}
+.main_visual div .tit h2 {
+    font-size: 75px;
+}
+.main_visual div .tit p {
+    font-size: 36px;
+}
+.main_visual .slick-slide img {
+    width: 100%;
+}
+.main_visual .slick-prev, .main_visual .slick-next {display: none !important;}
+.main_visual .slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+.main_visual .slick-dots {
+    bottom: 100px;
+}
+.m_main_visual {display: none;}
+/* search_box */
+.search_box_form {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.search_box {
+    width: 100%;
+    height: 125px;
+    position: absolute;
+    top: -215px;
+    background-color: #fff;
+    box-shadow: 0 0 25px rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    padding: 20px;
+}
+.search_box li {
+    float: left;
+    height: 100%;
+    border: 1px solid#ddd;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.search_box li .label {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 18px;
+}
+.search_box li input {
+    border: 0;
+    outline: 0;
+    width: 88%;
+    padding-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+.search_box li.list_destination {
+    width: 32.625%;
+}
+.search_box li.list_destination .xi-maker {
+    font-size: 20px;
+}
+.search_box li.list_calender {
+    width: 26.875%;
+}
+.search_box li.list_calender .calender {
+    display: inline-block;
+    overflow: hidden;
+}
+.search_box li.list_calender .calender .xi-calendar {
+    font-size: 20px;
+}
+.search_box li.list_calender .calender .time_tab {}
+.search_box li.list_calender .calender .check_in {
+    float: left;
+    width: 50%;
+}
+.search_box li.list_calender .calender .check_out {
+    float: right;
+    width: 50%;
+}
+.search_box li.list_calender .calender input {
+    width: 70%;
+}
+.search_box li.list_option {
+    width: 23.82%;
+    position:relative;
+}
+.count_range_wrap {
+    position: absolute;
+    top: calc(100% + 1px);
+    z-index: 9;
+    left: -1px;
+    background: #fff;
+    width: 95.5%;
+    padding: 16px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    display: none;
+}
+.count_range_wrap > div {
+    overflow: hidden;
+    margin: 10px 0 ;
+}
+.count_range_wrap p {
+    line-height: 30px;
+    float: left;
+}
+.count_range_wrap .count_range {
+    float: right;
+}
+.count_range_wrap .count_range input.count {
+    border: 0;
+    outline: 0;
+    width: 13px;
+    padding-top: 0px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+.count_range_wrap .count_range input[type="button"] {
+    width: 30px!important;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ccc;
+    color: #000;
+    padding: 0;
+}
+.count_range_wrap .count_range input[type="button"]:hover {
+    background-color: #2565ff;
+    color: #fff;
+    font-weight: bold;
+}
+.search_box li.search_btn {
+    box-sizing: border-box;
+    background-color: #2565ff;
+    width: 14.82%;
+    margin: 0 auto;
+    margin-left: 1.5%;
+    text-align: center;
+    position: relative;
+}
+.search_box .search_btn .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.search_box .search_btn .btn a {display: block;}
+
+/* cont01 : 추천 여행지 시작 */
+.cont01_inner {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+/* 컨텐츠 제목 시작 */
+.cont_tit {
+    margin-top: 150px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-family: 'NanumGothic';
+}
+.cont_tit h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+.cont_tit p {
+    font-size: 30px;
+}
+/* 컨텐츠 제목 끝 */
+.cont01_box {
+    overflow: hidden;
+}
+.cont01_box article {
+    float: left;
+}
+.cont01_box article.box01 {
+    width: 23.82%;
+    margin-right: 1.56%;
+}
+.cont01_box article.box02 {
+    margin-right: 1.56%;
+    width: 49.21%;
+}
+.cont01_box article.box03 {
+    width: 23.82%;
+}
+.cont01_box article div {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.cont01_box article div::before {
+    content: '';
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: 1s;
+}
+.cont01_box article div:hover::before {
+    opacity: 1;
+}
+.cont01_box article div img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.cont01_box article div:hover img {
+    transform: scale(1.2);
+}
+.cont01_box article div dl {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    transform: translate(0%, 0%);
+    text-align: center;
+    font-family: 'NanumGothic';
+    font-size: 24px;
+    color: #fff;
+    z-index: 2;
+    transition: 1s;
+    opacity: 0;
+}
+.cont01_box article div:hover dl {
+    opacity: 1;
+}
+/* cont01 : 추천 여행지 끝 */
+/* cont02 :  호텔스닷컴 혜택 시작 */
+.cont02_inner .cont_tit {margin-top: 130px;}
+.cont02_list {
+    max-width: 1060px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cont02_list article {
+    /* display: inline-block; */
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .3);
+    position: relative;
+    /* margin-right: 14%; */
+    margin-bottom: 45px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.cont02_list article:last-child {
+    margin-right: 0;
+}
+.cont02_list article div {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.cont02_list article div > i {
+    color: #2565ff;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.cont02_list article div dl dt {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.cont02_list article div dl dd {
+    font-size: 18px;
+}
+.cont02_list article div dl dd a {
+    color: #000;
+    font-size: 18px;
+    font-display: block;
+}
+.cont02_list article div dl dd a .xi-angle-right {
+    font-size: 18px;
+}
+.cont02_list article div dl dd:hover a {
+    color: #2565ff;
+    font-weight: bold;
+}
+.cont02_list article div dl dd:hover a .xi-angle-right {
+    font-weight: bold;
+}
+/* cont02 호텔스닷컴 리워드 */
+.cont02_reward {
+    background-color: #f5f5f5;
+}
+.cont02_reward_inner {
+    max-width: 846px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.cont02_reward_inner h3 {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.cont02_reward_inner > div {
+    float: left;
+}
+.cont02_reward_inner .reward_left {
+    width: 49%;
+    border-radius: 10px;
+    margin-right: 3%;
+}
+.cont02_reward_inner .reward_left img {
+    width:100% ;
+    border-radius: 10px;
+    box-shadow:10px 10px 20px rgba(0, 0, 0, .3);
+}
+.cont02_reward_inner .reward_right {
+    width: 48%;
+}
+.cont02_reward_inner .reward_right h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+.cont02_reward_inner .reward_right p {
+    font-size: 18px;
+}
+.cont02_reward_inner .reward_right .button {
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #2565ff;
+    margin-top: 22px;
+}
+.cont02_reward_inner .reward_right .button a {
+    color: #fff;
+    font-size: 16px;
+    display: block;
+}
+/* cont02 끝 */
+/* cont03 : 호텔 및 숙박 시설 시작 */
+.cont03 {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+.cont03 .accomodation {
+    margin-bottom: 150px;
+}
+.cont03 .accomodation .type:hover img {
+    border-radius: 50%;
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, .3); */
+}
+.cont03 .accomodation .type:hover p {
+    color: #2565ff;
+    font-weight: bold;
+}
+.cont03 .accomodation .type a img {
+    width: 100%;
+    transition: .5s ease;
+}
+.cont03 .accomodation .type a p {
+    text-align: center;
+    color: #333;
+    font-size: 22px;
+    margin-top: 22px;
+}
+
+.cont03 .accomodation .slick-slide {
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.cont03 .accomodation .slick-prev, .cont03 .accomodation .slick-next {
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .5);
+}
+.cont03 .accomodation .slick-prev {
+    left: 20px;
+    z-index: 2;
+}
+.cont03 .accomodation .slick-next {
+    right: 20px;
+}
+.cont03 .accomodation .slick-prev:before {
+    content:"\e93b";
+    font-family: 'xeicon';
+}
+.cont03 .accomodation .slick-next:before {
+    content: "\e93e";
+    font-family: 'xeicon';
+}
+/* cont03 : 호텔 및 숙박 시설 끝 */
+/* cont04 : 뉴스레터 & 앱 다운 시작 */
+.cont04 {
+    margin-bottom: 150px;
+}
+.cont04_inner {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.cont04_left, .cont04_right  {
+    float: left;
+    width: 49%;
+    border: 1px solid #2565ff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 40px;
+} 
+.cont04_left {
+    margin-right: 2%;
+}
+.cont04_tit {}
+.cont04_tit i {
+    font-size: 25px;
+}
+.cont04_tit h3 {
+    font-size: 25px;
+    display: inline-block;
+    letter-spacing: -3px;
+    margin-bottom: 24px;
+}
+.cont04_tit p {
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+.cont04_left .e-mail {
+    display: block;
+    opacity: 0;
+}
+.cont04_right .app {
+    display: block;
+}
+.cont04_inner .input_wrap {
+    width: 100%;
+    overflow: hidden;
+}
+.cont04_inner .input_wrap input {
+    float: left;
+    width: 75%;
+    height: 40px;
+    margin-top: 8px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.cont04_inner .input_wrap .btn {
+    float: left;
+    display: inline-block;
+    width: 25%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 8px;
+    background-color: #2565ff;
+}
+.cont04_inner .input_wrap .btn a {
+    display: block;
+}
+.cont04_inner .txt {
+    margin-top: 130px;
+    color: #999;
+}
+/* cont04 : 뉴스레터 & 앱 다운 끝 */
+
+@media screen and (max-width:1024px) {
+    .main_visual div .tit {
+        display: none ;
+    }
+    .search_box_form {
+        width: 98% !important;
+    }
+    .search_box {
+        height: auto;
+    }
+    .search_box li input {
+        width: 80%;
+        top: -300px;
+    }
+    .search_box li {
+        float: inherit;
+        height: auto;
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+    .search_box li .label {
+        display: inline-block;
+    }
+    .search_box li i {
+        padding-left: 20px;
+    }
+    .search_box li.list_calender .calender {
+        width: 100%;
+    }
+    .search_box li.list_calender .calender input {
+        width: auto;
+    }
+    .search_box .list_option {
+        position: relative;
+    }
+    .search_box .list_option input {
+        padding-left: 20px;
+    }
+    .count_range_wrap .count_range input.count {
+        padding-left: 5px;
+    }
+    .search_box .list_option i.xi-angle-down {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .search_box li.search_btn {
+        margin-left: 0;
+    }
+    .cont_tit {
+        margin-top: 130px;
+    }
+    .cont01_inner {
+        width: 98% !important;
+        padding-top: 147px;
+        box-sizing: border-box;
+    }
+    .cont01_box article div {
+        margin-bottom: 16px !important;
+    }
+    .cont02_list {
+        width: 98% !important;
+    }
+    
+    .cont04_tit i {
+        display: none;
+    }
+    .cont04_left, .cont04_right {
+        padding:30px !important;
+    }
+}
+@media screen and (max-width:840px) {
+    .cont_tit {
+        margin-bottom: 80px;
+    }
+    .cont_tit h2 {
+        font-size: 45px;
+    }
+    .cont_tit p {
+        font-size: 26px;
+    }
+    .cont01_box article div {
+        margin-bottom: 13px !important;
+    }
+    .cont02_reward_inner {
+        width: 98%;
+    }
+    .cont02_list article {
+        width: 200px;
+        height: 200px;
+    }
+    .cont02_list article div dl dd {
+        font-size: 16px;
+    }
+    .cont02_list article div dl dd a {
+        font-size: 16px;
+    }
+    .cont02_list article div dl dd a .xi-angle-right {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:767px) {
+    .main_visual {display: none;}
+    .m_main_visual {
+        display: block;
+        max-width: 767px;
+        width: 100%;
+        height: 600px;
+        background-color: #2565ff;
+        margin: 0 auto;
+    }
+    .m_main_visual .bg{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .3);
+    }
+    .search_box {
+        top: -380px;
+    }
+    .search_box li.list_calender .calender input {
+        width: 54%;
+    }
+    .cont01_inner {
+        padding-top: 0;
+    }
+    .cont_tit h2 {
+        font-size: 40px;
+    }
+    .cont_tit p {
+        font-size: 24px;
+    }
+    .cont01_box article div {
+        margin-bottom: 12px !important;
+    }
+    .cont04_inner {
+        width: 98%;
+    }
+    .cont04_left, .cont04_right {
+        float: inherit;
+        width: 100%;
+    }
+    .cont04_left {
+        margin-right: 0;
+        margin-bottom: 1.5%;
+    }
+    .cont04_tit p {
+        margin-bottom: 30px;
+    }
+    .cont04_inner .txt {
+        margin-top: 80px;
+    }
+}
+@media screen and (max-width:647px) {
+    .search_box li .label {
+        display: block;
+        margin-bottom: 1%;
+    }
+    .search_box li i {
+        padding-left: 0;
+    }
+    .search_box .list_option input {
+        padding-left: 0;
+    }
+    .cont_tit h2 {
+        font-size: 35px;
+    }
+    .cont_tit p {
+        font-size: 20px;
+    }
+    .cont01_box article.box01 {
+        width: 49%;
+        margin-right: 2%;
+    }
+    .cont01_box article.box02 {
+        display: none;
+    }
+    .cont01_box article.box03 {
+        width: 49%;
+    }
+    .cont01_box article div {
+        margin-bottom: 10px!important;
+    }
+    .cont02_reward_inner {
+        width: 96%;
+        padding-bottom: 50px;
+        margin-top: 50px;
+    }
+    .cont02_reward_inner h3 {
+        text-align: center;
+        font-size: 20px;
+    }
+    .cont02_reward_inner .reward_right h4 {
+        font-size: 18px;
+    }
+    .cont02_reward_inner .reward_right p {
+        font-size: 16px;
+    }
+    .cont02_list article {
+        width: 100%;
+        height: 100px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    .cont02_list article div {
+        text-align: inherit;
+    }
+    .cont02_list article div > i {
+        margin-bottom: 0;
+        margin: 0 20px;
+    }
+    .cont02_list article div dl {
+        display: inline-block;
+    }
+    .cont02_reward_inner .reward_left {
+        width: 98%;
+        margin-right: 0;
+    }
+    .cont02_reward_inner .reward_right {
+        width: 98%;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .cont02_reward_inner .reward_right .button {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .cont03 .accomodation .slick-prev, .cont03 .accomodation .slick-next {
+        display: none !important;
+    }
+    .slick-dots li button:before {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:420px) {
+    .cont01_box article div {
+        margin-bottom: 5px!important;
+    }
+    .cont_tit {
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .cont_tit h2 {
+        font-size: 30px;
+    }
+    .cont_tit p {
+        font-size:18px;
+    }
+    .cont02_inner .cont_tit {
+        margin-top: 80px;
+    }
+    .cont03 .accomodation {
+        margin-bottom: 120px;
+    }
+    .cont04 {
+        margin-bottom: 120px;
+    }
+    .cont04_inner .input_wrap input {
+        width: 65%;
+    }
+    .cont04_inner .input_wrap .btn {
+        width: 35%;
+    }
+}

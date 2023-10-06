@@ -1,0 +1,1030 @@
+@charset "utf-8";
+
+*{margin:0; padding:0;}
+
+a{
+    text-decoration: none;
+    display: block;
+    color:#333;
+}
+
+li{list-style: none;}
+
+@font-face {
+    font-family: 'TmonMonsori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.main_page {
+    max-width:1920px;
+    width:100%;
+    height:1080px;
+    font-family: 'TmonMonsori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    /* background: url('/img/main_page.jpg')center center /cover no-repeat; */
+    box-sizing: border-box;
+    position: relative;
+    margin:0 auto;
+}
+
+.main_in {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    width:calc(1920px - 32.88%);
+    height:calc(100% - 240px);
+    margin:0 auto;
+}
+
+.main_in > p {
+    width:100%;
+    height:100%;
+    position: relative;
+    text-align: center;
+}
+
+.main_in > p img{
+    height:100%;
+}
+
+.main_in .v01 {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:125%;
+    height:110%;
+    margin:0 auto;
+}
+
+.main_in .top_menu {
+    width:80%;
+    margin:0 auto;
+    padding-bottom:2% 0;
+}
+
+.main_in .top_menu ul {
+    margin-bottom:2%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: flex-end;   
+    height: 3em; /* 애니메이션 높이 */
+    overflow-y: hidden;    
+}
+
+.main_in .top_menu ul li {
+    width:100px;
+    text-align: center;
+    font-size: 3em;/* 애니메이션 높이 */
+    font-weight: bold;
+    line-height: 2;
+    animation-name: grow;
+    animation-duration: 10s;
+    animation-delay: 0;
+    animation-iteration-count :initial;
+    opacity: 1;
+}
+
+.main_in .top_menu ul li a {
+    color:#674b95;
+    font-size: 20px;
+}
+
+.main_in .box_in {
+    width:80%;
+    height:60%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    margin:0 auto;
+}
+
+.main_in .box_in p {
+    color:#674b95 ;
+    transform:rotate(-90deg);
+    transform-origin:top;
+    font-size: 25px;
+    box-sizing: border-box;
+    width:3%;
+    height:30%;
+    animation-name: grow01;
+    animation-duration: 8s;
+    animation-delay: 0;
+    animation-iteration-count :initial;
+    opacity: 1;
+}
+
+.main_in .box_in .name {
+    width:42%;
+    height: 50%;
+    padding-top: 15%;
+    padding-right:2%;
+    box-sizing: border-box;
+}
+
+.main_in .box_in .name ul {
+    width:50%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: flex-end; 
+    box-sizing: border-box;
+}
+
+.main_in .box_in .name ul li  {
+    color:#f2b413;
+    height:125px;
+    line-height: 125px;
+    margin-right:20px;
+}
+
+#wrap {
+    display: -ms-flexbox;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    
+  }
+  
+  #app {
+    text-transform: uppercase;
+    width:100%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: flex-end; 
+    box-sizing: border-box;
+    color:#f2b413;
+    height:125px;
+    line-height: 125px;
+    margin-right:20px;
+    font-size: 100px;
+  }
+  /* 애니메이션에도 트렌스폼을 넣어 줄것  */
+  @keyframes grow01 {
+    0% { transform: rotate(-90deg) translateY(-10%); opacity: 0;}/* 애니메이션 높이 */
+    50% {    opacity: 0;}
+    60% {    opacity: 0.5;}
+    70% {    opacity: 0.8;}
+    100% {  opacity: 1;}
+} 
+  
+@keyframes grow {
+    0% { transform: translateY(3em); opacity: 0;}/* 애니메이션 높이 */
+    50% { transform: translateY(0); opacity: 1;}
+    100% { transform: translateY(0); opacity: 1;}
+}
+
+.main_in .box_in .name ul li:first-child{
+    font-size: 100px;
+}
+
+.main_in .box_in .name ul:first-child li:nth-child(2) {
+    font-size: 50px;
+    padding-top:2%;
+    box-sizing: border-box;
+}
+
+.main_in .box_in .name ul:nth-child(2) li:nth-child(2) {
+    font-size: 80px;
+}
+
+.main_in .box_in ul li:nth-child(4) {
+    font-size: 80px;
+}
+
+  /* ---------------------------------------------------------------------------------- */
+
+  .cont01{
+      max-width:1920px;
+      width:100%;
+      height:1080px;
+      margin:0 auto;
+      margin-bottom:160px;
+      position: relative;
+  }
+
+  .cont01 > div {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:100%;
+    height: 80%;
+  }
+
+ /* .cont01_in {
+    opacity: 0;
+  } */
+
+  
+  
+  .cont01 > div  h3 {
+      width: 20%;
+      height:auto;
+      margin-left:15%;
+      margin-bottom:1%;
+      color:#674b95;
+      font-family: 'TmonMonsori';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+      font-size: 30px;
+      /* background: url('/img/index.png')center center / cover no-repeat;  */
+      padding:10px 5px;
+      padding-left:70px;
+      box-sizing: border-box;
+      position: relative;
+  }
+
+  .cont01 > div h3 span{
+      width:100%;
+      position:absolute;
+      top:0;
+      left:0;
+      z-index: -1;
+  }
+
+  .cont01 > h3 span img{
+      width:100%;
+  }
+
+  .cont01 .cont01_in {
+      max-width:calc(1920px - 11.88%);
+      width:70%;
+      height:71%;
+      margin:0 auto;
+      display:flex;
+      flex-wrap:wrap;
+      justify-content: space-evenly;
+      position:relative;
+      margin-top:2%;
+  }
+
+  .cont01 .cont01_in > p {
+      width:100%;
+      position:absolute;
+      top:0;
+      left:0;
+      z-index: -1;
+  }
+
+  .cont01 .cont01_in > p img {
+      width:100%;
+  }
+
+  .cont01 .cont01_in:before {
+      content:'';
+      width:100%;
+      height:100%;
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+  }
+
+  .cont01 .cont01_in .cont01_l {
+      width:22%;
+      height:48%;
+      margin-top:15%;
+  }
+
+  .cont01 .cont01_in .cont01_l dl{
+      width:100%;
+      height:100%;
+      position: relative;
+  }
+
+  .cont01 .cont01_in .cont01_l dl span{
+      width: 100%;
+      height:100%;
+      position: absolute;
+      top:0;
+      left:0;
+      z-index: -1;
+  }
+
+  .cont01 .cont01_in .cont01_l dl span img{
+      width:100%;
+      overflow: hidden;
+  }
+
+  .cont01 .cont01_in .cont01_l dl dt {
+      width:97.5%;
+      height:74%;
+      overflow: hidden;
+  }
+
+  .cont01 .cont01_in .cont01_l dl dt img {
+     width: 100%;
+     display: block;
+  }
+
+  .cont01 .cont01_in .cont01_r {
+      width:50%;
+      height:78%;
+      margin-top:5%;
+  }
+
+  .cont01 .cont01_in .cont01_r .window{
+      width:100%;
+      height:100%;
+      position:relative;
+  }
+
+  .cont01 .cont01_in .cont01_r .window > p {
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+  }
+
+  .cont01 .cont01_in .cont01_r .window > p img{
+      width:100%;
+  }
+
+  .cont01 .cont01_in .cont01_r .window .tab {
+      width:100%;
+      height:100%;
+      margin:0 auto;
+  }
+
+  .cont01_r .window .tab .tab_list{
+      width:97.5%;
+      display:flex;
+      flex-wrap:wrap;
+      justify-content: flex-end;
+      margin-right:3%;
+  }
+
+  .cont01_r .window .tab .tab_list li {
+      width:15%;
+      padding:1.5% 0;
+      padding-left:3%;
+      background-color:#fff;
+      border-radius: 10px 10px 0 0;
+      overflow: hidden;
+      font-size: 12px;
+      margin-top:1.8%;
+      transition: 0.5s;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+  }
+
+  .cont01_r .window .tab .tab_cont {
+      padding:5%;
+      margin-top:8%;
+      z-index: 1;
+  }
+
+  .cont01_r .window .tab .tab_cont > li {
+      width: 100%;
+  }
+
+  .window .tab .tab_cont li p {
+    font-family: 'Roboto', sans-serif;
+    position:relative;
+  }
+
+  .cont01_r .window .tab .tab_cont > li h4 {
+    font-family: 'TmonMonsori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    color:#674b95;
+    font-size: 30px;
+    margin-bottom:7%;
+  }
+
+  .window .tab .tab_cont > li p {
+      border-bottom: 1px solid #707070;
+      padding:3% 0;
+      width:100%;
+  }
+
+  .cont01_r .window .tab .tab_cont li span {
+      color:#757575;
+  }
+
+  .cont01_r .window .tab .tab_cont .b01 p:first-child  {
+      color:aquamarine;
+  }
+  .cont01_r .window .tab .tab_cont .b01 span:first-child  {
+        font-weight: bold;
+        display:inline-block;
+        width:17%;
+  }
+
+   .tab_list li.on {
+    color: #674b95;
+  }
+
+  .cont01_r .window .tab .tab_cont li:last-child span:last-child{
+    display:inline-block;
+    text-align: right;
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right:2%;
+  }
+
+  .cont01_r .window .tab .tab_list li:hover {
+      transform: scaleY(1.);
+      background-color: #ddd;
+  }
+
+  .tab_cont li {
+    display: none;
+  }
+
+  .tab_cont li.on {
+    display: block;
+  }
+
+  .tab_cont li:nth-child(3) div {
+      text-align: center;
+      padding:2% 0;
+  }
+
+  .tab_cont li:nth-child(3) div img {
+      height:100%;
+  }
+
+  .cont01_r .window .tab .tab_cont > li h4 {
+    margin-bottom:5%;
+  }
+
+  .chart > div {
+    margin:0 20px;
+
+  }
+  .chart > div:nth-child(1), 
+  .chart > div:nth-child(2), 
+  .chart > div:nth-child(3) {
+    padding:0 1%;
+    margin-bottom:10px;
+  }
+
+  .chart > a {
+      margin-top:30px;
+      font-family: 'TmonMonsori';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+        color:#674b95;
+  }
+
+  .pie-chart {
+    position: relative;
+    display:inline-block;
+    width: 120px;
+    height: 100px;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+  
+  span.center{
+    background: #fff;
+    display : block;
+    position: absolute;
+    top:50%; left:50%;
+    width:60%; height:60%;
+    border-radius: 50%;
+    text-align:center; line-height: 75px;
+    font-size:18px;
+    transform: translate(-50%, -50%);
+    font-family: 'TmonMonsori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    color:#674b95;
+  }
+ 
+
+  /* ----------------------------------------------------------------------------------------------- */
+
+.cont02 {
+    max-width:1920px;
+    width:100%;
+    margin:0 auto;
+}
+
+.cont02_in {
+    width:100%;
+    margin:0 auto;
+    position:relative;
+}
+
+.cont02 > p{
+    width:100%;
+    height:18px;
+    border-top:5px solid #674b95;
+    border-bottom:5px solid #674b95;
+    position:relative;
+    margin-bottom:5%;
+    z-index:1;
+}
+
+.cont02 > p span {
+    width:13%;
+    height:80px;
+    background-color:#fff;
+    text-align: center; line-height: 80px;
+    font-size: 50px;
+    color:#674b95;
+    font-family: 'TmonMonsori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    position: absolute;
+    top:50%;
+    right:20%;
+    transform: translateY(-50%);
+}
+
+.cont02_in h3 {
+    width: 25%;
+    height:auto;
+    margin-left:15%;
+    color:#674b95;
+    font-family: 'TmonMonsori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    box-sizing: border-box;
+    position: relative;
+    top:15px;
+    z-index: 2;
+    padding:8px 4%;
+}
+
+.cont02_in h3 span{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+}
+
+.cont02_in h3 span img{
+    width:100%;
+    z-index: 1;
+}
+
+.cont02_in .box {
+    width:100%;
+    height:600px;
+    overflow: hidden;
+    margin:0 auto;
+    margin-bottom: 5%;
+    background-color: #f2b413;
+    border-top:5px solid #674b95;
+    border-bottom:5px solid #674b95;
+}
+
+.cont02_in .box .e01 {
+    max-width:calc(1920px - 11.88%);
+    width:70%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    overflow: hidden;
+    margin:0 auto;
+}
+
+.cont02_in .box .e01 .box01_l > p {
+    width:140px;
+    height:50px;
+    border:1px solid #fff;
+    text-align:center;
+    line-height:50px;
+    overflow: hidden;
+    position:relative;
+}
+
+.cont02_in .box .e01 .box01_l > p::before {
+    content:'';
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:-140px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: 2s cubic-bezier(0,0,0,1);
+}
+
+.cont02_in .box .e01 .box01_l > p:hover::before{
+    left:0;
+}
+
+.cont02_in .box .e01 .box01_l > p:hover a{
+    color:#b66727;
+}
+
+.cont02_in .box .e01 .box01_l a {
+    color:#fff;
+    font-family: 'TmonMonsori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    z-index: 3;
+    transition: 1.5s;
+}
+
+.cont02_in .box .e01 .box01_l {
+    width:20%;
+    padding-top:26%;
+    padding-left:2%;
+}
+
+.cont02_in .box .e01 .box01_l ul {
+    font-family: 'Roboto', sans-serif;
+    color:#fff;
+    margin:10% 0;
+    border-left:2px solid #fff;
+    padding:0 5%;
+}
+
+.cont02_in .box .e01 .box01_l ul li {
+    margin:2% 0;
+    width:100%;
+}
+
+.cont02_in .box .e01 .box01_l ul li:nth-child(3) {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.cont02_in .box .e01 .box01_l ul li:nth-child(3) p {
+    width: 20%;
+}
+
+.cont02_in .box .e01 .box01_l ul li:nth-child(3) p:nth-child(3){
+    padding-right:4%;
+}
+
+.cont02_in .box .e01 .box01_l ul li:nth-child(3) p:nth-child(4) {
+    padding-left:2%;
+}
+
+.cont02_in .box .e01 .box01_r {
+    width:70%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: flex-end;
+}
+
+.cont02_in .box .e01 .box01_r p {
+    width:70%;
+}
+
+.cont02_in .box .e01 .box01_r img {
+    display:block;
+    width:100%;
+}
+
+
+.f02 h3 {
+    width: 25%;
+    height:auto;
+    margin-left:60%;
+    color:#f2b413;
+    font-family: 'TmonMonsori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    box-sizing: border-box;
+    position: relative;
+    top:15px;
+    z-index: 2;
+    padding:8px 4%;
+}
+
+.f02 h3 span{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+}
+
+.f02 h3 span img{
+    width:100%;
+    z-index: 1;
+}
+
+.f02 .box {
+    width:100%;
+    height:600px;
+    overflow: hidden;
+    margin:0 auto;
+    margin-bottom: 5%;
+    background-color: #fff;
+    border-top:0;
+    border-bottom:0;
+}
+
+.cont02_in .box .e02 {
+    max-width:calc(1920px - 11.88%);
+    width:70%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    overflow: hidden;
+    margin:0 auto;
+}
+
+.cont02_in .box .e02 .box01_l > p {
+    width:100%;
+    height:50px;
+    text-align: center;
+    line-height: 35px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: flex-end;
+}
+
+
+
+.f02 .box .e02 .box01_l p a {
+    width:55%;
+    color:#757575;
+    border:2px solid #757575;
+    font-family: 'TmonMonsori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 50px;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.cont02_in .box .e02 .box01_l > p a::before {
+    content:'';
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    right:-160px;
+    background-color: rgba(105, 105, 105, 0.5);
+    transition: 2s cubic-bezier(0,0,0,1);
+}
+
+.cont02_in .box .e02 .box01_l > p a:hover::before{
+    right:0;
+}
+
+.cont02_in .box .e02 .box01_l {
+    width:20%;
+    padding-top:26%;
+    padding-left:2%;
+}
+
+.cont02_in .box .e02 .box01_l ul {
+    font-family: 'Roboto', sans-serif;
+    color:#757575;
+    margin:10% 0;
+    border-right:2px solid #757575;
+    padding:0 5%;
+}
+
+.cont02_in .box .e02 .box01_l ul li {
+    margin:2% 0;
+    width:100%;
+    text-align: right;
+}
+
+.cont02_in .box .e02 .box01_l ul li:nth-child(3) {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.cont02_in .box .e02 .box01_l ul li:nth-child(3) p {
+    width: 20%;
+}
+
+.cont02_in .box .e02 .box01_l ul li:nth-child(3) p:nth-child(3){
+    padding-left:10%;
+}
+
+.cont02_in .box .e02 .box01_l ul li:nth-child(3) p:nth-child(4) {
+    padding-left:0%;
+}
+
+.cont02_in .box .e02 .box01_r {
+    width:70%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+}
+
+.cont02_in .box .e02 .box01_r p {
+    width:70%;
+}
+
+.cont02_in .box .e02 .box01_r img {
+    display:block;
+    width:100%;
+    animation: slider 30s infinite linear;
+}
+
+.cont02_in .box .e01 .box01_r img {
+    display:block;
+    width:100%;
+    animation: slider 20s infinite linear;
+}
+
+@keyframes slider {
+    0% {
+        transform: translateY(0);
+        /* 그냥 position으로 조절히면 600px만큼만 내려간다 */
+    }
+    100% {
+        transform: translateY(-100%);
+        }
+    }
+
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+
+.cont03{
+    max-width:1920px;
+    width:100%;
+    margin:0 auto;
+    margin-top:300px;
+}
+
+.cont03 > p{
+    width:100%;
+    height:18px;
+    border-top:5px solid #674b95;
+    border-bottom:5px solid #674b95;
+    position:relative;
+    margin-bottom:5%;
+    z-index:1;
+}
+
+.cont03 > p span {
+    width:15%;
+    height:80px;
+    background-color:#fff;
+    text-align: center; line-height: 80px;
+    font-size: 50px;
+    color:#674b95;
+    font-family: 'TmonMonsori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    position: absolute;
+    top:50%;
+    left:20%;
+    transform: translateY(-50%);
+}
+
+.cont03 .cont03_in{
+    max-width:calc(1920px - 11.88%);
+    width:70%;
+    margin:0 auto;
+}
+
+.cont03 .cont03_in .photo_top {
+    width:100%;
+    margin:0 auto;
+    margin-bottom:10%;
+}
+
+.cont03_in .photo_top h3 {
+    width: 40%;
+    height:auto;
+    margin-bottom:5%;
+    color:#674b95;
+    font-family: 'TmonMonsori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    box-sizing: border-box;
+    position: relative;
+    top:15px;
+    z-index: 2;
+    padding:0.7% 5%;
+}
+
+.cont03_in .photo_top h3 span{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    /* display:none; */
+}
+
+.cont03_in .photo_top h3 span img{
+    width:100%;
+    z-index: 1;
+}
+
+.cont03 .cont03_in .photo_top ul{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.cont03 .cont03_in .photo_top ul li:first-child, 
+.cont03 .cont03_in .photo_top ul li:last-child {
+    margin:0;
+}
+
+.cont03 .cont03_in .photo_top ul li {
+    width:30%;
+    margin:0 auto;
+}
+
+.cont03 .cont03_in .photo_top ul li a{
+    width:100%;
+}
+
+.cont03 .cont03_in .photo_top ul li a img {
+    width:100%;
+}
+
+
+.cont03_in .photo_bt {
+    margin-bottom:10%;
+}
+
+.cont03_in .photo_bt h3 {
+    width: 40%;
+    height:auto;
+    margin-bottom:5%;
+    color:#674b95;
+    font-family: 'TmonMonsori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    box-sizing: border-box;
+    position: relative;
+    top:15px;
+    z-index: 2;
+    padding:0.7% 5%;
+}
+
+.cont03_in .photo_bt h3 span{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    /* display:none; */
+}
+
+.cont03_in .photo_bt h3 span img{
+    width:100%;
+    z-index: 1;
+}
+
+.cont03 .cont03_in .photo_bt ul{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.cont03 .cont03_in .photo_bt ul li {
+    width:45%;
+}
+
+
+/* -------------------------------------마우스 스크롤 효과---------------------------------------------------- */
+
+
+    element.style {
+        height:auto;
+    }
