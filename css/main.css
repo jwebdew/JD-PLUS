@@ -2,6 +2,30 @@
 
 @import url('common.css');
 
+header {
+    height: 100px;
+    border-bottom: 1px solid #000;
+}
+header h1 {
+    height: 100%;
+    font-size: 32px;
+}
+header h1 a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+header h1 a span {
+    font-family: 'Cafe24-ClassicType';
+    margin-right: -25px;
+    position: relative;
+    z-index: 9; 
+}
+header h1 a img {
+    height: 60px;
+}
+
 
 .text_slide {
     height: 145px;
@@ -398,7 +422,7 @@
 .data .data_wrap .data_inner_menu {
     width: 32.03%;
     position: sticky;
-    top: 0;
+    top: 15vh;
     /* margin-left: -30px; */
      
 }
