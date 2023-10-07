@@ -80,7 +80,7 @@ html,body {
     font-family: 'S-Core_Dream';
     font-weight: 400;
     cursor: default;
-    overflow-x: hidden; 
+    /* overflow-x: hidden;  */
 }
 
 h3 {
