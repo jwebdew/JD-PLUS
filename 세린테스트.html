@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            background-color: #000;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        ul li {
+            color: #fff;
+            display: none;
+        }
+
+        ul li.on {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="news">
+        <li class="on">swiper slide라이브러리를 이용하여 다양한 슬라이드 표현</li>
+        <li>전체화면 스크롤(원 페이지 스크롤)을 적용한 웹사이트 구현</li>
+        <li>이미지 갤러리 만들기에 최적화된 라이브러리</li>
+    </ul>
+    <script>
+        let news = document.querySelector('.news');
+        let newsInner = document.querySelectorAll('li');
+        let i = 0;
+
+        function newsSlide() {
+            i++;
+            if (i >= newsInner.length) {
+                i = 0;
+            }
+            newsInner.forEach(function (index) {
+                index.classList.remove('on')
+            })
+
+            newsInner[i].classList.add('on')
+
+        }
+        newsSlide()
+        setInterval(newsSlide, 2000)
+    </script>
+</body>
+
+</html>
