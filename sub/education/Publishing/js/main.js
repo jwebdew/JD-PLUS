@@ -57,7 +57,7 @@ $(function () {
     //console.log( $('.work_list.on > .list .item').length)
 
     //iframe popup
-    let listItem = $('.itemWrap > a'); 
+   /*  let listItem = $('.itemWrap > a'); 
     let num = $('.itemWrap .num');
     let popup = $('#numList');
     
@@ -69,7 +69,7 @@ $(function () {
 
         //클릭한 번호와 동일한 html파일 열기
         //window.open('sub/vol' + thisnum + '.jpg', 'popup01', 'width=1000, height=500') 
-    })
+    }) */
 
 
 });//jquery end

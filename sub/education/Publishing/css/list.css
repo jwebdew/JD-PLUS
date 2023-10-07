@@ -177,6 +177,12 @@ form .search_box input::placeholder {
     text-align: center;
     font-size: 14px;
 }
+.itemWrap {
+    display: none;
+}
+.itemWrap.on {
+    display: block;
+}
 .itemWrap__item {
     background-color: #fff;
     border-radius: 7px;

@@ -1,4 +1,4 @@
-window.onload = function () {
+$(function(){
     //course onmouseenter image change
     let course = document.querySelector('.course');
     let courseList = course.querySelectorAll('.lib_wrap div');
@@ -72,4 +72,19 @@ window.onload = function () {
     }
 
 
-}//end
+    $(window).mousemove(function(e){
+        //마우스위치값 구하기
+        //x축 e.pageX
+        //y축 e.pageY
+        let mouseX = e.pageX;
+        let mouseY = e.pageY;
+        // console.log(mouseX)
+        // console.log(mouseY)
+        $('.mouse').css({
+            'top' : mouseY,
+            'left' : mouseX
+        })
+
+    });
+
+});//jquery end

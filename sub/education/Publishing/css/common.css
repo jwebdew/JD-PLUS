@@ -85,6 +85,7 @@ html,body {
     font-size: 62.5%;
     font-family: 'S-Core_Dream';
     font-weight: 400;
+    cursor: default;
      
     /* overflow-x: hidden; */
 }
