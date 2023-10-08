@@ -24,6 +24,18 @@ $(function(){
                 'transform' : 'scale(1)'
             })
         }
+    });
+
+    let menu = $('.menu_list li');
+    let list = $('.list')
+
+    menu.click(function(){
+        menu.removeClass('on');
+        $(this).addClass('on');
+
+        list.removeClass('on');
+        list.eq($(this).index()).addClass('on');
     })
 
+    
 });//jquery end
