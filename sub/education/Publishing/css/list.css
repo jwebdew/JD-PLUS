@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url('common.css');
+@import url('../../../../css/common.css');
 @font-face {
     font-family: 'MonoLisa';
     src: url('font/MonoLisa-Regular.eot');
@@ -18,6 +19,7 @@
 
 body {
     background-color: #eee;
+    color: #333;
 }
 iframe {width: 100%;}
 .work {
@@ -159,49 +161,111 @@ form .search_box input::placeholder {
     margin-bottom: 20px; 
     /* padding: 0 20px; */
 }
-.list .list_tit li.num {
-    border: 0;
-}
-.table_info li.num {
-    width: 6%;
-    border-right: 1px solid #ccc;
-    text-align: center;
-}
-.table_info li.text {
-    width: 80%;
-    text-align: left;
-    
-}
-.table_info li.date {
-    width: 12%;
-    text-align: center;
-    font-size: 14px;
-}
+ 
+
 .itemWrap {
     display: none;
 }
 .itemWrap.on {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+.itemWrap > div {
+    width: 23.81%;
+    /* width: 343px */
+    margin-right: 1.58%;
+    /* margin-right: 23% */
+    margin-bottom: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 16px;
+   
+    border: 1px solid transparent;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.itemWrap > div:nth-child(4n) {
+    margin-right: 0;
 }
 .itemWrap__item {
-    background-color: #fff;
-    border-radius: 7px;
-    padding: 22px 0;
-    margin: 15px 0;
-    font-size: 17px;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid transparent;
+   
 }
-.itemWrap__item:hover {
+.itemWrap > div:hover {
     /* background-color: #bfff00; */
     border: 1px solid #FF55BB;
+    box-shadow: 0px 0px 25px rgba(255, 85, 187, 0.3);
     /* box-shadow: 0 0 15px #ff55bb52; */
 }
-.itemWrap__item a {
+.itemWrap > div a {
     display: block;
 }
+.itemWrap > div ul.itemWrap__item li.num {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+.itemWrap > div ul.itemWrap__item li.text {
+     
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: 600;
+    
+}
+.itemWrap > div ul.itemWrap__item li.lang span {
+    display: inline-block;
+    font-size: 12px;
+    color: #000;
+    background-color: #d4ffb7;
+    border: 1px solid #000;
+    padding: 5px 5px;
+    border-radius: 3px; 
+    margin-bottom: 5px;
 
+}
+.itemWrap > div ul.itemWrap__item li.date {
+    margin-top: 30px;
+}
+.itemWrap > div ul.itemWrap__item li.date p {
+    margin-bottom: 10px; 
+    line-height: 1.3;
+    word-break: keep-all; 
+}
+ 
+.itemWrap > div .btn {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+}
+.itemWrap > div .btn li { 
+    width: 48%;
+    background-color: #FF55BB;
+    border: 1px solid #000;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center; 
+}
+.itemWrap > div .btn li.explain {
+    background-color: #000;
+} 
+.itemWrap > div .btn li a {
+    padding: 7px 0;
+}
+.itemWrap > div .btn li img {
+    width: 20px;
+    vertical-align: middle;
+}
+.itemWrap > div .btn li span {
+    vertical-align: middle;
+    line-height: 1;
+}
 #numList {
     width: 1500px;
     position: fixed;
