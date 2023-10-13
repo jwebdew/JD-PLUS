@@ -73,6 +73,9 @@ a {
     text-decoration: none;
     color: inherit;
 }
+i {
+    font-style: normal;
+}
 html,body {
     line-height: 1;
     color: #000;
