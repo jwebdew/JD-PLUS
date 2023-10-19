@@ -7,11 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HA:D 제이디플러스(제디플)</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="lib/carouselTicker.css"> -->
     <link rel="stylesheet" href="css/main.css">
 
-    <script src="lib/jquery-3.7.0.min.js"></script>
     <!-- Swiper JS -->
+    <script src="lib/jquery-3.7.0.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.carouselTicker.js"></script>
+    <script src="lib/start.js"></script>
+
     <script src="js/common.js"></script>
     <script src="js/main.js"></script>
 
@@ -836,53 +841,121 @@
                 </div><!-- .inner end -->
 
                 <div class="study_result__wrap">
-                    <div class="list">
-                        <div class="item">
-                            <a href="https://iloveblueberry.github.io/portfolio/" onclick="return onclick"
-                                target="_blank">
-                                <img src="https://iloveblueberry.github.io/portfolio/img/%EC%BA%90%EB%A6%AD%ED%84%B0.png"
-                                    alt="샘플이미지" />
-                                <p>#2023.11종강 #웹모션</p>
-                            </a>
-                        </div><!-- .item end -->
+                    <div id="carouselTicker-width-resize" class="carouselTicker">
+                        <ul class="carouselTicker__list list">
+                            <li class="carouselTicker__item item">
+                                <a href="https://lee1029m.github.io/portfolio/#firstPage" target="_blank">
+                                    <div>
+                                        <figure>
+                                            <img src="https://lee1029m.github.io/portfolio/img/BG2.png" alt="">
+                                            <figcaption>대표이미지</figcaption>
+                                        </figure>
+                                        <span>ver.2023</span>
+                                    </div>
+                                    <p>#20231101 #웹모션 #이미진</p>
+                                </a>
+                            </li><!-- carouselTicker__item -->
 
-                        <div class="item">
-                            <a href="#" onclick="return onclick" target="_blank">
-                                <img src="img/sample.jpg" alt="샘플이미지" />
-                                <p>#2023.11종강 #웹모션</p>
-                            </a>
-                        </div><!-- .item end -->
-                        <div class="item">
-                            <a href="#" onclick="return onclick" target="_blank">
-                                <img src="img/sample.jpg" alt="샘플이미지" />
-                                <p>#2023.11종강 #웹모션</p>
-                            </a>
-                        </div><!-- .item end -->
-                        <div class="item">
-                            <a href="#" onclick="return onclick" target="_blank">
-                                <img src="img/sample.jpg" alt="샘플이미지" />
-                                <p>#2023.11종강 #웹모션</p>
-                            </a>
-                        </div><!-- .item end -->
-                        <div class="item">
-                            <a href="#" onclick="return onclick" target="_blank">
-                                <img src="img/sample.jpg" alt="샘플이미지" />
-                                <p>#2023.11종강 #웹모션</p>
-                            </a>
-                        </div><!-- .item end -->
-                        <div class="item">
-                            <a href="#" onclick="return onclick" target="_blank">
-                                <img src="img/sample.jpg" alt="샘플이미지" />
-                                <p>#2023.11종강 #웹모션</p>
-                            </a>
-                        </div><!-- .item end -->
-                        <div class="item">
-                            <a href="#" onclick="return onclick" target="_blank">
-                                <img src="img/sample.jpg" alt="샘플이미지" />
-                                <p>#2023.11종강 #웹모션</p>
-                            </a>
-                        </div><!-- .item end -->
-                    </div><!-- .list end -->
+                            <li class="carouselTicker__item item">
+                                <a href="https://iloveblueberry.github.io/portfolio/" target="_blank">
+                                    <div>
+                                        <figure>
+                                            <img src="https://iloveblueberry.github.io/portfolio/img/%EC%BA%90%EB%A6%AD%ED%84%B0.png"
+                                                alt="">
+                                            <figcaption>대표이미지</figcaption>
+                                        </figure>
+                                        <span>ver.2023</span>
+                                    </div>
+                                    <p>#20231101 #웹모션 #이예나</p>
+                                </a>
+                            </li><!-- carouselTicker__item -->
+
+                            <li class="carouselTicker__item item">
+                                <a href="https://goddykim.github.io/2023_portfolio/#firstPage" target="_blank">
+                                    <div>
+                                        <figure>
+                                            <img class="front" src="https://goddykim.github.io/2023_portfolio/img/MAIN.jpg" alt="">
+                                            <img class="back" src="img/202311/김강현.png" alt="">
+                                            <figcaption>대표이미지</figcaption>
+                                        </figure>
+                                        <span>ver.2023</span>
+                                    </div>
+                                    <p>#20231101 #웹모션 #김강현</p>
+                                </a>
+                            </li><!-- carouselTicker__item -->
+
+                            <li class="carouselTicker__item item">
+                                <a href="https://kimkyeongmun.github.io/KKM2023/" target="_blank">
+                                    <div>
+                                        <figure>
+                                            <img class="front" src="https://kimkyeongmun.github.io/KKM2023/img/bubble9.png" alt="김경문 포트폴리오">
+                                            <img class="back" src="img/202311/김경문.png" alt="김경문 포트폴리오">
+                                            <figcaption>대표이미지</figcaption>
+                                        </figure>
+                                        <span>ver.2023</span>
+                                    </div>
+                                    <p>#20231101 #웹모션 #김경문</p>
+                                </a>
+                            </li><!-- carouselTicker__item -->
+
+                            <li class="carouselTicker__item item">
+                                <a href="https://ta3h0.github.io/Portfolio/" target="_blank">
+                                    <div>
+                                        <figure>
+                                            <img src="https://ta3h0.github.io/Portfolio/img/Charactor.png" alt="">
+                                            <figcaption>대표이미지</figcaption>
+                                        </figure>
+                                        <span>ver.2023</span>
+                                    </div>
+                                    <p>#20231101 #웹모션 #김태호</p>
+                                </a>
+                            </li><!-- carouselTicker__item -->
+
+                            <li class="carouselTicker__item item">
+                                <a href="https://jamjam222.github.io/portfolio/#firstPage" target="_blank">
+                                    <div>
+                                        <figure>
+                                            <img class="front" src="https://jamjam222.github.io/portfolio/img/logo.png" alt="">
+                                            <img class="back" src="img/202311/박재민.png" alt="">
+                                            <figcaption>대표이미지</figcaption>
+                                        </figure>
+                                        <span>ver.2023</span>
+                                    </div>
+                                    <p>#20231101 #웹모션 #박재민</p>
+                                </a>
+                            </li><!-- carouselTicker__item -->
+
+                            <li class="carouselTicker__item item">
+                                <a href="https://su12jin123.github.io/portfolio/#sec1" target="_blank">
+                                    <div>
+                                        <figure>
+                                            <img class="front sujin" src="img/202311/신수진.png" alt="신수진">
+                                            <img class="back" src="img/202311/신수진_back.png" alt="">
+                                            <figcaption>대표이미지</figcaption>
+                                        </figure>
+                                        <span>ver.2023</span>
+                                    </div>
+                                    <p>#20231101 #웹모션 #신수진</p>
+                                </a>
+                            </li><!-- carouselTicker__item -->
+
+                            <li class="carouselTicker__item item">
+                                <a href="https://thenthenthen12.github.io/portfolio/" target="_blank">
+                                    <div>
+                                        <figure>
+                                            <img src="img/sample2.jpg" alt="이주한">
+                                            <figcaption>대표이미지</figcaption>
+                                        </figure>
+                                        <span>ver.2023</span>
+                                    </div>
+                                    <p>#20231101 #웹모션 #이주한</p>
+                                </a>
+                            </li><!-- carouselTicker__item -->
+ 
+                           
+
+                        </ul><!-- carouselTicker__list -->
+                    </div><!-- carouselTicker -->
                 </div><!-- .study_result__wrap end -->
 
             </section><!-- .study_result end -->
@@ -907,6 +980,7 @@
 
         </main>
         <footer></footer>
+
     </div><!-- #wrap end -->
 </body>
 

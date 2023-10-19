@@ -82,8 +82,24 @@ $(function () {
     });
   });
 
-  /* study_result 슬라이드  */
+  // .study_result.list 의 전체 너비(가로값) 구하기
   let studyResult = $(".study_result .list");
+  let itemWidth = $(".study_result .list .item").length;
+
+  let studyResultWidth = studyResult.width() * itemWidth;
+  // console.log(studyResultWidth)
+  studyResult.css({
+    width: studyResultWidth,
+  });
+
+  $('.carouselTicker').carouselTicker({
+    speed: 2,
+    delay: 30,
+    // reverse: true
+ });
+
+  /* study_result 슬라이드  */
+  /* let studyResult = $(".study_result .list");
   let itemWidth = $(".study_result .list .item").length;
 
   let studyResultWidth = studyResult.width() * itemWidth;
@@ -127,7 +143,5 @@ $(function () {
   studyResult.mouseleave(function(){ 
     studyResultSlid()
     itemSlide = setInterval(studyResultSlid, 4000);
-  });
-
-
+  }); */
 }); //jquery end
