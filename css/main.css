@@ -3,6 +3,14 @@
 @import url('common.css');
 
 
+section .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #000;
+}
+
 
 .text_slide {
     height: 145px;
@@ -270,13 +278,7 @@
 .portfolio .inner{
     position: relative;
 }
-.portfolio .title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #000;
-}
+
 .portfolio .tab_menu {
     display: flex;
     margin: 50px 0 30px;
@@ -551,4 +553,35 @@
 .data .data_wrap .data_list .item:hover figure img {
     transform: scale(0.9);
 
+}
+ 
+
+/* study_result */
+.study_result__wrap {
+    /* max-width: calc(1440px); */
+    margin-right: calc((100% - 1440px) / 2);
+    overflow: hidden;
+}
+.study_result .list {
+    display: flex;
+    margin: 50px 0; 
+    position: relative;
+    left: 0;
+}
+.study_result .list .item {
+    width: 350px;
+    /* margin-right: 20px; */
+    /* margin: 0 20px; */
+     text-align: center;
+}
+.study_result .list .item p {
+    margin-top: 20px;
+    font-size: 20px;
+}
+.study_result .list .item img {
+    width: calc(100% - 20px);
+    height: 500px;
+    object-fit: cover;
+    transform: translateX();
+    transition: 0.5s;
 }
