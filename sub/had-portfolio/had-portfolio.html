@@ -6,6 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>제디플 포트폴리오</title>
     <link rel="stylesheet" href="css/had.css">
+    <script src="../../lib/jquery-3.7.0.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script>
+        $(function(){
+            //문자열에서 문자 찾기
+    
+            let search = $('.search_text li');
+            let searchText = $('.search_text li').text();
+           
+
+            let searcItem = $('.item'); 
+            let searcItemText = $('.item').text(); 
+   
+  
+            let text1 = ['반응형', '피그마', '디자인']
+          /*   let i = 0;
+  
+            let searchText1 = $( '.item:contains('  + text1[i] + ')'); */
+            let searchText2 = $( '.item:contains("반응형")');
+            let searchText3 = $( '.item:contains("피그마")');
+       
+            
+
+            //console.log(searchText1)
+            search.click(function(){
+                searchText1 = $( '.item:contains('  + text1[$(this).index()] + ')');
+                console.log(searchText1)
+                
+              
+
+                searcItem.css('display', 'none')
+                //console.log($( '.item:contains("디자인")'))
+                if($(this).text() ===   text1[$(this).index()] ) {
+                    searcItem.removeClass('on')
+                    searchText1.addClass('on')
+                }  
+
+                /* i++;
+                if (i >= text1.length) {
+                    i = 0;
+                } */
+            })
+            
+            // $( '.item:contains("#디자인")' ).css( 'color', 'red' );
+            // $( '.item:contains("#디자인")' ).addClass('on');
+            //alert(searcItemText.indexOf('디자인'))
+                 
+  
+ 
+ 
+        });//jquery end
+
+    </script>
 </head>
 
 <body>
@@ -21,6 +74,11 @@
             </h1>
         </header>
         <main>
+            <ul class="search_text" style="font-size: 16px; text-align: center;">
+                <li>반응형</li>
+                <li>피그마</li>
+                <li>디자인</li>
+            </ul>
             <section class="sub_main inner">
                 <h2 class="title">HA:D 포트폴리오</h2>
                 <ul class="tab_menu">

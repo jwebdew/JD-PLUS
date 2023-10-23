@@ -93,6 +93,10 @@ main i {
     margin-bottom: 25px;
 
 }
+.portfolio_list .item.on {
+    display: block !important;
+}
+ 
 
 .portfolio_list .item figure {
     width: 100%;

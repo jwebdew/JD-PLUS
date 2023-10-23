@@ -72,6 +72,7 @@ li {
 a {
     text-decoration: none;
     color: inherit;
+    display: block;
 }
 i {
     font-style: normal;
@@ -84,8 +85,7 @@ html,body {
     font-weight: 400;
     cursor: default;
     /* overflow-x: hidden;  */
-}
-
+} 
 h3 {
     font-family: 'Cafe24-ClassicType';
     font-weight: normal; 
@@ -99,13 +99,12 @@ h3 {
     background-color: #BFFF00;
     border-radius: 50%;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px; 
     transition: all 0.3s linear;
     z-index: 9;
     mix-blend-mode: difference;
 }
-
 img {
     vertical-align: top;
 }
@@ -156,4 +155,28 @@ header h1 div img {
 }
 
 /* 🎫 footer*/
-footer {}
+footer {
+    padding: 80px 0;
+    background-color: #F7D061;
+    text-align: center;
+    font-size: 16px;
+}
+footer > ul {
+    display: flex;
+    justify-content: center;
+}
+footer > ul li {
+    margin: 0 10px;
+}
+footer > ul li img {
+    height: 40px;
+}
+footer > ul li span {
+    display: block;
+    font-size: 13px;
+    margin-top: 5px;
+}
+footer > img {
+    width: 300px;
+    margin: 30px 0;
+}

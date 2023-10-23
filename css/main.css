@@ -343,6 +343,7 @@ section .title {
     height: calc((100vw - 40px) / 3 - 12px);
     overflow: hidden;
     /* border: 2px solid #000; */
+    position: relative;
 }
 .portfolio .portfolio_list .item figure img {
     width: 100%;
@@ -350,11 +351,39 @@ section .title {
     object-fit: cover;
     transition: 1s;
 }
-.portfolio .portfolio_list .item div ul {
-    display: flex;
-    padding-top: 30px;
+.portfolio .portfolio_list .item figure figcaption strong {
+    position: absolute;
+    left: -9999px;
 }
-.portfolio .portfolio_list .item div ul li {
+.portfolio .portfolio_list .item figure figcaption p {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    padding-left: 30px;
+    color: #fff;
+    font-size: 14px;
+    
+    
+}
+.portfolio .portfolio_list .item figure figcaption p span {
+    transform: translateX(-100px);
+    width: 0;
+    display: inline-block;
+    opacity: 0;
+    transition: 1s; 
+}
+.portfolio .portfolio_list .item:hover figure figcaption p span {
+    transform: translateX(0);
+    opacity: 1; 
+}
+.portfolio .portfolio_list .item div {
+    margin: 30px 0;
+}
+.portfolio .portfolio_list .item div .tool {
+    display: flex;
+    /* padding-top: 30px; */
+}
+.portfolio .portfolio_list .item div .tool li {
     color: #838383;
     font-size: 14px;
     margin-right: 8px;
@@ -372,15 +401,57 @@ section .title {
     margin-bottom: 30px;
     position: relative;
 }
-.portfolio .portfolio_list .item div span::before {
+ 
+.portfolio .portfolio_list .item .date {
+    /* position: relative; */
+}
+.portfolio .portfolio_list .item .date::before {
     content: '';
-    width: 28px;
-    height: 28px;
+    width: 25px;
+    height: 25px;
     background: url('../img/main_icon_calendar.png') 0 0 / 100% no-repeat;
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+}
+.portfolio .portfolio_list .item .btn {
+    display: flex;
+}
+.portfolio .portfolio_list .item .btn li { 
+    font-size: 14px; 
+    transition: width 1s, color 0.5s;
+    width: 0;
+    border-radius: 5px; 
+}
+.portfolio .portfolio_list .item .btn {
+    position: relative;
+}
+.portfolio .portfolio_list .item .btn li.prototype {
+    position: absolute;
+    left: 110px;
+}
+.portfolio .portfolio_list .item .btn li a {
+    width: 100px;
+    height: 35px;
+    line-height: 35px; 
+    display: inline-block;
+    /* padding: 0 25px; */
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-origin: content-box;
+     
+}
+.portfolio .portfolio_list .item .btn li:hover {
+    width: 100px;
+    background-color: #FF55BB;
+    color: #fff;
+    background-origin: content-box;
+    
+}
+.portfolio .portfolio_list .item .btn li:hover a {
+    
 }
 
 .portfolio .portfolio_list .item:hover figure img {
@@ -564,9 +635,11 @@ section .title {
     /* max-width: calc(1440px); */
     margin-right: calc((100% - 1440px) / 2);
     /* overflow: hidden; */
+    position: relative;
 }
 .study_result {
     background-color: #eee;
+    position: relative;
 }
 .study_result .title {
     margin-bottom: 50px;
@@ -631,4 +704,26 @@ section .title {
 }
 .study_result .swiper-wrapper{
 	transition-timing-function: linear;
+}
+
+.study_result .sec_btn {
+    position: absolute;
+    right: -140px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
+    
+}
+.study_result .sec_btn:hover  div {
+    animation: btnSlide 5s infinite linear;
+}
+.study_result .sec_btn::before {
+    content: '';
+    width: 37px;
+    height: 28px;
+    background: url('../img/moreBtn_right.png') 0 0 / 100% no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }

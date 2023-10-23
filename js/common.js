@@ -9,19 +9,24 @@ $(function(){
         // console.log(mouseY)
         $('.mouse').css({
             'top' : mouseY,
-            'left' : mouseX
+            'left' : mouseX,
+             
         })
 
     });
     $('a').on({
         mouseenter: function(){
             $('.mouse').css({
-                'transform' : 'scale(2) translateX(10px)', 
+                'transform' : 'scale(4) translateX(15px)',
+                // 'background-color' : 'unset', 
+                 
             })
         },
         mouseleave: function(){
             $('.mouse').css({
-                'transform' : 'scale(1)'
+                'transform' : 'scale(1)',
+                'background-color' : '#BFFF00',  
+
             })
         }
     });

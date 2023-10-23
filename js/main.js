@@ -98,6 +98,7 @@ $(function () {
     // reverse: true
  });
 
+ 
   /* study_result 슬라이드  */
   /* let studyResult = $(".study_result .list");
   let itemWidth = $(".study_result .list .item").length;
@@ -127,6 +128,8 @@ $(function () {
         }
       );
   } 
+
+   
 
   let itemSlide = setInterval(studyResultSlid, 4000)
 
