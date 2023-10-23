@@ -42,5 +42,29 @@ $(function(){
         list.eq($(this).index()).addClass('on');
     })
 
+    let topEvent =  $('.portfolio').offset().top - $(window).height();
+    let study_resultTop = $('.study_result').offset().top;
+    let portfolioTop = $('.portfolio').offset().top
+    $(window).scroll(function(){
+        let scrollBar = $(window).scrollTop();
+        if(topEvent <= scrollBar && study_resultTop > scrollBar) {
+            $('aside.top figure').addClass('on');
+        }  else {
+            $('aside.top figure').removeClass('on');
+        }
+
+        if(topEvent <= scrollBar) {    
+            $('aside.top').addClass('on');
+        } else {
+            $('aside.top').removeClass('on');   
+        }
+    })
+
+    $('aside.top').click(function(){
+        $('html, body').animate({
+            scrollTop: 0
+        }, 2000)
+
+    })
     
 });//jquery end
