@@ -14,6 +14,7 @@ $(function () {
   var swiper = new Swiper(".courseSlide", {
     slidesPerView: 4,
     spaceBetween: 10,
+    centeredSlides: true,
     autoplay: {
       delay: 4000,
       disableOnInteraction: false,

@@ -9,53 +9,53 @@
     <script src="../../lib/jquery-3.7.0.min.js"></script>
     <script src="../../js/common.js"></script>
     <script>
-        $(function(){
+        $(function () {
             //문자열에서 문자 찾기
-    
+
             let search = $('.search_text li');
             let searchText = $('.search_text li').text();
-           
 
-            let searcItem = $('.item'); 
-            let searcItemText = $('.item').text(); 
-   
-  
+
+            let searcItem = $('.item');
+            let searcItemText = $('.item').text();
+
+
             let text1 = ['반응형', '피그마', '디자인']
-          /*   let i = 0;
-  
-            let searchText1 = $( '.item:contains('  + text1[i] + ')'); */
-            let searchText2 = $( '.item:contains("반응형")');
-            let searchText3 = $( '.item:contains("피그마")');
-       
-            
+            /*   let i = 0;
+    
+              let searchText1 = $( '.item:contains('  + text1[i] + ')'); */
+            let searchText2 = $('.item:contains("반응형")');
+            let searchText3 = $('.item:contains("피그마")');
+
+
 
             //console.log(searchText1)
-            search.click(function(){
-                searchText1 = $( '.item:contains('  + text1[$(this).index()] + ')');
+            search.click(function () {
+                searchText1 = $('.item:contains(' + text1[$(this).index()] + ')');
                 console.log(searchText1)
-                
-              
+
+
 
                 searcItem.css('display', 'none')
                 //console.log($( '.item:contains("디자인")'))
-                if($(this).text() ===   text1[$(this).index()] ) {
+                if ($(this).text() === text1[$(this).index()]) {
                     searcItem.removeClass('on')
                     searchText1.addClass('on')
-                }  
+                }
 
                 /* i++;
                 if (i >= text1.length) {
                     i = 0;
                 } */
             })
-            
+
             // $( '.item:contains("#디자인")' ).css( 'color', 'red' );
             // $( '.item:contains("#디자인")' ).addClass('on');
             //alert(searcItemText.indexOf('디자인'))
-                 
-  
- 
- 
+
+
+
+
         });//jquery end
 
     </script>
@@ -88,129 +88,103 @@
                     <li><a href="#" onclick="return false">리액트</a></li>
                 </ul><!-- .tab_menu end -->
 
+                <h5>레저/여행</h5>
                 <div class="portfolio_list">
-
+                    
                     <div class="item">
                         <figure>
                             <img src="img/main_tripus.png" alt="트립어스">
                             <span class="date">2019.08</span>
                         </figure>
-                        <div class="info"> 
+                        <div class="info">
                             <h4>트립어스</h4>
                             <i>[웹에이전시] : 메인페이지, 구축</i>
                             <p>여행지 소개및 sns공유등의 여행지 추천이 주된 사이트로 이미지를 주로 표현할 수 있도록 구현</p>
-                            <ul> 
-                                <li>#여행</li> 
+                            <ul>
+                                <li>#여행</li>
                                 <li>#포토샵</li>
                                 <li>#디자인</li>
                             </ul>
                             <div class="btn">
                                 <ul>
                                     <li><a href="#" onclick="return false" target="_blank">디자인</a></li>
-                                     
+
                                 </ul>
                             </div><!-- .btn end -->
                         </div>
-                     
-                </div><!-- .item end -->
 
-
-                    <div class="item">
-                        <a href="https://jwebdew.github.io/smithteakorea/#" target="_blank">
-                            <figure>
-                                <img src="img/smithtea_beauty.jpg" alt="스미스티">
-                            </figure>
-                            <div class="info">
-                                <ul>
-                                    <li>#HTML</li>
-                                    <li>#CSS</li>
-                                    <li>#jquery</li>
-                                    <li>#티(tea)</li>
-                                    <li>#반응형</li>
-                                    <li>#피그마</li>
-                                </ul>
-                                <h4>스미스티</h4>
-                                <span class="date">2023.09</span>
-                            </div>
-                        </a>
                     </div><!-- .item end -->
 
-                    <div class="item">
-                        <a href="sub/had-portfolio/vieetmaison/index.html" target="_blank">
-                            <figure>
-                                <img src="../../img/vieetmaison_bg2.jpg" alt="비에메종">
-                            </figure>
-                            <div class="info">
-                                <ul>
-                                    <li>#HTML</li>
-                                    <li>#CSS</li>
-                                    <li>#javascript</li>
-                                    <li>#편집샵</li>
-                                    <li>#반응형</li>
-                                    <li>#피그마</li>
-                                </ul>
-                                <h4>비에메종</h4>
-                                <span class="date">2023.05</span>
-                            </div>
-                        </a>
-                    </div><!-- .item end -->
-                    <div class="item">
-                        <a href="https://www.figma.com/file/hNCo5jwxUsGHMViFmMqryE/Untitled?type=design&amp;t=UjoZmrq7dH8lvIsB-0"
-                            target="_blank">
-                            <figure>
-                                <img src="../../img/portfolio-trip.jpg" alt="트립비토즈">
-                            </figure>
-                            <div class="info">
-                                <ul>
-                                    <li>#HTML</li>
-                                    <li>#CSS</li>
-                                    <li>#javascript</li>
-                                    <li>#여행</li>
-                                    <li>#반응형</li>
-                                    <li>#피그마</li>
-                                </ul>
-                                <h4>트립비토즈</h4>
-                                <span class="date">2023.05</span>
-                            </div>
-                        </a>
-                    </div><!-- .item end -->
-                    <div class="item">
-                            <figure>
-                                <img src="img/main_culture.png" alt="문화가 있는 날">
-                                <span class="date">2022.10</span>
-                            </figure>
-                            <div class="info">
 
-                                <h4>문화가 있는 날</h4>
-                                <i>[개인] : 메인페이지</i>
-                                <p>문화의 날과 그날에 즐길 수 있는 혜택등을 상세히 파악할 수 있도록 정보전달을 중점으로 제작</p>
+                   
+
+                   
+                    <div class="item"> 
+                        <figure>
+                            <img src="../../img/portfolio-trip.jpg" alt="트립비토즈">
+                            <figcaption><span class="date">2023.05</span></figcaption>
+                        </figure>
+                        <div class="info">
+                            <h4>트립비토즈</h4>
+                            <i>[개인작업] : 리디자인</i>
+                            <p></p>
+                            <ul>
+                                <li>#HTML</li>
+                                <li>#CSS</li>
+                                <li>#javascript</li>
+                                <li>#여행</li>
+                                <li>#반응형</li>
+                                <li>#피그마</li>
+                            </ul>
+                            <div class="btn">
                                 <ul>
-                                    <li>#HTML</li>
-                                    <li>#CSS</li>
-                                    <li>#javascript</li>
-                                    <li>#여행</li>
-                                    <li>#반응형</li>
-                                    <li>#피그마</li>
+                                    <li><a href="https://www.figma.com/file/hNCo5jwxUsGHMViFmMqryE/Untitled?type=design&amp;t=UjoZmrq7dH8lvIsB-0" target="_blank">디자인</a></li>
                                 </ul>
-                                <div class="btn">
-                                    <ul>
-                                        <li><a href="https://www.figma.com/file/vhqnF7PaYARFsQCwONESUK/%5B%EB%A6%AC%EB%89%B4%EC%96%BC%5D%EB%AC%B8%ED%99%94%EA%B0%80%EC%9E%88%EB%8A%94%EB%82%A0?type=design&amp;t=UjoZmrq7dH8lvIsB-0" target="_blank">피그마</a></li>
-                                        <li><a href="#">가이드</a></li>
-                                    </ul>
-                                </div><!-- .btn end -->
                             </div>
-                         
+                        </div>
+
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <figure>
+                            <img src="img/main_culture.png" alt="문화가 있는 날">
+                            <span class="date">2022.10</span>
+                        </figure>
+                        <div class="info">
+
+                            <h4>문화가 있는 날</h4>
+                            <i>[개인] : 메인페이지</i>
+                            <p>문화의 날과 그날에 즐길 수 있는 혜택등을 상세히 파악할 수 있도록 정보전달을 중점으로 제작</p>
+                            <ul>
+                                <li>#HTML</li>
+                                <li>#CSS</li>
+                                <li>#javascript</li>
+                                <li>#여행</li>
+                                <li>#반응형</li>
+                                <li>#피그마</li>
+                            </ul>
+                            <div class="btn">
+                                <ul>
+                                    <li><a href="https://www.figma.com/file/vhqnF7PaYARFsQCwONESUK/%5B%EB%A6%AC%EB%89%B4%EC%96%BC%5D%EB%AC%B8%ED%99%94%EA%B0%80%EC%9E%88%EB%8A%94%EB%82%A0?type=design&amp;t=UjoZmrq7dH8lvIsB-0"
+                                            target="_blank">피그마</a></li>
+                                    <li><a href="#">가이드</a></li>
+                                </ul>
+                            </div><!-- .btn end -->
+                        </div>
+
                     </div><!-- .item end -->
 
 
 
                     <div class="item">
-                        <a href="https://famous-kangaroo-264006.netlify.app/" target="_blank">
+                        
                             <figure>
                                 <img src="https://www.visitbusan.net/uploadImgs/files/cntnts/20191227160751479_ttiel"
                                     alt="부산명소소개">
+                                    <figcaption> <span class="date">2023.09</span></figcaption>
                             </figure>
                             <div class="info">
+                                <h4>부산명소 소개</h4>
+                                <i>[개인작업&수업예제] : 리액트 공공데이터포털 - 부산관광 API 연결</i>
                                 <ul>
                                     <li>#react</li>
                                     <li>#api</li>
@@ -218,32 +192,161 @@
                                     <li>#부산홍보</li>
                                     <li>#모바일웹</li>
                                 </ul>
-                                <h4>부산명소 소개</h4>
-                                <span class="date">2023.09</span>
+                                <div class="btn">
+                                    <ul>
+                                        <li><a href="#" target="_blank">디자인</a></li>
+                                        <li><a href="https://famous-kangaroo-264006.netlify.app/" target="_blank">프로토타입</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </a>
+                   
                     </div><!-- .item end -->
 
                     <div class="item">
-                        <a href="https://jwebdew.github.io/seantour/" target="_blank">
+                        
                             <figure>
                                 <img src="img/seatour.png" alt="바다여행">
+                                <figcaption><span class="date">2022.00</span></figcaption>
                             </figure>
                             <div class="info">
+                                <h4>바다여행</h4>
+                                <i>[개인작업&수업예제] : 피그마 + html / css 연습</i>
+                                <p></p>
                                 <ul>
                                     <li>#HTML</li>
                                     <li>#CSS</li>
                                     <li>#레이아웃연습</li>
                                     <li>#포토샵/피그마그리드연습</li>
                                 </ul>
-                                <h4>바다여행</h4>
-                                <span class="date">2022.00</span>
+                                <div class="btn">
+                                    <ul>
+                                        <li><a href="#" target="_blank">디자인</a></li>
+                                        <li><a href="https://jwebdew.github.io/seantour/" target="_blank">프로토타입</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </a>
+                      
                     </div><!-- .item end -->
 
-                </div>
+                </div> <!-- portfolio_list / 1 -->
+
+                <h5>쇼핑</h5>
+                <div class="portfolio_list">
+                    <div class="item">
+
+                        <figure>
+                            <img src="img/smithtea_beauty.jpg" alt="스미스티">
+                            <figcaption><span class="date">2023.09</span></figcaption>
+                        </figure>
+                        <div class="info">
+                            <h4>스미스티</h4>
+                            <i>[개인작업&수업예제] : 메인페이지 리뉴얼</i>
+                            <p>기존사이트에서 제공되는 정보는 그대로 유지하되, 컬러 강조, 컨텐츠와 레이아웃을 변경</p>
+                            <ul>
+                                <li>#HTML</li>
+                                <li>#CSS</li>
+                                <li>#jquery</li>
+                                <li>#반응형</li>
+                                <li>#피그마</li>
+                                <li>#식품</li>
+                            </ul>
+                            <div class="btn">
+                                <ul>
+                                    <li><a href="#" onclick="return false" target="_blank">디자인</a></li>
+                                    <li><a href="https://jwebdew.github.io/smithteakorea/" target="_blank">프로토타입</a>
+                                    </li>
+
+                                </ul>
+                            </div><!-- .btn end -->
+                        </div>
+
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <figure>
+                            <img src="../../img/vieetmaison_bg2.jpg" alt="비에메종">
+                            <figcaption><span class="date">2023.05</span></figcaption>
+                        </figure>
+                        <div class="info">
+                            <h4>비에메종</h4>
+                            <i>[개인작업&수업예제] : 메인페이지 리뉴얼</i>
+                            <p>편집/소품샵 웹사이트, 바닐라자바스크립트로 동적인 효과를 구현. 차분하고 깔끔한 분위기를 중심으로 진행</p>
+                            <ul>
+                                <li>#HTML</li>
+                                <li>#CSS</li>
+                                <li>#javascript</li>
+                                <li>#편집샵</li>
+                                <li>#반응형</li>
+                                <li>#피그마</li>
+                            </ul>
+                            <div class="btn">
+                                <ul>
+                                    <li><a href="#" onclick="return false" target="_blank">디자인</a></li>
+                                    <li><a href="sub/had-portfolio/vieetmaison/index.html" target="_blank">프로토타입</a>
+                                    </li>
+
+                                </ul>
+                            </div><!-- .btn end -->
+                        </div>
+                    </div><!-- .item end -->
+                </div><!-- portfolio_list / 2 -->
+
+                <h5>문화/예술</h5>
+                <div class="portfolio_list">
+                    <div class="item"> 
+                        <figure>
+                            <img src="img/main_culture.png" alt="스미스티">
+                            <figcaption><span class="date">2023.09</span></figcaption>
+                        </figure>
+                        <div class="info">
+                            <h4>문화가 있는 날</h4>
+                            <i>[개인작업] : 메인페이지 리뉴얼</i>
+                            <p>문화의 날과 그날에 즐길 수 있는 혜택등을 상세히 파악할 수 있도록 정보전달을 중점으로 제작</p>
+                            <ul>  
+                                <li>#피그마</li>
+                                <li>#공공기관</li>
+                            </ul>
+                            <div class="btn">
+                                <ul>
+                                    <li><a href="file:///E:/%23%ED%95%98%EC%88%98%EC%A0%95%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4/02_html%20ver.5/img/full_culture.jpg"  target="_blank">디자인</a></li>
+                                    <li><a href="https://jwebdew.github.io/smithteakorea/" target="_blank">프로토타입</a>
+                                    </li>
+
+                                </ul>
+                            </div><!-- .btn end -->
+                        </div>
+                    </div><!-- .item end -->
+
+                    <div class="item"> 
+                        <figure>
+                            <img src="img/main_culture.png" alt="휴에이블">
+                            <figcaption><span class="date">2019.10</span></figcaption>
+                        </figure>
+                        <div class="info">
+                            <h4>휴에이블</h4>
+                            <i>[개인작업] : 메인페이지 리뉴얼</i>
+                            <p>문화의 날과 그날에 즐길 수 있는 혜택등을 상세히 파악할 수 있도록 정보전달을 중점으로 제작</p>
+                            <ul>  
+                                <li>#피그마</li>
+                                <li>#공공기관</li>
+                            </ul>
+                            <div class="btn">
+                                <ul>
+                                    <li><a href="file:///E:/%23%ED%95%98%EC%88%98%EC%A0%95%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4/02_html%20ver.5/img/full_culture.jpg"  target="_blank">디자인</a></li>
+                                    <li><a href="https://jwebdew.github.io/smithteakorea/" target="_blank">프로토타입</a>
+                                    </li>
+
+                                </ul>
+                            </div><!-- .btn end -->
+                        </div>
+                    </div><!-- .item end -->
+                     
+                </div><!-- portfolio_list / 3 -->
+
+
             </section>
+
+
+           
 
         </main>
     </div><!-- .wrap end -->
