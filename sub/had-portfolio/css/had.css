@@ -202,3 +202,8 @@ main i {
     padding: 0 20px;
     display: block;
 }
+
+.btn ul li:hover {
+    background-color: #FF55BB;
+    color: #fff;
+}
