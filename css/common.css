@@ -167,6 +167,7 @@ footer > ul {
 }
 footer > ul li {
     margin: 0 10px;
+    position: relative;
 }
 footer > ul li img {
     height: 40px;
@@ -179,6 +180,13 @@ footer > ul li span {
 footer > img {
     width: 300px;
     margin: 30px 0;
+}
+footer > ul li img.copy {
+    height: 15px;
+    /* position: absolute;
+    right: -17px;
+    bottom: 0; */
+    cursor: pointer;
 }
 
 aside.top {  

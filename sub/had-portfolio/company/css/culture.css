@@ -1,0 +1,309 @@
+@charset "utf-8";
+@import url("common.css");
+
+
+/*fold:sub culture.css*/
+
+.content_wrap {
+	width: 100%;
+}
+.visual {
+	width: 1200px;
+	margin: 0 auto;
+	height: 440px;
+	position: relative;
+}
+.culture_content {
+	width: 1200px;
+	margin: 0 auto;
+}
+.culture_content .visual img:nth-child(2) {
+	position: absolute;
+	top: 0;
+	right: 94px;
+}
+.visual input[type="button"] {
+	color: #7ecef4;
+	background-color: #001c58;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	padding: 13px 26px;
+	font-size: 14px;
+	position: absolute;
+	top: 320px;
+	right: 257px;
+}
+
+
+/*.culture_lnb*/
+.culture_lnb {
+	margin: 0 auto;
+	width: 201px;
+	float: left;
+}
+.culture_lnb .lnb {
+	padding-bottom: 40px;
+}
+.lnb dt {
+	width: 201px;
+	height: 160px;
+	background-color: #abe2fc;
+	font-size: 20px;
+	position: relative;
+	margin-bottom: 40px;
+}
+.lnb dt span {
+	position: absolute;
+	top: 70px;
+	left: 33px;
+	font-weight: bold;
+}
+
+.lnb dd {
+	height: 40px;
+}
+.lnb_first {
+	background-color: #dcf2fc;
+	border-left: 5px solid #00b7ee;
+}
+.lnb_first a {
+	margin-left: 28px;
+	color: #001c58;
+}
+.lnb dd:hover{
+	background-color: #dcf2fc;
+	border-left: 5px solid #00b7ee;
+}
+.lnb dd:hover a {
+	margin-left: 28px;
+	color: #001c58;
+}
+.lnb dd a {
+	line-height: 40px;
+	margin-left: 33px;
+	font-size: 13px;
+	font-weight: bold;
+}
+.lnb_time {
+	padding: 35px 0;
+	width: 176px;
+	border-top: 1px solid #575555;
+	border-bottom: 1px solid #575555;
+	margin-left: 5px;
+}
+.lnb_time li {
+	margin-left: 33px;
+}
+.lnb_time li:first-child {
+	font-size: 15px;
+	color: #575555;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.lnb_time li:nth-child(2),
+.lnb_time li:nth-child(4) {
+	font-size: 14px;
+	color: #005982;
+	line-height: 30px;
+}
+.lnb_time li:nth-child(3) {
+	margin-bottom: 10px;
+}
+.lnb_time li:nth-child(3),
+.lnb_time li:nth-child(5) {
+	font-size: 12px;
+	color: #575555;
+}
+
+/*.content*/
+.content {
+	width: 920px;
+	float: right;
+	position: relative;
+	
+}
+p.culture_t {
+	font-size: 25px;
+	width: 360px;
+	height: 42px;
+	border-top: 5px solid #001C58;
+	position: absolute;
+	top: 95px;
+	padding-top: 8px;
+	padding-left: 5px;
+} 
+/*.location*/
+.location {
+	position: absolute;
+	right: 0;
+	top: 42px;
+}
+.location li {
+	display: inline-block;
+	margin-left: 11px;
+}
+.location li a {
+	font-size: 11px;
+	
+}
+.location li:nth-child(3) a {
+	color: #FB0C1D;
+}
+.location li img {
+	float: right;
+	margin-left: 10px;
+	margin-top: 6.5px;
+}
+/*.content_header*/
+.content_header .class {
+	float: right;
+	margin-right: 107px;
+	margin-top: 95px;
+}
+.content_header .class select {
+	margin-left: 25px;
+	margin-bottom: 16px;
+	font-size: 13px;
+	line-height: 13px;
+	border: none;
+	border-radius: 5px;
+	background-color: #bfbfbf;
+	padding-left: 10px;
+}
+.content_header .class select:first-child {
+	margin-left: 0;
+}
+.education {
+	width: 104px;
+	height: 33px;
+	-webkit-appearance: none;
+	-moz-appearanc: none;
+	appearance: none;
+	background: url(../img/culture/culture_edu_arrow.png) 78px no-repeat;
+
+}
+.age {
+	width: 132px;
+	height: 33px;
+	-webkit-appearance: none;
+	-moz-appearanc: none;
+	appearance: none;
+	background: url(../img/culture/culture_edu_arrow.png) 106px no-repeat;
+}
+.sort {
+	width: 132px;
+	height: 33px;
+	-webkit-appearance: none;
+	-moz-appearanc: none;
+	appearance: none;
+	background: url(../img/culture/culture_edu_arrow.png) 106px no-repeat;
+}
+.work {
+	width: 104px;
+	height: 33px;
+	-webkit-appearance: none;
+	-moz-appearanc: none;
+	appearance: none;
+	background: url(../img/culture/culture_edu_arrow.png) 78px no-repeat;
+}
+.work option {
+	background-color: #fff;	
+}
+input[type="search"] {
+	width: 295px;
+	height: 33px;
+	background-color: #005982;
+	border: none;
+	border-radius: 5px;
+	margin-left: 25px;
+}
+input[placeholder="강좌명"] {
+	padding-left: 10px;
+}
+/*.content_main*/
+.content_main {
+	position: relative;
+}
+.content_main .pic_01 {
+	float: right;
+	margin-top: 104px;
+}
+.content_main .pic_01 img {
+	margin-left: 34px;
+	padding: 5px;
+	border: 1px solid #ededed;
+	box-sizing: border-box;
+}
+.content_main .pic_01 img:first-child {
+	margin-left: 0;
+}
+
+.pic_01_look {
+	float: left;
+	position: absolute;
+	top: 623px;
+}
+.pic_01_look img {
+	margin-left: 81px;
+}
+.pic_01_look img:first-child {
+	margin-left: 25px;
+}
+.pic_02 {
+	float: right;
+	margin-top: 61px;
+}
+.pic_02 img {
+	margin-left: 34px;
+	padding: 5px;
+	border: 1px solid #ededed;
+	box-sizing: border-box;
+}
+.pic_02 img:first-child {
+	margin-left: 0;
+}
+.pic_02_look {
+	float: left;
+	position: absolute;
+	top: 1059px;
+}
+.pic_02_look img {
+	margin-left: 81px;
+}
+.pic_02_look img:first-child {
+	margin-left: 25px;
+}
+
+.dropdown {
+	position: absolute;
+	top: 1186px;
+	left: 252px;
+	background-color: #e5e5e5;
+}
+.dropdown input[type="button"] {
+	padding: 16px 160px 16px 145px;
+	color: #000000;
+	font-size: 13px;
+	border: none;
+	border-radius: 5px;
+	background: url(../img/culture/culture_button_arrow.png) 230px no-repeat;
+}
+.line_left {
+    width: 232px;
+    border: 1px solid #E5E5E5;
+    float: left;
+	margin-top: 93px;    
+  }
+.line_right {
+	width: 232px;
+    border: 1px solid #E5E5E5;
+    float: right;
+	margin-top: 93px;  
+}
+
+
+
+
+
+
+

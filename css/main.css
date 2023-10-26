@@ -133,7 +133,7 @@ section .title {
     position: absolute;
     top: 0;
     left: 0;
-    transition: 0.7s;
+    transition: 0.7s; 
 }
 .course .course_newItem .info .info__new ul li a:hover {
  
