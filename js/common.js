@@ -44,8 +44,8 @@ $(function () {
     alert("🌹 준비중입니다.");
   });
 
-  function copy_url() {
-    var copy_url = jQuery(".copyText").text();
+  function copyurl() {
+    var copy_url = jQuery("#copy").text();
     navigator.clipboard.writeText(copy_url).then(() => {
       alert("아이디 복사 성공!");
       return false;
@@ -53,6 +53,6 @@ $(function () {
   }
 
   $('.copy').click(function(){
-    copy_url() 
+    copyurl() 
   })
 }); //jquery end
