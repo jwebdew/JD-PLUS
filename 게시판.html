@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+#t1, div{
+	border: 1px solid black;
+}
+</style>
+<script>
+let cnt = 1;
+function a(){
+	let writer = f.writer.value;
+	let pwd = f.pwd.value;
+	let content = f.content.value; 
+	let el = mkDiv(writer, pwd, content); 
+	let list = document.getElementById("list"); 
+	list.appendChild(el); 
+}
+
+function mkDiv(writer, pwd, content){ 
+	let newDiv = document.createElement("div"); 
+	newDiv.id = "d_" + cnt++; 
+	let html = ""; 
+	html += "writer:"+writer+"<br/>";
+	html += "content:"+content+"<br/>";
+	html += "<input type = 'button' value = '수정'>";
+	html += "<input type = 'button' value = '삭제'>"; 
+	newDiv.innerHTML = html; 
+	return newDiv; 
+}
+
+</script>
+
+</head>
+<body>
+    <h3>방명록</h3>
+    <form name = "f">
+    <table id = "t1">
+    <tr><th> 작성자</th><td><input type = "text" name = "writer" id = "writer"></td></tr>
+    <tr><th> 글 비밀번호</th><td><input type = "password" name = "pwd" id = "pwd"></td></tr>
+    <tr><th> 내용</th><td><input type = "text" name = "content" id = "content"></td></tr>
+    <tr><th> 작성</th><td><input type = "button" name = "작성" value = "작성" onclick="a()"></td></tr>
+    </table>
+    </form>
+    
+    <div id = "list"> 
+    
+    <!-- id 가 list 인 div 에 받아온 값들을 계속 넣는 것. -->
+    <!-- 우리가 코드를 치는 것과 동일하게 계속 내용이 들어가고 있다. -->
+    
+    </div>
+    </body>
