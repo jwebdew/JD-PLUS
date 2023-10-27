@@ -8,30 +8,7 @@
 	border: 1px solid black;
 }
 </style>
-<script>
-let cnt = 1;
-function a(){
-	let writer = f.writer.value;
-	let pwd = f.pwd.value;
-	let content = f.content.value; 
-	let el = mkDiv(writer, pwd, content); 
-	let list = document.getElementById("list"); 
-	list.appendChild(el); 
-}
 
-function mkDiv(writer, pwd, content){ 
-	let newDiv = document.createElement("div"); 
-	newDiv.id = "d_" + cnt++; 
-	let html = ""; 
-	html += "writer:"+writer+"<br/>";
-	html += "content:"+content+"<br/>";
-	html += "<input type = 'button' value = '수정'>";
-	html += "<input type = 'button' value = '삭제'>"; 
-	newDiv.innerHTML = html; 
-	return newDiv; 
-}
-
-</script>
 
 </head>
 <body>
@@ -51,4 +28,50 @@ function mkDiv(writer, pwd, content){
     <!-- 우리가 코드를 치는 것과 동일하게 계속 내용이 들어가고 있다. -->
     
     </div>
+
+    <script>
+        let cnt = 1;
+        function a(){
+            let writer = f.writer.value;
+            let pwd = f.pwd.value;
+            let content = f.content.value; 
+            let el = mkDiv(writer, pwd, content); 
+            let list = document.getElementById("list"); 
+            list.appendChild(el); 
+        }
+        
+        function mkDiv(writer, pwd, content){ 
+            let newDiv = document.createElement("div"); 
+            newDiv.id = "d_" + cnt++; 
+            let html = ""; 
+            html += "writer:"+writer+"<br/>";
+            html += "content:"+content+"<br/>";
+            html += "<input type = 'button' value = '수정'>";
+            html += "<input type = 'button' value = '삭제'>"; 
+            newDiv.innerHTML = html; 
+            return newDiv; 
+        }
+        
+        window.onpageshow = function (event) {
+        
+        // 새로고침: window.performance.navigation.type == 1
+        // 뒤로가기: window.performance.navigation.type == 2
+        if (event.persisted || (window.performance && (window.performance.navigation.type == 1 || window.performance.navigation.type == 2))) {
+        
+            // 현재 브라우저에서 WebStorage를 지원할 때
+            if (('sessionStorage' in window) && window['sessionStorage'] !== null) {
+            
+                // sessionStorage로 데이터 다시 불러오기
+                if (sessionStorage.getItem('DATA')) {
+                    input_text.value = sessionStorage.getItem('DATA');
+                }
+                
+            }
+            
+        }
+        
+        }
+        
+        </script>
+        
     </body>
