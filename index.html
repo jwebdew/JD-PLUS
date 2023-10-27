@@ -20,10 +20,14 @@
     <script src="js/common.js"></script>
     <script src="js/main.js"></script>
 
-</head>
+</head>     
 
 <body>
     <!-- https://github.com/jwebdew/JD-PLUS -->
+    <div class="skip">
+        <a href="#main_content">본문 바로가기</a>
+        <a href="#footer">본문 바로가기</a>
+    </div><!-- .skip end -->
     <div class="mouse"></div>
     <div id="wrap">
         <header id="header">
@@ -72,7 +76,7 @@
         </div>
 
         <!-- .text_slide end -->
-        <main>
+        <main id="main_content" tabindex="0">
             <section class="course">
                 <article class="course_newItem">
                     <figure>
@@ -131,7 +135,7 @@
                         </li>
 
                         <li class="on">
-                            <a href="#" onclick="return false">포트폴리오</a>
+                            <a href="#" onclick="return false">훈련생포트폴리오</a>
                             <div class="sec_btn">
                                 <a href="sub/utile/result.html">전체보기</a>
                             </div>
@@ -1022,7 +1026,7 @@
 
 
         </main>
-        <footer>
+        <footer id="footer">
             <ul>
                 <li>
                     <a href="tel:010-8563-7815">

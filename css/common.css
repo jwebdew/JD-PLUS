@@ -86,6 +86,10 @@ html,body {
     cursor: default;
     /* overflow-x: hidden;  */
 } 
+.skip {
+    position: absolute;
+    left: -9999px;
+}
 h3 {
     font-family: 'Cafe24-ClassicType';
     font-weight: normal; 
