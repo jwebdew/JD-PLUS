@@ -79,3 +79,50 @@ section ul li strong {
     position:relative !important;
     overflow:auto; 
 }
+
+
+
+/* tag.html */
+.tag_list .middle_title {
+    margin: 40px 0 20px;
+}
+.tag_list h4 {
+    font-size: 30px;
+}
+.tag_list p {
+    margin: 5px 0 0;
+    line-height: 1.3;
+}
+.tag_list dl {
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    padding: 15px;
+    margin: 10px 0;
+    position: relative; 
+    background-color: #fff;
+}
+.tag_list dl::before {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: #999;
+    position: absolute;
+    top: 0;
+    left: 15%;
+}
+.tag_list dl dt {
+    width: 15%;
+    padding: 0 10px;
+    font-weight: 600;
+}
+.tag_list dl dd {
+    width: 90%;
+    line-height: 1.5;
+    word-break: keep-all;
+    padding: 0 20px;
+}
+
+.tag_list dl:hover {
+    background-color: #F7D061;
+}

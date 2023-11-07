@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html / css</title>
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../../../../css/common.css">
+
+    <script src="../lib/jquery-3.7.0.min.js"></script>
+    <script src="../../../../js/common.js"></script>
+</head>
+
+<body>
+    <div class="mouse"></div>
+    <div id="wrap">
+        <header id="header">
+            <h1>
+                <a href="/">
+                    <span>JD+</span>
+                </a>
+                <div title="메뉴보기">
+                    <img src="../../../../img/main_flower.png" alt="">
+                </div>
+            </h1>
+        </header><!-- .header end -->
+        <main>
+            <section>
+                <div class="inner">
+
+                    <div class="content_menu">
+                        <ul>
+                            <li class="on"><a href="#">html5 / css3</a></li>
+                        </ul>
+                        <p>html/css</p>
+                    </div><!-- content_menu end -->
+                    <ul class="content_menu__category">
+                        <li class="on"><a href="#">html</a></li>
+                        <li><a href="#">css</a></li>
+                    </ul><!--  -->
+
+                    <article class="tag_list">
+                        <div class="">
+                            <dl>
+                                <dt>body</dt>
+                                <dd>HTML 문서의 내용을 나타냅니다. 문서에는 이러한 요소가 하나만 있을 수 있습니다.</dd>
+                            </dl>
+                            <div class="middle_title">
+                                <h4>콘텐츠 섹션</h4>
+                                <p>콘텐츠 섹션 요소를 사용하면 문서 콘텐츠를 논리적 조각으로 구성할 수 있습니다.<br />섹션 요소를 사용하여 머리글 및 바닥글 탐색, 콘텐츠 섹션을 식별하는 머리글 요소를 포함하여 페이지 콘텐츠에 대한 광범위한 개요를 만듭니다.</p>
+                            </div><!-- middle_title end -->
+
+                            <dl>
+                                <dt>h1, h2, h3, h4, h5, h6</dt>
+                                <dd>6단계의 구획 제목을 나타냅니다. 구획 단계는 <mark>h1</mark>이 가장 높고 <mark>h6</mark>은 가장 낮습니다.</dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt>header</dt>
+                                <dd>소개 및 탐색에 도움을 주는 콘텐츠를 나타냅니다. 제목, 로고, 검색 폼, 작성자 이름 등의 요소도 포함할 수 있습니다.</dd>
+                            </dl>
+
+                            <dl>
+                                <dt>main</dt>
+                                <dd>문서 <body>의 주요 콘텐츠를 나타냅니다. 주요 콘텐츠 영역은 문서의 핵심 주제나 앱의 핵심 기능에 직접적으로 연결됐거나 확장하는 콘텐츠로 이루어집니다.</dd>
+                            </dl>
+
+                            <dl>
+                                <dt>footer</dt>
+                                <dd>가장 가까운 섹션 콘텐츠나 섹션 루트의 푸터를 나타냅니다. 푸터는 일반적으로 섹션의 작성자, 저작권 정보, 관련 문서 등의 내용을 담습니다.</dd>
+                            </dl>
+
+                            <dl>
+                                <dt>section</dt>
+                                <dd>HTML 문서의 독립적인 구획을 나타내며, 더 적합한 의미를 가진 요소가 없을 때 사용합니다. 보통 <mark>section</mark>은 제목을 포함하지만, 항상 그런 것은 아닙니다.</dd>
+                            </dl>
+
+                            <dl>
+                                <dt>article</dt>
+                                <dd>문서, 페이지, 애플리케이션, 또는 사이트 안에서 독립적으로 구분해 배포하거나 재사용할 수 있는 구획을 나타냅니다. 사용 예제로 게시판과 블로그 글, 매거진이나 뉴스 기사 등이 있습니다.</dd>
+                            </dl>
+
+                            <dl>
+                                <dt>nav</dt>
+                                <dd>문서의 부분 중 현재 페이지 내, 또는 다른 페이지로의 링크를 보여주는 구획을 나타냅니다. 자주 쓰이는 예제는 메뉴, 목차, 색인입니다.</dd>
+                            </dl>
+                           
+                            <dl>
+                                <dt>address</dt>
+                                <dd>가까운 HTML 요소의 사람, 단체, 조직 등에 대한 연락처 정보를 나타냅니다.</dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt>aside</dt>
+                                <dd>문서의 주요 내용과 간접적으로만 연관된 부분을 나타냅니다. 주로 사이드바 혹은 콜아웃 박스로 표현합니다.</dd>
+                            </dl>
+                           
+                        </div><!--  -->
+                    </article>
+                </div><!-- .inner end -->
+
+            </section>
+        </main>
+
+        <footer id="footer">
+            <ul>
+                <li>
+                    <a href="tel:010-8563-7815">
+                        <img src="../../../../img/icon_tel.png" alt="전화번호">
+                        <span>010-8563-7815</span>
+                    </a>
+
+                </li>
+
+                <li>
+                    <img src="../../../../img/kakaotalk.png" alt="카카오톡ID">
+
+                    <span id="copy">shines2268 <img src="../../../../img/icon_copy.png" alt="복사하기" class="copy"
+                            title="복사하기"></span>
+                </li>
+                <!-- <li>
+                    <a href="https://github.com/jwebdew" target="_blank">
+                        <img src="img/icon_github.png" alt="깃허브">
+                        <span>깃허브</span>
+                    </a>
+                </li> -->
+            </ul>
+            <img src="../../../../img/kakao_myQR.png" alt="">
+            <p>©HA:D 하수정 2023.All Rights Reserved.</p>
+        </footer><!-- #footer end -->
+    </div><!-- #wrap end -->
+</body>
+
+</html>
