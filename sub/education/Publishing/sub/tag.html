@@ -13,6 +13,9 @@
 </head>
 
 <body>
+    <!-- https://developer.mozilla.org/ko/docs/Web/HTML/Element -->
+    <!-- https://www.tcpschool.com/html-tags/intro -->
+
     <div class="mouse"></div>
     <div id="wrap">
         <header id="header">
@@ -114,7 +117,7 @@
 
                             <dl>
                                 <dt>li</dt>
-                                <dd>목록의 항목을 나타냅니다. 반드시 정렬 목록(&lt;ol&gt;), 비정렬 목록(&lt;ul&gt;, 혹은 메뉴(&lt;menu&gt; (en-US)) 안에 위치해야 합니다. 메뉴와 비정렬 목록에서는 보통 불릿으로 항목을 나타내고, 정렬 목록에서는 숫자나 문자를 사용한 오름차순 카운터로 나타냅니다.</dd>
+                                <dd>목록의 항목을 나타냅니다. 반드시 정렬 목록(&lt;ol&gt;), 비정렬 목록(&lt;ul&gt;), 혹은 메뉴(&lt;menu&gt; (en-US)) 안에 위치해야 합니다. 메뉴와 비정렬 목록에서는 보통 불릿으로 항목을 나타내고, 정렬 목록에서는 숫자나 문자를 사용한 오름차순 카운터로 나타냅니다.</dd>
                             </dl>
 
                             <dl>
@@ -298,11 +301,63 @@
                             </dl>
 
 
-                            <!-- ⭐⭐⭐이미지 & 멀티미디어<⭐⭐⭐  -->
+                            <!-- ⭐⭐⭐내장 콘텐츠⭐⭐⭐  -->
                             <div class="middle_title">
-                                <h4>이미지 & 멀티미디어</h4>
-                                <p>HTML은 사진, 오디오, 비디오 등 다양한 멀티미디어 리소스를 지원합니다.</p>
+                                <h4>내장 콘텐츠</h4>
+                                <p>HTML은 일반적인 멀티미디어 콘텐츠 외에도 다양한 종류의 기타 콘텐츠를 포함할 수 있습니다.</p>
                             </div><!-- middle_title end -->
+
+                            <dl>
+                                <dt>embed</dt>
+                                <dd>외부 어플리케이션이나 대화형 컨텐츠와의 통합점을 나타냅니다.</dd>
+                            </dl>
+
+                            <dl>
+                                <dt>iframe</dt>
+                                <dd>중첩 브라우징 맥락을 나타내는 요소로, 현재 문서 안에 다른 HTML 페이지를 삽입합니다.</dd>
+                            </dl>
+
+                            <dl>
+                                <dt>object</dt>
+                                <dd>이미지나, 중첩된 브라우저 컨텍스트, 플러그인에 의해 다뤄질수 있는 리소스와 같은 외부 리소스를 나타냅니다.</dd>
+                            </dl>
+
+                            <dl>
+                                <dt>picture</dt>
+                                <dd>0개 이상의 source 요소와 하나의 img 요소를 포함하여 다양한 디스플레이/장치 시나리오에 대한 이미지의 대체 버전을 제공합니다.<br />
+                                picture의 자식요소로 <code>source media="(min-width: 400px)" srcset="/examples/images/people_575.jpg"</code> 사용</dd>
+                            </dl>
+
+                            <dl>
+                                <dt>portal : 실험, 호환안됨</dt>
+                                <dd>새 페이지로의 원활한 탐색을 위해 다른 HTML 페이지를 현재 페이지에 포함할 수 있습니다.</dd>
+                            </dl>
+
+                            <dl>
+                                <dt>source</dt>
+                                <dd>그림, 오디오 요소 또는 비디오 요소에 대한 여러 미디어 리소스를 지정합니다. 이는 콘텐츠가 없고 닫는 태그가 없음을 의미하는 무효 요소입니다. </dd>
+                            </dl>
+
+                            <!-- ⭐⭐⭐스크립트⭐⭐⭐  -->
+                            <div class="middle_title">
+                                <h4>스크립트</h4>
+                                <p>HTML은 동적인 콘텐츠와 웹 어플리케이션을 위해 스크립트 언어, 그 중에서도 주로 JavaScript를 지원합니다. 특정 요소가 이런 기능을 가지고 있습니다.</p>
+                            </div><!-- middle_title end -->
+
+                            <dl>
+                                <dt>convas</dt>
+                                <dd>캔버스 스크립팅 API 또는 WebGL API와 함께 사용해 그래픽과 애니메이션을 그릴 수 있습니다.</dd>
+                            </dl>
+
+                            <dl>
+                                <dt>noscript</dt>
+                                <dd>페이지의 스크립트 유형을 지원하지 않거나, 브라우저가 스크립트를 비활성화한 경우 보여줄 HTML 구획을 정의합니다.</dd>
+                            </dl>
+
+                            <dl>
+                                <dt>script</dt>
+                                <dd>데이터와 실행 가능한 코드를 문서에 포함할 때 사용하며 보통 JavaScript 코드와 함께 씁니다. WebGL의 GLSL 셰이더 프로그래밍 언어, JSON 등 다른 언어와도 사용할 수 있습니다.</dd>
+                            </dl>
                              
                         </div><!--  -->
                     </article>
