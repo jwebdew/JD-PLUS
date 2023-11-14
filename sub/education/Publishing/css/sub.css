@@ -2,7 +2,7 @@
 @import url('main.css');
 
  
-    
+a {display: inline-block !important;}    
 .en {
     font-family: 'MonoLisa';
     font-size: 15px;
