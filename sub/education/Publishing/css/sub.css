@@ -109,15 +109,15 @@ section ul li strong {
     background-color: #999;
     position: absolute;
     top: 0;
-    left: 15%;
+    left: 17%;
 }
 .tag_list dl dt {
-    width: 15%;
+    width: 17%;
     padding: 0 10px;
     font-weight: 600;
 }
 .tag_list dl dd {
-    width: 90%;
+    width: 80%;
     line-height: 1.5;
     word-break: keep-all;
     padding: 0 20px;
