@@ -3,14 +3,14 @@ $(function () {
     //마우스위치값 구하기
     //x축 e.pageX
     //y축 e.pageY
-    // let mouseX = e.pageX;
-    // let mouseY = e.pageY;
+    let mouseX = e.pageX;
+    let mouseY = e.pageY;
     // console.log(mouseX)
     // console.log(mouseY)
-    // $(".mouse").css({
-    //   top: mouseY,
-    //   left: mouseX,
-    // });
+    $(".mouse, .list_mouse").css({
+      top: mouseY,
+      left: mouseX,
+    });
   });
   $("a").on({
     mouseenter: function () {
@@ -18,12 +18,14 @@ $(function () {
         transform: "scale(4) translateX(15px)",
         // 'background-color' : 'unset',
       });
+      $('.mouse, .list_mouse').addClass('hover');
     },
     mouseleave: function () {
       $(".mouse").css({
         transform: "scale(1)",
         "background-color": "#BFFF00",
       });
+      $('.mouse, .list_mouse').removeClass('hover');
     },
   });
 
