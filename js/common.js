@@ -3,14 +3,14 @@ $(function () {
     //마우스위치값 구하기
     //x축 e.pageX
     //y축 e.pageY
-    let mouseX = e.pageX;
-    let mouseY = e.pageY;
+    // let mouseX = e.pageX;
+    // let mouseY = e.pageY;
     // console.log(mouseX)
     // console.log(mouseY)
-    $(".mouse").css({
-      top: mouseY,
-      left: mouseX,
-    });
+    // $(".mouse").css({
+    //   top: mouseY,
+    //   left: mouseX,
+    // });
   });
   $("a").on({
     mouseenter: function () {

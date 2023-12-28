@@ -77,10 +77,10 @@ $(function () {
     let mouseY = e.pageY;
     // console.log(mouseX)
     // console.log(mouseY)
-    $(".mouse").css({
-      top: mouseY,
-      left: mouseX,
-    });
+    // $(".mouse").css({
+    //   top: mouseY,
+    //   left: mouseX,
+    // });
   });
 
   // .study_result.list 의 전체 너비(가로값) 구하기
