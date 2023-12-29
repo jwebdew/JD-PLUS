@@ -71,6 +71,23 @@ $(function () {
         //window.open('sub/vol' + thisnum + '.jpg', 'popup01', 'width=1000, height=500') 
     }) */
 
+    let archiveBtn = $('.itemWrap__btn-pdf');
+    let archive = $('.itemWrap__archive');
 
+    archiveBtn.click(function(){
+        $(this).find(archive).css({
+            'display' : 'block'
+        });
+        $('body').addClass('itemWrap__archive_on');
+    })
+
+    /* mouseup : 마우스 누르고 있는 상태에서 뗐을 경우 */
+    $(window).mouseup(function(){
+        archive.css({
+            'display' : 'none'
+        });
+        $('body').removeClass('itemWrap__archive_on');
+
+    })
 });//jquery end
 

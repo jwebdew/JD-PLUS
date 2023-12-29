@@ -163,6 +163,7 @@ body:active,
     border-radius 0.3s;
   transition: width 0.5s, height 0.5s, background 0.5s, opacity 0.3s,
     border-radius 0.3s;
+    z-index: 999;
 }
 
 .list_mouse:before,
