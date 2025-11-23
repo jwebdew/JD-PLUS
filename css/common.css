@@ -86,6 +86,7 @@ html,body {
     cursor: default;
     /* overflow-x: hidden;  */
     background-color: #fff;
+    min-width: 1440px;
 } 
 
 body::-webkit-scrollbar {
